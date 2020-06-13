@@ -4,17 +4,24 @@
  
 Server side:
 
-Web-Server: Apache
-Operating System: Linux Ubuntu
-Program Language: PHP
-Database: MySQL
-Web Platform: OpenCart
+Web-Server: Apache;
+
+Operating System: Linux Ubuntu;
+
+Program Language: PHP;
+
+Database: MySQL;
+
+Web Platform: OpenCart;
+
 
 Client side:
 
-JavaScript library: Jquery
-PHP Template Engine: Twig
-Program languages: JS, CSS, HTML
+JavaScript library: Jquery;
+
+PHP Template Engine: Twig;
+
+Program languages: JS, CSS, HTML;
 
 # SOA Integrations
 
