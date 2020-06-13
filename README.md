@@ -1,6 +1,6 @@
 # InterCasa eCommerce source code
 
-- OpenCart eCommerce Platform basics
+- OpenCart eCommerce Platform basics {opencart-platform-basics.docx}
 - main files and folders explanation {opencart-folders.jpg}
 
  
