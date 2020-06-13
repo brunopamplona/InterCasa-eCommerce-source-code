@@ -1,3 +1,3 @@
 # InterCasa eCommerce source code
  
-# Please access \mvc-source-code directory
+# Please access folder \mvc-source-code 
