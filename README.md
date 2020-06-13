@@ -16,7 +16,7 @@ Client side:
 - PHP Template Engine: Twig;
 - Program languages: JS, CSS, HTML;
 
-# SOA Integrations
+# 3rd party services Integration
 
 Logistics and Operations:
 
