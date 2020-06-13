@@ -40,4 +40,5 @@ Finance and Payments:
 - Cielo (for credit card payment processing)
 - GerenciaNet (for bank billed issuance)
 
-# Source Code located on gt-files branch (under /mvc-source-code folder)
+- Source Code located on gt-files branch 
+(under /mvc-source-code folder)
