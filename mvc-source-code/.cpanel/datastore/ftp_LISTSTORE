@@ -1,0 +1,1 @@
+{"error":0,"exit_code":0,"statusmsg":"Ran adminbin Cpanel/ftp/LISTSTORE","mode":"simple","status":1,"data":[{"user":"interca1","type":"main","homedir":"/home/interca1"},{"type":"logaccess","homedir":"/etc/apache2/logs/domlogs/interca1","user":"interca1_logs"}],"timeout":0,"version":"2.4","action":"fetch"}

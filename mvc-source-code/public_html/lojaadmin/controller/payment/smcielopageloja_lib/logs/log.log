@@ -1,0 +1,254 @@
+[12-Sep-2014 15:43:41 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare httprequest() in /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php on line 24
+[19-Sep-2014 16:28:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function deleteOrder() on a non-object in /home/interca1/public_html/vqmod/vqcache/vq2-lojaadmin_controller_sale_order.php on line 213
+**********************************************************
+1024 USER NOTICE - 2015-04-08 15:27:40 (BRT)
+     ARQUIVO: /home/interca1/public_html/vqmod/vqcache/vq2-system_engine_loader.php(Linha 48)
+     MENSAGEM: 
+Error: Could not load model payment/amazon_checkout!
+
+**********************************************************
+2 WARNING - 2015-09-02 17:28:25 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-02 17:29:03 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-02 17:29:31 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-04 15:43:06 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-04 15:43:37 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-04 20:46:37 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-04 20:46:58 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-09 19:09:43 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-09 19:09:53 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-14 14:28:41 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-09-14 14:29:00 (BRT)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-11-19 15:19:05 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-11-19 15:19:27 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-11-19 15:20:06 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-11-19 15:20:23 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-11-19 15:21:10 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-11-19 15:21:32 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-12-14 16:18:55 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-12-14 16:19:18 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-12-14 16:19:34 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-12-21 09:48:47 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2015-12-21 09:49:06 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2016-01-12 14:28:47 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2016-01-12 14:41:58 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2016-01-12 14:43:13 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2016-01-12 14:43:44 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2016-01-14 11:48:48 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2016-01-14 11:49:11 (BRST)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 108 is not a valid cURL handle resource
+
+**********************************************************
+1024 USER NOTICE - 2016-04-01 11:47:40 (BRT)
+     ARQUIVO: /home/interca1/public_html/vqmod/vqcache/vq2-system_engine_loader.php(Linha 48)
+     MENSAGEM: 
+Error: Could not load model payment/amazon_checkout!
+
+**********************************************************
+1024 USER NOTICE - 2016-04-22 11:34:19 (BRT)
+     ARQUIVO: /home/interca1/public_html/vqmod/vqcache/vq2-system_engine_loader.php(Linha 48)
+     MENSAGEM: 
+Error: Could not load model payment/amazon_checkout!
+
+**********************************************************
+1024 USER NOTICE - 2016-04-28 11:07:31 (BRT)
+     ARQUIVO: /home/interca1/public_html/vqmod/vqcache/vq2-system_engine_loader.php(Linha 48)
+     MENSAGEM: 
+Error: Could not load model payment/amazon_checkout!
+
+**********************************************************
+1024 USER NOTICE - 2016-06-27 16:09:36 (BRT)
+     ARQUIVO: /home/interca1/public_html/vqmod/vqcache/vq2-system_engine_loader.php(Linha 48)
+     MENSAGEM: 
+Error: Could not load model payment/amazon_checkout!
+
+**********************************************************
+1024 USER NOTICE - 2016-10-13 17:43:53 (BRT)
+     ARQUIVO: /home/interca1/public_html/vqmod/vqcache/vq2-system_engine_loader.php(Linha 48)
+     MENSAGEM: 
+Error: Could not load model payment/amazon_checkout!
+
+**********************************************************
+2 WARNING - 2018-08-14 05:03:19 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:03:34 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:04:00 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:04:14 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:41:52 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:41:59 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:42:32 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2018-08-14 05:43:03 (-03)
+     ARQUIVO: /home/interca1/public_html/lojaadmin/controller/payment/smcielopageloja_lib/includes/include.php(Linha 0)
+     MENSAGEM: 
+curl_error(): 57 is not a valid cURL handle resource
+

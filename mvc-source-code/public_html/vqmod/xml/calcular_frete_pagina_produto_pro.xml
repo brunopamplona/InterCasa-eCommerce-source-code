@@ -1,0 +1,195 @@
+                                <modification>
+	<id><![CDATA[Calcular Frete Pagina de Produtos Pro]]></id>
+	<version><![CDATA[1.0.0]]></version>
+	<vqmver><![CDATA[2.3.2]]></vqmver>
+	<author><![CDATA[Valdeir S. <valdeirpsr@hotmail.com.br>]]></author>
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation>
+			<search position="before"><![CDATA[
+				<div id="marcadorcep"></div>
+			]]></search>
+			<add><![CDATA[
+				<!--VALDEIR - CALCULA FRETE-->
+				<?php if ($shipping): ?>
+				<div id="calcula_cep">
+					<div><?php echo $calculaFrete_help ?></div><br />
+					<form name="frmCalculaFrete" method="post" action="#">
+						<label><?php echo $calculaFrete_cep ?></label>&nbsp;&nbsp;&nbsp;<input type="text" value="<?php echo $zipcode ?>" name="postcode" id="postcode" />
+						<input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+						<input type="submit" id="calcular" class="button" value="<?php echo $calculaFrete_botao ?>" />
+					</form>
+					<div id="resultado"></div>
+					<div id="aviso" style="display:none;"><?php echo $calculaFrete_aviso ?></div>
+				</div>
+				<?php endif; ?>
+				<!--FIM VALDEIR - CALCULA FRETE-->
+			]]></add>
+		</operation>
+		
+		<operation>
+			<search position="before" offset="1"><![CDATA[
+				$('#button-cart').bind('click', function() {
+			]]></search>
+			<add><![CDATA[
+				<!--VALDEIR - CALCULA FRETE-->
+				<?php if ($shipping): ?>
+				<script type="text/javascript"><!--
+
+				//Aplica CSS na div calcula_cep
+				$("#calcula_cep").css({
+					'border-bottom':'1px solid #E7E7E7',
+					//'border-top':'1px solid #E7E7E7',
+					margin:'0 0 20px 0',
+					padding:'10px 0'
+				});
+
+				//Aplica CSS na div resultado e aviso
+				$("#resultado, #aviso").css({
+					display:'none',
+					padding:'10px 0 0'
+				});
+
+				//Quando o botão calcular for clicado
+				$('.option input').first().attr('checked', true);
+				$("#calcular").click(function() {
+    //Envia a solicitação via AJAX
+    $.ajax({
+        url: 'index.php?route=valdeir/calcula_frete',
+        type: 'post',
+        data: $('.product-info input[type=\'text\'], .product-info input[type=\'hidden\'], .product-info input[type=\'radio\']:checked, .product-info input[type=\'checkbox\']:checked, .product-info select, .product-info textarea'),
+        dataType: 'json',
+        success: function(json) {
+            if (json['shipping_method']) {
+                    html = '<h2><?php echo $calculaFrete_titulo ?></h2>';
+                    html += '  <table class="radio">';
+
+                    for (i in json['shipping_method']) {
+                        html += '<tr>';
+                        html += '  <td colspan="3"><b>' + json['shipping_method'][i]['title'] + '</b></td>';
+                        html += '</tr>';
+
+                        if (!json['shipping_method'][i]['error']) {
+                            for (j in json['shipping_method'][i]['quote']) {
+                                html += '<tr class="highlight">';
+
+                                html += '<td><input type="hidden" /></td>';
+
+                                html += '  <td><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['title'] + '</label></td>';
+                                html += '  <td style="text-align: right;"><label for="' + json['shipping_method'][i]['quote'][j]['code'] + '">' + json['shipping_method'][i]['quote'][j]['text'] + '</label></td>';
+                                html += '</tr>';
+                            }
+                        } else {
+                            html += '<tr>';
+                            html += '  <td colspan="3"><div class="error">' + json['shipping_method'][i]['error'] + '</div></td>';
+                            html += '</tr>';
+                        }
+                    }
+
+                    html += '  </table>';
+                    html += '  <br />';
+                } else {
+                    html = '<h2>Erro</h2> <ul>';
+
+                    $error = json['error'];
+
+                    for (var p in $error) {
+                        html += '<li>' + $error[p] + '<li>';
+                    }
+
+                    html += '</li>';
+                }
+
+                $.colorbox({
+                    overlayClose: true,
+                    opacity: 0.5,
+                    width: '600px',
+                    href: false,
+                    html: html
+                });
+
+        }
+    });
+
+    return false;
+});
+
+				//--></script>
+				<?php endif; ?>
+				<!-- FIM VALDEIR - CALCULA FRETE-->
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/product/product.php">
+		<operation>
+			<search position="after"><![CDATA[
+				$this->data['points'] = $product_info['points'];
+			]]></search>
+			<add><![CDATA[
+				//VALDEIR - CALCULA FRETE
+				
+				$this->load->model('account/address');
+				$enderecoCliente = $this->model_account_address->getAddress($this->customer->getId());
+				
+				$this->data['zipcode'] = $enderecoCliente['postcode'];
+				//FIM VALDEIR - CALCULA FRETE
+			]]></add>
+		</operation>
+		
+		<operation>
+			<search position="after"><![CDATA[
+				$product_info = $this->model_catalog_product->getProduct($product_id);
+			]]></search>
+			<add><![CDATA[
+				if ($product_info['shipping']):
+					$this->data['shipping'] = $product_info['shipping'];
+					$this->data['calculaFrete_titulo'] = $this->language->get('calculaFrete_titulo');
+					$this->data['calculaFrete_help']   = $this->language->get('calculaFrete_help');
+					$this->data['calculaFrete_cep']    = $this->language->get('calculaFrete_cep');
+					$this->data['calculaFrete_botao']  = $this->language->get('calculaFrete_botao');
+					$this->data['calculaFrete_aviso']  = $this->language->get('calculaFrete_aviso');
+				else:
+					$this->data['shipping'] = 0;
+				endif;
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/language/english/product/product.php">
+		<operation>
+			<search position="before"><![CDATA[?>]]></search>
+			<add><![CDATA[
+				$_['calculaFrete_titulo']  = 'Shipping Options';
+				$_['calculaFrete_help']    = '<strong>Calculate shipping and delivery estimates for your region. Questions? <a style="cursor:pointer;"> Click here. </a></strong>';
+				$_['calculaFrete_cep']     = '<strong>Enter your zip code:</strong>';
+				$_['calculaFrete_aviso']   = '<p> The freight and delivery informed on this page are an estimate <strong> </ strong>, considering only one unit of the product to be purchased. If you wish to include in the application a greater quantity of the item, variations may occur within and freight value (depending on the weight and volume of the product). </p><p> When viewing the cart, the delivery time will be clearly informed and may be different for each order item, depending on the availability in our stock. In this case, the delivery will be done partially. Also in the cart you will know the final value of the freight for your purchase. </p>';
+				$_['calculaFrete_botao']   = 'Calculate';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/language/portuguese-br/product/product.php">
+		<operation>
+			<search position="before"><![CDATA[?>]]></search>
+			<add><![CDATA[
+				$_['calculaFrete_titulo']  = 'Opções de Frete';
+				$_['calculaFrete_help']    = '<strong>Calcule o frete e o prazo de entrega estimados para sua regi&atilde;o. D&uacute;vidas? <a href="Entregas_e_Fretes">Clique aqui.</a></strong>';
+				$_['calculaFrete_cep']     = '<strong>Informe seu CEP: Formato - XXXXX-XXX</strong>';
+				$_['calculaFrete_aviso']   = '<p>O valor do frete e o prazo de entrega informados nesta p&aacute;gina s&atilde;o uma <strong>estimativa</strong>, considerando apenas uma unidade do produto a ser adquirida. Caso voc&ecirc; deseje incluir no pedido uma maior quantidade do item, podem ocorrer varia&ccedil;&otilde;es no prazo e no valor do frete (em fun&ccedil;&atilde;o do peso e volume dos produtos).</p><p>Ao visualizar o carrinho, o prazo de entrega ser&aacute; claramente informado, podendo ser diferente para cada item do pedido, conforme a disponibilidade em nosso estoque. Neste caso, a entrega ser&aacute; feita parcialmente. Tamb&eacute;m no carrinho voc&ecirc; saber&aacute; o valor final do frete para sua compra.</p>';
+				$_['calculaFrete_botao']   = 'Calcular';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/model/catalog/product.php">
+		<operation>
+			<search position="after"><![CDATA[
+				'mpn'              => $query->row['mpn'],
+			]]></search>
+			<add><![CDATA[
+				'shipping'         => $query->row['shipping'],
+			]]></add>
+		</operation>
+	</file>
+</modification>
+                            

@@ -1,0 +1,69 @@
+head	1.4;
+access;
+symbols;
+locks
+	interca1:1.4; strict;
+comment	@# @;
+
+
+1.4
+date	2015.06.02.15.46.06;	author interca1;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.07.07.16.18.20;	author interca1;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.05.31.15.39.00;	author interca1;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.05.31.15.39.00;	author interca1;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@site:x:528:527::/home/interca1/mail/intercasamoveis.com.br/site:/home/interca1
+ebook:x:528:527::/home/interca1/mail/intercasamoveis.com.br/ebook:/home/interca1
+webmaster:x:528:527::/home/interca1/mail/intercasamoveis.com.br/webmaster:/home/interca1
+@
+
+
+1.3
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d3 1
+@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d2 1
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@

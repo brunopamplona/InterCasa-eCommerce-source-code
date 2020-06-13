@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<!DOCTYPE modification [
+<!ENTITY adminFolder "lojaadmin">
+<!ENTITY themeFolder "theme255">
+]>
+<modification>
+	<id>ProductQuestionPro</id>
+	<version>3.1</version>
+	<author>http://ffct.cc/</author>
+	<file name="catalog/view/theme/&themeFolder;/template/product/product.tpl">
+<!--		<operation>
+			<search position="before" offset="1"><![CDATA[
+				<div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+			]]></search>
+			<add><![CDATA[
+  				<a href="#tab-questions"><?php echo $tab_questions ?></a>
+			]]></add>
+		</operation>-->
+
+		<operation>
+			<search position="before"><![CDATA[
+				<?php if ($tags) { ?>
+			]]></search>
+			<add><![CDATA[
+  				<div id="tab-questions" class="tab-content"></div>
+			]]></add>
+		</operation>
+
+		<operation>
+			<search position="before"><![CDATA[
+				$('#button-review').bind('click', function() {
+			]]></search>
+			<add><![CDATA[
+  				$('#tab-questions').load('index.php?route=module/productquestion/getForm&product_id=<?php echo $product_id; ?>');
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/controller/product/product.php">
+		<operation>
+			<search position="before"><![CDATA[
+			    $this->data['tab_related'] = $this->language->get('tab_related');
+			]]></search>
+			<add><![CDATA[
+				$this->load->model('module/productquestion');
+				$this->language->load('module/productquestion');
+				$this->data['tab_questions'] = sprintf($this->language->get('tab_questions'), $this->model_module_productquestion->getQuestionCount(
+					array(
+						'language_id' => $this->model_module_productquestion->getLangIdByCode($this->customer->session->data['language']),
+						'display' => 1,
+						'product_id' => $this->request->get['product_id']
+					)
+				));
+
+				$this->document->addScript('catalog/view/javascript/productquestion.js');
+				if (file_exists('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/productquestion.css')) {
+					$this->document->addStyle('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/productquestion.css');
+				} else {
+					$this->document->addStyle('catalog/view/theme/default/stylesheet/productquestion.css');
+				}
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="&adminFolder;/view/template/common/home.tpl">
+		<operation error="skip">
+			<search position="before" offset="3"><![CDATA[
+				<div class="statistic">
+			]]></search>
+			<add><![CDATA[
+	            <tr>
+	              <td><?php echo $pq_total_questions; ?></td>
+	              <td><?php echo $total_questions; ?></td>
+	            </tr>
+	            <tr>
+	              <td><?php echo $pq_total_questions_unanswered; ?></td>
+	              <td><?php echo $total_questions_unanswered; ?></td>
+	            </tr>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="&adminFolder;/controller/common/home.php">
+		<operation>
+			<search position="before"><![CDATA[
+			    $this->template = 'common/home.tpl';
+			]]></search>
+			<add><![CDATA[
+				$this->load->model('module/productquestion');
+				$this->language->load('module/productquestion');
+				$this->data['pq_total_questions'] = sprintf($this->language->get('pq_total_questions'), $this->url->link('module/productquestion', 'token=' . $this->session->data['token'], 'SSL'));
+				$this->data['pq_total_questions_unanswered'] = sprintf($this->language->get('pq_total_questions_unanswered'), $this->url->link('module/productquestion', 'token=' . $this->session->data['token'], 'SSL'));
+
+				$this->data['total_questions'] = $this->model_module_productquestion->getQuestionCount();
+				$this->data['total_questions_unanswered'] = $this->model_module_productquestion->getQuestionCount(array('unanswered' => 1));
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="&adminFolder;/controller/common/header.php">
+		<operation>
+			<search position="before" offset="2"><![CDATA[
+			    $this->template = 'common/header.tpl';
+			]]></search>
+			<add><![CDATA[
+				$this->language->load('module/productquestion');
+				$this->data['pq_questions'] = $this->language->get('pq_questions');
+				$this->data['pq_link_questions'] = $this->url->link('module/productquestion', 'token=' . $this->session->data['token'], 'SSL');
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="&adminFolder;/view/template/common/header.tpl">
+		<operation>
+			<search position="after"><![CDATA[
+			    <li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
+			]]></search>
+			<add><![CDATA[
+				<li><a href="<?php echo $pq_link_questions; ?>"><?php echo $pq_questions; ?></a></li>
+			]]></add>
+		</operation>
+	</file>
+</modification>

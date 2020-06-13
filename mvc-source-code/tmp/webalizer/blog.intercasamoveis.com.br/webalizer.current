@@ -1,0 +1,357 @@
+# Webalizer V2.23-08 Incremental Data - 06/09/2020 08:53:36
+2020 6 9 8 53 36
+179 15 54 5 3 25 1837013 42 18 0
+5 1 12 1 9
+15 2 560223 8 5 2
+9 3 340805 6 0 0
+18 0 1766 7 2 2
+22 1 3088 9 7 3
+34 1 4380 10 15 3
+30 5 334825 16 8 4
+35 0 3374 9 2 1
+9 0 895 9 1 1
+7 3 587657 5 2 2
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+1 0 103 1
+9 0 911 1
+3 0 309 0
+12 1 2106 7
+4 1 28622 2
+4 2 559138 1
+18 1 2780 1
+11 0 1069 0
+14 0 1243 3
+6 1 210201 1
+22 1 3144 6
+2 0 206 0
+10 1 1916 5
+10 0 1022 9
+4 0 388 1
+1 1 460 0
+2 1 279565 0
+9 0 863 4
+13 1 61437 0
+2 1 60384 0
+2 0 198 0
+9 1 61089 0
+1 0 95 0
+10 2 559764 0
+0
+0
+0
+15
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+163
+0
+0
+0
+0
+0
+# -urls- 
+/wp-includes/wlwmanifest.xml
+0 5 8028900191616989801 4640 0 0
+/wp-content/uploads/2015/06/barroco.jpg
+0 1 407343750145 209710 0 0
+/wp-content/uploads/2015/06/beliches.jpg
+0 1 8026310038524159340 28313 0 0
+/wp-content/uploads/2015/06/cama_infantil.jpg
+0 3 3633125067753259008 180843 0 0
+/wp-content/uploads/2015/06/ambiente_1.jpg
+0 5 0 1397350 0 0
+# End Of Table - urls
+# -sites- (monthly)
+17-58-99-254.applebot.apple.com
+0 1 0 103 0 0
+-
+20.191.124.140
+0 3 0 285 0 0
+-
+ip240.ip-158-69-38.net
+0 6 0 570 1 1591033076
+-
+77-88-5-55.spider.yandex.com
+0 2 0 198 1 1591454356
+-
+47.99.145.71
+0 1 0 103 0 0
+-
+crawl-66-249-65-230.googlebot.com
+0 5 0 515 0 0
+-
+195.54.167.190
+0 16 2 3420 2 1591438009
+-
+r-136-41-62-5.consumer-pool.prcdn.net
+0 12 0 1236 0 0
+-
+66.249.83.34
+0 1 0 103 1 1591144789
+-
+ec2-3-250-202-94.eu-west-1.compute.amazonaws.com
+0 1 0 103 1 1591678201
+-
+p3nlhg191.shr.prod.phx3.secureserver.net
+0 1 0 95 0 0
+-
+a2nlwpweb270.prod.iad2.secureserver.net
+0 1 0 95 0 0
+-
+129.146.110.88
+0 2 0 190 1 1591673085
+-
+91.132.138.51
+0 1 0 103 1 1591158917
+-
+win01.mandichost.com.br
+0 1 0 95 0 0
+-
+195.54.160.66
+0 1 0 103 0 0
+-
+crawl-66-249-65-228.googlebot.com
+0 4 0 412 0 0
+-
+lambo.ns1.asgitservers.com
+0 1 0 95 0 0
+-
+216.244.66.247
+0 4 0 380 0 0
+-
+crawl-66-249-73-101.googlebot.com
+0 1 0 103 0 0
+-
+bot.semrush.com
+0 2 0 206 0 0
+-
+52.142.62.48
+0 1 0 95 1 1591267133
+-
+crawl-66-249-66-37.googlebot.com
+0 2 0 206 0 0
+-
+ns571186.ip-192-99-36.net
+0 2 0 190 0 0
+-
+52.158.249.163
+0 3 1 1235 1 1591423741
+-
+hosted-by.rootlayer.net
+0 6 0 570 0 0
+-
+crawl-66-249-75-103.googlebot.com
+0 1 0 103 0 0
+-
+192.0.91.101
+0 1 1 279470 0 0
+-
+crawl-66-249-73-98.googlebot.com
+0 2 0 206 0 0
+-
+178.128.204.192
+0 1 0 103 0 0
+-
+103.82.235.2
+0 6 0 618 0 0
+-
+52.247.113.105
+0 8 1 1710 1 1591358677
+-
+142.93.179.244
+0 1 0 95 0 0
+-
+195.234.109.68
+0 1 1 60281 0 0
+-
+ac03864.valione360
+0 1 1 460 0 0
+-
+tk2-246-32635.vs.sakura.ne.jp
+0 12 0 1045 1 1591517059
+-
+195.234.109.126
+0 1 1 209710 0 0
+-
+crawl-66-249-69-159.googlebot.com
+0 1 0 103 0 0
+-
+162-214-77-153.unifiedlayer.com
+0 1 0 95 1 1590989287
+-
+crawl-66-249-65-226.googlebot.com
+0 13 0 1339 0 0
+-
+crawl-66-249-66-39.googlebot.com
+0 1 0 103 0 0
+-
+212.92.119.83
+0 9 0 927 1 1591364864
+-
+207.154.204.144
+0 1 0 103 0 0
+-
+192.0.85.89
+0 2 2 120562 0 0
+-
+ip-54-36-149-96.a.ahrefs.com
+0 1 0 103 0 0
+-
+23.98.66.167
+0 1 0 95 0 0
+-
+p3nlhg694.shr.prod.phx3.secureserver.net
+0 10 0 950 0 0
+-
+wordpress.com
+0 5 5 1146193 0 0
+-
+209.17.96.2.rdns.cloudsystemnetworks.com
+0 1 0 95 1 1591415925
+-
+183.136.225.46
+0 2 0 190 2 1591605489
+-
+17-58-101-246.applebot.apple.com
+0 1 0 103 1 1591322104
+-
+119.30.39.135
+0 10 0 1030 0 0
+-
+crawl-66-249-73-103.googlebot.com
+0 1 0 103 0 0
+-
+crawl-66-249-66-34.googlebot.com
+0 3 0 309 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+ec2-3-250-202-94.eu-west-1.compute.amazonaws.com
+0 1 0 103 1 1591678201
+-
+129.146.110.88
+0 1 0 95 1 1591673085
+-
+crawl-66-249-65-228.googlebot.com
+0 1 0 103 0 0
+-
+103.82.235.2
+0 1 0 103 0 0
+-
+wordpress.com
+0 3 3 587253 0 0
+-
+# End Of Table - sites (daily)
+# -referrers- 
+- (Direct Request)
+0 172
+http://www.google.com/
+0 6
+https://intercasamoveis.com.br/
+0 1
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36
+0 7
+Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)
+0 1
+Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)
+0 4
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+0 3
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+0 1
+Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.1; bit.ly/2W6Px8S) Chrome/7
+0 1
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 34
+Photon/1.0
+0 10
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+0 27
+Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0
+0 9
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebo
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+0 2
+Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+0 24
+Python-urllib/2.7
+0 6
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_29_77) AppleWebKit/531.61.18 (KHTML, like Gecko) Chrome/55.1.6913.0641 Safari/532.0
+0 1
+Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0
+0 10
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+0 2
+Mozilla/5.0 (compatible; SemrushBot-BA; +http://www.semrush.com/bot.html)
+0 2
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2896.3 Safari/537.36
+0 6
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+0 1
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 3
+Mozlila/5.0 (Linux; Android 7.0; SM-G892A Bulid/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.31
+0 12
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

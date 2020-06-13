@@ -1,0 +1,36 @@
+--- 
+__version: '2.1'
+blog.intercasamoveis.com.br: 
+  account_count: 0
+  accounts: {}
+
+ebook.intercasamoveis.com.br: 
+  account_count: 0
+  accounts: {}
+
+intercasamoveis.com.br: 
+  account_count: 3
+  accounts: 
+    ebook: 
+      disk_mtime: '1450780939'
+      diskquota: 0
+      diskused: 0
+    site: 
+      disk_mtime: '1450780939'
+      diskquota: '1048576000'
+      diskused: 0
+    webmaster: 
+      disk_mtime: '1450780939'
+      diskquota: '1048576000'
+      diskused: 0
+  disk_mtime: '1450780939'
+  passwd_mtime: '1450780939'
+  quota_mtime: '1450780939'
+net.intercasamoveis.com.br: 
+  account_count: 0
+  accounts: {}
+
+site.intercasamoveis.com.br: 
+  account_count: 0
+  accounts: {}
+

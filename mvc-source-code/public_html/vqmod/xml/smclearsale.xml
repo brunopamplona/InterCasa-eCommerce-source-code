@@ -1,0 +1,199 @@
+<modification>
+        <id>Integração com Clear Sale</id>
+        <version>1.0</version>
+        <vqmver>1.0</vqmver>
+        <author>System Master Ltda - (47)3264-7741</author>
+        
+        
+        <file name="lojaadmin/controller/sale/order.php">
+            
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="before"><![CDATA[$this->language->load('sale/order');]]></search>
+                <add><![CDATA[
+                    if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')){  
+                      $this->language->load( 'module/smclearsale' );                      
+                    }                  
+                ]]></add>
+            </operation> 
+            
+            <!--
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="after"><![CDATA[if ($order_info) {]]></search>
+                <add><![CDATA[
+                    
+                    if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')){                        
+                      $this->load->model('systemmaster/smclearsale');
+                      if($this->config->get('smclearsale_teste')){
+                            $this->data['url_clearsale'] = 'http://homolog.clearsale.com.br/Start/Entrada/EnviarPedido.aspx';
+                      }else{
+                            if($this->config->get('config_secure')){
+                                $this->data['url_clearsale'] = 'https://www.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
+                            }else{
+                                $this->data['url_clearsale'] = 'http://www.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
+                            }
+                      }
+                      $this->data['clearsale'] = $this->model_systemmaster_smclearsale->getStatusPedido($order_id);
+                      if(!$this->data['clearsale'] && !is_array($this->data['clearsale']) ){
+                        $this->redirect($this->url->link('module/smclearsale', 'token=' . $this->session->data['token'], 'SSL'));
+                      }
+                    }else{
+                      $this->data['clearsale'] = '';
+                    }
+
+                    
+                  
+                ]]></add>
+            </operation> 
+            -->
+
+            <operation info="Url para o frame do Clear Sale no info do pedido">
+                <search position="after" index="1"><![CDATA[if ($order_info) {]]></search>
+                <add><![CDATA[
+                    $this->data['order_href_clearsale'] = $this->url->link('module/smclearsale/send', 'token=' . $this->session->data['token'] . '&pedido=' . $order_id, 'SSL');
+                ]]></add>
+            </operation>
+
+            <operation info="Url para o frame do Clear Sale na listagem de pedidos">
+                <search position="before" index="1"><![CDATA[$this->data['orders'][] = array(]]></search>
+                <add><![CDATA[
+                    if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')){   
+                        $url_clearsale = $this->url->link('module/smclearsale/send', 'token=' . $this->session->data['token'] . '&pedido=' . $result['order_id'], 'SSL');
+                    }else{
+                        $url_clearsale = '';
+                    }
+                ]]></add>
+            </operation>  
+
+            <operation info="Adicionando elemento com url para o frame do clear sale ao array de orders">
+                <search position="after" index="1"><![CDATA[$this->data['orders'][] = array(]]></search>
+                <add><![CDATA[
+                    'order_href_clearsale'      => $url_clearsale,
+                ]]></add>
+            </operation>  
+
+            <!--
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="before" index="1"><![CDATA[$this->data['orders'][] = array( ]]></search>
+                <add><![CDATA[  
+                    if( $this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag') ){                        
+                        $this->data['clearsale'][$result['order_id']] = $this->model_systemmaster_smclearsale->getStatusPedido($result['order_id']);                        
+                        if(!$this->data['clearsale'][$result['order_id']] && !is_array($this->data['clearsale'][$result['order_id']])){                                                        
+                            $this->redirect($this->url->link('module/smclearsale', 'token=' . $this->session->data['token'], 'SSL'));
+                        }
+                    }else{
+                        $this->data['clearsale'][$result['order_id']] = '';
+                    }
+                ]]></add>
+            </operation> 
+            
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="after"><![CDATA[protected function getList() {]]></search>
+                <add><![CDATA[                  
+                    if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')){                                                
+                        $this->load->model('systemmaster/smclearsale');  
+                        if($this->config->get('smclearsale_teste')){
+                            $this->data['url_clearsale'] = 'http://homolog.clearsale.com.br/Start/Entrada/EnviarPedido.aspx';                            
+                        }else{
+                            if($this->config->get('config_secure')){
+                                $this->data['url_clearsale'] = 'https://www.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
+                            }else{
+                                $this->data['url_clearsale'] = 'http://www.clearsale.com.br/start/Entrada/EnviarPedido.aspx';
+                            }
+                        }
+                    }
+                    $this->data['clearsale'] = array();
+                ]]></add>
+            </operation>                         
+            -->
+        </file>
+
+        <file name="lojaadmin/view/template/sale/order_info.tpl">
+            <!--
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="after"><![CDATA[<div id="tab-payment" class="vtabs-content">]]></search>
+                <add><![CDATA[
+                    <?php if($this->config->get('smclearsale_status') && !empty($clearsale)){ ?>
+                    <iframe id="iFrameStart" src="<?php echo $order_href_clearsale; ?>" style="border: none; height: 100px;" src="">
+                        <P>Seu Browser não suporta iframes</P>
+                    </iframe>
+                    <form method=POST target="iFrameStart" id="formclearsale" action="<?php echo $url_clearsale; ?>">
+                        <?php foreach($clearsale as $k=>$v){ ?>                   
+                        <input type="hidden" name="<?php echo $k; ?>" value="<?php echo $v; ?>" />
+                        <?php } ?>
+                    </form>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $("#formclearsale").submit();
+                        });
+                    </script>
+                    <?php } ?>
+                ]]></add>
+            </operation>  
+            -->
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="after"><![CDATA[<div id="tab-payment" class="vtabs-content">]]></search>
+                <add><![CDATA[
+                    <?php if($this->config->get('smclearsale_status') && !empty($clearsale)){ ?>
+                    <iframe id="iFrameStart" src="<?php echo $order_href_clearsale; ?>" style="border: none; height: 100px;" src="">
+                        <P>Seu Browser não suporta iframes</P>
+                    </iframe>
+                    <?php } ?>
+                ]]></add>
+            </operation>  
+        </file>
+
+        <file name="lojaadmin/view/template/sale/order_list.tpl">
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="before"><![CDATA[<td class="right"><?php echo $column_action; ?></td>]]></search>
+                <add><![CDATA[
+                    <?php if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')) { ?>                    
+                    <td class="right">CLEAR SALE</td>
+                    <?php } ?>
+                ]]></add>
+            </operation>  
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="before"><![CDATA[<td align="right"><a onclick="filter();" class="button"><?php echo $button_filter; ?></a></td>]]></search>
+                <add><![CDATA[
+                    <?php if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')) { ?>                    
+                    <td class="right"></td>
+                    <?php } ?>
+                ]]></add>
+            </operation>            
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="after"><![CDATA[<td class="left"><?php echo $order['date_modified']; ?></td>]]></search>
+                <add><![CDATA[
+                    <?php if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')) { ?>                    
+                    <td class="left" style="width: 15%;">
+                        <iframe id="iFrameStart_<?php echo $order['order_id']; ?>" src="<?php echo $order['order_href_clearsale']; ?>" style="border: none; width: 270px; height: 100px;" src="">
+                            <P>Seu Browser não suporta iframes</P>
+                        </iframe>
+                    </td>
+                    <?php } ?>
+                ]]></add>
+            </operation> 
+            
+            <!--         
+            <operation info="Buscando informacao do Clear Sale">
+                <search position="after"><![CDATA[<div class="pagination"><?php echo $pagination; ?></div>]]></search>
+                <add><![CDATA[
+                    <?php if($this->config->get('smclearsale_status') && $this->config->get('smclearsale_form_pag')) { ?>                    
+                        <?php foreach($clearsale as $k=>$v){ ?>                   
+                            <?php if($v){ ?>                                
+                                <form method='post' target="iFrameStart_<?php echo $k; ?>" id="formclearsale_<?php echo $k; ?>" action="<?php echo $url_clearsale; ?>">                        
+                                    <?php foreach($v as $a=>$b){ ?>                                     
+                                    <input type="hidden" size="30" name="<?php echo $a; ?>" value="<?php echo $b; ?>" />
+                                    <?php } ?>
+                                </form>
+                                <script type="text/javascript">
+                                    $(document).ready(function(){
+                                        $("#formclearsale_<?php echo $k; ?>").submit();
+                                    });
+                                </script>
+                            <?php } ?>
+                        <?php } ?>
+                    <?php } ?>
+                ]]></add>
+            </operation>
+        -->
+        </file>
+</modification>

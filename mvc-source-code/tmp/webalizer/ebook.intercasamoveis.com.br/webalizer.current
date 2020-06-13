@@ -1,0 +1,255 @@
+# Webalizer V2.23-08 Incremental Data - 06/09/2020 05:49:15
+2020 6 9 5 49 15
+39 6 29 3 1 20 556 19 17 0
+2 1 6 1 9
+2 0 0 1 2 2
+13 6 556 10 5 5
+4 0 0 4 2 2
+3 0 0 2 2 1
+5 0 0 5 3 3
+5 0 0 4 0 0
+2 0 0 2 1 1
+2 0 0 2 1 1
+3 0 0 2 3 2
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+1 0 0 0
+3 0 0 2
+4 0 0 2
+2 0 0 2
+2 0 0 2
+1 0 0 1
+2 0 0 0
+4 0 0 1
+1 0 0 0
+0 0 0 0
+6 6 556 0
+0 0 0 0
+0 0 0 0
+1 0 0 1
+1 0 0 1
+3 0 0 3
+4 0 0 3
+0 0 0 0
+0 0 0 0
+0 0 0 0
+2 0 0 0
+1 0 0 0
+1 0 0 1
+0 0 0 0
+0
+0
+0
+6
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+33
+0
+0
+0
+0
+0
+# -urls- 
+/.well-known/acme-challenge/S0BFn6AdmEWkPwZvwSfMboNvNoxotf8Tjp95Y3Ci3mA
+0 4 0 428 0 0
+/.well-known/acme-challenge/U0NVSE6Y72FY4FT1Z12O5WLOKQX5VH_L
+0 1 0 64 0 0
+/.well-known/acme-challenge/OFR53ENQZD2_E4RI_V3KF3LZ77LVZCJZ
+0 1 0 64 0 0
+# End Of Table - urls
+# -sites- (monthly)
+bd20a22d.virtua.com.br
+0 2 0 0 1 1591286480
+-
+crawl-66-249-66-49.googlebot.com
+0 1 0 0 0 0
+-
+vps-3830212.sv2hostconecte.com.br
+0 2 2 128 0 0
+-
+a2e3d.netcup.net
+0 1 0 0 0 0
+-
+167.99.211.55
+0 1 0 0 1 1591113137
+-
+crawl-66-249-73-199.googlebot.com
+0 1 0 0 0 0
+-
+ec2-3-250-202-94.eu-west-1.compute.amazonaws.com
+0 2 0 0 1 1591678214
+-
+ec2-34-222-229-130.us-west-2.compute.amazonaws.com
+0 1 1 107 0 0
+-
+server.kapcservice.com
+0 1 0 0 0 0
+-
+95.217.104.173
+0 1 0 0 1 1591115916
+-
+msnbot-40-77-167-3.search.msn.com
+0 1 0 0 1 1591498397
+-
+ns511543.ip-192-99-4.net
+0 2 0 0 0 0
+-
+msnbot-157-55-39-44.search.msn.com
+0 1 0 0 0 0
+-
+100.49.230.35.bc.googleusercontent.com
+0 1 0 0 1 1591343231
+-
+crawl-66-249-66-53.googlebot.com
+0 1 0 0 0 0
+-
+ec2-52-28-236-88.eu-central-1.compute.amazonaws.com
+0 1 1 107 0 0
+-
+crawl-66-249-73-201.googlebot.com
+0 1 0 0 0 0
+-
+h62-189-162-59.ptr.roamsite.com
+0 1 0 0 1 1591681755
+-
+64.78.149.164
+0 1 1 107 0 0
+-
+159.203.70.169
+0 1 0 0 0 0
+-
+17-58-98-73.applebot.apple.com
+0 1 0 0 0 0
+-
+183.136.225.46
+0 2 0 0 2 1591653667
+-
+17-58-101-246.applebot.apple.com
+0 1 0 0 1 1591321032
+-
+23.237.4.26
+0 5 0 0 5 1591151737
+-
+crawl21.bl.semrush.com
+0 1 0 0 0 0
+-
+mlists.stcable.net
+0 2 0 0 0 0
+-
+francis.onyphe.io
+0 1 0 0 1 1591194792
+-
+209.17.96.82.rdns.cloudsystemnetworks.com
+0 1 0 0 1 1591105935
+-
+ec2-3-14-255-131.us-east-2.compute.amazonaws.com
+0 1 1 107 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+ec2-3-250-202-94.eu-west-1.compute.amazonaws.com
+0 2 0 0 1 1591678214
+-
+h62-189-162-59.ptr.roamsite.com
+0 1 0 0 1 1591681755
+-
+# End Of Table - sites (daily)
+# -referrers- 
+- (Direct Request)
+0 39
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-US) AppleWebKit/532.5 (KHTML, like Gecko) Chrome/4.0.249.0 Safari/532.5
+0 1
+Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)
+0 1
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; fr; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8
+0 2
+Mozilla/5.0 (compatible; Let's Encrypt validation server; +https://www.letsencrypt.org)
+0 4
+Mozilla/5.0 (Linux; Android 7.1.2; HT-705) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.1; bit.ly/2W6Px8S) Chrome/7
+0 2
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 4
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+0 1
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.26.10.1974 Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebo
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+0 2
+Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+0 2
+Cpanel-HTTP-Client/1.0
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+0 1
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 3
+Mozilla/5.0 (compatible; SemrushBot/6~bl; +http://www.semrush.com/bot.html)
+0 1
+Mozilla/5.0 (compatible; AlphaBot/3.2; +http://alphaseobot.com/bot.html)
+0 5
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+0 1
+Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safa
+0 1
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

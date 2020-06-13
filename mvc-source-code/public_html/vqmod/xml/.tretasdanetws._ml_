@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Tretas da Net - Web Services</id>
+	<version>1.0.4</version>
+	<vqmver>2.1.5</vqmver>
+	<author>http://tretasdanet.com</author>
+
+	<file name="catalog/controller/account/register.php">
+   		<operation error="skip">
+   			<search position="after" offset="3"><![CDATA[public function index() {]]></search>
+   			<add>
+			<![CDATA[
+			$tdnws = $this->config->get('tdnws');
+			if(count($tdnws))
+			{
+				$this->data['autocep'] = $tdnws['autocep'];
+			}
+			]]>
+   			</add>
+   		</operation>
+		<operation error="skip">
+			<ignoreif><![CDATA[public function getcep()]]></ignoreif>
+			<search position="before"><![CDATA[public function country() {]]></search>
+			<add><![CDATA[
+
+			public function getcep()
+			{
+				$tdnws = $this->config->get('tdnws');
+				
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					$wskey = $tdnws['wskey'];
+					
+					$cep = $this->request->get['cep'];
+					$url = "http://ws.tretasdanet.com/Api/cep.json?cep={$cep}&apiKey={$wskey}";
+					$ch = curl_init($url);
+					curl_setopt($ch, CURLOPT_HEADER, false);
+					curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+					curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+					echo curl_exec($ch);
+					curl_close($ch);
+				}
+			}
+			]]></add>
+		</operation>
+   	</file>
+    <file name="catalog/view/theme/*/template/account/register.tpl">
+   		<operation error="skip">
+			<search position="replace"><![CDATA[<input class="span4" type="text" name="postcode" value="<?php echo $postcode; ?>"/>]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+			?>
+			<td><input type="text" class="span4" name="postcode" value="<?php echo $postcode; ?>" /> <img src="image/reload.png" id="autopreencher" style="position: relative; top: -4px"/>
+			<?php
+				}
+				else
+				{
+					echo '<input type="text" class="span4" name="postcode" value="'.$postcode.'" />';
+				}
+			?>
+			]]>
+			</add>
+   		</operation>
+   		<operation error="skip">
+			<search position="before"><![CDATA[$('input[name=\'customer_group_id\']:checked').live('change', function () {]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					$hideDisabled = isset($tdnws['acaocampos']) ? $tdnws['acaocampos'] : 1;
+					$disabledOrOcult = $enableShow = '';
+					if($config_country_id == 30 && $this->request->server['REQUEST_METHOD'] != 'POST')
+					{
+						if($hideDisabled == 2)
+						{
+							$disabledOrOcult = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").attr(\'disabled\', \'disabled\');';
+							$enableShow = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").removeAttr(\'disabled\');';
+						}
+						if($hideDisabled == 3)
+						{
+							$disabledOrOcult = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().hide();';
+							$enableShow = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().show();';
+						}
+					}
+					
+					echo $disabledOrOcult;
+			?>
+					$("select[name='country_id']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher").length == 0)
+							{
+								$("input[name='postcode']").after(' <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/>');
+							}
+						}
+						else
+						{
+							$("#autopreencher").remove();
+						<?php
+							echo $enableShow;						
+						?>
+						}
+					});
+
+			$("#autopreencher").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("input[name='postcode']").val();
+				if(!erValCep.test(cep))
+				{
+					$("input[name='postcode']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+				
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+							echo $enableShow;
+						?>
+
+						if(rpt.success)
+						{
+							$("input[name='address_1']").val(rpt.data.logradouro);
+							$("input[name='address_2']").val(rpt.data.bairro);
+							$("input[name='city']").val(rpt.data.cidade);
+							$("select[name='country_id'] option[value='30']").attr('selected',true).trigger("change");
+							
+							setTimeout(function()
+							{
+								$("select[name='zone_id'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}							
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+						echo $enableShow;
+						?>
+
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+			</add>
+   		</operation>
+   	</file>
+    <file name="catalog/view/theme/*/template/checkout/payment_address.tpl">
+   		<operation error="skip">
+			<search position="replace" ><![CDATA[<input type="text" name="postcode" value="" class="large-field" />]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					echo '<input type="text" name="postcode" value="" class="large-field" maxlength="9" /> <img src="image/reload.png" id="autopreencher_3" style="position: relative; top: 4px"/>';
+				}
+				else
+				{
+					echo '<input type="text" name="postcode" value="" class="large-field" maxlength="9" />';
+				}
+			?>
+			]]>
+			</add>
+   		</operation>
+   		<operation error="skip">
+			<search position="before"><![CDATA[$('#payment-address input[name=\'payment_address\']').live('change', function() {]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				//if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+				
+					//$hideDisabled = isset($tdnws['acaocampos']) && $tdnws['acaocampos'] == 2 ? 2 : 1;
+					$hideDisabled = isset($tdnws['acaocampos']) ? $tdnws['acaocampos'] : 1;
+					$disabledOrOcult = $enableShow = '';
+					if($config_country_id == 30 && $this->request->server['REQUEST_METHOD'] != 'POST')
+					{
+						if($hideDisabled == 2)
+						{
+							$disabledOrOcult = '$("#payment-address input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").attr(\'disabled\', \'disabled\');';
+							$enableShow = '$("#payment-address input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").removeAttr(\'disabled\');';
+						}
+						if($hideDisabled == 3)
+						{
+							$disabledOrOcult = '$("#payment-address input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().hide();';
+							$enableShow = '$("#payment-address input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().show();';
+						}
+					}
+
+					echo $disabledOrOcult;
+			?>
+					$("#payment-address select[name='country_id']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher_3").length == 0)
+							{
+								$("#payment-address input[name='postcode']").after(' <img src="image/reload.png" id="autopreencher_3" style="position: relative; top: 4px"/>');
+								
+							}
+						}
+						else
+						{
+							$("#autopreencher_3").remove();
+						<?php
+							echo $enableShow;						
+						?>
+						}
+					});
+					
+			$("#autopreencher_3").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("#payment-address input[name='postcode']").val();
+				if(!erValCep.test(cep))
+				{
+					$("input[name='postcode']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+							echo $enableShow;
+						?>
+						if(rpt.success)
+						{
+							$("#payment-address input[name='address_1']").val(rpt.data.logradouro);
+							$("#payment-address input[name='address_2']").val(rpt.data.bairro);
+							$("#payment-address input[name='city']").val(rpt.data.cidade);
+							$("#payment-address select[name='country_id'] option[value='30']").attr('selected',true).trigger("change");
+							
+							setTimeout(function()
+							{
+								$("select[name='zone_id'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}							
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+						echo $enableShow;
+						?>
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+			</add>
+   		</operation>
+   	</file>
+    <file name="catalog/view/theme/*/template/checkout/shipping_address.tpl">
+        <operation error="skip">
+            <search position="replace" ><![CDATA[<input type="text" name="postcode" value="<?php echo $postcode; ?>" class="large-field" />]]></search>
+            <add>
+                <![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					echo '<input type="text" name="postcode" value="" class="large-field" maxlength="9" /> <img src="image/reload.png" id="autopreencher_2" style="position: relative; top: 4px"/>';
+				}
+				else
+				{
+					echo '<input type="text" name="postcode" value="" class="large-field" maxlength="9" />';
+				}
+			?>
+			]]>
+            </add>
+        </operation>
+        <operation error="skip">
+            <search position="before"><![CDATA[$('#mark');]]></search>
+            <add>
+                <![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				//if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+
+					//$hideDisabled = isset($tdnws['acaocampos']) && $tdnws['acaocampos'] == 2 ? 2 : 1;
+					$hideDisabled = isset($tdnws['acaocampos']) ? $tdnws['acaocampos'] : 1;
+					$disabledOrOcult = $enableShow = '';
+					if($config_country_id == 30 && $this->request->server['REQUEST_METHOD'] != 'POST')
+					{
+						if($hideDisabled == 2)
+						{
+							$disabledOrOcult = '$("#shipping-address input[name=\'address_1\'], #shipping-address input[name=\'address_2\'], #shipping-address input[name=\'city\']").attr(\'disabled\', \'disabled\');';
+							$enableShow = '$("#shipping-address input[name=\'address_1\'], #shipping-address input[name=\'address_2\'], #shipping-address input[name=\'city\']").removeAttr(\'disabled\');';
+						}
+						if($hideDisabled == 3)
+						{
+							$disabledOrOcult = '$("#shipping-address input[name=\'address_1\'], #shipping-address input[name=\'address_2\'], #shipping-address input[name=\'city\']").parent().parent().hide();';
+							$enableShow = '$("#shipping-address input[name=\'address_1\'], #shipping-address input[name=\'address_2\'], #shipping-address input[name=\'city\']").parent().parent().show();';
+						}
+					}
+
+					echo $disabledOrOcult;
+			?>
+					$("#shipping-address select[name='country_id']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher_2").length == 0)
+							{
+								$("#shipping-address input[name='postcode']").after(' <img src="image/reload.png" id="autopreencher_2" style="position: relative; top: 4px"/>');
+
+							}
+						}
+						else
+						{
+							$("#autopreencher_2").remove();
+						<?php
+							echo $enableShow;
+						?>
+						}
+					});
+
+			$("#autopreencher_2").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("#shipping-address input[name='postcode']").val();
+				if(!erValCep.test(cep))
+				{
+					$("#shipping-address input[name='postcode']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+							echo $enableShow;
+						?>
+						if(rpt.success)
+						{
+							$("#shipping-address input[name='address_1']").val(rpt.data.logradouro);
+							$("#shipping-address input[name='address_2']").val(rpt.data.bairro);
+							$("#shipping-address input[name='city']").val(rpt.data.cidade);
+							$("#shipping-address select[name='country_id'] option[value='30']").attr('selected',true).trigger("change");
+
+							setTimeout(function()
+							{
+								$("#shipping-address select[name='zone_id'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+						echo $enableShow;
+						?>
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+            </add>
+        </operation>
+    </file>
+    <file name="catalog/view/theme/*/template/checkout/register.tpl">
+   		<operation error="skip">
+			<search position="replace" ><![CDATA[<td><input type="text" name="postcode" value="" class="large-field" /></td>]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					echo '<td><input type="text" name="postcode" value="" class="large-field" maxlength="9" /> <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/></td>';
+				}
+				else
+				{
+					echo '<td><input type="text" name="postcode" value="" class="large-field" maxlength="9" /></td>';
+				}
+			?>
+			]]>
+			</add>
+   		</operation>
+   		<operation error="skip">
+			<search position="before"><![CDATA[$('#payment-address input[name=\'customer_group_id\']:checked').live('change', function() {]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				//if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+				
+					//$hideDisabled = isset($tdnws['acaocampos']) && $tdnws['acaocampos'] == 2 ? 2 : 1;
+					$hideDisabled = isset($tdnws['acaocampos']) ? $tdnws['acaocampos'] : 1;
+					$disabledOrOcult = $enableShow = '';
+					if($config_country_id == 30 && $this->request->server['REQUEST_METHOD'] != 'POST')
+					{
+						if($hideDisabled == 2)
+						{
+							$disabledOrOcult = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").attr(\'disabled\', \'disabled\');';
+							$enableShow = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").removeAttr(\'disabled\');';
+						}
+						if($hideDisabled == 3)
+						{
+							$disabledOrOcult = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().hide();';
+							$enableShow = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().show();';
+						}
+					}
+
+					echo $disabledOrOcult;
+			?>
+					$("select[name='country_id']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher").length == 0)
+							{
+								$("input[name='postcode']").after(' <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/>');
+								
+							}
+						}
+						else
+						{
+							$("#autopreencher").remove();
+						<?php
+							echo $enableShow;						
+						?>
+						}
+					});
+					
+			$("#autopreencher").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("input[name='postcode']").val();
+				if(!erValCep.test(cep))
+				{
+					$("input[name='postcode']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+							echo $enableShow;
+						?>
+						if(rpt.success)
+						{
+							$("input[name='address_1']").val(rpt.data.logradouro);
+							$("input[name='address_2']").val(rpt.data.bairro);
+							$("input[name='city']").val(rpt.data.cidade);
+							$("select[name='country_id'] option[value='30']").attr('selected',true).trigger("change");
+							
+							setTimeout(function()
+							{
+								$("select[name='zone_id'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}							
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+						echo $enableShow;
+						?>
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+			</add>
+   		</operation>
+   	</file>
+    <file name="catalog/view/theme/*/template/checkout/guest.tpl">
+   		<operation error="skip">
+			<search position="replace" ><![CDATA[<td><input type="text" name="postcode" value="" class="large-field" /></td>]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					echo '<td><input type="text" name="postcode" value="" class="large-field" maxlength="9" /> <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/></td>';
+				}
+				else
+				{
+					echo '<td><input type="text" name="postcode" value="" class="large-field" maxlength="9" /></td>';
+				}
+			?>
+			]]>
+			</add>
+   		</operation>
+   		<operation error="skip">
+			<search position="before"><![CDATA[$('#payment-address input[name=\'customer_group_id\']:checked').live('change', function() {]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				//f($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+				
+					//$hideDisabled = isset($tdnws['acaocampos']) && $tdnws['acaocampos'] == 2 ? 2 : 1;
+					$hideDisabled = isset($tdnws['acaocampos']) ? $tdnws['acaocampos'] : 1;
+					$disabledOrOcult = $enableShow = '';
+					if($config_country_id == 30 && $this->request->server['REQUEST_METHOD'] != 'POST')
+					{
+						if($hideDisabled == 2)
+						{
+							$disabledOrOcult = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").attr(\'disabled\', \'disabled\');';
+							$enableShow = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").removeAttr(\'disabled\');';
+						}
+						if($hideDisabled == 3)
+						{
+							$disabledOrOcult = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().hide();';
+							$enableShow = '$("input[name=\'address_1\'], input[name=\'address_2\'], input[name=\'city\']").parent().parent().show();';
+						}
+					}
+
+					echo $disabledOrOcult;
+			?>
+					$("select[name='country_id']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher").length == 0)
+							{
+								$("input[name='postcode']").after(' <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/>');
+								
+							}
+						}
+						else
+						{
+							$("#autopreencher").remove();
+						<?php
+							echo $enableShow;						
+						?>
+						}
+					});
+					
+			$("#autopreencher").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("input[name='postcode']").val();
+				if(!erValCep.test(cep))
+				{
+					$("input[name='postcode']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+							echo $enableShow;
+						?>
+						if(rpt.success)
+						{
+							$("input[name='address_1']").val(rpt.data.logradouro);
+							$("input[name='address_2']").val(rpt.data.bairro);
+							$("input[name='city']").val(rpt.data.cidade);
+							$("select[name='country_id'] option[value='30']").attr('selected',true).trigger("change");
+							
+							setTimeout(function()
+							{
+								$("select[name='zone_id'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}							
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						<?php
+						echo $enableShow;
+						?>
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+			</add>
+   		</operation>
+   	</file>
+    <file name="admin/view/template/sale/customer_form.tpl">
+   		<operation error="skip">
+			<search position="replace" ><![CDATA[<td><input type="text" name="address[<?php echo $address_row; ?>][postcode]" value="<?php echo $address['postcode']; ?>" /></td>]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					echo '<td><input type="text" name="address'.$address_row.'][postcode]" value="'.$address['postcode'].'" /> <img src="/image/reload.png" id="autopreencher" style="position: relative; top: 4px"/></td>';
+				}
+				else
+				{
+					echo '<td><input type="text" name="address'.$address_row.'][postcode]" value="'.$address['postcode'].'" /></td>';
+				}
+			?>
+			]]>
+			</add>
+   		</operation>
+   		<operation error="skip">
+			<search position="before"><![CDATA[$('select[name=\'customer_group_id\']').live('change', function() {]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				//if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+			?>
+					$("select[name='address[1][country_id]']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher").length == 0)
+							{
+								$("input[name='address1][postcode]']").after(' <img src="/image/reload.png" id="autopreencher" style="position: relative; top: 4px"/>');								
+							}
+						}
+						else
+						{
+							$("#autopreencher").remove();
+						}
+					});
+					
+			$("#autopreencher").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("input[name='address1][postcode]']").val();
+				if(!erValCep.test(cep))
+				{
+					$("input[name='address1][postcode]']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "/index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "/index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+
+						if(rpt.success)
+						{
+							$("input[name='address[1][address_1]']").val(rpt.data.logradouro);
+							$("input[name='address[1][address_2]").val(rpt.data.bairro);
+							$("input[name='address[1][city]").val(rpt.data.cidade);
+							$("select[name='address[1][country_id]'] option[value='30']").attr('selected',true).trigger("change");
+							
+							setTimeout(function()
+							{
+								$("select[name='address[1][zone_id]'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}							
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+			</add>
+   		</operation>
+   	</file>
+	<file name="catalog/view/theme/*/template/account/address_form.tpl">
+		<operation error="skip">
+		<search position="replace"><![CDATA[<td><input type="text" name="postcode" value="<?php echo $postcode; ?>" />]]></search>
+   			<add>
+			<![CDATA[			
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+				
+				if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+					echo '<td><input type="text" name="postcode" value="'.$postcode.'" /> <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/>';
+				}
+				else
+				{
+					echo '<td><input type="text" name="postcode" value="'.$postcode.'" />';
+				}
+			?>
+			]]>
+			</add>
+   		</operation>
+		<!-- aqui não precisa ocultar ou desabilitar pois é página de user logado e ja cadastrado//-->
+   		<operation error="skip">
+			<search position="before"><![CDATA[$('select[name=\'country_id\']').bind('change', function() {]]></search>
+			<add>
+			<![CDATA[
+			<?php
+				$tdnws = $this->config->get('tdnws');
+				$config_language = $this->config->get('config_language');
+				$config_country_id = $this->config->get('config_country_id');
+
+				//if($config_country_id == 30 && isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				if(isset($tdnws['wskey']) && isset($tdnws['autocep']) && $tdnws['autocep'])
+				{
+			?>
+					$("select[name='country_id']").change(function()
+					{
+						if(this.value == 30)
+						{
+							if($("#autopreencher").length == 0)
+							{
+								$("input[name='postcode']").after(' <img src="image/reload.png" id="autopreencher" style="position: relative; top: 4px"/>');
+								
+							}
+						}
+						else
+						{
+							$("#autopreencher").remove();
+						}
+					});
+					
+			$("#autopreencher").live("click", function()
+			{
+				$autopreencherButton = $(this);
+				erValCep = /^[0-9]{5}-?[0-9]{3}$/;
+				cep = $("input[name='postcode']").val();
+				if(!erValCep.test(cep))
+				{
+					$("input[name='postcode']").focus().select();
+					return false;
+				}
+
+				<?php
+				if(defined('_JEXEC'))
+				{
+					echo 'url = "index.php?option=com_mijoshop&format=raw&tmpl=component&route=account/register/getcep&cep="+cep;';
+				}
+				else
+				{
+					echo 'url = "index.php?route=account/register/getcep&cep="+cep;';
+				}
+				?>
+
+				$.ajax(
+				{
+					url: url,
+					dataType: "json",
+					beforeSend: function()
+					{
+						<?php if(defined('_JEXEC'))
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="components/com_mijoshop/opencart/image/loading.gif" alt="" /></span>\');';
+						}
+						else
+						{
+							echo '$autopreencherButton.after(\'<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>\');';
+						}
+						?>
+						$autopreencherButton.hide();
+					},
+					success: function(rpt)
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+						if(rpt.success)
+						{
+							$("input[name='address_1']").val(rpt.data.logradouro);
+							$("input[name='address_2']").val(rpt.data.bairro);
+							$("input[name='city']").val(rpt.data.cidade);
+							$("select[name='country_id'] option[value='30']").attr('selected',true).trigger("change");
+							
+							setTimeout(function()
+							{
+								$("select[name='zone_id'] option").each(function()
+								{
+									if($(this).text().toLowerCase() == rpt.data.estado.toLowerCase())
+									{
+										$(this).attr('selected',true);
+									}
+								});
+							}, 1000);
+						}							
+					},
+					error: function()
+					{
+						$(".wait").remove();
+						$autopreencherButton.show();
+					}
+				});
+			});
+			<?php } ?>
+			]]>
+			</add>
+   		</operation>
+   	</file>
+</modification>

@@ -1,0 +1,446 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201907 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/ssl/awstats.site.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2028                
+POS_TIME 2705                
+POS_VISITOR 14485               
+POS_DAY 14765               
+POS_DOMAIN 3282                
+POS_LOGIN 3536                
+POS_ROBOT 3691                
+POS_WORMS 4015                
+POS_EMAILSENDER 4146                
+POS_EMAILRECEIVER 4289                
+POS_SESSION 14845               
+POS_SIDER 14991               
+POS_FILETYPES 4424                
+POS_DOWNLOADS 4601                
+POS_OS 4649                
+POS_BROWSER 4780                
+POS_SCREENSIZE 4907                
+POS_UNKNOWNREFERER 4981                
+POS_UNKNOWNREFERERBROWSER 5137                
+POS_ORIGIN 5288                
+POS_SEREFERRALS 5419                
+POS_PAGEREFS 5572                
+POS_SEARCHWORDS 5821                
+POS_KEYWORDS 5973                
+POS_MISC 2369                
+POS_ERRORS 6032                
+POS_CLUSTER 3392                
+POS_SIDER_404 6131                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190801001408 49 9056 9467156470078
+FirstTime 20190719093548
+LastTime 20190719184548
+LastUpdate 20190801022525 49 0 48 0 0
+TotalVisits 6                   
+TotalUnique 5                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 6                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 3 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 26 38 315
+1 0 0 0 17 50 0
+2 0 0 0 20 36 0
+3 0 0 0 17 21 0
+4 0 0 0 25 31 315
+5 0 0 0 11 24 0
+6 0 0 0 27 37 315
+7 0 0 0 17 31 0
+8 0 0 0 21 74 0
+9 2 2 0 24 30 36024
+10 3 47 409165 28 50 113850
+11 0 0 0 21 50 8923
+12 0 0 0 28 52 41628
+13 1 1 0 33 73 81723
+14 0 4 1445291 30 55 0
+15 0 0 0 25 31 0
+16 0 0 0 24 29 0
+17 0 0 0 27 37 19228
+18 1 1 0 27 63 17892
+19 0 0 0 29 82 11452
+20 0 0 0 19 39 0
+21 0 0 0 25 63 315
+22 0 0 0 30 58 0
+23 0 0 0 22 47 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 4
+br 2 2 0
+us 2 50 1854456
+cl 2 2 0
+dz 1 1 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 5
+bingbot/ 10 74675 20190722061250 2
+Googlebot/ 4 1002 20190722041044 1
+SemrushBot/ 4 37644 20190719190135 1
+bot[\s_+:,\.\;\/\\-] 2 35786 20190719184549 0
+no_user_agent 1 18130 20190719093550 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+jpg 7 1640060 0 0
+php 3 512 0 0
+gif 1 723 0 0
+css 9 77136 0 0
+html 4 17322 0 0
+png 14 18325 0 0
+js 17 100378 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+Unknown 2 2
+ios_iphone 2 2
+linuxandroid 1 1
+win7 4 0
+winlong 46 2
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 5
+msie9.0 46 2
+safari12.1.1 2 2
+android 1 1
+chrome75.0.3770.80 4 0
+Unknown 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+WordPress/4.3.19;_https://site.intercasamoveis.com.br 20190719104659
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+WordPress/4.3.19;_https://site.intercasamoveis.com.br 20190719104659
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 4 4
+From1 0 0
+From2 0 4
+From3 2 2
+From4 1 45
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+bing 0 4
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://pinterest.com/pin/4081455889675110/ 1 1
+https://br.pinterest.com/pin/570057265306578399/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+404 996 164743
+301 1 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 183
+/tag/quartos-de-crianca/ 3 -
+/wp-content/themes/Intercasa_Theme/1300886603_inventory_catego.png 2 -
+/wp-content/plugins/iphorm-form-builder/js/jquery.iphorm.js 1 -
+/wp-content/themes/Intercasa_Theme/1300885750_Program-Group.png 1 -
+/wp-content/themes/Intercasa_Theme/style.css 1 -
+/decore-o-quarto-de-bebe-com-adesivos-de-parede/ 3 -
+/tag/quarto-de-menina-2/ 3 -
+/ads.txt 12 -
+/moveis-infantis/camas/camas-tematicas/ 3 -
+/imprensa/jornal-do-brasil-1991/ 1 -
+/tag/bercos-3/ 6 -
+/moveis-infantis/camas/ 2 -
+/category/almofadas/ 3 -
+/moveis-infantis/beliches/feed/ 1 -
+/wp-content/themes/Intercasa_Theme/print.css 1 -
+/facebook-home/moveis-infantis-juvenis/ 1 -
+/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js 1 -
+/apple-touch-icon-120x120-precomposed.png 59 -
+/moveis-infantis/camas/cama-individual/ 2 -
+/tag/dicas-para-decorar/ 3 -
+/wp-content/themes/Intercasa_Theme/facebook_ico_pequeno.png 1 -
+/wp-includes/js/jquery/jquery.js 1 -
+/empresa/responsabilidade-ambiental/ 6 -
+/tag/camas-tematicas/ 3 -
+/fim-da-liquidacao-intercasa/ 5 -
+/wp-content/plugins/iphorm-form-builder/js/jquery.form.min.js 1 -
+/tag/quarto-de-bebe 1 -
+/lancamento-para-quarto-de-bebe-comoda-mila/ 3 -
+/nova-colecao-punk-rock-para-quartos-de-meninas/ 4 -
+/tag/quarto-das-criancas/ 4 -
+/moveis-infantis/acessorios/ 2 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1985/ 1 -
+/moveis-infantis/comodas/ 3 -
+/imprensa/casa-claudia-bebe-marco-2010/ 1 -
+/wp-content/uploads/2013/10/moveis-infantis-decoracao-de-quarto-infantil-5.jpg 2 -
+/apple-touch-icon-120x120.png 59 -
+/tag/almofadas/ 3 -
+/empresa/quem-somos/ 2 -
+/liquidacao-intercasa-moveis/ 3 -
+/almofadas-edredon-e-adesivo-para-quarto-jovem/ 5 -
+/wp-content/plugins/slideshow-gallery/views/default/images/colorbox/controls.png 1 https://site.intercasamoveis.com.br/category/comodas/
+/category/mesas-e-bancadas/ 2 -
+/imprensa/revista-minha-casa-dezembro-2012/ 4 -
+/ 22 -
+/moveis-infantis/adesivos-para-quartos/ 3 -
+/empresa/ 6 -
+/almofada-keep-calm/ 5 -
+/novidades-em-camas-e-almofadas/ 4 -
+/quartos-com-beliche/ 8 -
+/novidades-intercasa-para-2013/ 4 -
+/nova-linha-de-escrivaninhas-e-homes-com-paineis-para-tv/ 2 -
+/fale-conosco/ 11 -
+/moveis-infantis/ 10 -
+/novidade-da-intercasa-para-o-dia-das-criancas/ 3 -
+/wp-content/plugins/slideshow-gallery/views/default/css/font.css 1 -
+/aplicativo-para-iphone-e-ipad-para-criancas/ 1 -
+/comecou-a-liquidacao-intercasa/ 3 -
+/wp-content/plugins/iphorm-form-builder/js/uniform/jquery.uniform.min.js 1 -
+/lancamento-intercasa-cama-provencal/ 4 -
+/tag/liquidacao/ 4 -
+/tag/adesivos/ 1 -
+/wp-content/uploads/2014/05/slide-show-quarto-de-bebes.jpg 1 -
+/category/quartos/ 2 -
+/wp-content/themes/Intercasa_Theme/rss.png 1 -
+/wp-content/plugins/iphorm-form-builder/css/styles.css 1 -
+/tag/quarto-de-bebe-2/ 1 -
+/wp-includes/js/jquery/jquery-migrate.min.js 1 -
+/novidades/ 5 -
+/novidade-intercasa-para-quarto-dos-meninos/ 2 -
+/inauguracao-da-loja-via-parque/ 3 -
+/novidade-para-o-quarto-das-criancas/ 1 -
+/tag/comodas/ 3 -
+/imprensa/jornal-o-globo-2008/ 1 -
+/category/armarios-2/ 2 -
+/wp-content/plugins/slideshow-gallery/views/default/images/colorbox/overlay.png 1 https://site.intercasamoveis.com.br/category/comodas/
+/tag/quartos-de-menino/ 34 -
+/wp-content/plugins/slideshow-gallery/views/default/images/colorbox/border.png 1 https://site.intercasamoveis.com.br/category/comodas/
+/category/camas-2/ 3 -
+/wp-content/uploads/2013/09/slide-dia-das-criancas-safari.jpg 1 -
+/projetos-para-quartos/quartos-12-18/ 4 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1987-2/ 2 -
+/quarto-das-criancas-cama-safari-2-andares/ 2 -
+/imprensa/ 4 -
+/moveis-infantis/treliches/ 7 -
+/tag/quarto-de-bebe-2 1 https://www.icloud.com/applications/notes3/current/pt-br/index.html
+/cama-com-escorrega-no-tema-futebol/ 5 -
+/moveis-infantis/camas/camas-com-escorrega/ 1 -
+/moveis-infantis/camas/primeira-cama/ 3 -
+/wp-content/plugins/iphorm-form-builder/js/swfupload.min.js 1 -
+/sitemap.xml 1 -
+/wp-content/plugins/contact-form-7/includes/css/styles.css 1 -
+/imprensa/revista-veja-rio-1998/ 3 -
+/decoracao-para-quarto-de-bebe/ 2 -
+/wp-content/plugins/iphorm-form-builder/js/uniform/themes/default/default.css 1 -
+/tag/quartos-de-adolescente/ 4 -
+/imprensa/revista-magazine-junho-de-2009/ 2 -
+/moveis-infantis/camas/cama-max/ 4 -
+/wp-content/plugins/slideshow-gallery/views/default/js/gallery.js 1 -
+/moveis-infantis/camas/cama-dossel/ 3 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1997/ 5 -
+/wp-content/plugins/slideshow-gallery/views/default/css/colorbox.css 1 -
+/moveis-infantis/beliches/ 3 -
+/moveis-infantis/camas/mini-cama/ 3 -
+/wp-content/themes/Intercasa_Theme/youtube_ico_pequeno.png 1 -
+/wp-includes/js/wp-emoji-release.min.js 1 -
+/cgi-bin/ 1 -
+/cobertores-norkid/ 1 -
+/apple-touch-icon-152x152-precomposed.png 8 -
+/facebook-home/fale-conosco/ 2 -
+/category/bercos-2/ 3 -
+/tag/decoracao-2/ 2 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1983/ 1 -
+/robots.txt 114 -
+/facebook-home 1 -
+/wp-content/plugins/slideshow-gallery/views/default/images/colorbox/loading_background.png 1 https://site.intercasamoveis.com.br/category/comodas/
+/category/adesivos-para-quartos/ 4 -
+/wp-content/themes/Intercasa_Theme/face_curtir.jpg 2 -
+/wp-content/uploads/2013/10/cama-alta-copia.jpg 1 -
+/tag/quarto-de-criancas/ 4 -
+/projetos-para-quartos/quartos-6-12/ 9 -
+/www.intercasamoveis.com.br/novidades 3 -
+/como-transformar-o-quarto-de-crianca-em-um-de-adolescente/ 3 -
+/moveis-infantis/bicamas/ 3 -
+/wp-cron.php 4 -
+/moveis-infantis/camas/camas-altas/ 4 -
+/wp-content/plugins/iphorm-form-builder/js/jquery.infieldlabel.min.js 1 -
+/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js 1 -
+/tag/intercasa-2/ 4 -
+/tag/moveis-infantis-2/ 8 -
+/category/treliches/ 8 -
+/lancamento-da-nova-colecao-de-almofadas-e-colchas-super-herois/ 7 -
+/lancamento-intercasa-para-quarto-infantil/ 4 -
+/nova-cama-tema-castelo-com-cortinas-estampadas-em-xadrez/ 15 -
+/apple-touch-icon.png 67 -
+/projetos-para-quartos/quartos-bebe/ 4 -
+/wp-content/plugins/iphorm-form-builder/js/iphorm.js 1 -
+/moveis-infantis/armarios/ 6 -
+/tag/quarto-de-menino-2/ 4 -
+/facebook-home/projetos/ 2 -
+/mudanca-do-berco-para-cama-sem-traumas/ 4 -
+/tag/cama-safari/ 1 -
+/wp-content/uploads/2013/10/punkrock-.jpg 1 -
+/category/comodas/ 3 -
+/fale-conosco/assistencia-tecnica/ 4 -
+/wp-content/plugins/slideshow-gallery/views/default/images/colorbox/loading.gif 1 https://site.intercasamoveis.com.br/category/comodas/
+/moveis-infantis/sofas-cama/ 2 -
+/empresa/loja/ 9 -
+/apple-touch-icon-152x152.png 8 -
+/wp-content/uploads/2013/10/escorrega-copia.jpg 2 -
+/berco-e-comoda-provencal/ 5 -
+/apple-touch-icon-precomposed.png 67 -
+/conheca-nossa-linha-de-edredons-almofadas-rolos-para-decorar/ 7 -
+/tag/beliches-3/ 1 -
+/wp-content/plugins/contact-form-7/includes/js/scripts.js 1 -
+/wp-includes/js/jquery/ui/effect.min.js 1 -
+/beliches-transformaveis-em-camas-individuais/ 1 -
+/moveis-infantis/mesas-e-bancadas/ 2 -
+/wp-content/plugins/iphorm-form-builder/js/jquery.smooth-scroll.min.js 1 -
+/tag/quartos-de-menina/ 5 -
+/tag/cama-2/ 4 -
+/wp-content/plugins/iphorm-form-builder/js/qtip2/jquery.qtip.min.js 1 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1987/ 1 -
+/revista-minha-casa-dezembro-2012/ 2 -
+/tag/quartos-de-bebe/ 3 -
+/tag/edredons-e-almofadas/ 1 -
+/category/edredons-e-almofadas/ 5 -
+/inauguracao-da-loja-virtual-para-as-regioes-metropolitanas-rj-e-sp/ 2 -
+/projetos-para-quartos/ 3 -
+/wp-content/themes/Intercasa_Theme/custom.js 1 -
+/dicas-praticas-de-como-deixar-o-quarto-das-criancas-organizado/ 4 -
+/dicas-para-decorar-o-quarto-do-bebe/ 3 -
+/imprensa/revista-magazine-2010/ 6 -
+/wp-content/plugins/iphorm-form-builder/js/qtip2/jquery.qtip.min.css 1 -
+/projetos-para-quartos/quartos-2-6/ 6 -
+/moveis-infantis/bercos/ 4 -
+/tag/iphone/ 1 -
+/wp-content/plugins/jquery-colorbox/themes/theme9/colorbox.css 1 -
+/ideias-de-projetos-para-presente-do-dia-das-criancas/ 4 -
+/nova-linha-de-produtos-para-recem-nascidos/ 4 -
+/feed/ 2 -
+/tag/quarto-de-meninos/ 5 -
+/category/beliches-2/ 42 -
+/nova-linha-intercasa-de-quartos-de-bebe/ 12 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 6
+52.162.211.179 2 46 409165 20190719104710
+181.215.132.73 2 2 0 20190719104659
+179.241.226.79 1 1 0 20190719132042
+179.93.55.6 1 1 0 20190719184548
+41.99.10.237 1 1 0 20190719094135
+168.181.51.92 0 4 1445291 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 1
+20190719 7 55 1854456 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 1
+0s-30s 6
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 5
+/category/beliches-2/ 2 0 2 2
+/wp-cron.php 2 0 2 2
+/category/comodas/ 1 17322 1 0
+/tag/quartos-de-menino/ 1 0 1 1
+/wp-content/plugins/iphorm-form-builder/includes/captcha.php 1 512 0 1
+END_SIDER

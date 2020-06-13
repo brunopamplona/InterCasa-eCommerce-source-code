@@ -1,0 +1,67 @@
+<modification>
+
+	<id>Compatibility Fix</id>
+	<version>2.0</version>
+	<vqmver>2.5.1</vqmver>
+	<author>Adikon.eu</author>
+
+	<file name="system/engine/action.php" error="skip">
+		<operation error="skip">
+			<search position="before"><![CDATA[foreach ($parts as $part) {]]></search>
+			<add><![CDATA[
+			if (version_compare(VERSION, '2.0', '<')) {
+				$parts = explode('/', preg_replace('/[^a-zA-Z0-9_\/]/', '', (string)$route));
+
+				while ($parts) {
+					$file = DIR_APPLICATION . 'controller/' . implode('/', $parts) . '.php';
+
+					if (is_file($file)) {
+						$this->file = $file;
+
+						$this->class = 'Controller' . preg_replace('/[^a-zA-Z0-9]/', '', implode('/', $parts));
+
+						break;
+					} else {
+						$this->method = array_pop($parts);
+					}
+				}
+
+				if (!$this->method) {
+					$this->method = 'index';
+				}
+
+				$this->args = $args;
+
+				return;
+			}
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="system/library/config.php" error="skip">
+		<operation error="skip">
+			<search position="after"><![CDATA[$cfg = array();]]></search>
+			<add><![CDATA[$_ = array();]]></add>
+		</operation>
+
+		<operation error="skip">
+			<search position="after"><![CDATA[$this->data = array_merge($this->data, $cfg);]]></search>
+			<add><![CDATA[$this->data = array_merge($this->data, $_);]]></add>
+		</operation>
+	</file>
+
+	<file name="lojaadmin/controller/common/header.php,lojaadmin/controller/common/footer.php" error="skip">
+		<operation error="skip">
+			<search position="replace"><![CDATA[protected function index(]]></search>
+			<add><![CDATA[public function index(]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/controller/common/header.php,catalog/controller/common/footer.php,catalog/controller/common/column_left.php,catalog/controller/common/column_right.php,catalog/controller/common/content_top.php,catalog/controller/common/content_bottom.php" error="skip">
+		<operation error="skip">
+			<search position="replace"><![CDATA[protected function index(]]></search>
+			<add><![CDATA[public function index(]]></add>
+		</operation>
+	</file>
+
+</modification>

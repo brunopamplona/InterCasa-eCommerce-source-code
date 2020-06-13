@@ -1,0 +1,467 @@
+--- 
+files: 
+  certificate: 
+    Entrust_Certification_Authority_L1K_da3f9_bd91b_1922730236_b7f98adaf2364367232159d95f05993f: 
+      created: '1535466731'
+      domains: 
+        - Entrust Certification Authority - L1K
+      friendly_name: Entrust Certification Authority - L1K
+      id: Entrust_Certification_Authority_L1K_da3f9_bd91b_1922730236_b7f98adaf2364367232159d95f05993f
+      is_self_signed: 0
+      issuer.commonName: Entrust Root Certification Authority - G2
+      issuer.organizationName: Entrust, Inc.
+      modulus: da3f96d04db92f44e7db395e9b50ee5ca561da41675309aa009a8e577f296bdbc7e12124aa3ad08d4723d2ed7216f09121d25db7b84ba8838fb7913268cfce25932cb27d97c8fec1b417ba099e0390937b7c498322688a9bde47c331987a2e7d400bd2ef3ed3b28caa8f48a9ff00e8295806f7b6935a94732626ad580ee542b8d5ea737964685325b884cf947aae06450ca36b4dd0c6beea18a436f092b2ba1c888f3a527ff75e6d831c9df01fe5c3d6dda578923db06d2ceac9cf944119714468ba473c04e95dba3ef035f715b69ef22e151e3f47c8c838a773455d4db03bb18e172937eadd050122bb94362a8d5b35fe53192f0846c12ab31a621d4e2bd91b
+      modulus_length: 2048
+      not_after: '1922730236'
+      not_before: '1444072436'
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: Entrust Certification Authority - L1K
+      validation_type: ~
+    Entrust_Root_Certification_Authority_b695b_ad8cb_1795812822_c22b69e94c50e3941f912d68833ae114: 
+      created: '1535466714'
+      domains: 
+        - Entrust Root Certification Authority
+      friendly_name: Entrust Root Certification Authority
+      id: Entrust_Root_Certification_Authority_b695b_ad8cb_1795812822_c22b69e94c50e3941f912d68833ae114
+      is_self_signed: 1
+      issuer.commonName: Entrust Root Certification Authority
+      issuer.organizationName: Entrust, Inc.
+      modulus: b695b64342fac66d2a6f48df944c395705eec37911416836edecfe9a018fa13828fcf71046662e4d1e1ab11a4ec6d1c09588b0c9ff318b3303dbb7837b3e20845eedb25628a7f8e0b9407137c5cb470e972a68c022956215db47d9f5d02bff824bc9ad3ede4cdb9080503f098a8400ec300a3d18cdfbfd2a599a2395172c459e1f6e43796d0c5c98fe48a7c523475c5efd6ee71eb4f66845d186835ba28a8db1e32980fe257188adbebc8fac52964baa518de4133119e84e4d9fdbacb36ad5bc395471ca7a7a7f90dd7d1d80d981bb5926c211fee693e2f780e465fb34370e2980704daf38862e9e7f57af9e17aeeb1ccb28215fb61cd8e7a20422f9d3dad8cb
+      modulus_length: 2048
+      not_after: '1795812822'
+      not_before: '1164659022'
+      signature_algorithm: sha1WithRSAEncryption
+      subject.commonName: Entrust Root Certification Authority
+      validation_type: ~
+    _wildcard__intercasamoveis_com_br_c86bd_8f559_1599222376_eb60a3998a12611dd9c96b4dcecc02f3: 
+      created: '1591449976'
+      domains: 
+        - "*.intercasamoveis.com.br"
+        - intercasamoveis.com.br
+      friendly_name: Cert for “intercasamoveis.com.br” 1591449976.0
+      id: _wildcard__intercasamoveis_com_br_c86bd_8f559_1599222376_eb60a3998a12611dd9c96b4dcecc02f3
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: c86bdc81f62cd6c75d2995310c18d79207f536a91d366b75e3445f3bc0c78a107c988331d55f98748eefde081656ab62fe9d338f5b3709f424219d81c40fd380f08e9ec71f5d3e82648dcff6f3dbf4cee5df117876807c38ddf8cf5583a6b9db46455071ce2fa372d2bce872b01f966cf18183e2b9527c302f78f16746836764fc8569c932e6a571d41692da37f2afe4808bb0c5b17175f125126121885cb3deb2eb113444c33006db5d55d16dad0e07f7afe3be45292a985792139a6c834fb050dedcd988654315d7ebd06bddf45a56a529aabc17660c60944d2f725c892fde35a1e8bed8c2a38e703e048b3e65895bb6beae09b38564304df003dfcfb8f559
+      modulus_length: 2048
+      not_after: '1599222376'
+      not_before: '1591446376'
+      serial: 04f60d131fbf518232c69c5dbf68bc5f418f
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: "*.intercasamoveis.com.br"
+      validation_type: dv
+    blog_intercasamoveis_com_br_bf0f3_7cf7f_1590398922_3ddd3dc714eac417a00768f14ba6266a: 
+      created: '1582626522'
+      domains: 
+        - blog.intercasamoveis.com.br
+        - www.blog.intercasamoveis.com.br
+      friendly_name: Cert for “blog.intercasamoveis.com.br”
+      id: blog_intercasamoveis_com_br_bf0f3_7cf7f_1590398922_3ddd3dc714eac417a00768f14ba6266a
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: bf0f34609ee8b2f8401fc2cff71ef6e64e0708747bdb2d866fe85b8839559dbc4c5e64dae79042db08132e2ff0bf442d0daa2f23d9df579407ff9dce9bcd700c59b74b6e3eb3fe317f044c4f302111068b9959fb2d5d84160378539bbda7d42e02f9dd7fda5db6800300e12bf36e025c2d20c1afdb1d2afd4cfc83f36ebe3a3931ba93ca723265b7f198070f2a021fc0605b340e785b4a1782d02974f3d2ccaf783cd420ce3329c7baa3b1ad61e8c6afe8fe15ad578eb13d6e55d3a5938a9d66fdc869c420cf18ba9ee5f2c9b3ebfcd622d12422882cade3539ea4134f34beb69fa3226c11e3e65bb5b8d03e1e1682d0a8e3f0eb9539f0ab428cfc4961a7cf7f
+      modulus_length: 2048
+      not_after: '1590398922'
+      not_before: '1582622922'
+      serial: 0381c0566f063832859849dbba66025c37d1
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: blog.intercasamoveis.com.br
+      validation_type: dv
+    cpcontacts_intercasamoveis_com_br_c0ee1_335df_1593951988_f55e1fe94c3fd4518a107a0f968360a9: 
+      created: '1586179591'
+      domains: 
+        - cpanel.intercasamoveis.com.br
+        - cpcalendars.intercasamoveis.com.br
+        - cpcontacts.intercasamoveis.com.br
+        - intercasamoveis.com.br
+        - mail.intercasamoveis.com.br
+        - webdisk.intercasamoveis.com.br
+        - webmail.intercasamoveis.com.br
+        - www.intercasamoveis.com.br
+      friendly_name: Cert for “intercasamoveis.com.br”
+      id: cpcontacts_intercasamoveis_com_br_c0ee1_335df_1593951988_f55e1fe94c3fd4518a107a0f968360a9
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: c0ee13cd6b0aab2b471d7344d2f1cee36294e36f162958cd497ca1548678524b527ac05c08f7798b0ad07089164f8f776ca07751c8bc1c1be091d3c242f35c7e9d2710d821d3521663c6a9a8987893b2c464d469e1a6a6e81b4f119879bd72dd1f4f17aeb5479990c2cc8cc321fcfdd3c532378a5b9f99a08b37b0f13e2037826e96b34a3fc9ca2990acd762fcaeacf31fb3d8e3772c44a506196b9fd2ac9686f0127ca242077cf25b80345114557c9ad30ccab13e176bff27527f37b12803f6669607c1d3f611b83ad77e656d8070afb617b43bc061a58385d34a326e144f793a348493822a6e2705a8cd763326875711f65f6132b7a4cee51409b853e335df
+      modulus_length: 2048
+      not_after: '1593951988'
+      not_before: '1586175988'
+      serial: 04039edb3fe14bdfcbf159233a26c0712545
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: cpcontacts.intercasamoveis.com.br
+      validation_type: dv
+    ebook_intercasamoveis_com_br_c0d43_df9ef_1588336023_e4bc74a60c5769c71dd66b53a8d76ae6: 
+      created: '1580563623'
+      domains: 
+        - ebook.intercasamoveis.com.br
+        - site.intercasamoveis.com.br
+        - www.ebook.intercasamoveis.com.br
+        - www.site.intercasamoveis.com.br
+      friendly_name: Cert for “site.intercasamoveis.com.br” 1580563623.0
+      id: ebook_intercasamoveis_com_br_c0d43_df9ef_1588336023_e4bc74a60c5769c71dd66b53a8d76ae6
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: c0d43207cd60715c89ea5bc9365ebcb65bcf59b85f86c13dfe9bce0f668e010f96d27d9ec8d176ed12f41cc09fb9fe4fe596caaa80327f30c4a91a6a6dcde6049ca771b855b1c208cfedf205afbfd89a80bae735b49de239ef058828bdfbb3defd296ca0260c79afe83e6334b50ebaef709117ee48a05237694e6249aafaa334a7ca39b4910b22560ce07dddd308a320981432759c470ddf076c9374a7c55d35f83f3e0ee8f436171cdc3b5811187a4a17988e75c385973f1f0e68f7721449c8338d471860bda5c3d77be85348323b38fdac5e49425d20cc8a380d85566d0e2c4975b9dfe795c22bfda642325ca509df35ce05703eedb78399dc334034cdf9ef
+      modulus_length: 2048
+      not_after: '1588336023'
+      not_before: '1580560023'
+      serial: 033f18547d5f2978347563ecee209bfc9bdf
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: ebook.intercasamoveis.com.br
+      validation_type: dv
+    intercasamoveis_com_br_a05fc_3db0b_1588681598_086d9bdcbb2cecb45967f94fc5f4fca8: 
+      created: '1580909198'
+      domains: 
+        - cpanel.intercasamoveis.com.br
+        - cpcalendars.intercasamoveis.com.br
+        - cpcontacts.intercasamoveis.com.br
+        - intercasamoveis.com.br
+        - mail.intercasamoveis.com.br
+        - webdisk.intercasamoveis.com.br
+        - webmail.intercasamoveis.com.br
+        - www.intercasamoveis.com.br
+      friendly_name: Cert for “intercasamoveis.com.br” 1580909198.0
+      id: intercasamoveis_com_br_a05fc_3db0b_1588681598_086d9bdcbb2cecb45967f94fc5f4fca8
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: a05fc1375fa2d95bfbc918c2becae23682c22137b8994a8eea433a92a3c239df4b9bbf67581a79f808d3bf8f851d9765d6da14cae60a3e08a8b2067a81f88c2f909dfc6bc3cb4b1a68846da58e9781c44d0b59fc6a5f2f316ff48a90ee4c2cfc9092fcd01fa33b46382de346c35051da967315ce6ca3601f0098ab9394ff3e68e64112758e129461cfb99d9b5990fd2677860795e14e04d923f30eaec4569a97d07cf1a627f82b77b51ba23a505d652dd5f34d7ce586a410f42eed22b057877c91e63ff96dd7ce83d85563ec3e9a4e95b83018e7b138e5e8adc700cfc01a1baa67d54cc73e042c8552e6ec5ba2e725ed40624875827c98fd4c14e6a25cf3db0b
+      modulus_length: 2048
+      not_after: '1588681598'
+      not_before: '1580905598'
+      serial: 03f83d9cfc70ef0dca71d2dcbd6c7d60a184
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: intercasamoveis.com.br
+      validation_type: dv
+    intercasamoveis_com_br_cee33_a7f93_1585122640_c84f93655c6af7151bec75e994f62051: 
+      created: '1577350240'
+      domains: 
+        - blog.intercasamoveis.com.br
+        - cpanel.intercasamoveis.com.br
+        - intercasamoveis.com.br
+        - mail.intercasamoveis.com.br
+        - webdisk.intercasamoveis.com.br
+        - webmail.intercasamoveis.com.br
+        - www.blog.intercasamoveis.com.br
+        - www.intercasamoveis.com.br
+      friendly_name: Cert for “intercasamoveis.com.br” 1577350240.0
+      id: intercasamoveis_com_br_cee33_a7f93_1585122640_c84f93655c6af7151bec75e994f62051
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: cee33405026136dfb2bdf499c2eca40e16556759806625f1edf421950ee0f3c3473841a03d8df88559d4674a13757f6c17116fdc6f327daa5da28a950f6f4b6c549f868933546d7ce18f263d82be6bb2f3a70af1a6e25aed6663448df83cb03b3fb3074d1e89732524b8036ada84f1947fff58684f60c1f908022a5748c4250bab72d2ba528f8d01644b4a458193309bb9700468fbdf43dd5235704d550bfdadf2af171d3002522cec66b749317c96429d10425c2506c47d0e2c653169ad82c6e25e5ec38374ad8ae0880537be6e93bb90b0226234168eb50cc0bbb17cb7f373e82c7326ffac364b69b4c2973a57a2365a5e423a30aa34fbbd0a5e5eafaa7f93
+      modulus_length: 2048
+      not_after: '1585122640'
+      not_before: '1577346640'
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: intercasamoveis.com.br
+      validation_type: dv
+    testeblog_intercasamoveis_com_br_df450_c6325_1585880100_f2753a071faaa2ff47b816b108559e92: 
+      created: '1554344100'
+      domains: 
+        - testeblog.intercasamoveis.com.br
+        - www.testeblog.intercasamoveis.com.br
+      friendly_name: Cert for “testeblog.intercasamoveis.com.br”
+      id: testeblog_intercasamoveis_com_br_df450_c6325_1585880100_f2753a071faaa2ff47b816b108559e92
+      is_self_signed: 1
+      issuer.commonName: testeblog.intercasamoveis.com.br
+      issuer.organizationName: ~
+      modulus: df4507aef0d4512eec2064d4ed890fd04ed12bed5292ddc347fb259b07158de332709f3cacdde11f2618a2a68a2752653a2ba1d082baa7a106065713aa62b780e7857d79a72f05a5ab757f6fd25efabd48e87cf8c41fb1fec4a514614f11645eecdd6d221cf355ffd426eca4553dae2b720509061f6eda09acc65d1756d56d4fc2367177e0a1a2154b8005efb0bae57b38058e1450a38e4ccec9ca16b4b713607164c34a28d1c614f34866a5a5305584245f49ea3a9d91e982a40684b61d61511cbed2bd87f6b5fa9473529779bb64d3fdc08f92632dc6a7c3a479cd1cd8becbad9566a7c430b79a66582c0754c73ad362b398e52578b05aa1f4218469ec6325
+      modulus_length: 2048
+      not_after: '1585880100'
+      not_before: '1554344100'
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: testeblog.intercasamoveis.com.br
+      validation_type: ~
+    www_blog_intercasamoveis_com_br_d963c_f8187_1595669321_193fac0686b1da383a6268e60d9c075a: 
+      created: '1587896922'
+      domains: 
+        - blog.intercasamoveis.com.br
+        - www.blog.intercasamoveis.com.br
+      friendly_name: Cert for “blog.intercasamoveis.com.br” 1587896922.0
+      id: www_blog_intercasamoveis_com_br_d963c_f8187_1595669321_193fac0686b1da383a6268e60d9c075a
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: d963cc7ea5a27c042bfcac8e96ad22c0a0081e830d1067ddec5b89a42927878d70d30092c9fd2d30e48ed8763c74e6923d0d171679e28aaaf632f26f770abd65ce615e6cf1f16ec9c89b26a70db277b60e1446ca17478b07ff1fb8e612c605fee70b4c6f98c9a57c93367c3fe7ed2b7c9bb031080da31b590c2fb31f45617c5e7bb26f9d5a5fab872421cedebc60cd0ce30c0e9a8c19e79d554959a411d167f08db539ffe6bce7dff5064d597563e1079b1efc3ca6dc9cf59bba573eaf4bb9062a1f52d6fbb08e42f680adca9b1561f2399ce3520636242933cf86d475681cfef450c1219f67b43d617f28f14733dd0868907d715d4e17ae68d1c078a4df8187
+      modulus_length: 2048
+      not_after: '1595669321'
+      not_before: '1587893321'
+      serial: 0430aad8710848886de00b8d29b84a42e619
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: www.blog.intercasamoveis.com.br
+      validation_type: dv
+    www_ebook_intercasamoveis_com_br_c7096_17d7d_1593606390_823b91225945677e4f6aecbcd6f5345b: 
+      created: '1585833991'
+      domains: 
+        - ebook.intercasamoveis.com.br
+        - site.intercasamoveis.com.br
+        - www.ebook.intercasamoveis.com.br
+        - www.site.intercasamoveis.com.br
+      friendly_name: Cert for “ebook.intercasamoveis.com.br”
+      id: www_ebook_intercasamoveis_com_br_c7096_17d7d_1593606390_823b91225945677e4f6aecbcd6f5345b
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: c709679775e5a47d96191b62a75a62c1fc41e5238d177ce841522c9e7123cadb37f421a814010f23605a13bb48bc2fd2193d683ce6959f8fa3c95b97df46d318b99b3733057f61ba36ab65be81e7ac032ad8d5cbc2d6e72e50aaa84db0367d12a930b2819fcc4b347f7ce3acc3d1882496839e63bead4f2bf248b484afb2e6435056ceb55e4ab91e7ca0d63edbdcae197d0158c52602adfbe4c79adb344cd8674b60a0e8ac47d1bafea33e844098915f129f283407566a745c136832ebe563d97e67a662d37987a38b772eacb23fe9958775b06163e516f6aa085aa2be26ce780ab40b8d156f09e1435c0c1a081d91fd65b733ff712769a07bdd6e80ea517d7d
+      modulus_length: 2048
+      not_after: '1593606390'
+      not_before: '1585830390'
+      serial: 03a403bae9a12f9d079507ab93d100c894fb
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: www.ebook.intercasamoveis.com.br
+      validation_type: dv
+    www_ebook_intercasamoveis_com_br_df966_ab389_1598876806_647376ea40f5c7f4fcc2eca54b8414a9: 
+      created: '1591104407'
+      domains: 
+        - "*.intercasamoveis.com.br"
+        - www.ebook.intercasamoveis.com.br
+        - www.site.intercasamoveis.com.br
+      friendly_name: Cert for “site.intercasamoveis.com.br”
+      id: www_ebook_intercasamoveis_com_br_df966_ab389_1598876806_647376ea40f5c7f4fcc2eca54b8414a9
+      is_self_signed: 0
+      issuer.commonName: Let's Encrypt Authority X3
+      issuer.organizationName: Let's Encrypt
+      modulus: df966a8bedc1289db7b7b1e9fbe1b99ab635ec92dfb80081e4f77510e546b89e228bf382949258ca8e778ffcfdc9ffa6ffffecaef0d464bf0065c4fedeacd0141dcf3da17640aaa67d3dad76ecc373566324dcde96256c181df9254bfd10cb69acdc4bd52d120327e3f080afa4d28a025b84add0443fea3a38944020764a1d49c728a33f2d20a000b6d3038bd3fb884602ef779cd3a0612fec2c7e9dd55349d2a49162b68d998978d88ae3437f68950df24d5956a6891a9a056fc25f1e5f5f3384362c7d117d01a7713cd055e43a2326d462d961fc920af5b794beb911645ecf1eddcd145706403d07ddac972d406a53061cb5dc8c29246afa053d0512fab389
+      modulus_length: 2048
+      not_after: '1598876806'
+      not_before: '1591100806'
+      serial: 0467f58142e06134b2670311a39c2dc87ee9
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: www.ebook.intercasamoveis.com.br
+      validation_type: dv
+  csr: 
+    _wildcard__intercasamoveis_com_br_db87a_de2b9_41c96958c4dc9b8cf9733d6963ec66fb: 
+      commonName: "*.intercasamoveis.com.br"
+      created: '1464610587'
+      domains: 
+        - "*.intercasamoveis.com.br"
+      friendly_name: Site de moveis infantil
+      id: _wildcard__intercasamoveis_com_br_db87a_de2b9_41c96958c4dc9b8cf9733d6963ec66fb
+      modulus: db87aaa3547300057455383da9318110a739104159e1198b7745f0765785d6838c22890c0428901caa99216a520b1095caa916be59a6feffe17caf0feaad7cce98232fcbd791257ea77ed25672aa459734fece97955b3c791d89eba0772a545a691f26422a51189fe6a62f3f3d1c304050debbef51c92d84b5ddec516bd0f2d695c191bf66c08f608c4712db9149e5c277f76868a1989373f958a56e9611903bfca84c579ced6f35e1774bb60f5e1c8980d1a0641086405ed46b491671c53c6a8ea6f6c0235540c5158c5e2aacf25b0f4a4ed55ac1111b1f0c35ef0cc10c1097020cdf87e1f609c8ff4ab0354cae7f5765d135dd98c40a02abae4bf5733de2b9
+    intercasamoveis_com_br_db87a_de2b9_97d321b549801fb89fd85fad88b9e56c: 
+      commonName: intercasamoveis.com.br
+      created: '1433294424'
+      domains: 
+        - intercasamoveis.com.br
+      friendly_name: site de moveis
+      id: intercasamoveis_com_br_db87a_de2b9_97d321b549801fb89fd85fad88b9e56c
+      modulus: db87aaa3547300057455383da9318110a739104159e1198b7745f0765785d6838c22890c0428901caa99216a520b1095caa916be59a6feffe17caf0feaad7cce98232fcbd791257ea77ed25672aa459734fece97955b3c791d89eba0772a545a691f26422a51189fe6a62f3f3d1c304050debbef51c92d84b5ddec516bd0f2d695c191bf66c08f608c4712db9149e5c277f76868a1989373f958a56e9611903bfca84c579ced6f35e1774bb60f5e1c8980d1a0641086405ed46b491671c53c6a8ea6f6c0235540c5158c5e2aacf25b0f4a4ed55ac1111b1f0c35ef0cc10c1097020cdf87e1f609c8ff4ab0354cae7f5765d135dd98c40a02abae4bf5733de2b9
+    intercasamoveis_com_br_db87a_de2b9_ce12a7a730c038792bd365b28a485999: 
+      commonName: intercasamoveis.com.br
+      created: '1464990273'
+      domains: 
+        - intercasamoveis.com.br
+      friendly_name: loja infantil de moveis
+      id: intercasamoveis_com_br_db87a_de2b9_ce12a7a730c038792bd365b28a485999
+      modulus: db87aaa3547300057455383da9318110a739104159e1198b7745f0765785d6838c22890c0428901caa99216a520b1095caa916be59a6feffe17caf0feaad7cce98232fcbd791257ea77ed25672aa459734fece97955b3c791d89eba0772a545a691f26422a51189fe6a62f3f3d1c304050debbef51c92d84b5ddec516bd0f2d695c191bf66c08f608c4712db9149e5c277f76868a1989373f958a56e9611903bfca84c579ced6f35e1774bb60f5e1c8980d1a0641086405ed46b491671c53c6a8ea6f6c0235540c5158c5e2aacf25b0f4a4ed55ac1111b1f0c35ef0cc10c1097020cdf87e1f609c8ff4ab0354cae7f5765d135dd98c40a02abae4bf5733de2b9
+  key: 
+    a05fc_3db0b_6af8e0a66d3347243c0feb12386f4a4f: 
+      created: '1580909198'
+      friendly_name: Key for “intercasamoveis.com.br” 1580909198.0
+      id: a05fc_3db0b_6af8e0a66d3347243c0feb12386f4a4f
+      modulus: a05fc1375fa2d95bfbc918c2becae23682c22137b8994a8eea433a92a3c239df4b9bbf67581a79f808d3bf8f851d9765d6da14cae60a3e08a8b2067a81f88c2f909dfc6bc3cb4b1a68846da58e9781c44d0b59fc6a5f2f316ff48a90ee4c2cfc9092fcd01fa33b46382de346c35051da967315ce6ca3601f0098ab9394ff3e68e64112758e129461cfb99d9b5990fd2677860795e14e04d923f30eaec4569a97d07cf1a627f82b77b51ba23a505d652dd5f34d7ce586a410f42eed22b057877c91e63ff96dd7ce83d85563ec3e9a4e95b83018e7b138e5e8adc700cfc01a1baa67d54cc73e042c8552e6ec5ba2e725ed40624875827c98fd4c14e6a25cf3db0b
+      modulus_length: 2048
+    a452a_f2643_861a65b75679ec420bd806dc999d3efa: 
+      created: '1496606851'
+      friendly_name: chave nova 2017
+      id: a452a_f2643_861a65b75679ec420bd806dc999d3efa
+      modulus: a452ae27009b84894a202ccb5809c746a703ed0f787c728bff66e78d1d29a8408a007ffa3605932033cb31ff6b923b153ffd8a0c387794ca4a0bc44674ab06ea78bab470eb2280432fabf416c7ba626bf703067e248c3cf4014cec473f463d62814d03ecc56b0fb7b02ce057b6e8e144badd08018a02df35e16287e8ccfd8c38d0d08a10608bac71b805c77c1a7fee920a10315b922591cbe78d5c42d766f4a5058b37d750f431f518dfc2449cbfcefc4377946ea844a2dca760105a57344ae414b3db353b832663d11dbfda9e5c9eed18ec783f45fbc994a61e7683185e8595fec6b57f6ab0cff7cf064f2074386898c43b32277f3406a0778ca847094f2643
+      modulus_length: 2048
+    bf0f3_7cf7f_714f88bd97a2b4d0ae4b1cd20c29c619: 
+      created: '1582626522'
+      friendly_name: Key for “blog.intercasamoveis.com.br”
+      id: bf0f3_7cf7f_714f88bd97a2b4d0ae4b1cd20c29c619
+      modulus: bf0f34609ee8b2f8401fc2cff71ef6e64e0708747bdb2d866fe85b8839559dbc4c5e64dae79042db08132e2ff0bf442d0daa2f23d9df579407ff9dce9bcd700c59b74b6e3eb3fe317f044c4f302111068b9959fb2d5d84160378539bbda7d42e02f9dd7fda5db6800300e12bf36e025c2d20c1afdb1d2afd4cfc83f36ebe3a3931ba93ca723265b7f198070f2a021fc0605b340e785b4a1782d02974f3d2ccaf783cd420ce3329c7baa3b1ad61e8c6afe8fe15ad578eb13d6e55d3a5938a9d66fdc869c420cf18ba9ee5f2c9b3ebfcd622d12422882cade3539ea4134f34beb69fa3226c11e3e65bb5b8d03e1e1682d0a8e3f0eb9539f0ab428cfc4961a7cf7f
+      modulus_length: 2048
+    c0d43_df9ef_77d5d04f1357ee0bcad1010ecafed410: 
+      created: '1580563623'
+      friendly_name: Key for “site.intercasamoveis.com.br” 1580563623.0
+      id: c0d43_df9ef_77d5d04f1357ee0bcad1010ecafed410
+      modulus: c0d43207cd60715c89ea5bc9365ebcb65bcf59b85f86c13dfe9bce0f668e010f96d27d9ec8d176ed12f41cc09fb9fe4fe596caaa80327f30c4a91a6a6dcde6049ca771b855b1c208cfedf205afbfd89a80bae735b49de239ef058828bdfbb3defd296ca0260c79afe83e6334b50ebaef709117ee48a05237694e6249aafaa334a7ca39b4910b22560ce07dddd308a320981432759c470ddf076c9374a7c55d35f83f3e0ee8f436171cdc3b5811187a4a17988e75c385973f1f0e68f7721449c8338d471860bda5c3d77be85348323b38fdac5e49425d20cc8a380d85566d0e2c4975b9dfe795c22bfda642325ca509df35ce05703eedb78399dc334034cdf9ef
+      modulus_length: 2048
+    c0ee1_335df_a2344836915276eddf2144ee84db656a: 
+      created: '1586179591'
+      friendly_name: Key for “intercasamoveis.com.br”
+      id: c0ee1_335df_a2344836915276eddf2144ee84db656a
+      modulus: c0ee13cd6b0aab2b471d7344d2f1cee36294e36f162958cd497ca1548678524b527ac05c08f7798b0ad07089164f8f776ca07751c8bc1c1be091d3c242f35c7e9d2710d821d3521663c6a9a8987893b2c464d469e1a6a6e81b4f119879bd72dd1f4f17aeb5479990c2cc8cc321fcfdd3c532378a5b9f99a08b37b0f13e2037826e96b34a3fc9ca2990acd762fcaeacf31fb3d8e3772c44a506196b9fd2ac9686f0127ca242077cf25b80345114557c9ad30ccab13e176bff27527f37b12803f6669607c1d3f611b83ad77e656d8070afb617b43bc061a58385d34a326e144f793a348493822a6e2705a8cd763326875711f65f6132b7a4cee51409b853e335df
+      modulus_length: 2048
+    c6709_a0e21_549fcf05945549348fcb8e32396150ce: 
+      created: '1496608079'
+      friendly_name: "*.intercasamoveis.com.br 1"
+      id: c6709_a0e21_549fcf05945549348fcb8e32396150ce
+      modulus: c6709e922fcefc25942b5093ff9ac191f10cff476ddfb286e3f12db6745220e646fd510fff6a61fa67a16d952764888287f98a5d2ce40fca57f78a929a62a0b7fad94fbb22316b4e11cb6e8f577bee8c39facba9ea1ada0d10d8f9ba2e93fe1d6da758e456a3e74d344f91b056480b8ac336ebea8e8838c7edb75ceb342c64eb9d936ac053af26f13611a40d8c5ef6748624e100ebf65ec7515452ef76c00b787a8276d4375062ef15deb5b71d6646fa54cfa0957d21fc6bd14ff7c55a3bae197895d62ac9772312dce1ae1faee578df9015e4c6c5ead924d74b4aa8238443ba774e20ef595111396b698683300aa94fb7e711c3f7b952eca55c618cd5aa0e21
+      modulus_length: 2048
+    c7096_17d7d_6a970adf8daeebe5de237eca97a8d1bd: 
+      created: '1585833991'
+      friendly_name: Key for “ebook.intercasamoveis.com.br”
+      id: c7096_17d7d_6a970adf8daeebe5de237eca97a8d1bd
+      modulus: c709679775e5a47d96191b62a75a62c1fc41e5238d177ce841522c9e7123cadb37f421a814010f23605a13bb48bc2fd2193d683ce6959f8fa3c95b97df46d318b99b3733057f61ba36ab65be81e7ac032ad8d5cbc2d6e72e50aaa84db0367d12a930b2819fcc4b347f7ce3acc3d1882496839e63bead4f2bf248b484afb2e6435056ceb55e4ab91e7ca0d63edbdcae197d0158c52602adfbe4c79adb344cd8674b60a0e8ac47d1bafea33e844098915f129f283407566a745c136832ebe563d97e67a662d37987a38b772eacb23fe9958775b06163e516f6aa085aa2be26ce780ab40b8d156f09e1435c0c1a081d91fd65b733ff712769a07bdd6e80ea517d7d
+      modulus_length: 2048
+    c86bd_8f559_3095a4ae4ff6575da296b44233e0b328: 
+      created: '1591449976'
+      friendly_name: Key for “intercasamoveis.com.br” 1591449976.0
+      id: c86bd_8f559_3095a4ae4ff6575da296b44233e0b328
+      modulus: c86bdc81f62cd6c75d2995310c18d79207f536a91d366b75e3445f3bc0c78a107c988331d55f98748eefde081656ab62fe9d338f5b3709f424219d81c40fd380f08e9ec71f5d3e82648dcff6f3dbf4cee5df117876807c38ddf8cf5583a6b9db46455071ce2fa372d2bce872b01f966cf18183e2b9527c302f78f16746836764fc8569c932e6a571d41692da37f2afe4808bb0c5b17175f125126121885cb3deb2eb113444c33006db5d55d16dad0e07f7afe3be45292a985792139a6c834fb050dedcd988654315d7ebd06bddf45a56a529aabc17660c60944d2f725c892fde35a1e8bed8c2a38e703e048b3e65895bb6beae09b38564304df003dfcfb8f559
+      modulus_length: 2048
+    cbcd1_8d833_6ce43907760e85dc6b313249bc0a4dab: 
+      created: '1496609174'
+      friendly_name: intercasamoveis.com.br 2
+      id: cbcd1_8d833_6ce43907760e85dc6b313249bc0a4dab
+      modulus: cbcd18bb77a634e703d96d32122538705a770ca2e518f2e1885c5ce810cd37f32b45b55130964d3f84f94c86dd6b821be59207d95b89a8ed7a96e910092e1379c146ad304be242e612a8704225afb60999d26e799fc6f7a8628e4f9ff9d07c44f8aa5ffba1531ae6f7a0daf743123112d9978a28eee4427c828dc5785b141813def5d9dd4b08516a8737be40e25502428264efc6c665cd9af629dbb7028756af1ea85946deed105512510c6ba34697432eb6fe5a8bb99a4cfcd5a040b5689b25dfef9b9a4bc3c6834d5b715482eff5233d7c05b743909fa03b5a72e6b76c21a222f3407a879f72f6667909321c6468d3441f8e2d481fa8fdadda3a06bc58d833
+      modulus_length: 2048
+    cee33_a7f93_791201aee36b76f667eed13e7274ade9: 
+      created: '1577350240'
+      friendly_name: Key for “intercasamoveis.com.br” 1577350240.0
+      id: cee33_a7f93_791201aee36b76f667eed13e7274ade9
+      modulus: cee33405026136dfb2bdf499c2eca40e16556759806625f1edf421950ee0f3c3473841a03d8df88559d4674a13757f6c17116fdc6f327daa5da28a950f6f4b6c549f868933546d7ce18f263d82be6bb2f3a70af1a6e25aed6663448df83cb03b3fb3074d1e89732524b8036ada84f1947fff58684f60c1f908022a5748c4250bab72d2ba528f8d01644b4a458193309bb9700468fbdf43dd5235704d550bfdadf2af171d3002522cec66b749317c96429d10425c2506c47d0e2c653169ad82c6e25e5ec38374ad8ae0880537be6e93bb90b0226234168eb50cc0bbb17cb7f373e82c7326ffac364b69b4c2973a57a2365a5e423a30aa34fbbd0a5e5eafaa7f93
+      modulus_length: 2048
+    d060c_56efd_672fb0498792f90b9661b2126e89782c: 
+      created: '1433259512'
+      friendly_name: Loja de moveis
+      id: d060c_56efd_672fb0498792f90b9661b2126e89782c
+      modulus: d060ca0e4833b8352687d247900e85c5319a1daa88be10ca2db252618e79055ef760d9ac57f7df32d5e8dae387b9743f8cb177da389301144787a1f9211f181ee54352f2cfc0173e44e359b6cfbeddb34ccb59df2b2e65711623c98d3b2f3bbe7b33adc949a241027c26fe630648782a0cfdf91d6e5d9e4cd48a51a41e966980bd3b8e2e97caff8a9d1a0b07baa08a6183448c96b500ab1d2cd499fc208202735fd8649c8a30322201366085474ff96fc767fecb0c972e80720a762006a0a301d3cad29fb52e4ce0bb27e2fe545fb168fad97557dc353b2e9393471de28da6cbfda14ca22fb67e223df8ff286ac139ffda13f7c60aa539f1f203f3a973156efd
+      modulus_length: 2048
+    d963c_f8187_0afcd6113c2003a8147328b74cde1dec: 
+      created: '1587896922'
+      friendly_name: Key for “blog.intercasamoveis.com.br” 1587896922.0
+      id: d963c_f8187_0afcd6113c2003a8147328b74cde1dec
+      modulus: d963cc7ea5a27c042bfcac8e96ad22c0a0081e830d1067ddec5b89a42927878d70d30092c9fd2d30e48ed8763c74e6923d0d171679e28aaaf632f26f770abd65ce615e6cf1f16ec9c89b26a70db277b60e1446ca17478b07ff1fb8e612c605fee70b4c6f98c9a57c93367c3fe7ed2b7c9bb031080da31b590c2fb31f45617c5e7bb26f9d5a5fab872421cedebc60cd0ce30c0e9a8c19e79d554959a411d167f08db539ffe6bce7dff5064d597563e1079b1efc3ca6dc9cf59bba573eaf4bb9062a1f52d6fbb08e42f680adca9b1561f2399ce3520636242933cf86d475681cfef450c1219f67b43d617f28f14733dd0868907d715d4e17ae68d1c078a4df8187
+      modulus_length: 2048
+    df450_c6325_95c5f60f89b7d144df594d40914fa589: 
+      created: '1554344100'
+      friendly_name: Key for “testeblog.intercasamoveis.com.br”
+      id: df450_c6325_95c5f60f89b7d144df594d40914fa589
+      modulus: df4507aef0d4512eec2064d4ed890fd04ed12bed5292ddc347fb259b07158de332709f3cacdde11f2618a2a68a2752653a2ba1d082baa7a106065713aa62b780e7857d79a72f05a5ab757f6fd25efabd48e87cf8c41fb1fec4a514614f11645eecdd6d221cf355ffd426eca4553dae2b720509061f6eda09acc65d1756d56d4fc2367177e0a1a2154b8005efb0bae57b38058e1450a38e4ccec9ca16b4b713607164c34a28d1c614f34866a5a5305584245f49ea3a9d91e982a40684b61d61511cbed2bd87f6b5fa9473529779bb64d3fdc08f92632dc6a7c3a479cd1cd8becbad9566a7c430b79a66582c0754c73ad362b398e52578b05aa1f4218469ec6325
+      modulus_length: 2048
+    df966_ab389_e8b2b916f87ff667a0a33b5db5c89b9b: 
+      created: '1591104407'
+      friendly_name: Key for “site.intercasamoveis.com.br”
+      id: df966_ab389_e8b2b916f87ff667a0a33b5db5c89b9b
+      modulus: df966a8bedc1289db7b7b1e9fbe1b99ab635ec92dfb80081e4f77510e546b89e228bf382949258ca8e778ffcfdc9ffa6ffffecaef0d464bf0065c4fedeacd0141dcf3da17640aaa67d3dad76ecc373566324dcde96256c181df9254bfd10cb69acdc4bd52d120327e3f080afa4d28a025b84add0443fea3a38944020764a1d49c728a33f2d20a000b6d3038bd3fb884602ef779cd3a0612fec2c7e9dd55349d2a49162b68d998978d88ae3437f68950df24d5956a6891a9a056fc25f1e5f5f3384362c7d117d01a7713cd055e43a2326d462d961fc920af5b794beb911645ecf1eddcd145706403d07ddac972d406a53061cb5dc8c29246afa053d0512fab389
+      modulus_length: 2048
+    eb63f_f7ddf_c5d23382380ebb7777470dd8c1be5fa5: 
+      created: '1496608142'
+      friendly_name: intercasamoveis.com.br
+      id: eb63f_f7ddf_c5d23382380ebb7777470dd8c1be5fa5
+      modulus: eb63ff0f328851119ce14d0580e4251f6e6da5c4a5c631edb027e6199999e4d94e5c248876e6dc101314f2b6675a92f9f02881a2b9190a370cfb0f87a456ed561760a0b5f878f4dd1c29e4521e1a9ef89735361feade662206b55935abd1b8755727d32e93a709a6e84396d25c4a967add62e79f81ac89236e4ba8e07772a5b175b988e41560a2d55155cefd40e838d4ba9cb89b48d1926960d7afe4d1e71be4a2cd78a2330b8e13b41392f241ed803a24f845cefe21aa25a14c5176aabdd1bbb80828b321b942ba12040e436fbb4603e611a44d5d710bf89fafc71123164349859ab4666df4b61afa6d97e8b9df0eddce62b86e15dc3a52c59abbf245ff7ddf
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      a05fc1375fa2d95bfbc918c2becae23682c22137b8994a8eea433a92a3c239df4b9bbf67581a79f808d3bf8f851d9765d6da14cae60a3e08a8b2067a81f88c2f909dfc6bc3cb4b1a68846da58e9781c44d0b59fc6a5f2f316ff48a90ee4c2cfc9092fcd01fa33b46382de346c35051da967315ce6ca3601f0098ab9394ff3e68e64112758e129461cfb99d9b5990fd2677860795e14e04d923f30eaec4569a97d07cf1a627f82b77b51ba23a505d652dd5f34d7ce586a410f42eed22b057877c91e63ff96dd7ce83d85563ec3e9a4e95b83018e7b138e5e8adc700cfc01a1baa67d54cc73e042c8552e6ec5ba2e725ed40624875827c98fd4c14e6a25cf3db0b: 
+        intercasamoveis_com_br_a05fc_3db0b_1588681598_086d9bdcbb2cecb45967f94fc5f4fca8: ~
+      b695b64342fac66d2a6f48df944c395705eec37911416836edecfe9a018fa13828fcf71046662e4d1e1ab11a4ec6d1c09588b0c9ff318b3303dbb7837b3e20845eedb25628a7f8e0b9407137c5cb470e972a68c022956215db47d9f5d02bff824bc9ad3ede4cdb9080503f098a8400ec300a3d18cdfbfd2a599a2395172c459e1f6e43796d0c5c98fe48a7c523475c5efd6ee71eb4f66845d186835ba28a8db1e32980fe257188adbebc8fac52964baa518de4133119e84e4d9fdbacb36ad5bc395471ca7a7a7f90dd7d1d80d981bb5926c211fee693e2f780e465fb34370e2980704daf38862e9e7f57af9e17aeeb1ccb28215fb61cd8e7a20422f9d3dad8cb: 
+        Entrust_Root_Certification_Authority_b695b_ad8cb_1795812822_c22b69e94c50e3941f912d68833ae114: ~
+      bf0f34609ee8b2f8401fc2cff71ef6e64e0708747bdb2d866fe85b8839559dbc4c5e64dae79042db08132e2ff0bf442d0daa2f23d9df579407ff9dce9bcd700c59b74b6e3eb3fe317f044c4f302111068b9959fb2d5d84160378539bbda7d42e02f9dd7fda5db6800300e12bf36e025c2d20c1afdb1d2afd4cfc83f36ebe3a3931ba93ca723265b7f198070f2a021fc0605b340e785b4a1782d02974f3d2ccaf783cd420ce3329c7baa3b1ad61e8c6afe8fe15ad578eb13d6e55d3a5938a9d66fdc869c420cf18ba9ee5f2c9b3ebfcd622d12422882cade3539ea4134f34beb69fa3226c11e3e65bb5b8d03e1e1682d0a8e3f0eb9539f0ab428cfc4961a7cf7f: 
+        blog_intercasamoveis_com_br_bf0f3_7cf7f_1590398922_3ddd3dc714eac417a00768f14ba6266a: ~
+      c0d43207cd60715c89ea5bc9365ebcb65bcf59b85f86c13dfe9bce0f668e010f96d27d9ec8d176ed12f41cc09fb9fe4fe596caaa80327f30c4a91a6a6dcde6049ca771b855b1c208cfedf205afbfd89a80bae735b49de239ef058828bdfbb3defd296ca0260c79afe83e6334b50ebaef709117ee48a05237694e6249aafaa334a7ca39b4910b22560ce07dddd308a320981432759c470ddf076c9374a7c55d35f83f3e0ee8f436171cdc3b5811187a4a17988e75c385973f1f0e68f7721449c8338d471860bda5c3d77be85348323b38fdac5e49425d20cc8a380d85566d0e2c4975b9dfe795c22bfda642325ca509df35ce05703eedb78399dc334034cdf9ef: 
+        ebook_intercasamoveis_com_br_c0d43_df9ef_1588336023_e4bc74a60c5769c71dd66b53a8d76ae6: ~
+      c0ee13cd6b0aab2b471d7344d2f1cee36294e36f162958cd497ca1548678524b527ac05c08f7798b0ad07089164f8f776ca07751c8bc1c1be091d3c242f35c7e9d2710d821d3521663c6a9a8987893b2c464d469e1a6a6e81b4f119879bd72dd1f4f17aeb5479990c2cc8cc321fcfdd3c532378a5b9f99a08b37b0f13e2037826e96b34a3fc9ca2990acd762fcaeacf31fb3d8e3772c44a506196b9fd2ac9686f0127ca242077cf25b80345114557c9ad30ccab13e176bff27527f37b12803f6669607c1d3f611b83ad77e656d8070afb617b43bc061a58385d34a326e144f793a348493822a6e2705a8cd763326875711f65f6132b7a4cee51409b853e335df: 
+        cpcontacts_intercasamoveis_com_br_c0ee1_335df_1593951988_f55e1fe94c3fd4518a107a0f968360a9: ~
+      c709679775e5a47d96191b62a75a62c1fc41e5238d177ce841522c9e7123cadb37f421a814010f23605a13bb48bc2fd2193d683ce6959f8fa3c95b97df46d318b99b3733057f61ba36ab65be81e7ac032ad8d5cbc2d6e72e50aaa84db0367d12a930b2819fcc4b347f7ce3acc3d1882496839e63bead4f2bf248b484afb2e6435056ceb55e4ab91e7ca0d63edbdcae197d0158c52602adfbe4c79adb344cd8674b60a0e8ac47d1bafea33e844098915f129f283407566a745c136832ebe563d97e67a662d37987a38b772eacb23fe9958775b06163e516f6aa085aa2be26ce780ab40b8d156f09e1435c0c1a081d91fd65b733ff712769a07bdd6e80ea517d7d: 
+        www_ebook_intercasamoveis_com_br_c7096_17d7d_1593606390_823b91225945677e4f6aecbcd6f5345b: ~
+      c86bdc81f62cd6c75d2995310c18d79207f536a91d366b75e3445f3bc0c78a107c988331d55f98748eefde081656ab62fe9d338f5b3709f424219d81c40fd380f08e9ec71f5d3e82648dcff6f3dbf4cee5df117876807c38ddf8cf5583a6b9db46455071ce2fa372d2bce872b01f966cf18183e2b9527c302f78f16746836764fc8569c932e6a571d41692da37f2afe4808bb0c5b17175f125126121885cb3deb2eb113444c33006db5d55d16dad0e07f7afe3be45292a985792139a6c834fb050dedcd988654315d7ebd06bddf45a56a529aabc17660c60944d2f725c892fde35a1e8bed8c2a38e703e048b3e65895bb6beae09b38564304df003dfcfb8f559: 
+        _wildcard__intercasamoveis_com_br_c86bd_8f559_1599222376_eb60a3998a12611dd9c96b4dcecc02f3: ~
+      cee33405026136dfb2bdf499c2eca40e16556759806625f1edf421950ee0f3c3473841a03d8df88559d4674a13757f6c17116fdc6f327daa5da28a950f6f4b6c549f868933546d7ce18f263d82be6bb2f3a70af1a6e25aed6663448df83cb03b3fb3074d1e89732524b8036ada84f1947fff58684f60c1f908022a5748c4250bab72d2ba528f8d01644b4a458193309bb9700468fbdf43dd5235704d550bfdadf2af171d3002522cec66b749317c96429d10425c2506c47d0e2c653169ad82c6e25e5ec38374ad8ae0880537be6e93bb90b0226234168eb50cc0bbb17cb7f373e82c7326ffac364b69b4c2973a57a2365a5e423a30aa34fbbd0a5e5eafaa7f93: 
+        intercasamoveis_com_br_cee33_a7f93_1585122640_c84f93655c6af7151bec75e994f62051: ~
+      d963cc7ea5a27c042bfcac8e96ad22c0a0081e830d1067ddec5b89a42927878d70d30092c9fd2d30e48ed8763c74e6923d0d171679e28aaaf632f26f770abd65ce615e6cf1f16ec9c89b26a70db277b60e1446ca17478b07ff1fb8e612c605fee70b4c6f98c9a57c93367c3fe7ed2b7c9bb031080da31b590c2fb31f45617c5e7bb26f9d5a5fab872421cedebc60cd0ce30c0e9a8c19e79d554959a411d167f08db539ffe6bce7dff5064d597563e1079b1efc3ca6dc9cf59bba573eaf4bb9062a1f52d6fbb08e42f680adca9b1561f2399ce3520636242933cf86d475681cfef450c1219f67b43d617f28f14733dd0868907d715d4e17ae68d1c078a4df8187: 
+        www_blog_intercasamoveis_com_br_d963c_f8187_1595669321_193fac0686b1da383a6268e60d9c075a: ~
+      da3f96d04db92f44e7db395e9b50ee5ca561da41675309aa009a8e577f296bdbc7e12124aa3ad08d4723d2ed7216f09121d25db7b84ba8838fb7913268cfce25932cb27d97c8fec1b417ba099e0390937b7c498322688a9bde47c331987a2e7d400bd2ef3ed3b28caa8f48a9ff00e8295806f7b6935a94732626ad580ee542b8d5ea737964685325b884cf947aae06450ca36b4dd0c6beea18a436f092b2ba1c888f3a527ff75e6d831c9df01fe5c3d6dda578923db06d2ceac9cf944119714468ba473c04e95dba3ef035f715b69ef22e151e3f47c8c838a773455d4db03bb18e172937eadd050122bb94362a8d5b35fe53192f0846c12ab31a621d4e2bd91b: 
+        Entrust_Certification_Authority_L1K_da3f9_bd91b_1922730236_b7f98adaf2364367232159d95f05993f: ~
+      df4507aef0d4512eec2064d4ed890fd04ed12bed5292ddc347fb259b07158de332709f3cacdde11f2618a2a68a2752653a2ba1d082baa7a106065713aa62b780e7857d79a72f05a5ab757f6fd25efabd48e87cf8c41fb1fec4a514614f11645eecdd6d221cf355ffd426eca4553dae2b720509061f6eda09acc65d1756d56d4fc2367177e0a1a2154b8005efb0bae57b38058e1450a38e4ccec9ca16b4b713607164c34a28d1c614f34866a5a5305584245f49ea3a9d91e982a40684b61d61511cbed2bd87f6b5fa9473529779bb64d3fdc08f92632dc6a7c3a479cd1cd8becbad9566a7c430b79a66582c0754c73ad362b398e52578b05aa1f4218469ec6325: 
+        testeblog_intercasamoveis_com_br_df450_c6325_1585880100_f2753a071faaa2ff47b816b108559e92: ~
+      df966a8bedc1289db7b7b1e9fbe1b99ab635ec92dfb80081e4f77510e546b89e228bf382949258ca8e778ffcfdc9ffa6ffffecaef0d464bf0065c4fedeacd0141dcf3da17640aaa67d3dad76ecc373566324dcde96256c181df9254bfd10cb69acdc4bd52d120327e3f080afa4d28a025b84add0443fea3a38944020764a1d49c728a33f2d20a000b6d3038bd3fb884602ef779cd3a0612fec2c7e9dd55349d2a49162b68d998978d88ae3437f68950df24d5956a6891a9a056fc25f1e5f5f3384362c7d117d01a7713cd055e43a2326d462d961fc920af5b794beb911645ecf1eddcd145706403d07ddac972d406a53061cb5dc8c29246afa053d0512fab389: 
+        www_ebook_intercasamoveis_com_br_df966_ab389_1598876806_647376ea40f5c7f4fcc2eca54b8414a9: ~
+    subject.commonName: 
+      "*.intercasamoveis.com.br": 
+        _wildcard__intercasamoveis_com_br_c86bd_8f559_1599222376_eb60a3998a12611dd9c96b4dcecc02f3: ~
+      Entrust Certification Authority - L1K: 
+        Entrust_Certification_Authority_L1K_da3f9_bd91b_1922730236_b7f98adaf2364367232159d95f05993f: ~
+      Entrust Root Certification Authority: 
+        Entrust_Root_Certification_Authority_b695b_ad8cb_1795812822_c22b69e94c50e3941f912d68833ae114: ~
+      blog.intercasamoveis.com.br: 
+        blog_intercasamoveis_com_br_bf0f3_7cf7f_1590398922_3ddd3dc714eac417a00768f14ba6266a: ~
+      cpcontacts.intercasamoveis.com.br: 
+        cpcontacts_intercasamoveis_com_br_c0ee1_335df_1593951988_f55e1fe94c3fd4518a107a0f968360a9: ~
+      ebook.intercasamoveis.com.br: 
+        ebook_intercasamoveis_com_br_c0d43_df9ef_1588336023_e4bc74a60c5769c71dd66b53a8d76ae6: ~
+      intercasamoveis.com.br: 
+        intercasamoveis_com_br_a05fc_3db0b_1588681598_086d9bdcbb2cecb45967f94fc5f4fca8: ~
+        intercasamoveis_com_br_cee33_a7f93_1585122640_c84f93655c6af7151bec75e994f62051: ~
+      testeblog.intercasamoveis.com.br: 
+        testeblog_intercasamoveis_com_br_df450_c6325_1585880100_f2753a071faaa2ff47b816b108559e92: ~
+      www.blog.intercasamoveis.com.br: 
+        www_blog_intercasamoveis_com_br_d963c_f8187_1595669321_193fac0686b1da383a6268e60d9c075a: ~
+      www.ebook.intercasamoveis.com.br: 
+        www_ebook_intercasamoveis_com_br_c7096_17d7d_1593606390_823b91225945677e4f6aecbcd6f5345b: ~
+        www_ebook_intercasamoveis_com_br_df966_ab389_1598876806_647376ea40f5c7f4fcc2eca54b8414a9: ~
+  csr: 
+    commonName: 
+      "*.intercasamoveis.com.br": 
+        _wildcard__intercasamoveis_com_br_db87a_de2b9_41c96958c4dc9b8cf9733d6963ec66fb: ~
+      intercasamoveis.com.br: 
+        intercasamoveis_com_br_db87a_de2b9_97d321b549801fb89fd85fad88b9e56c: ~
+        intercasamoveis_com_br_db87a_de2b9_ce12a7a730c038792bd365b28a485999: ~
+    modulus: 
+      db87aaa3547300057455383da9318110a739104159e1198b7745f0765785d6838c22890c0428901caa99216a520b1095caa916be59a6feffe17caf0feaad7cce98232fcbd791257ea77ed25672aa459734fece97955b3c791d89eba0772a545a691f26422a51189fe6a62f3f3d1c304050debbef51c92d84b5ddec516bd0f2d695c191bf66c08f608c4712db9149e5c277f76868a1989373f958a56e9611903bfca84c579ced6f35e1774bb60f5e1c8980d1a0641086405ed46b491671c53c6a8ea6f6c0235540c5158c5e2aacf25b0f4a4ed55ac1111b1f0c35ef0cc10c1097020cdf87e1f609c8ff4ab0354cae7f5765d135dd98c40a02abae4bf5733de2b9: 
+        _wildcard__intercasamoveis_com_br_db87a_de2b9_41c96958c4dc9b8cf9733d6963ec66fb: ~
+        intercasamoveis_com_br_db87a_de2b9_97d321b549801fb89fd85fad88b9e56c: ~
+        intercasamoveis_com_br_db87a_de2b9_ce12a7a730c038792bd365b28a485999: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “blog.intercasamoveis.com.br”: blog_intercasamoveis_com_br_bf0f3_7cf7f_1590398922_3ddd3dc714eac417a00768f14ba6266a
+      Cert for “blog.intercasamoveis.com.br” 1587896922.0: www_blog_intercasamoveis_com_br_d963c_f8187_1595669321_193fac0686b1da383a6268e60d9c075a
+      Cert for “ebook.intercasamoveis.com.br”: www_ebook_intercasamoveis_com_br_c7096_17d7d_1593606390_823b91225945677e4f6aecbcd6f5345b
+      Cert for “intercasamoveis.com.br”: cpcontacts_intercasamoveis_com_br_c0ee1_335df_1593951988_f55e1fe94c3fd4518a107a0f968360a9
+      Cert for “intercasamoveis.com.br” 1577350240.0: intercasamoveis_com_br_cee33_a7f93_1585122640_c84f93655c6af7151bec75e994f62051
+      Cert for “intercasamoveis.com.br” 1580909198.0: intercasamoveis_com_br_a05fc_3db0b_1588681598_086d9bdcbb2cecb45967f94fc5f4fca8
+      Cert for “intercasamoveis.com.br” 1591449976.0: _wildcard__intercasamoveis_com_br_c86bd_8f559_1599222376_eb60a3998a12611dd9c96b4dcecc02f3
+      Cert for “site.intercasamoveis.com.br”: www_ebook_intercasamoveis_com_br_df966_ab389_1598876806_647376ea40f5c7f4fcc2eca54b8414a9
+      Cert for “site.intercasamoveis.com.br” 1580563623.0: ebook_intercasamoveis_com_br_c0d43_df9ef_1588336023_e4bc74a60c5769c71dd66b53a8d76ae6
+      Cert for “testeblog.intercasamoveis.com.br”: testeblog_intercasamoveis_com_br_df450_c6325_1585880100_f2753a071faaa2ff47b816b108559e92
+      Entrust Certification Authority - L1K: Entrust_Certification_Authority_L1K_da3f9_bd91b_1922730236_b7f98adaf2364367232159d95f05993f
+      Entrust Root Certification Authority: Entrust_Root_Certification_Authority_b695b_ad8cb_1795812822_c22b69e94c50e3941f912d68833ae114
+  csr: 
+    friendly_name: 
+      Site de moveis infantil: _wildcard__intercasamoveis_com_br_db87a_de2b9_41c96958c4dc9b8cf9733d6963ec66fb
+      loja infantil de moveis: intercasamoveis_com_br_db87a_de2b9_ce12a7a730c038792bd365b28a485999
+      site de moveis: intercasamoveis_com_br_db87a_de2b9_97d321b549801fb89fd85fad88b9e56c
+  key: 
+    friendly_name: 
+      "*.intercasamoveis.com.br 1": c6709_a0e21_549fcf05945549348fcb8e32396150ce
+      Key for “blog.intercasamoveis.com.br”: bf0f3_7cf7f_714f88bd97a2b4d0ae4b1cd20c29c619
+      Key for “blog.intercasamoveis.com.br” 1587896922.0: d963c_f8187_0afcd6113c2003a8147328b74cde1dec
+      Key for “ebook.intercasamoveis.com.br”: c7096_17d7d_6a970adf8daeebe5de237eca97a8d1bd
+      Key for “intercasamoveis.com.br”: c0ee1_335df_a2344836915276eddf2144ee84db656a
+      Key for “intercasamoveis.com.br” 1577350240.0: cee33_a7f93_791201aee36b76f667eed13e7274ade9
+      Key for “intercasamoveis.com.br” 1580909198.0: a05fc_3db0b_6af8e0a66d3347243c0feb12386f4a4f
+      Key for “intercasamoveis.com.br” 1591449976.0: c86bd_8f559_3095a4ae4ff6575da296b44233e0b328
+      Key for “site.intercasamoveis.com.br”: df966_ab389_e8b2b916f87ff667a0a33b5db5c89b9b
+      Key for “site.intercasamoveis.com.br” 1580563623.0: c0d43_df9ef_77d5d04f1357ee0bcad1010ecafed410
+      Key for “testeblog.intercasamoveis.com.br”: df450_c6325_95c5f60f89b7d144df594d40914fa589
+      Loja de moveis: d060c_56efd_672fb0498792f90b9661b2126e89782c
+      chave nova 2017: a452a_f2643_861a65b75679ec420bd806dc999d3efa
+      intercasamoveis.com.br: eb63f_f7ddf_c5d23382380ebb7777470dd8c1be5fa5
+      intercasamoveis.com.br 2: cbcd1_8d833_6ce43907760e85dc6b313249bc0a4dab
+    modulus: 
+      a05fc1375fa2d95bfbc918c2becae23682c22137b8994a8eea433a92a3c239df4b9bbf67581a79f808d3bf8f851d9765d6da14cae60a3e08a8b2067a81f88c2f909dfc6bc3cb4b1a68846da58e9781c44d0b59fc6a5f2f316ff48a90ee4c2cfc9092fcd01fa33b46382de346c35051da967315ce6ca3601f0098ab9394ff3e68e64112758e129461cfb99d9b5990fd2677860795e14e04d923f30eaec4569a97d07cf1a627f82b77b51ba23a505d652dd5f34d7ce586a410f42eed22b057877c91e63ff96dd7ce83d85563ec3e9a4e95b83018e7b138e5e8adc700cfc01a1baa67d54cc73e042c8552e6ec5ba2e725ed40624875827c98fd4c14e6a25cf3db0b: a05fc_3db0b_6af8e0a66d3347243c0feb12386f4a4f
+      a452ae27009b84894a202ccb5809c746a703ed0f787c728bff66e78d1d29a8408a007ffa3605932033cb31ff6b923b153ffd8a0c387794ca4a0bc44674ab06ea78bab470eb2280432fabf416c7ba626bf703067e248c3cf4014cec473f463d62814d03ecc56b0fb7b02ce057b6e8e144badd08018a02df35e16287e8ccfd8c38d0d08a10608bac71b805c77c1a7fee920a10315b922591cbe78d5c42d766f4a5058b37d750f431f518dfc2449cbfcefc4377946ea844a2dca760105a57344ae414b3db353b832663d11dbfda9e5c9eed18ec783f45fbc994a61e7683185e8595fec6b57f6ab0cff7cf064f2074386898c43b32277f3406a0778ca847094f2643: a452a_f2643_861a65b75679ec420bd806dc999d3efa
+      bf0f34609ee8b2f8401fc2cff71ef6e64e0708747bdb2d866fe85b8839559dbc4c5e64dae79042db08132e2ff0bf442d0daa2f23d9df579407ff9dce9bcd700c59b74b6e3eb3fe317f044c4f302111068b9959fb2d5d84160378539bbda7d42e02f9dd7fda5db6800300e12bf36e025c2d20c1afdb1d2afd4cfc83f36ebe3a3931ba93ca723265b7f198070f2a021fc0605b340e785b4a1782d02974f3d2ccaf783cd420ce3329c7baa3b1ad61e8c6afe8fe15ad578eb13d6e55d3a5938a9d66fdc869c420cf18ba9ee5f2c9b3ebfcd622d12422882cade3539ea4134f34beb69fa3226c11e3e65bb5b8d03e1e1682d0a8e3f0eb9539f0ab428cfc4961a7cf7f: bf0f3_7cf7f_714f88bd97a2b4d0ae4b1cd20c29c619
+      c0d43207cd60715c89ea5bc9365ebcb65bcf59b85f86c13dfe9bce0f668e010f96d27d9ec8d176ed12f41cc09fb9fe4fe596caaa80327f30c4a91a6a6dcde6049ca771b855b1c208cfedf205afbfd89a80bae735b49de239ef058828bdfbb3defd296ca0260c79afe83e6334b50ebaef709117ee48a05237694e6249aafaa334a7ca39b4910b22560ce07dddd308a320981432759c470ddf076c9374a7c55d35f83f3e0ee8f436171cdc3b5811187a4a17988e75c385973f1f0e68f7721449c8338d471860bda5c3d77be85348323b38fdac5e49425d20cc8a380d85566d0e2c4975b9dfe795c22bfda642325ca509df35ce05703eedb78399dc334034cdf9ef: c0d43_df9ef_77d5d04f1357ee0bcad1010ecafed410
+      c0ee13cd6b0aab2b471d7344d2f1cee36294e36f162958cd497ca1548678524b527ac05c08f7798b0ad07089164f8f776ca07751c8bc1c1be091d3c242f35c7e9d2710d821d3521663c6a9a8987893b2c464d469e1a6a6e81b4f119879bd72dd1f4f17aeb5479990c2cc8cc321fcfdd3c532378a5b9f99a08b37b0f13e2037826e96b34a3fc9ca2990acd762fcaeacf31fb3d8e3772c44a506196b9fd2ac9686f0127ca242077cf25b80345114557c9ad30ccab13e176bff27527f37b12803f6669607c1d3f611b83ad77e656d8070afb617b43bc061a58385d34a326e144f793a348493822a6e2705a8cd763326875711f65f6132b7a4cee51409b853e335df: c0ee1_335df_a2344836915276eddf2144ee84db656a
+      c6709e922fcefc25942b5093ff9ac191f10cff476ddfb286e3f12db6745220e646fd510fff6a61fa67a16d952764888287f98a5d2ce40fca57f78a929a62a0b7fad94fbb22316b4e11cb6e8f577bee8c39facba9ea1ada0d10d8f9ba2e93fe1d6da758e456a3e74d344f91b056480b8ac336ebea8e8838c7edb75ceb342c64eb9d936ac053af26f13611a40d8c5ef6748624e100ebf65ec7515452ef76c00b787a8276d4375062ef15deb5b71d6646fa54cfa0957d21fc6bd14ff7c55a3bae197895d62ac9772312dce1ae1faee578df9015e4c6c5ead924d74b4aa8238443ba774e20ef595111396b698683300aa94fb7e711c3f7b952eca55c618cd5aa0e21: c6709_a0e21_549fcf05945549348fcb8e32396150ce
+      c709679775e5a47d96191b62a75a62c1fc41e5238d177ce841522c9e7123cadb37f421a814010f23605a13bb48bc2fd2193d683ce6959f8fa3c95b97df46d318b99b3733057f61ba36ab65be81e7ac032ad8d5cbc2d6e72e50aaa84db0367d12a930b2819fcc4b347f7ce3acc3d1882496839e63bead4f2bf248b484afb2e6435056ceb55e4ab91e7ca0d63edbdcae197d0158c52602adfbe4c79adb344cd8674b60a0e8ac47d1bafea33e844098915f129f283407566a745c136832ebe563d97e67a662d37987a38b772eacb23fe9958775b06163e516f6aa085aa2be26ce780ab40b8d156f09e1435c0c1a081d91fd65b733ff712769a07bdd6e80ea517d7d: c7096_17d7d_6a970adf8daeebe5de237eca97a8d1bd
+      c86bdc81f62cd6c75d2995310c18d79207f536a91d366b75e3445f3bc0c78a107c988331d55f98748eefde081656ab62fe9d338f5b3709f424219d81c40fd380f08e9ec71f5d3e82648dcff6f3dbf4cee5df117876807c38ddf8cf5583a6b9db46455071ce2fa372d2bce872b01f966cf18183e2b9527c302f78f16746836764fc8569c932e6a571d41692da37f2afe4808bb0c5b17175f125126121885cb3deb2eb113444c33006db5d55d16dad0e07f7afe3be45292a985792139a6c834fb050dedcd988654315d7ebd06bddf45a56a529aabc17660c60944d2f725c892fde35a1e8bed8c2a38e703e048b3e65895bb6beae09b38564304df003dfcfb8f559: c86bd_8f559_3095a4ae4ff6575da296b44233e0b328
+      cbcd18bb77a634e703d96d32122538705a770ca2e518f2e1885c5ce810cd37f32b45b55130964d3f84f94c86dd6b821be59207d95b89a8ed7a96e910092e1379c146ad304be242e612a8704225afb60999d26e799fc6f7a8628e4f9ff9d07c44f8aa5ffba1531ae6f7a0daf743123112d9978a28eee4427c828dc5785b141813def5d9dd4b08516a8737be40e25502428264efc6c665cd9af629dbb7028756af1ea85946deed105512510c6ba34697432eb6fe5a8bb99a4cfcd5a040b5689b25dfef9b9a4bc3c6834d5b715482eff5233d7c05b743909fa03b5a72e6b76c21a222f3407a879f72f6667909321c6468d3441f8e2d481fa8fdadda3a06bc58d833: cbcd1_8d833_6ce43907760e85dc6b313249bc0a4dab
+      cee33405026136dfb2bdf499c2eca40e16556759806625f1edf421950ee0f3c3473841a03d8df88559d4674a13757f6c17116fdc6f327daa5da28a950f6f4b6c549f868933546d7ce18f263d82be6bb2f3a70af1a6e25aed6663448df83cb03b3fb3074d1e89732524b8036ada84f1947fff58684f60c1f908022a5748c4250bab72d2ba528f8d01644b4a458193309bb9700468fbdf43dd5235704d550bfdadf2af171d3002522cec66b749317c96429d10425c2506c47d0e2c653169ad82c6e25e5ec38374ad8ae0880537be6e93bb90b0226234168eb50cc0bbb17cb7f373e82c7326ffac364b69b4c2973a57a2365a5e423a30aa34fbbd0a5e5eafaa7f93: cee33_a7f93_791201aee36b76f667eed13e7274ade9
+      d060ca0e4833b8352687d247900e85c5319a1daa88be10ca2db252618e79055ef760d9ac57f7df32d5e8dae387b9743f8cb177da389301144787a1f9211f181ee54352f2cfc0173e44e359b6cfbeddb34ccb59df2b2e65711623c98d3b2f3bbe7b33adc949a241027c26fe630648782a0cfdf91d6e5d9e4cd48a51a41e966980bd3b8e2e97caff8a9d1a0b07baa08a6183448c96b500ab1d2cd499fc208202735fd8649c8a30322201366085474ff96fc767fecb0c972e80720a762006a0a301d3cad29fb52e4ce0bb27e2fe545fb168fad97557dc353b2e9393471de28da6cbfda14ca22fb67e223df8ff286ac139ffda13f7c60aa539f1f203f3a973156efd: d060c_56efd_672fb0498792f90b9661b2126e89782c
+      d963cc7ea5a27c042bfcac8e96ad22c0a0081e830d1067ddec5b89a42927878d70d30092c9fd2d30e48ed8763c74e6923d0d171679e28aaaf632f26f770abd65ce615e6cf1f16ec9c89b26a70db277b60e1446ca17478b07ff1fb8e612c605fee70b4c6f98c9a57c93367c3fe7ed2b7c9bb031080da31b590c2fb31f45617c5e7bb26f9d5a5fab872421cedebc60cd0ce30c0e9a8c19e79d554959a411d167f08db539ffe6bce7dff5064d597563e1079b1efc3ca6dc9cf59bba573eaf4bb9062a1f52d6fbb08e42f680adca9b1561f2399ce3520636242933cf86d475681cfef450c1219f67b43d617f28f14733dd0868907d715d4e17ae68d1c078a4df8187: d963c_f8187_0afcd6113c2003a8147328b74cde1dec
+      df4507aef0d4512eec2064d4ed890fd04ed12bed5292ddc347fb259b07158de332709f3cacdde11f2618a2a68a2752653a2ba1d082baa7a106065713aa62b780e7857d79a72f05a5ab757f6fd25efabd48e87cf8c41fb1fec4a514614f11645eecdd6d221cf355ffd426eca4553dae2b720509061f6eda09acc65d1756d56d4fc2367177e0a1a2154b8005efb0bae57b38058e1450a38e4ccec9ca16b4b713607164c34a28d1c614f34866a5a5305584245f49ea3a9d91e982a40684b61d61511cbed2bd87f6b5fa9473529779bb64d3fdc08f92632dc6a7c3a479cd1cd8becbad9566a7c430b79a66582c0754c73ad362b398e52578b05aa1f4218469ec6325: df450_c6325_95c5f60f89b7d144df594d40914fa589
+      df966a8bedc1289db7b7b1e9fbe1b99ab635ec92dfb80081e4f77510e546b89e228bf382949258ca8e778ffcfdc9ffa6ffffecaef0d464bf0065c4fedeacd0141dcf3da17640aaa67d3dad76ecc373566324dcde96256c181df9254bfd10cb69acdc4bd52d120327e3f080afa4d28a025b84add0443fea3a38944020764a1d49c728a33f2d20a000b6d3038bd3fb884602ef779cd3a0612fec2c7e9dd55349d2a49162b68d998978d88ae3437f68950df24d5956a6891a9a056fc25f1e5f5f3384362c7d117d01a7713cd055e43a2326d462d961fc920af5b794beb911645ecf1eddcd145706403d07ddac972d406a53061cb5dc8c29246afa053d0512fab389: df966_ab389_e8b2b916f87ff667a0a33b5db5c89b9b
+      eb63ff0f328851119ce14d0580e4251f6e6da5c4a5c631edb027e6199999e4d94e5c248876e6dc101314f2b6675a92f9f02881a2b9190a370cfb0f87a456ed561760a0b5f878f4dd1c29e4521e1a9ef89735361feade662206b55935abd1b8755727d32e93a709a6e84396d25c4a967add62e79f81ac89236e4ba8e07772a5b175b988e41560a2d55155cefd40e838d4ba9cb89b48d1926960d7afe4d1e71be4a2cd78a2330b8e13b41392f241ed803a24f845cefe21aa25a14c5176aabdd1bbb80828b321b942ba12040e436fbb4603e611a44d5d710bf89fafc71123164349859ab4666df4b61afa6d97e8b9df0eddce62b86e15dc3a52c59abbf245ff7ddf: eb63f_f7ddf_c5d23382380ebb7777470dd8c1be5fa5

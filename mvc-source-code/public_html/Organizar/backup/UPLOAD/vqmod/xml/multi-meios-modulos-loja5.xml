@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id><![CDATA[Multi Meios de Pagamento por Modulo - Loja5]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[2.2.1]]></vqmver>
+	<author><![CDATA[Loja5 | http://loja5.com.br]]></author>
+	
+	<file name="admin/controller/extension/payment.php">
+		<operation error="log">
+			<search position="replace">
+			<![CDATA[$this->model_setting_extension->uninstall('payment', $value);]]>
+			</search>
+			<add><![CDATA[//esta linha foi removida para permitir que um unico modulo tenha controle sobre varios meios de pagamento ao finalizar um pedido]]></add>
+		</operation>
+	</file>
+	
+</modification>

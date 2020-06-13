@@ -1,0 +1,982 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201912 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/ssl/awstats.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2023                
+POS_TIME 2706                
+POS_VISITOR 15383               
+POS_DAY 26952               
+POS_DOMAIN 3643                
+POS_LOGIN 4255                
+POS_ROBOT 4410                
+POS_WORMS 5282                
+POS_EMAILSENDER 5413                
+POS_EMAILRECEIVER 5556                
+POS_SESSION 27069               
+POS_SIDER 27277               
+POS_FILETYPES 5691                
+POS_DOWNLOADS 5975                
+POS_OS 6023                
+POS_BROWSER 6249                
+POS_SCREENSIZE 7832                
+POS_UNKNOWNREFERER 7906                
+POS_UNKNOWNREFERERBROWSER 8358                
+POS_ORIGIN 8747                
+POS_SEREFERRALS 8891                
+POS_PAGEREFS 9260                
+POS_SEARCHWORDS 10180               
+POS_KEYWORDS 10364               
+POS_MISC 2370                
+POS_ERRORS 10455               
+POS_CLUSTER 4111                
+POS_SIDER_404 10597               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200101000007 455 125554 21192359085322
+FirstTime 20191230224034
+LastTime 20191231235901
+LastUpdate 20200101225029 455 0 454 0 0
+TotalVisits 183                 
+TotalUnique 145                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 357                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+AddToFavourites 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 118 1016 15884712 192 218 4358656
+1 8 80 1879893 128 163 3285634
+2 12 170 4929577 127 217 3481568
+3 7 51 822668 124 164 3269142
+4 9 104 1793466 129 156 2893125
+5 16 170 4496568 160 207 4225822
+6 0 6 171970 164 208 3849945
+7 21 392 9958450 193 239 4789892
+8 46 639 9858755 147 201 5385432
+9 11 207 4729339 364 431 8647791
+10 27 518 8321253 262 325 7078425
+11 55 615 15299537 418 503 8874829
+12 21 406 11055151 320 357 7022873
+13 26 401 5243621 122 148 2812512
+14 16 322 8373775 158 181 3506339
+15 32 594 9049685 345 437 9932674
+16 55 707 17581366 154 241 4215974
+17 36 562 11030884 648 708 10988163
+18 11 227 4424511 333 354 6492651
+19 66 612 16702288 220 250 5797905
+20 23 688 17396870 203 225 4397002
+21 18 198 3724749 143 161 3680998
+22 73 1025 20573439 388 442 9216998
+23 67 1160 25154462 289 319 6914508
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 26
+br 437 7759 148426547
+us 170 1915 45238080
+ru 48 48 7747656
+ca 28 46 1999453
+mx 24 288 7209045
+cz 19 121 1355693
+in 8 85 1704136
+se 8 8 900261
+ma 6 99 1852374
+ua 5 5 376383
+fr 5 18 538011
+de 4 4 349224
+at 4 4 449907
+vn 4 243 6738162
+cn 3 141 1786127
+ro 1 72 610390
+id 0 1 8583
+cl 0 1 56172
+nz 0 1 107672
+ch 0 1 138382
+gb 0 1 56172
+pt 0 3 123693
+mz 0 1 101534
+jp 0 3 273107
+za 0 1 220695
+uz 0 1 89530
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 18
+MJ12bot/ 1621 33153888 20191231222901 0
+Googlebot/ 1390 29739317 20191231235705 0
+SemrushBot/ 1189 28924326 20191231235954 0
+bingbot/ 439 10998314 20191231235724 0
+Googlebot\-Image/ 419 1260229 20191231234638 0
+bot[\s_+:,\.\;\/\\-] 351 7710989 20191231235126 0
+facebookexternalhit/ 171 5540257 20191231234554 0
+msnbot/ 169 2009354 20191231232922 0
+Applebot/ 62 2268777 20191231235453 0
+bingpreview 58 1231187 20191231235157 0
+Apache\-HttpClient/ 20 463490 20191230225236 0
+curl 6 1005087 20191231211139 0
+(firefox/)([0-9]\.|[0-1][0]\.) 2 50054 20191231070819 0
+link 2 66805 20191231031455 0
+no_user_agent 2 392024 20191231114910 0
+CFNetwork 1 482 20191231180325 0
+Wget/ 1 196012 20191231010359 0
+GrapeshotCrawler/ 1 25034 20191231011100 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+css 1620 5964034 0 0
+Unknown 184 4575109 0 0
+js 2209 17614607 0 0
+png 847 6180600 0 0
+eot 2 74748 0 0
+html 64 2681199 0 0
+php 522 26178990 0 0
+jpg 5342 164118965 0 0
+jpeg 6 389548 0 0
+woff 2 87136 0 0
+gif 72 592053 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 11
+ios_ipad 76 6
+win10 1727 141
+win7 958 97
+Unknown 42 36
+winxp 2 0
+win8.1 169 18
+macosx 262 32
+linuxandroid 5149 263
+win2003 2 2
+linux 222 52
+ios_iphone 2261 127
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 73
+chrome78.0.3904.108 284 4
+chrome75.0.3770.100 1 1
+safari13.0.3 115 6
+opera55.0.2994.44 11 11
+edge15 1 1
+chrome77.0.3865.116 99 5
+msie7.0 18 0
+msie9.0 2 2
+chrome78.0.3904.90 1 0
+chrome47.0.2526.80 1 1
+chrome73.0.3683.86 1 0
+chrome44.0.2403.125 10 10
+opera52.0.2871.40 3 3
+chrome68.0.3440.84 5 5
+firefox56.0 1 0
+chrome38.0.1025.166 1192 60
+safari 600 48
+chrome68.0.3440.70 61 2
+chrome66.0.3359.139 1 1
+Unknown 40 34
+firefox68.3.0 1 0
+chrome68.0.3440.75 3 3
+chrome44.0.2403.133 1 1
+chrome70.0.3538.110 2 0
+opera53.0.2907.68 6 6
+chrome49.0.2623.112 2 0
+chrome38.0.2125.102 1 0
+chrome66.0.3359.181 13 13
+chrome50.0.2661.86 1 0
+safari10.0 75 6
+safari13.0.1 132 12
+opera54.0.2952.71 6 6
+safari12.1.1 1 0
+chrome72.0.3626.81 1 0
+chrome76.0.3809.100 25 7
+opera54.0.2952.51 3 3
+chrome67.0.3396.99 7 7
+iphone 135 7
+android 8 0
+edge17 7 4
+chrome68.0.3440.91 229 7
+firefox43.0 2 2
+chrome73.0.3669.0 130 2
+chrome55.0.2883.91 2 0
+chrome78.0.3904.97 115 6
+chrome61.0.3163.100 4 0
+opera65.0.3467.78 2 0
+firefox60.0 2 0
+opera53.0.2907.99 3 3
+firefox68.0 117 2
+chrome63.0.3239.132 2 2
+chrome67.0.3396.87 4 4
+chrome79.0.3945.88 2034 131
+chrome74.0.3729.157 122 5
+chrome67.0.3396.79 3 3
+chrome79.0.3945.79 217 28
+firefox28.0 1 1
+msie11.0 254 5
+chrome79.0.3945.93 2353 128
+safari13.0.4 991 42
+chrome78.0.3904.62 2 0
+chrome71.0.3578.99 677 49
+chrome65.0.3325.181 83 42
+safari12.1.2 287 12
+chrome68.0.3440.106 15 13
+chrome75.0.3770.101 1 0
+mozilla 3 2
+firefox71.0 187 8
+edge16 2 0
+chrome69.0.3497.100 144 8
+edge18 3 0
+safari11.0 1 0
+chrome74.0.3729.136 1 0
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 9
+WhatsApp/2.19.360_A 20191231060958
+Photon/1.0 20191231174346
+Mozilla/4.0_(compatible;) 20191231104406
+AddThis.com_(http://support.addthis.com/) 20191231224158
+Go-http-client/1.1 20191231134540
+Mozilla/5.0_(compatible;_NetcraftSurveyAgent/1.0;__info@netcraft.com) 20191231200803
+google-xrawler 20191231050035
+Googlebot 20191231020023
+WLMHttpTransport 20191231212834
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 8
+WLMHttpTransport 20191231212834
+Googlebot 20191231020023
+com.google.GoogleMobile/42.0.0_iPad/9.3.5_hw/iPad2_5 20191231032924
+google-xrawler 20191231050035
+AddThis.com_(http://support.addthis.com/) 20191231224158
+Go-http-client/1.1 20191231134540
+WhatsApp/2.19.360_A 20191231060958
+Photon/1.0 20191231174346
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 87 144
+From1 1 1
+From2 66 324
+From3 24 35
+From4 596 10366
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 10
+www_google_pt 0 3
+bing 0 9
+www_google_com 51 250
+google_com 0 2
+mx_images_search_yahoo_com 0 1
+www_google_co_uk 0 1
+www_google_com_br 14 51
+br_images_search_yahoo_com 0 4
+images_search_yahoo_com 0 2
+int_search_myway_com 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 15
+https://www.biano.com.br/produtos/poltronas-2/balanco/tecido-2 5 5
+https://pinterest.com/pin/570268371542130950/ 3 3
+https://pinterest.com/pin/570268371542130937/ 3 3
+https://l.instagram.com 2 2
+https://www.pinterest.com 2 2
+https://www.biano.com.br/produto/82877003-sofa-cama-casal-vizzi 2 2
+http://pinterest.com/pin/227502218650611408/ 2 2
+https://www.biano.com.br/produtos/sofas/sofas-cama 1 1
+https://admin.biano.com.br/products/edit/85693707 1 1
+https://www.pinterest.com/pin/548594798353709663 1 1
+https://arquiteturainteriores.com 1 1
+https://www.biano.com.br/produtos/escrivaninhas-e-mesas-de-trabalho-3 1 1
+http://www.australianocicats.com/camas-para-bebes-de-2-anos.html 0 1
+https://bmail1.uol.com.br 0 7
+http://www.australianocicats.com/barra-de-cama.html 0 3
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+%5ebys%5exdm191%5elmptbr%5ebr 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 1
+%5ebys%5exdm191%5elmptbr%5ebr 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+404 447 9588740
+302 28 0
+301 447 159498
+401 4 37136
+206 16 297858
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 120
+/Ber%C3%A7o_ninare 2 -
+/comoda-stilo-base-metal-cores 1 -
+/colch%C3%A3o_cama_auxiliar_d23 1 -
+/colchao-arredondado-ber%C3%A7o-crescer 1 -
+/bau-organizadora-azul 1 -
+/ber%C3%A7o-montessoriano-cores 2 -
+/apple-touch-icon-120x120-precomposed.png 1 -
+/ber%C3%A7o-3-em-1-cores 1 -
+/bicama-solteiro-infantil-beaba-branco 2 -
+/ads.txt 2 -
+/grade_protecao_cama_tata 1 -
+/image/cache/data/beliche/cama-beliche-alta-01-540%C3%97540.jpg 1 -
+/ber%C3%A7o_ninare 2 -
+/apple-touch-icon-120x120.png 1 -
+/bi-cama-infantil-grades-prote%C3%A7%C3%A3o 1 -
+/cama-com-escorrega-infantil-futebol 3 -
+/comoda-square-branco-ciliegio 1 -
+/ber%C3%A7o_victoria_2_em_1 1 -
+/nicho_bebe_rosa 1 -
+/comoda-hamptons-cores-porta 2 -
+/beliche-infantil-woody 1 -
+/berco-stilo-base-metal-cores-fosco 1 -
+/Capa_Edredon_Lilaz 1 -
+/apple-touch-icon-precomposed.png 1 -
+/Rolo_Gorgurim_Azul%C3%A3o 1 -
+/T%C3%BAnel_Tenda_Menina 1 -
+/cama-beliche-infantil-menino 2 -
+/berco-retro-pes-palito-azul 1 -
+/cama-beliche-woody-em-l 2 -
+/apple-touch-icon.png 24 -
+/comoda-slim-porta-cores-madeira 2 -
+/beco-montessoriano-branco 4 -
+/bau-organizadora-vermelha 1 -
+/cama-multi-safari-escada-escorrega 2 -
+/armario_victoria_3_portas 1 -
+/criado_mudo_beab%C3%A1_carvalho 1 -
+/cama-kids-2-branco-rosa-moldura 1 -
+/cama-alta-casual-office-branca 1 -
+/grade_prote%C3%A7%C3%A3o_mini_cama 1 -
+/Ber%C3%A7o_Smart_5_em_1 1 -
+/image/cache/data/berco/berco_casinha_ambientado-600%C3%97600.jpg 1 -
+/colch%C3%A3o-ortobom-ber%C3%A7o-d18 1 -
+/cortina_tematica_casinha_estampa 1 -
+/$$$ 1 -
+/nicho_a%C3%A9reo_infantil_freij%C3%B3 1 -
+/comoda-evolutive-cores-sem-porta 2 -
+/comoda-retro-bebe-cores 2 -
+/image/cache/data/berco/berco-montessoriano-casinha-540%C3%97540.jpg 1 -
+/MESA_APOIO_TRIPE_AMARELA 2 -
+/system/storage/upload/index.php.php 1 -
+/image/cache/data/Prateleira/nicho_aereo_ambiente-540%C3%97540.jpg 1 -
+/berco-hampton-branco 1 -
+/mesa-kids2-tons-azul 1 -
+/mini-ber%C3%A7o-crescer-moises 1 -
+/cdn-cgi/l/email-protection 14 -
+/image/cache/data/beliche/01-quarto-completo-tema-selva-01-600%C3%97600.jpg 1 -
+/.well-known/assetlinks.json 1 -
+/Nicho_Infantil_Casinha 1 -
+/KIT_DE_BERCO_OVELHA 1 -
+/mesa-kids2-tons-verde 1 -
+/storage/upload/index.php.php 1 -
+/cama-beliche-solteiro-branco 1 -
+/cama-beliche-em-l-authentic 1 -
+/Escrivaninha_Beab%C3%A1_Carvalho 1 -
+/wp-login.php 1 -
+/Sof%C3%A1_Cama_Nature_Carvalho 1 -
+/moveis-infantis/bercos/ 1 -
+/berco-slim-cores-madeira 2 -
+/cama-casinha-montessoriana-cores 2 -
+/ber%C3%A7o_square_ciliegio 1 -
+/image/catalog/d_blog_module/review/b.php 1 -
+/Grade_Prote%C3%A7%C3%A3o_Mini_Cama 1 -
+/Escrivaninha_Beab%C3%A1 1 -
+/escrivaninha-crescer-branca 1 -
+/robots.txt 127 -
+/sofa-cama-infantil-woody 1 -
+/ber%C3%A7o-retro-pes-palito-rosa 2 -
+/bicama-casinha-infantil-safari-selva 1 -
+/image/cache/data/comoda/comoda-bebe-retro-rosa-ambientada-600%C3%97600.jpg 1 -
+/cabideiro_clever_riverdale 1 -
+/ber%C3%A7o-venere-branco-fosco 2 -
+/comoda-victoria-5-gavetas-branca-carvalho 2 -
+/berco_stile_plus_acetinado 3 -
+/treliche-infantil-kids-tons-verde 1 -
+/cama-media-infantil 1 -
+/armario-colorido-infantil-portas-deslizantes 1 -
+/escrivaninha_clever 1 -
+/treliche-authentic-galaxia 1 -
+/cama-de-solteiro-victoria-branco-carvalho 1 -
+/colch%C3%A3o_minicama_d23 1 -
+/comoda-victoria-com-porta 1 -
+/kit-cama-baixa-branco-laqueado 1 -
+/Ber%C3%A7o_Square_Ciliegio 1 -
+/image/cache/data/Prateleira/quater_beaba_prateleira-600%C3%97600.jpg 1 -
+/cama-cabana-com-escorregador-menina 1 -
+/berco-evolutive-3-em-1-branco 1 -
+/ber%C3%A7o_smart_5_em_1 2 -
+/Tema_Castelo 2 -
+/comoda-evolutive-cores 1 -
+/cadeira-infantil-ghost-incolor 1 -
+/image/cache/data/beliche/01-quarto-completo-tema-selva-01-540%C3%97540.jpg 1 -
+/index.php 136 -
+/Cama_Telhado_Escorrega 1 -
+/Colch%C3%A3o_Solteiro_D33 1 -
+/image/cache/data/ambientadas/detalhes_armario_porta_coloridas-600%C3%97600.jpg 1 -
+/cama-beliche-casal-de-crian%C3%A7as 1 -
+/nicho_aereo_amarelo_freijo 1 -
+/comoda-retro-gaveta-bebe-cores 1 -
+/image/cache/data/berco/berco-montessoriano-bebe-540%C3%97540.jpg 1 -
+/Sof%C3%A1-cama-loren 2 -
+/cama-solteiro-infantil-com-escada 1 -
+/primeira-cama-infantil-riverdale 1 -
+/image/cache/data/ambientadas/DSC_0778-540%C3%97540.jpg 1 -
+/Ber%C3%A7o_comoda_grade 1 -
+/bau_uk_26x26 1 -
+/ber%C3%A7o_Loren_2_em_1 2 -
+/bicama-solteiro-suspensa-infantil 1 -
+/image/cache/data/ambientadas/777final-600%C3%97600.jpg 1 -
+/wp-content/uploads/slideshow-gallery/camas-tematicas 2 https://intercasamoveis.com.br/
+/cadeira-van-gogh-infantil-vermelha 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 357
+189.78.84.197 40 182 1901762 20191231000408
+129.146.158.17 29 29 708024 20191231224158
+201.17.111.151 28 216 4719098 20191231164359
+189.122.58.28 25 270 6585747 20191231223305
+177.25.206.6 21 150 3924397 20191231195151
+142.93.65.231 20 37 913428 20191231002736
+138.197.7.56 19 43 547697 20191231114925
+89.103.111.163 19 121 1355693 20191231083547
+191.205.6.114 19 369 9848100 20191231165139
+177.25.199.80 17 240 6455024 20191231195200
+187.157.157.105 14 266 6861251 20191231074601
+66.102.8.172 13 243 4860713 20191231181125
+179.127.68.79 12 14 198564 20191231000151
+189.101.234.111 11 201 3843294 20191231113434
+170.245.68.22 10 90 917771 20191231001010
+34.237.77.117 10 10 12738210 20191231220444
+201.83.131.202 10 300 8200364 20191230235007
+200.68.142.99 10 21 279451 20191231111822
+179.157.221.53 10 160 2705459 20191231090005
+5.188.210.38 9 9 980928 20191230225727
+191.242.240.117 9 123 1596780 20191231170757
+46.246.65.139 8 8 900261 20191231212805
+189.107.127.36 8 178 3123315 20191231155046
+138.118.30.165 8 108 1383306 20191231102137
+66.102.8.174 8 218 4794267 20191231135516
+187.64.155.138 0 1 44827 
+170.79.52.194 4 86 1284873 20191231124018
+179.180.182.178 0 1 43163 
+187.10.53.219 1 43 294518 20191231030459
+179.156.105.146 0 1 24702 
+201.17.81.16 0 3 233050 
+179.181.104.228 0 1 71598 
+92.81.76.135 1 72 610390 20191231210242
+185.255.96.99 1 1 129109 20191231085425
+201.26.22.171 0 2 204998 
+192.100.248.238 0 1 368370 
+45.225.86.8 5 91 908222 20191231085656
+189.40.102.222 0 1 112292 
+177.69.82.169 0 1 96934 
+35.210.215.110 1 1 25029 20191231134540
+201.20.27.105 0 4 310892 
+191.189.14.62 0 1 24454 
+177.25.188.29 1 29 455150 20191230230044
+177.79.125.142 1 65 1368765 20191231152550
+179.254.73.78 0 2 238597 
+45.4.45.197 0 1 17455 
+201.17.173.191 0 1 18489 
+187.41.95.202 0 1 17423 
+179.146.220.253 0 1 96934 
+179.218.253.63 2 46 2147764 20191231002751
+148.63.220.227 0 1 102658 
+216.86.240.172 0 1 38349 
+187.93.134.160 2 79 1592831 20191230231220
+216.218.141.229 0 4 49614 
+177.59.13.35 5 108 1596782 20191231144326
+189.47.234.85 2 61 536110 20191231012004
+47.244.9.129 3 3 324189 20191231043441
+189.107.64.52 7 24 390941 20191231194824
+187.70.226.82 5 113 3056866 20191231120637
+177.79.64.151 0 1 34429 
+138.219.202.239 0 1 49518 
+181.221.10.215 0 1 61312 
+200.143.103.226 0 1 84852 
+170.231.185.243 0 1 73129 
+45.186.67.11 0 1 98513 
+179.34.252.250 0 1 57682 
+88.157.19.171 0 1 70977 
+187.120.21.15 6 160 2796184 20191231025130
+104.37.172.238 3 3 55055 20191231222544
+189.27.93.135 0 1 17409 
+187.38.62.137 0 3 113695 
+138.117.210.134 6 111 956810 20191231154430
+102.9.129.173 0 1 8583 
+164.85.16.101 0 1 61312 
+189.6.34.82 0 1 24454 
+187.183.234.56 0 1 20936 
+189.40.91.104 0 1 89530 
+177.3.194.232 0 2 189269 
+78.245.113.237 1 14 88014 20191231092907
+187.105.98.134 1 10 77741 20191231221432
+189.6.27.191 0 2 187103 
+189.40.87.218 0 1 49518 
+187.38.61.170 5 100 1208400 20191231132103
+200.216.220.211 0 1 84852 
+189.10.28.49 0 1 35205 
+177.23.251.115 2 78 1050521 20191231001919
+189.103.225.210 0 1 63983 
+177.64.168.115 5 98 939426 20191230232957
+189.48.221.160 5 96 1142630 20191230230939
+168.195.101.97 0 1 15218 
+170.254.74.184 2 77 788773 20191231095004
+189.86.240.2 0 1 34616 
+189.46.64.38 0 1 44171 
+14.17.101.42 3 139 1658097 20191231205634
+189.112.85.23 5 103 1411190 20191230224331
+168.196.106.248 0 1 71414 
+179.198.130.189 6 95 1020306 20191231101033
+138.118.182.60 1 29 294927 20191231220458
+46.165.4.146 4 4 530064 20191231221606
+187.122.5.141 0 1 61312 
+177.65.161.161 7 68 995763 20191231175948
+200.163.216.209 0 1 61312 
+186.231.135.207 3 15 377481 20191231073724
+189.120.73.233 0 1 21959 
+186.243.75.231 5 124 1603886 20191231001742
+201.42.40.13 0 2 105634 
+45.235.50.34 1 1 29319 20191231225209
+177.59.16.160 0 1 96517 
+191.55.191.16 0 1 74216 
+45.230.245.192 0 1 41576 
+187.26.175.87 0 1 105644 
+191.243.118.29 5 100 1067609 20191231004228
+187.110.220.74 0 2 48508 
+187.26.75.106 0 1 40377 
+66.249.83.91 5 82 1136237 20191231002902
+219.149.223.103 0 2 128030 
+167.249.25.139 1 1 23664 20191231180321
+177.16.108.230 0 3 304873 
+187.0.184.144 2 95 1618564 20191231101119
+74.125.72.161 1 1 103901 20191231020023
+188.163.109.159 3 3 324154 20191231112624
+186.208.18.34 0 1 77467 
+45.162.232.58 0 2 99379 
+66.102.6.170 1 40 389721 20191231131810
+189.95.1.54 2 105 2087335 20191230225253
+177.25.176.153 1 32 589555 20191230230041
+168.181.51.79 0 1 123670 
+177.182.71.69 0 2 140739 
+201.6.143.93 0 1 61312 
+187.22.132.9 0 1 76565 
+170.79.86.165 0 1 61312 
+189.40.64.251 0 1 96934 
+187.94.16.68 0 1 49103 
+189.17.178.42 0 1 21085 
+187.19.251.206 0 1 217248 
+131.100.95.47 0 1 23671 
+201.87.36.63 0 1 36213 
+191.25.146.185 3 89 1046632 20191230224039
+158.69.121.179 5 5 712318 20191231195325
+191.178.147.136 2 56 595216 20191231175803
+93.124.88.73 4 4 449900 20191231051312
+201.16.59.4 2 200 5710244 20191231204333
+177.222.136.197 0 1 20936 
+177.66.173.248 0 1 102658 
+84.73.164.83 0 1 138382 
+66.249.83.92 5 64 787084 20191231002902
+170.78.95.229 0 1 320687 
+179.241.204.94 0 1 61312 
+177.59.19.242 0 1 77467 
+168.195.101.171 5 103 1411234 20191231105605
+179.85.176.17 0 1 63983 
+177.18.60.202 0 1 21932 
+185.85.162.242 3 3 324197 20191231055922
+45.40.122.12 1 1 25027 20191231174733
+177.80.87.141 0 1 57008 
+170.66.1.231 0 1 74216 
+179.197.76.174 0 1 83262 
+66.249.83.93 5 80 876089 20191231002902
+177.37.138.222 0 1 61312 
+162.241.60.70 1 1 0 20191231032636
+177.73.200.176 0 1 28772 
+168.194.161.92 0 1 84852 
+191.13.115.10 0 1 89530 
+177.79.113.230 0 1 65340 
+186.227.221.154 0 1 89530 
+198.12.108.123 1 1 23167 20191231002816
+170.233.51.79 0 1 47582 
+189.22.228.194 0 1 61003 
+201.86.3.203 0 1 15271 
+168.196.128.241 0 1 132246 
+189.125.47.27 0 1 71602 
+191.6.165.165 0 1 77064 
+170.233.51.51 5 100 1380362 20191231221010
+201.17.91.245 0 1 80385 
+164.163.98.198 0 1 106465 
+201.80.27.92 0 2 109633 
+189.40.70.114 0 1 23454 
+177.35.77.217 0 1 61312 
+177.132.177.130 6 115 1133897 20191231172735
+148.69.56.7 0 1 114308 
+66.102.6.174 3 35 466076 20191231131810
+198.20.173.190 1 1 23167 20191230231429
+157.44.199.60 0 1 78971 
+3.8.236.125 3 3 329076 20191231145631
+177.205.193.109 0 1 24389 
+186.202.173.147 1 1 196012 20191231161842
+46.188.98.10 6 6 648505 20191231211827
+201.17.74.201 0 1 90279 
+177.201.14.145 5 98 939155 20191231164341
+177.25.186.100 2 74 2305057 20191230231406
+177.209.219.135 0 1 89530 
+179.159.118.68 0 1 363659 
+177.79.113.112 1 25 588680 20191231152553
+90.219.212.247 0 1 56172 
+179.211.25.44 0 2 110830 
+177.59.21.150 5 100 1380376 20191230230516
+213.109.164.201 2 2 2546786 20191231124556
+109.70.100.19 4 4 449907 20191231194354
+116.106.25.238 4 243 6738162 20191231114703
+191.33.178.99 0 1 98660 
+187.115.35.167 7 111 1237413 20191231152654
+189.40.87.59 2 91 1859798 20191231233940
+177.96.188.37 0 2 39693 
+177.223.164.230 0 1 174100 
+189.120.78.252 0 3 124459 
+187.127.207.66 0 2 170745 
+177.103.100.11 5 94 940352 20191231042129
+186.213.19.84 7 135 2384507 20191231182950
+179.126.90.19 0 2 45382 
+186.213.62.88 2 95 1216469 20191231172212
+74.125.72.163 1 1 103903 20191231050035
+192.0.102.144 0 1 56435 
+177.25.178.24 0 22 498565 
+138.0.1.150 0 2 142436 
+64.225.28.220 1 1 196012 20191231175055
+45.182.59.245 0 2 115433 
+201.42.65.235 0 1 61312 
+179.242.188.220 2 98 2352479 20191231141432
+177.140.242.228 0 1 217248 
+177.149.130.221 0 1 159124 
+168.195.235.238 0 2 35125 
+187.68.192.43 0 2 630938 
+189.112.144.41 2 84 1064087 20191231050939
+187.180.183.195 5 85 699038 20191231203754
+187.115.146.146 0 2 114880 
+45.139.48.7 6 6 645086 20191231235901
+192.0.100.83 0 1 50383 
+187.180.184.48 0 1 90279 
+170.244.253.77 0 1 87252 
+109.248.149.30 6 6 645080 20191231152647
+45.185.181.206 2 72 572450 20191231093212
+170.0.63.142 0 1 220695 
+177.13.152.134 0 1 29143 
+45.70.190.27 0 1 107672 
+179.222.108.53 0 1 19738 
+45.234.17.19 0 2 406428 
+186.233.72.183 0 1 30828 
+188.124.36.225 3 3 324237 20191231130629
+177.67.241.235 0 1 61003 
+177.132.104.127 1 6 70418 20191231133116
+177.215.82.168 0 1 74216 
+179.158.130.151 0 1 128507 
+177.66.208.247 0 1 23671 
+189.40.108.132 0 1 123670 
+217.29.114.229 0 1 89530 
+104.132.61.82 2 130 1595224 20191231225240
+138.36.22.59 0 1 16127 
+143.107.176.138 0 8 306989 
+177.58.165.37 0 1 18666 
+179.124.28.128 0 1 96934 
+177.79.27.180 1 43 481838 20191231120615
+45.55.48.221 1 1 196012 20191231200803
+45.6.92.102 0 1 78161 
+197.235.237.169 0 1 101534 
+164.163.25.67 0 2 166642 
+179.110.215.28 0 1 24454 
+45.228.109.10 0 1 68783 
+66.102.8.170 8 211 4251486 20191231135516
+201.79.153.227 0 1 28825 
+201.17.74.58 0 1 94304 
+45.235.160.242 0 1 307928 
+201.49.72.118 0 1 96934 
+191.23.248.152 0 1 162838 
+200.11.10.137 0 1 61312 
+177.58.239.51 0 1 96934 
+187.182.211.242 0 1 78161 
+201.56.58.114 0 1 21211 
+177.25.183.237 5 78 1588738 20191231191557
+109.173.85.245 3 3 324165 20191231083225
+170.79.52.143 0 3 188884 
+185.206.224.245 6 6 648635 20191231234758
+177.66.195.50 2 84 822973 20191231115131
+189.40.69.136 0 1 13701 
+91.109.29.140 1 1 25027 20191231114524
+186.221.152.43 0 1 60574 
+191.35.61.80 0 1 83990 
+187.123.176.245 0 1 85855 
+201.59.166.18 0 1 61312 
+187.14.152.194 5 5 37278 20191230232905
+191.0.27.246 5 92 857826 20191231155048
+177.68.213.141 0 1 49074 
+178.159.37.155 2 2 52229 20191231032815
+189.85.85.50 0 1 88422 
+177.82.221.146 0 1 61312 
+177.159.0.204 0 18 69644 
+179.212.123.62 0 1 61312 
+177.25.143.140 0 1 107803 
+179.181.126.188 0 2 366651 
+187.123.0.14 0 1 80720 
+201.42.87.121 0 1 84852 
+179.152.230.86 0 1 16319 
+173.213.85.124 5 5 72086 20191231002548
+187.85.87.43 0 1 84852 
+189.10.143.154 0 1 60574 
+105.66.129.128 0 1 15902 
+189.95.19.62 0 1 49518 
+177.125.100.13 0 1 0 
+191.30.58.15 5 85 884656 20191231145037
+177.79.24.153 1 26 208085 20191231120604
+177.206.82.176 0 1 98660 
+189.40.64.178 2 20 128252 20191231092645
+177.84.216.242 0 1 54439 
+179.70.178.185 0 1 29143 
+179.127.193.66 2 116 1559674 20191231083727
+201.14.254.208 0 1 61312 
+168.194.161.79 0 1 107672 
+189.40.85.252 0 1 97195 
+177.41.114.142 0 2 157056 
+186.235.253.158 0 1 43119 
+179.208.71.105 0 1 61003 
+179.164.234.201 0 1 98660 
+201.17.156.143 0 1 52078 
+66.249.88.170 4 65 1015345 20191231004222
+209.19.180.16 1 1 11848 20191231191045
+78.158.192.67 1 1 196021 20191231092405
+193.56.117.22 4 4 449997 20191231023125
+191.183.100.42 0 1 56172 
+187.20.137.245 0 2 141794 
+191.189.14.40 0 2 348428 
+192.0.99.11 0 1 23820 
+186.251.153.90 0 1 89530 
+186.224.25.4 2 70 690456 20191231100845
+177.25.187.85 0 1 17119 
+45.226.119.157 0 1 74216 
+179.187.44.162 0 2 182254 
+177.42.127.143 5 108 1184322 20191231213400
+35.206.158.168 1 1 25029 20191231012445
+187.115.167.202 5 251 6753941 20191231204431
+191.241.48.180 0 2 48908 
+66.249.88.172 3 67 978035 20191231004222
+138.118.232.59 0 1 73191 
+177.58.171.57 2 107 1328586 20191231073537
+82.146.54.216 3 3 324226 20191231123655
+177.33.146.95 0 1 110090 
+85.243.140.169 0 2 52716 
+189.6.34.1 6 99 1128167 20191230234517
+177.189.128.68 0 1 56172 
+66.102.6.172 1 33 332031 20191231131810
+177.52.68.211 0 1 31755 
+177.17.61.175 0 1 61312 
+179.234.211.170 3 7 72457 20191231175852
+66.249.88.174 4 54 515002 20191231004222
+177.55.191.18 0 1 62529 
+45.171.155.229 0 1 78971 
+128.201.102.153 0 1 61312 
+177.226.230.172 0 1 68343 
+170.254.210.234 0 1 205312 
+177.73.99.196 0 2 563407 
+170.66.1.234 0 1 59595 
+45.182.63.2 0 1 94304 
+35.210.147.198 1 1 25029 20191231071044
+187.58.25.96 0 1 61312 
+177.25.188.114 4 104 2651183 20191231191552
+181.191.8.53 0 1 56172 
+131.0.218.33 6 75 833586 20191231133220
+189.72.190.191 0 1 64327 
+177.86.1.251 5 95 944694 20191230232847
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20191230 88 1526 30305822 23
+20191231 686 9344 198151167 160
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 18
+5mn-15mn 8
+30mn-1h 4
+0s-30s 141
+1h+ 2
+2mn-5mn 8
+15mn-30mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 91
+/index.php 522 26178990 71 141
+/ 64 2681199 27 22
+/moveis 16 508852 2 2
+/moveis/ber%C3%A7os_para_bebe 9 193035 6 1
+/treliche-infantil-kids-cores 6 172580 4 0
+/moveis/armario-estante-infantil 6 110258 1 0
+/moveis/montessoriano 6 124113 1 1
+/sleeper-moveis 5 117259 4 1
+/moveis/cama-infantil 4 92697 3 2
+/moveis/comodas_criados 4 82164 1 1
+/poltrona-amamentacao-cacula-capitone 4 109173 1 0
+/beliche-kids-cor-montessori 4 115912 3 0
+/moveis/Cadeiras/Cadeira_Infantil_Azul 3 96636 1 1
+/moveis/Cadeiras/Cadeira_Infantil_vermelha 3 98532 1 1
+/sofa-cama-casal-vizzi 3 82649 1 0
+/beliche-kids-branco-fosco 3 84831 2 0
+/moveis/bicamas 3 58017 0 1
+/bicama-de-solteiro-com-gavetas 3 83766 3 0
+/moveis/beliche-treliche-infantil 3 60362 1 0
+/poltrona-wind-tecido-155a 3 81707 2 0
+/quartos_tematicos/quarto-infantil-kids-II 3 50675 1 1
+/Poltrona_Amamenta%C3%A7%C3%A3o_Babalu 2 58628 2 0
+/poltrona_century 2 57952 2 0
+/comoda-zlin-cores 2 52930 2 0
+/catalog/view/theme/theme255/font/fontawesome-webfont.woff 2 87136 0 1
+/moveis/montessoriano/bicama-kids-sleeper-madeira-jequitiba 1 27164 0 0
+/moveis/montessoriano/bicama-casinha-montessori-cores 1 28283 0 0
+/imperial-moveis 1 20895 1 0
+/rack-verona-azul-turquesa-branco 1 26900 1 0
+/moveis/armario-estante-infantil/armario-malu-2-portas-branco-madeira 1 26441 0 0
+/depoimentos 1 17324 0 0
+/moveis/bicamas/bicama-cabana-infantil-menino 1 29025 0 0
+/trocas_e_devolucoes 2 38280 0 0
+/sleeper-moveis/cama-casinha-sleeper-branca 1 27091 0 0
+/ber%C3%A7o-crescer-azul-turquesa 1 29319 1 1
+/moveis/beliche-casual-branco-fosco 1 26489 0 0
+/ber%C3%A7o-crescer-madeira-jequitiba 2 57370 2 1
+/moveis/Cadeiras/cadeira_infantil_verde 2 65054 1 0
+/beliche-newport-branco-fosco 1 27519 1 1
+/moveis/ber%C3%A7os_para_bebe/berco-transformare-castanho-cores 1 25848 0 0
+/moveis/racks-paineis 1 20803 1 0
+/mini-cama-infantil-otto 1 27701 1 0
+/sofa-cama-miami 2 53620 1 0
+/sofa-cama-ambar-branco 1 27879 1 0
+/euclar-moveis 1 18901 1 0
+/moveis/mesas_escrivaninhas_infantis 1 21182 1 0
+/sleeper-moveis/beliche-kids-branco-fosco 1 28032 0 0
+/quartos_tematicos/quarto-de-bebe-retro-vintage 1 19713 0 0
+/quartos_tematicos 1 15647 0 0
+/berco-otto-madeira-jequitiba 1 25713 1 0
+/moveis/sofas-de-2-e-3-lugares 1 20667 1 0
+/garantia 2 36034 0 0
+/bicama-hashtag-branco-pinus 1 27200 0 1
+/quater-moveis 2 36968 2 1
+/beliche-montessoriano-casual 1 27002 1 0
+/bicama-infantil-grades-prote%C3%A7%C3%A3o 1 28875 1 0
+/escrivaninha_larousse 2 55264 2 1
+/berco-otto-branco-madeira 1 26144 0 0
+/quem_somos 2 36216 0 0
+/cama-infantil-solteiro-nichos-gavetoes 1 28259 1 0
+/bicama-casinha-pietra-branco-madeira-tauari 1 27098 1 0
+/quartos_tematicos/quarto-de-bebe-ambar 2 39082 0 0
+/moveis/banqueta_infantil_compact_azul 1 25625 0 0
+/quater-moveis/criado-mudo-victoria-ibizza 2 32484 2 0
+/moveis/base-e-cama-auxiliar-kids-branco 1 24875 0 0
+/catalog/view/theme/theme255/font/fontawesome-webfont.eot 2 74748 0 0
+/quartos_tematicos/quarto-bebe-montessoriano-completo 2 39560 0 0
+/berco-ambar-branco-fosco 2 56552 2 0
+/ber%C3%A7o-smart-graffite-fiorello 2 53409 1 0
+/ber%C3%A7o-crescer-4-fases-cinza 1 29358 1 0
+/montagem 2 36116 0 0
+/beliche-kids-3-gavetas-cores 1 28777 1 0
+/comoda-ambar-cores-pes-palito 1 28691 0 0
+/quartos_tematicos/quarto-tematico-classic 1 18823 1 0
+/bicama-solteiro-infantil-cabana-casinha 1 30119 1 1
+/quater-moveis/Berco_Nature_2_em_1 1 18555 1 0
+/moveis/armario-estante-infantil/armario-otto-duas-portas 1 27012 0 0
+/termos_e_condicoes 2 37090 0 0
+/poltrona_amamentacao_babylook_com_bordado 1 28294 0 0
+/escrivaninha-de-canto-mega-office-branco 1 26832 1 0
+/showrooms 2 32926 0 0
+/cama_e_banho/almofada-infantil 2 36578 0 0
+/caixa-organizadora-winny-verde 1 26348 1 0
+/entregas_e_fretes 2 34788 0 0
+/quartos_tematicos/quarto-infantil-kids-II/beliche-kids-branco-fosco 1 28041 0 0
+/moveis/bicamas/bicama-casinha-montessori-cores 2 57458 2 0
+/moveis/armario-estante-infantil/estante-arvore-branco-jequitiba 1 25773 1 0
+/decoracao/acessorios 2 38212 0 0
+/ber%C3%A7o-crescer-4-fases 2 58899 2 0
+/bicama-kids-sleeper-madeira-jequitiba 1 27547 1 0
+/poltrona-abstratto-eternity 2 52637 0 0
+END_SIDER

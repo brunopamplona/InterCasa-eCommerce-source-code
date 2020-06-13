@@ -1,0 +1,1344 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202002 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/awstats.site.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2024                
+POS_TIME 2693                
+POS_VISITOR 17369               
+POS_DAY 33004               
+POS_DOMAIN 3550                
+POS_LOGIN 4357                
+POS_ROBOT 4512                
+POS_WORMS 5602                
+POS_EMAILSENDER 5733                
+POS_EMAILRECEIVER 5876                
+POS_SESSION 33751               
+POS_SIDER 33952               
+POS_FILETYPES 6011                
+POS_DOWNLOADS 6332                
+POS_OS 6662                
+POS_BROWSER 6976                
+POS_SCREENSIZE 8610                
+POS_UNKNOWNREFERER 8684                
+POS_UNKNOWNREFERERBROWSER 9240                
+POS_ORIGIN 9487                
+POS_SEREFERRALS 9627                
+POS_PAGEREFS 9883                
+POS_SEARCHWORDS 16748               
+POS_KEYWORDS 16900               
+POS_MISC 2355                
+POS_ERRORS 16959               
+POS_CLUSTER 4213                
+POS_SIDER_404 17060               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200301012510 100 17899 8733959805745
+FirstTime 0
+LastTime 20200229230719
+LastUpdate 20200301060123 100 0 99 0 0
+TotalVisits 551                 
+TotalUnique 380                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 432                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+AddToFavourites 0 221 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+DirectorSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 30 31 277476 148 207 1366673
+1 44 46 116234 172 210 1302139
+2 22 23 9391 95 161 1487951
+3 36 37 4648 64 88 411173
+4 31 31 3634 72 116 1494909
+5 21 21 2478 84 120 1027160
+6 30 37 138902 71 116 2106231
+7 17 18 267071 67 109 561441
+8 28 31 159516 84 150 2324894
+9 118 135 61586 87 157 1358842
+10 38 48 216178 77 129 294534
+11 35 49 710541 77 137 1058268
+12 18 23 352766 85 148 861836
+13 65 68 226203 107 165 2396052
+14 40 49 670223 95 160 1466101
+15 29 32 284391 98 167 2403485
+16 43 48 434834 156 242 1340268
+17 86 86 13052 109 223 1535109
+18 37 50 876157 81 131 1288724
+19 34 40 448268 107 185 2063916
+20 113 127 269325 87 144 1695520
+21 60 68 381711 169 301 915318
+22 60 64 553461 105 271 1824477
+23 43 44 149715 72 180 1642892
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 47
+us 293 315 804828
+ph 188 231 161500
+ru 96 96 11268
+br 92 135 4541851
+ca 58 58 9253
+gb 52 58 43014
+fr 33 34 60806
+nl 31 31 3514
+at 27 27 3186
+ch 23 23 2462
+de 18 19 63979
+in 17 23 48277
+zz 17 17 2006
+ro 11 11 1298
+pl 10 10 2023
+gr 10 10 1180
+cz 9 9 3771
+se 7 7 826
+es 7 7 826
+cn 6 6 672
+md 6 6 672
+au 6 6 708
+id 5 5 590
+mx 5 5 590
+vn 5 5 590
+py 1 1 118
+vg 4 4 457
+ir 4 4 472
+my 4 4 472
+fi 1 1 118
+pt 2 4 220079
+uz 3 3 354
+za 2 2 212
+ua 2 2 236
+eu 1 1 118
+sa 0 2 191324
+ma 3 4 340322
+it 3 3 354
+uy 1 1 118
+sv 3 3 354
+nz 2 2 236
+bg 3 3 354
+dk 2 2 236
+jp 1 1 118
+hr 0 1 101547
+pk 1 1 118
+no 3 3 354
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 25
+bingbot/ 793 17854828 20200229233650 81
+AhrefsBot/ 494 10925608 20200229210055 36
+CFNetwork 415 48970 20200229230721 0
+Applebot/ 392 235639 20200229235501 26
+bot[\s_+:,\.\;\/\\-] 239 23298 20200229203506 80
+SemrushBot/ 227 22808 20200228042723 110
+Googlebot/ 225 29001 20200229195441 27
+msnbot/ 182 465447 20200229151908 46
+Googlebot\-Image/ 152 2325649 20200227160015 0
+Python\-urllib/ 130 13780 20200225025836 0
+DotBot/ 112 1039870 20200228112224 17
+oBot/ 96 125013 20200225031244 3
+MJ12bot/ 74 8122 20200226015306 10
+no_user_agent 64 347402 20200229002713 0
+unknown 45 3790 20200225041929 45
+link 9 583625 20200227222003 5
+CCBot/ 8 883 20200223025850 1
+YandexBot/ 8 700 20200227000321 4
+BDCbot/ 6 354 20200213173026 0
+Feedfetcher\-Google 4 472 20200228101440 0
+Dalvik/ 4 3152 20200225070315 0
+nbot 3 0 20200227221821 0
+(firefox/)([0-9]\.|[0-1][0]\.) 2 212 20200214010126 0
+facebookexternalhit/ 2 121424 20200208155253 0
+Konqueror/ 1 118 20200224080458 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 16
+env 11 1250 0 0
+xml 40 16174 0 0
+gif 20 2360 0 0
+json 7 826 0 0
+js 36 236417 0 0
+jpg 61 6250075 0 0
+txt 7 826 0 0
+old 1 106 0 0
+Unknown 38 4128 0 0
+php 382 44327 0 0
+ini 1 118 0 0
+html 585 69184 0 0
+bak 2 212 0 0
+css 4 472 0 0
+jd 10 1180 0 0
+new 1 106 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 7
+/ads.txt 19 0 2242
+/media/spy.txt 2 0 236
+/ficheiros/conteudos/spy.txt 1 0 118
+/wp-content/plugins/ajax_multi_upload/readme.txt 1 0 118
+/wp-content/plugins/front-file-manager/readme.txt 1 0 118
+/wp-content/plugins/mac-dock-gallery/readme.txt 1 0 118
+/userfiles/file/spy.txt 1 0 118
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 19
+macosx6 7 7
+winlong 1 1
+macosx7 2 2
+ios_ipad 58 58
+macosx 3 2
+psp 1 1
+win7 70 57
+macosx9 2 2
+winunknown 2 0
+macosx12 1 1
+linux 302 260
+ios_iphone 21 18
+Unknown 115 109
+win10 557 507
+win8.1 9 9
+winxp 6 1
+macosx10 1 1
+linuxandroid 47 42
+winphone 1 0
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 80
+safari7.0.6 2 2
+safari13.0.4 3 1
+firefox68.0 281 281
+chrome78.0.3904.108 1 1
+chrome80.0.3987.87 6 5
+chrome79.0 8 8
+chrome63.0.3235.0 1 0
+chrome76.0.3809.132 38 38
+safari12.1.2 14 14
+chrome71.0.3578.99 2 1
+firefox58.0 31 31
+edge16 1 0
+firefox57.0 3 3
+msie8.0 1 1
+chrome59.0.3071.104 2 2
+chrome72.0.3626.121 2 2
+chrome78.0.3904.90 1 1
+netscape4.0 2 2
+chrome75.0.3770.100 3 3
+firefox45.0 1 1
+firefox72.0 2 1
+safari13.0.5 6 5
+chrome42.0.2311.90 10 10
+chrome78.0.3904.96 1 1
+chrome79.0.3945.130 12 4
+firefox24.0 2 2
+msie6.0 1 1
+chrome42.0.2311.152 3 2
+chrome35.0.1916.153 2 2
+webcollage 1 0
+firefox52.0 2 2
+chrome80.0.3987.106 2 0
+firefox62.0 175 175
+chrome66.0.3359.158 1 1
+chrome72.0.3602.2 2 2
+safari6.0.4 1 1
+Unknown 105 100
+safari 1 0
+chrome49.0.2623.75 6 6
+chrome80.0.3987.122 2 1
+iphone 12 12
+edge18 20 0
+chrome68.0.3440.75 1 1
+chrome79.0.3945.93 1 1
+firefox59.0 1 1
+firefox11.0 5 0
+chrome80.0.3987.99 8 7
+chrome36.0.1985.143 1 1
+edge15 1 0
+firefox28.0 103 61
+chrome67.0.3396.79 1 1
+msie9.0 25 25
+chrome64.0.3282.186 1 0
+chrome56.0.2896.3 15 10
+safari5.1 7 7
+safari12.0 43 43
+chrome80.0.3987.117 4 4
+safari1.2.4 1 1
+opera42.0.2393.94 1 1
+chrome75.0.3770.143 1 1
+firefox30.0 2 2
+firefox64.0 74 58
+chrome79.0.3945.116 1 1
+chrome46.0.2490.80 2 2
+chrome58.0.3029.110 1 1
+chrome80.0.3987.119 3 3
+firefox46.0 1 1
+chrome80.0.3987.116 2 1
+chrome36.0.1985.125 6 6
+chrome79.0.3945.136 18 16
+firefox53.0 1 1
+chrome78.0.3904.97 16 16
+chrome63.0.3239.132 3 3
+chrome78.0.3904.70 1 1
+msie11.0 4 0
+chrome78.0.3904.87 1 1
+chrome80.0.3987.100 1 0
+safari10.0 3 3
+opera36.0.2130.32 64 64
+mozilla 10 8
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 9
+webcollage/1.182 20200221130534
+Mozilla/5.0_(compatible;_NetcraftSurveyAgent/1.0;__info@netcraft.com) 20200229201829
+Mozilla/4.0 20200229080723
+Cpanel-HTTP-Client/1.0 20200201102455
+Mozilla/5.0_(compatible;_tracemyfile/1.0) 20200210142941
+WhatsApp/2.20.11_A 20200205221735
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20200201102701
+YahooCacheSystem;_YahooWebServiceClient 20200203073420
+python-requests/2.22.0 20200220090405
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+WhatsApp/2.20.11_A 20200205221735
+YahooCacheSystem;_YahooWebServiceClient 20200203073420
+python-requests/2.22.0 20200220090405
+Cpanel-HTTP-Client/1.0 20200201102455
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 715 796
+From1 2 2
+From2 23 58
+From3 333 343
+From4 5 7
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 6
+www_google_com_br 1 1
+www_google_com_hk 10 10
+br_search_yahoo_com 0 1
+nation 1 1
+bing 0 25
+www_google_com 11 20
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 234
+http://pinterest.com/pin/41447259048478579/ 17 17
+http://www.pinterest.com/pin/41447259048478579 7 7
+http://pinterest.com/pin/338262621991014135/ 6 6
+http://octadecyl.best 5 5
+http://arabophil.best 3 3
+http://counterermine.best 3 3
+http://ripeningly.best 3 3
+http://ottomanism.best 3 3
+http://looplet.best 3 3
+http://pinterest.com/pin/303570831113891452/ 3 3
+http://overcurrent.best 3 3
+http://isolated.best 2 2
+http://dissheathe.best 2 2
+http://www.pinterest.com/pin/529595237416177353 2 2
+http://aureateness.best 2 2
+http://thruv.best 2 2
+http://polysyllogism.best 2 2
+http://tuberiform.best 2 2
+http://gradationally.best 2 2
+http://kilmarnock.best 2 2
+http://elevenfold.best 2 2
+http://pinterest.com/pin/529595237416177353/ 2 2
+http://ropish.best 2 2
+http://dictation.best 2 2
+http://tormenta.best 2 2
+http://recut.best 1 1
+http://treacherous.best 1 1
+http://sociably.best 1 1
+http://camorra.best 1 1
+http://sixhaend.best 1 1
+http://inthrallment.best 1 1
+http://enray.best 1 1
+https://www.pinterest.co.kr 1 1
+http://anhydration.best 1 1
+http://telchines.best 1 1
+http://scansores.best 1 1
+http://calyciflorous.best 1 1
+http://hematosalpinx.best 1 1
+http://nonumbrellaed.best 1 1
+http://akeake.best 1 1
+http://awheel.best 1 1
+http://loftily.best 1 1
+http://yorkshireman.best 1 1
+http://dobbin.best 1 1
+http://stenoglossa.best 1 1
+http://jeziah.best 1 1
+http://predatoriness.best 1 1
+http://combustion.best 1 1
+http://ultracentenarianism.best 1 1
+http://hydrosulphate.best 1 1
+http://tartar.best 1 1
+http://orthognathus.best 1 1
+http://mareotic.best 1 1
+http://redifferentiate.best 1 1
+http://lepidosperma.best 1 1
+http://apteral.best 1 1
+http://groaning.best 1 1
+http://viperling.best 1 1
+http://unswell.best 1 1
+https://br.pinterest.com 1 3
+http://unterminated.best 1 1
+http://mejorana.best 1 1
+https://www.pinterest.com 1 1
+http://houtou.best 1 1
+http://pneumonitic.best 1 1
+http://scratchy.best 1 1
+http://cominform.best 1 1
+http://wagering.best 1 1
+http://brakemaker.best 1 1
+http://canalization.best 1 1
+http://digitaliphonetv.blogspot.com 0 2
+http://convocationist.best 1 1
+http://deutonymphal.best 1 1
+http://cortinarious.best 1 1
+http://talmudism.best 1 1
+http://sulphamino.best 1 1
+http://transnaturation.best 1 1
+http://warmthless.best 1 1
+http://raptorial.best 1 1
+http://cabinda.best 1 1
+http://strongyloplasmata.best 1 1
+http://thelalgia.best 1 1
+http://pinterest.com/pin/338262621991014137/ 1 1
+http://schwendenerian.best 1 1
+http://anglicization.best 1 1
+http://semicolon.best 1 1
+http://pollenigerous.best 1 1
+http://subectodermal.best 2 2
+http://cladothrix.best 1 1
+http://youngling.best 1 1
+http://unriddleable.best 2 2
+http://cris.best 1 1
+http://eruciform.best 2 2
+http://procapitalism.best 2 2
+http://waterway.best 1 1
+http://necrophorus.best 2 2
+http://playcraftsman.best 1 1
+http://nonsacrifice.best 2 2
+http://uninstructive.best 2 2
+http://nonarithmetical.best 2 2
+http://gens.best 1 1
+http://phoebean.best 1 1
+http://decimalize.best 2 2
+http://hydriodate.best 1 1
+http://reheboth.best 1 1
+http://pinterest.com/pin/302233824988432392/ 1 1
+http://vitiligo.best 2 2
+http://otocranial.best 1 1
+http://premeditative.best 1 1
+http://nonprelatical.best 2 2
+http://megalophonic.best 1 1
+http://stockman.best 1 1
+http://www.pinterest.com 1 1
+http://digress.best 1 1
+http://ungroomed.best 1 1
+http://unserrated.best 1 1
+http://unfunniness.best 1 1
+http://salpiglossis.best 1 1
+http://nonspeculation.best 1 1
+http://gegger.best 1 1
+http://www.pinterest.com/pin/654851602040070108 1 1
+http://hellenistic.best 1 1
+http://superfissure.best 1 1
+http://pitside.best 1 1
+http://nematophyton.best 2 2
+http://infraventral.best 1 1
+http://synartesis.best 1 1
+http://chirping.best 1 1
+http://digitaliphonetv.blogspot.com/2015/06/mini-cama-infantil-com-gavetas.html 0 6
+http://quintuplicate.best 1 1
+http://bathometer.best 1 1
+http://bletilla.best 1 1
+http://tremellineous.best 2 2
+http://bugologist.best 2 2
+http://bowla.best 2 2
+http://encave.best 2 2
+http://emendation.best 1 1
+http://rutile.best 1 1
+http://underhorsed.best 2 2
+http://pinterest.com/pin/460704236860824966/ 1 1
+http://ganocephalan.best 2 2
+http://raunge.best 1 1
+http://whalebacker.best 1 1
+http://pinterest.com/pin/828099450203189450/ 1 1
+http://biferous.best 1 1
+http://pinterest.com/pin/575827502333711569/ 1 1
+http://acquaintance.best 1 1
+http://accosted.best 1 1
+http://unrelentingness.best 1 1
+http://glaucine.best 1 1
+http://isethionate.best 1 1
+http://monothelete.best 2 2
+http://oscillariaceous.best 1 1
+http://precentorship.best 1 1
+http://unapproved.best 1 1
+http://turdinae.best 1 1
+http://headbander.best 1 1
+http://ulceromembranous.best 1 1
+http://levy.best 1 1
+http://puboiliac.best 1 1
+http://sulphydric.best 1 1
+http://www.pinterest.com/pin/319403798565252507 1 1
+http://molala.best 1 1
+http://detersiveness.best 1 1
+http://superbly.best 1 1
+http://outstretcher.best 2 2
+http://covassal.best 1 1
+http://balachong.best 1 1
+http://decemplicate.best 2 2
+http://wheelless.best 2 2
+http://weanyer.best 2 2
+http://solomonic.best 1 1
+http://unclipper.best 1 1
+http://productively.best 1 1
+http://autogiro.best 1 1
+http://gastroduodenotomy.best 1 1
+http://edrioasteroid.best 1 1
+http://thiocarbanilide.best 2 2
+http://protactic.best 1 1
+http://sealant.best 1 1
+http://panagiarion.best 2 2
+http://fellifluous.best 1 1
+http://predicament.best 1 1
+http://pyxis.best 1 1
+http://radicand.best 1 1
+http://wheedle.best 1 1
+http://quindecad.best 1 1
+http://ruckus.best 1 1
+http://arteriotome.best 1 1
+http://heeder.best 1 1
+http://scenical.best 1 1
+http://uberty.best 1 1
+http://unyieldingly.best 2 2
+http://unfooled.best 2 2
+http://overprotract.best 2 2
+http://triolein.best 2 2
+http://hepper.best 1 1
+http://crispine.best 1 1
+http://troposphere.best 1 1
+http://middlemanship.best 1 1
+http://prosecution.best 1 1
+http://churchiness.best 1 1
+http://thyreoarytenoideus.best 2 2
+https://www.pinterest.ca 1 1
+http://overchlorinate.best 2 2
+http://subimbricated.best 1 1
+http://secessional.best 2 2
+http://gonepoiesis.best 2 2
+http://tympana.best 1 1
+http://diatomaceous.best 1 1
+http://ungruff.best 1 1
+http://ruralization.best 2 2
+http://kernelly.best 1 1
+http://berrylike.best 1 1
+http://cerebron.best 1 1
+http://annoyment.best 1 1
+http://adversaria.best 2 2
+http://lamiger.best 2 2
+http://pinterest.com/pin/573716440025878146/ 1 1
+http://symptomatize.best 2 2
+http://skerrick.best 1 1
+http://incomposedly.best 2 2
+http://sulphonal.best 1 1
+http://versine.best 2 2
+http://quad.best 2 2
+http://untailorlike.best 1 1
+http://invidiousness.best 2 2
+http://tagula.best 2 2
+https://www.pinterest.cl 1 1
+http://arline.best 1 1
+http://unbedizened.best 1 1
+https://www.pinterest.es 1 1
+http://hepatoenteric.best 1 1
+https://www.pinterest.com.mx 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+206 43 5074
+301 66 16620
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 0
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 432
+49.149.106.136 188 231 161500 20200216215620
+168.62.57.38 64 64 6784 20200202170202
+179.213.74.151 26 26 3068 20200214224629
+198.27.81.94 24 24 2664 20200205215505
+185.39.10.69 21 21 2226 20200208220253
+179.213.68.143 17 17 2006 20200229230719
+158.69.158.101 17 17 3680 20200228184410
+95.211.211.232 12 12 1272 20200229192408
+148.72.153.208 11 11 1166 20200222205207
+51.132.8.239 10 16 35055 20200214183142
+129.146.174.219 10 16 35055 20200216065020
+103.82.235.2 10 15 1770 20200228212355
+150.136.238.223 10 16 35055 20200229145815
+94.158.246.250 8 8 1787 20200205170247
+62.210.140.151 8 8 1787 20200219133916
+62.210.88.225 8 8 1787 20200223012320
+192.169.216.153 6 6 708 20200219050709
+77.234.44.190 6 6 2514 20200202180455
+51.79.30.167 6 6 2514 20200209082304
+109.70.100.28 6 6 708 20200216172633
+185.220.101.29 6 6 708 20200216153127
+198.12.149.7 6 6 708 20200218210159
+148.72.153.211 6 6 636 20200224020143
+51.83.207.97 6 6 1575 20200225183015
+217.79.178.53 5 5 590 20200216235412
+47.91.229.187 3 3 354 20200218201624
+185.220.101.35 3 3 354 20200216125952
+69.12.72.190 0 1 118 
+176.123.5.250 1 1 118 20200210140550
+107.189.11.163 2 2 236 20200217010730
+162.214.21.81 3 3 354 20200218234246
+5.9.94.207 1 1 106 20200221222723
+178.62.64.61 1 1 118 20200216161502
+179.66.254.176 0 2 13710 
+104.248.40.59 3 3 354 20200219020833
+46.105.99.163 1 1 106 20200218235736
+66.249.85.23 0 1 45693 
+35.223.236.180 3 3 354 20200218200104
+93.137.190.50 0 1 101547 
+54.245.39.148 1 1 118 20200215030211
+212.16.104.33 1 1 118 20200216134118
+199.249.230.110 1 1 118 20200211064420
+68.183.29.98 3 3 354 20200219024658
+177.80.91.36 1 1 118 20200224110525
+91.96.77.239 1 1 118 20200202041903
+188.213.49.176 1 1 118 20200216233218
+185.220.100.246 1 1 118 20200206002640
+79.148.177.147 1 1 118 20200210131255
+191.245.67.8 1 1 118 20200223184007
+132.255.234.9 1 1 118 20200207192749
+35.247.168.219 3 3 354 20200219044013
+184.73.9.73 1 1 0 20200218130040
+185.220.100.242 4 4 472 20200216222646
+185.220.101.47 4 4 472 20200217025342
+149.56.253.71 1 1 118 20200202115750
+187.119.224.106 1 1 118 20200216121208
+80.4.151.140 3 3 354 20200219053402
+159.138.151.71 1 1 118 20200227222004
+107.189.10.42 1 1 118 20200216124921
+93.124.39.2 2 2 212 20200202063244
+85.139.197.190 1 1 118 20200222153842
+34.90.11.124 1 1 174 20200208074143
+191.215.161.234 1 1 118 20200201114651
+51.77.52.216 2 2 236 20200210113516
+201.4.20.149 0 1 87181 
+189.17.21.162 0 2 162654 
+196.52.43.76 1 1 106 20200220093240
+125.214.50.18 2 2 236 20200213153421
+212.47.229.4 2 2 236 20200217000048
+23.129.64.201 1 1 118 20200216150822
+45.14.148.98 1 1 118 20200217011452
+51.235.202.94 0 1 95662 
+185.220.101.2 1 1 118 20200211073808
+177.222.170.120 0 1 101942 
+104.244.76.189 1 1 118 20200216225901
+179.174.49.192 4 4 472 20200207104036
+51.15.117.50 1 1 118 20200208091257
+185.220.100.254 2 2 236 20200217055001
+189.114.53.192 1 1 118 20200216203339
+144.217.255.89 2 2 236 20200210160304
+177.76.221.236 1 1 118 20200221084051
+201.1.29.9 0 1 273996 
+109.70.100.31 2 2 236 20200217011339
+204.18.188.232 1 1 118 20200204100009
+132.148.240.164 3 3 354 20200218223707
+35.243.115.20 3 3 354 20200219042636
+35.237.23.151 1 1 118 20200201230759
+193.128.108.245 1 1 106 20200218083759
+185.220.101.76 2 2 236 20200208141010
+104.248.63.183 1 1 118 20200215040551
+157.230.114.229 3 3 354 20200218204657
+177.45.205.238 0 1 200872 
+217.170.205.107 2 2 236 20200217043721
+89.163.239.216 1 1 118 20200216232306
+204.85.191.9 1 1 118 20200205233009
+213.179.54.190 1 1 118 20200216211816
+46.166.139.111 2 2 236 20200211072402
+185.220.100.255 4 4 472 20200211132708
+209.97.175.228 3 3 354 20200219004939
+188.164.198.99 3 3 354 20200219032256
+45.136.108.44 2 2 224 20200228134121
+185.207.139.2 1 1 118 20200211104222
+179.205.173.3 1 1 118 20200225194914
+192.160.102.166 1 1 118 20200211101226
+177.36.8.226 3 3 354 20200218190201
+23.129.64.209 1 1 118 20200210070949
+192.99.39.157 3 3 354 20200219060230
+199.249.230.121 1 1 118 20200208153642
+189.74.180.200 1 1 118 20200225210833
+35.193.18.90 1 1 118 20200206114300
+198.98.55.119 1 1 118 20200216230859
+187.190.178.143 1 1 118 20200224121726
+51.15.111.29 1 1 118 20200216193424
+188.166.221.111 3 3 354 20200218191649
+66.133.109.36 2 2 214 20200201102701
+189.40.83.77 0 1 82918 
+23.129.64.188 1 1 118 20200217052842
+185.220.100.251 4 4 472 20200217011020
+185.195.237.25 1 1 118 20200210153720
+179.254.213.166 1 1 118 20200204115115
+138.0.102.72 0 1 109387 
+3.14.255.131 2 2 214 20200201102701
+179.235.221.37 0 1 45693 
+88.23.83.107 2 2 236 20200227084114
+102.78.170.101 1 1 118 20200218061947
+73.101.56.65 1 1 118 20200226230117
+109.70.100.27 1 1 118 20200205220740
+185.220.101.61 1 1 118 20200217030030
+157.230.55.177 3 3 354 20200218235938
+80.95.45.238 2 2 212 20200226111503
+62.102.148.69 4 4 472 20200216234418
+66.249.83.221 2 2 236 20200228043543
+87.120.37.79 1 1 118 20200210074155
+198.50.253.44 1 1 118 20200216180739
+138.121.27.239 0 1 45693 
+185.220.100.247 2 2 236 20200210132321
+185.129.62.62 1 1 118 20200205205805
+2.80.48.90 0 1 101942 
+158.174.122.199 2 2 236 20200216205924
+170.231.29.14 1 1 118 20200226141748
+107.189.11.84 1 1 106 20200205205255
+149.56.101.239 3 3 354 20200219015429
+87.162.161.144 1 1 118 20200208123846
+104.248.43.72 3 3 354 20200218194637
+138.197.200.113 1 1 118 20200229175554
+185.220.100.243 2 2 236 20200211132358
+62.171.133.250 2 2 236 20200217010631
+77.247.181.165 2 2 236 20200210090701
+185.121.69.14 1 1 118 20200205223858
+79.233.115.122 0 1 61867 
+223.111.150.12 3 3 318 20200229080723
+193.218.118.90 1 1 118 20200211112046
+165.225.214.123 0 1 45693 
+177.205.231.73 1 1 118 20200209080411
+23.129.64.206 1 1 118 20200211090651
+168.194.161.53 1 1 118 20200215201503
+149.129.97.194 1 1 118 20200202044322
+142.93.215.121 1 1 118 20200229160326
+66.249.88.65 0 1 6855 
+185.220.101.59 4 4 472 20200211133635
+187.24.193.111 1 1 118 20200213134411
+171.25.193.234 1 1 118 20200211110647
+66.85.45.206 1 1 118 20200216131514
+62.210.140.4 1 1 118 20200228233823
+177.181.176.70 1 1 118 20200219132709
+185.220.101.77 3 3 354 20200216220011
+181.120.139.129 1 1 118 20200213154732
+104.244.76.245 2 2 236 20200208170021
+69.4.82.204 1 1 118 20200217041854
+167.71.220.148 3 3 354 20200219023447
+177.19.248.109 0 1 109387 
+200.162.250.209 0 1 45693 
+179.95.206.41 0 1 273996 
+45.64.1.51 1 1 118 20200224131931
+177.220.173.112 1 1 118 20200201173044
+192.42.116.14 1 1 118 20200211105510
+66.102.6.62 1 1 118 20200213032712
+128.199.58.60 3 3 354 20200219035748
+66.249.85.24 1 2 274114 20200213131209
+5.199.130.188 1 1 118 20200216130944
+162.241.54.65 2 2 128 20200201102455
+35.200.161.138 1 1 118 20200221145311
+116.62.49.96 1 1 118 20200227135858
+66.249.88.95 0 2 13710 
+189.40.68.207 1 1 118 20200217212449
+86.126.67.84 1 1 118 20200209090803
+178.128.48.87 4 4 472 20200201131053
+159.89.48.237 3 3 354 20200218211830
+37.28.154.68 1 1 118 20200217052537
+109.70.100.24 5 5 590 20200217043207
+34.90.15.157 1 1 174 20200210142941
+23.129.64.225 1 1 118 20200210113445
+201.48.132.241 0 4 259420 
+212.47.244.208 3 3 354 20200219041146
+64.233.172.219 0 1 45693 
+85.241.123.78 1 1 118 20200213203424
+178.128.146.87 4 4 472 20200202142624
+189.217.26.230 1 1 118 20200216151342
+165.227.126.34 1 1 106 20200229201829
+204.8.156.142 1 1 118 20200211065607
+85.133.220.134 3 3 354 20200218203147
+185.216.32.130 1 1 118 20200206021437
+104.236.75.62 1 1 118 20200213113226
+177.228.53.199 1 1 118 20200210193857
+189.46.145.234 0 1 99570 
+104.248.58.131 1 1 118 20200217100727
+85.140.22.124 1 1 118 20200218144717
+45.66.35.35 2 2 236 20200216173935
+104.248.147.78 4 4 472 20200202100508
+189.5.100.252 2 2 236 20200208104753
+177.76.103.129 0 1 68737 
+191.33.160.221 1 1 118 20200212133640
+185.220.101.72 2 2 236 20200211051229
+198.98.53.61 1 1 118 20200205203717
+157.245.233.164 3 3 354 20200219022141
+185.220.101.65 2 2 236 20200216193752
+178.165.72.177 1 1 118 20200206033944
+185.220.101.70 2 2 236 20200211065446
+201.22.114.186 1 1 118 20200211184415
+177.239.41.197 1 1 118 20200209063852
+87.118.116.103 2 2 236 20200216195106
+196.52.43.73 1 1 106 20200221033817
+23.129.64.229 1 1 118 20200217010958
+178.17.171.102 1 1 118 20200208151435
+199.249.230.102 1 1 118 20200211090241
+5.173.10.167 1 1 118 20200209181846
+170.247.83.244 1 1 118 20200214114508
+199.249.230.122 1 1 118 20200216153153
+187.255.53.242 0 1 273996 
+51.254.18.52 1 1 118 20200208160027
+165.22.53.1 3 3 354 20200219012345
+201.45.186.82 1 1 118 20200211095826
+34.87.100.216 3 3 354 20200218225330
+169.197.97.34 1 1 118 20200205225420
+209.141.47.99 1 1 118 20200210140024
+185.220.100.244 3 3 354 20200217045439
+45.227.253.82 1 1 118 20200210213550
+142.44.246.156 2 2 236 20200217031330
+66.249.93.220 1 1 118 20200205132635
+128.31.0.13 2 2 236 20200217032735
+144.91.106.71 1 1 118 20200217001727
+209.90.225.218 2 2 236 20200222165455
+51.79.53.145 1 1 118 20200216131811
+189.59.61.150 1 1 118 20200224214950
+201.81.36.254 0 1 45693 
+185.220.101.24 3 3 354 20200217003205
+45.55.82.44 1 1 118 20200225103755
+167.88.7.134 3 3 354 20200216125539
+51.89.213.82 1 1 118 20200216144940
+199.249.230.108 2 2 236 20200211093318
+187.4.54.16 0 1 55274 
+201.175.156.82 1 1 118 20200206004401
+187.40.61.72 0 1 101942 
+128.199.171.89 1 1 118 20200216162052
+179.217.1.137 0 2 101942 
+162.247.74.216 3 3 354 20200217012502
+54.39.152.58 1 1 118 20200211115506
+104.244.78.233 1 1 118 20200210162911
+45.165.177.120 3 3 354 20200226190517
+18.188.102.147 1 1 118 20200226151144
+66.230.230.230 2 2 236 20200216235358
+104.244.74.97 1 1 118 20200217045346
+193.118.34.130 1 1 118 20200216213519
+23.102.50.91 4 4 472 20200201075545
+201.5.68.216 1 1 118 20200227200901
+194.61.24.94 1 1 118 20200228201545
+54.36.108.162 4 4 472 20200216210629
+94.102.51.78 2 2 236 20200208115439
+191.56.23.160 0 1 45693 
+104.244.74.47 2 2 236 20200211124924
+23.100.232.233 2 2 236 20200206024855
+199.249.230.113 1 1 118 20200206004135
+206.189.68.222 4 4 472 20200202011839
+82.65.13.126 0 1 55274 
+199.249.230.109 2 2 236 20200217030641
+201.18.18.171 0 1 144665 
+84.54.118.70 3 3 354 20200219001603
+159.138.159.153 1 1 118 20200209154521
+179.131.255.251 1 1 118 20200205013606
+5.135.177.2 3 3 354 20200219052023
+51.15.1.221 1 1 118 20200208083631
+185.220.101.75 1 1 118 20200210075946
+195.176.3.20 1 1 118 20200208154730
+178.17.170.135 1 1 118 20200208135507
+190.86.109.41 3 3 354 20200217230500
+52.57.25.74 4 4 472 20200201211452
+179.100.22.197 0 1 45693 
+185.220.101.62 1 1 118 20200217015803
+167.172.236.207 1 1 118 20200205134657
+191.189.8.229 0 1 45693 
+54.37.121.239 3 3 354 20200219034406
+187.123.1.105 1 1 118 20200211115718
+201.76.186.110 1 1 118 20200210112734
+177.37.239.98 1 1 118 20200214105436
+85.243.161.85 0 1 117901 
+185.220.102.4 2 2 236 20200210135812
+193.169.145.66 2 2 236 20200217041132
+18.27.197.252 1 1 118 20200210143511
+179.213.143.69 1 1 118 20200225202856
+164.132.98.229 3 3 354 20200218175947
+109.70.100.19 3 3 354 20200217030750
+200.229.237.154 0 2 91386 
+37.255.133.209 1 1 118 20200204111641
+185.220.101.58 1 1 118 20200217044433
+162.247.72.199 1 1 118 20200210102743
+183.91.11.75 3 3 354 20200218220510
+178.175.148.44 1 1 106 20200205204948
+185.100.86.128 1 1 118 20200206041443
+5.199.135.107 1 1 118 20200211080954
+45.188.218.233 0 1 45693 
+216.218.134.12 1 1 118 20200217042045
+51.68.214.45 1 1 118 20200208114857
+157.245.74.244 3 3 354 20200219003230
+162.247.73.192 1 1 118 20200216201124
+130.185.250.76 1 1 118 20200211065431
+185.220.101.73 1 1 118 20200216134117
+185.4.132.135 1 1 118 20200206043900
+109.70.100.30 1 1 118 20200217031908
+131.0.31.16 1 1 118 20200218164809
+177.82.210.150 0 1 291552 
+23.129.64.214 1 1 118 20200210100234
+81.16.33.31 1 1 118 20200210143240
+67.205.31.136 3 3 354 20200219054807
+46.165.245.154 4 4 472 20200217035405
+35.230.58.15 1 1 118 20200201230735
+109.70.100.29 1 1 118 20200208082731
+210.52.224.26 1 1 118 20200211152924
+51.255.45.144 1 1 118 20200210100904
+195.154.62.232 2 2 212 20200203002729
+198.251.89.80 1 1 118 20200216154929
+91.92.109.43 1 1 118 20200210074047
+110.4.45.88 3 3 354 20200218222115
+185.220.100.250 1 1 118 20200211062324
+209.141.34.95 1 1 118 20200206012059
+189.115.181.138 0 1 328758 
+139.59.5.179 3 3 354 20200219033530
+23.129.64.200 1 1 118 20200206034258
+185.225.69.60 1 1 118 20200205194832
+178.175.148.37 1 1 106 20200206013428
+167.114.200.140 3 3 1257 20200227202018
+13.251.154.200 1 1 118 20200229193737
+179.189.246.102 0 1 60712 
+185.220.103.4 2 2 236 20200216205119
+46.232.251.191 1 1 118 20200211091922
+18.202.57.169 1 1 118 20200229212931
+23.129.64.181 1 1 118 20200216230537
+177.107.31.230 1 1 118 20200217215456
+177.79.35.227 1 1 118 20200224231620
+95.152.2.83 1 1 106 20200204075938
+144.217.60.211 1 1 118 20200208113553
+210.52.224.19 1 1 118 20200227231512
+45.6.220.38 1 1 118 20200228191253
+169.197.112.102 2 2 236 20200205230400
+45.227.255.224 2 2 212 20200224074540
+185.153.198.230 1 1 118 20200207042414
+185.34.33.2 1 1 118 20200208165157
+185.38.175.71 1 1 118 20200208102620
+95.211.230.211 2 2 236 20200216200843
+167.99.212.214 1 1 118 20200202105311
+103.228.156.98 1 1 118 20200219062930
+51.89.23.74 1 1 118 20200216135200
+177.66.195.197 1 1 118 20200217190147
+185.220.101.57 1 1 118 20200216141757
+5.61.32.96 1 1 118 20200217030700
+100.35.173.154 1 1 118 20200220010231
+195.154.179.3 1 1 118 20200216230317
+186.224.66.15 0 2 91386 
+185.220.101.79 1 1 118 20200211053819
+185.244.39.233 1 1 118 20200205210741
+109.70.100.32 4 4 472 20200217042348
+185.220.101.23 1 1 118 20200208165948
+176.10.107.180 1 1 118 20200216155846
+31.14.73.63 4 4 457 20200220090405
+179.35.116.123 0 1 273996 
+209.141.40.201 1 1 118 20200205204412
+51.253.47.19 0 1 95662 
+201.22.175.186 1 1 118 20200208092629
+187.32.142.161 0 1 60712 
+185.220.101.71 3 3 354 20200216153128
+109.70.100.26 3 3 354 20200216183832
+5.62.49.25 3 3 696 20200220034229
+141.98.254.225 3 3 354 20200216210124
+177.139.110.193 1 1 118 20200215144931
+139.59.59.75 3 3 354 20200218193214
+185.220.100.240 2 2 236 20200210155215
+131.0.216.75 0 1 368078 
+142.93.108.189 3 3 354 20200218232548
+185.220.101.68 1 1 118 20200206004922
+46.101.112.205 3 3 354 20200219045453
+167.60.5.155 1 1 118 20200211092359
+186.214.248.94 0 1 67701 
+82.137.37.51 3 3 354 20200218181807
+23.129.64.208 1 1 118 20200208113813
+185.220.101.25 2 2 236 20200216174357
+179.249.6.145 1 1 118 20200228153649
+200.18.44.21 0 1 55274 
+103.229.72.99 3 3 354 20200218213329
+64.233.172.217 1 1 118 20200221210627
+201.22.170.114 1 1 118 20200213113859
+143.137.183.233 1 1 118 20200204094647
+178.175.148.25 1 1 106 20200208080520
+143.0.177.25 1 1 118 20200212081028
+91.121.183.15 1 1 106 20200225041912
+167.99.73.144 3 3 354 20200218230957
+185.220.100.249 1 1 118 20200208090942
+77.234.44.180 3 3 1257 20200202171329
+186.220.197.166 1 1 118 20200216141936
+179.159.57.241 1 1 118 20200218195150
+89.163.143.8 1 1 118 20200210133325
+23.129.64.185 2 2 236 20200206041823
+66.249.88.121 0 1 6855 
+90.174.5.76 1 1 118 20200223120843
+179.214.179.77 1 1 118 20200218004806
+77.243.61.193 1 1 118 20200220211007
+189.57.62.146 1 1 118 20200201233524
+62.102.148.68 2 2 236 20200216182631
+185.4.135.135 1 1 118 20200210120413
+189.113.74.31 1 1 118 20200207090012
+67.195.177.80 0 1 265045 
+45.137.184.71 2 2 236 20200211143243
+45.238.244.28 0 1 339992 
+188.166.233.216 3 3 354 20200218184751
+200.170.76.150 1 1 118 20200209200058
+23.129.64.156 1 1 118 20200206030239
+66.249.83.222 1 1 118 20200225050218
+91.250.242.12 3 3 354 20200216215223
+185.220.100.248 1 1 118 20200211125926
+177.79.114.186 1 1 118 20200203210627
+23.129.64.192 1 1 118 20200216130040
+167.86.94.107 1 1 118 20200210084944
+185.220.101.74 3 3 354 20200216195510
+192.42.116.26 1 1 118 20200217002528
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 29
+20200201 24 29 259112 12
+20200202 107 108 60983 18
+20200203 4 8 333190 3
+20200204 6 13 453956 6
+20200205 64 67 67558 32
+20200206 43 46 399529 34
+20200207 6 6 708 5
+20200208 69 70 208806 48
+20200209 17 17 3812 10
+20200210 53 54 374388 52
+20200211 52 60 570684 51
+20200212 6 8 107133 5
+20200213 11 14 321105 9
+20200214 15 25 555213 6
+20200215 168 200 430676 8
+20200216 110 131 324598 79
+20200217 43 47 425336 40
+20200218 79 83 442263 33
+20200219 83 85 106417 29
+20200220 13 13 1849 7
+20200221 5 7 124577 5
+20200222 14 15 1638 4
+20200223 11 13 377684 4
+20200224 12 12 1332 7
+20200225 15 15 2625 10
+20200226 9 10 110437 7
+20200227 9 12 190113 7
+20200228 10 11 275140 10
+20200229 20 27 96899 10
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+0s-30s 532
+15mn-30mn 4
+30s-2mn 4
+5mn-15mn 4
+30mn-1h 5
+2mn-5mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 211
+/wp-login.php 137 16058 64 22
+/ 115 12934 62 45
+/xmlrpc.php 62 7136 1 54
+/moveis-infantis/camas/camas-altas/ 50 5900 37 37
+/tag/quartos-de-adolescente/ 39 4602 35 35
+/index.php 37 4330 0 1
+/tag/quartos-de-menina/ 25 2950 24 24
+/wp-includes/wlwmanifest.xml 13 13000 0 0
+/.env 11 1250 3 5
+/wp/ 10 1060 0 0
+/administrator/index.php 10 1084 0 0
+/wordpress/ 10 1060 0 0
+/components/com_jbcatalog/libraries/jsupload/server/php 10 1180 0 0
+/blog/ 10 1060 0 2
+/tag/cama-safari/ 9 1062 9 9
+/administrator/components/com_extplorer/uploadhandler.php 8 944 0 0
+/projetos-para-quartos/quartos-2-6/ 8 944 8 8
+/blog/administrator/index.php 8 848 0 0
+/empresa/loja/ 8 944 7 8
+/administrator/ 8 944 0 0
+/vendor/phpunit/phpunit/build.xml 8 944 1 0
+/administrator/components/com_rokdownloads/assets/uploadhandler.php 8 944 0 0
+/joomla/administrator/index.php 8 848 0 1
+/administrator/language/en-GB/install.xml 7 826 0 0
+/plugins/system/debug/debug.xml 7 826 0 0
+/moveis-infantis/acessorios/ 3 354 3 3
+/libraries/jscripts/kcfinder/upload/files/up.php.jd 1 118 0 0
+/moveis-infantis/camas/ 5 590 5 5
+/wp-content/plugins/omni-secure-files/plupload/examples/upload.php 1 118 1 1
+/wp-content/plugins/blaze-slide-show-for-wordpress/js/swfupload/js/upload.php 1 118 1 1
+/projetos-para-quartos/ 6 708 6 6
+/blogs/wp-login.php 1 106 0 0
+/category/edredons-e-almofadas/ 4 472 4 4
+/inauguracao-da-loja-via-parque/ 6 708 6 6
+/category/bercos-2/ 4 472 4 4
+/moveis-infantis/camas/mini-cama/ 5 590 5 5
+/projetos-para-quartos/quartos-bebe/ 3 354 3 3
+/wp/wp-login.php 1 106 0 0
+/fale-conosco/fale-com-a-intercasa/ 4 472 4 4
+/server/php/ 3 354 2 2
+/public/upload_nhieuanh/server/php/files/up.php 1 118 0 0
+/fckeditor/editor/filemanager/connectors/php/connector.php 1 118 0 0
+/projetos-para-quartos/quartos-12-18/ 6 708 6 6
+/nova-linha-intercasa-de-quartos-de-bebe/ 4 472 4 4
+/ppqdphpinfo.php 1 106 1 0
+/sites/wp-login.php 1 106 0 0
+/info/wp-login.php 1 106 0 0
+/category/armarios-2/ 2 236 2 2
+/AndroidFileUpload/uploads/up.php 1 118 0 0
+/AndroidFileUpload/fileUpload.php 1 118 0 0
+/server/php/files/up.php 1 118 0 0
+/application/configs/application.ini 1 118 0 0
+/administrator/wp-admin/plugin-install.php 2 212 0 0
+/moveis-infantis/camas/camas-tematicas/ 6 708 6 6
+/portal/wp-login.php 1 106 0 0
+/tag/quarto-de-bebe-2/ 5 590 5 5
+/profile/register/ 1 118 1 0
+/moveis-infantis/mesas-e-bancadas/ 6 708 6 5
+/tag/liquidacao/ 3 354 3 3
+/libraries/jscripts/kcfinder/upload.php 1 118 0 0
+/tag/quartos-de-menina 2 236 2 2
+/wp-content/plugins/slide-show-pro/js/swfupload/js/upload.php 1 118 1 1
+/tpl/plugins/upload9.1.0/server/php/files/up.php 1 118 0 0
+/inauguracao-da-loja-virtual-para-as-regioes-metropolitanas-rj-e-sp/ 3 354 3 3
+/adminside/server/php/ 1 118 0 0
+/configuration.php-bak 1 106 0 0
+/tag/quarto-das-criancas/ 7 826 7 7
+/category/camas-2/ 6 708 6 6
+/configuration.php_bak 1 106 0 0
+/fckeditor/editor/filemanager/connectors/php/upload.php 7 826 0 0
+/kcfinder-2.51/upload.php 1 118 0 0
+/wp-json/wp/v2/users 1 106 0 1
+/configuration.php.bak 1 106 0 0
+/vehiculo_photos/server/php/ 1 118 0 0
+/wp-admin/plugin-install.php 4 424 0 0
+/scripts/jquery/kcfinder/upload.php 1 118 0 0
+/configuration.php 1 106 1 0
+/tag/quartos-de-menino/ 1 106 1 1
+/category/mesas-e-bancadas/ 4 472 4 4
+/assets/admin/ckeditor/kcfinder/upload.php 1 118 0 0
+/tag/almofadas/ 3 342 3 3
+/lancamento-intercasa-cama-provencal/ 4 472 4 4
+/assets/js/mylibs/kcfinder/upload.php 1 118 0 0
+/configuration.php.new 1 106 0 0
+/web/image/Images/up.php 1 118 0 0
+/tag/quarto-de-criancas/ 5 590 5 5
+/moveis-infantis/edredons-e-almofadas/ 4 472 4 4
+/imprensa/ 4 472 4 4
+/tag/bercos-3/ 2 236 2 2
+/configuration.php_new 1 106 0 0
+/images/stories/up.php 4 472 0 0
+/wp-content/plugins/mm-forms/includes/doajaxfileupload.php 1 118 1 1
+/hwwfphpinfo.php 1 106 0 1
+/category/beliches-2/ 5 590 5 5
+/lancamento-da-nova-colecao-de-almofadas-e-colchas-super-herois/ 2 236 2 2
+/tag/quartos-de-crianca/ 2 236 2 2
+/configuration.php.old 1 106 0 0
+/wp-content/plugins/mm-forms-community/includes/doajaxfileupload.php 1 118 1 1
+/press/wp-login.php 1 106 0 0
+/dup-installer/main.installer.php 1 106 1 1
+/images/block/up.php 1 118 0 0
+/wp-admin/ 1 0 1 1
+/moveis-infantis/bicamas/ 2 236 2 2
+/wp-content/plugins/iphorm-form-builder/includes/captcha.php 2 348 2 2
+/assets/plugins/ckeditor/kcfinder/upload.php 1 118 0 0
+/configuration.php_old 1 106 0 0
+/moveis-infantis/armarios/ 4 460 4 4
+/tag/quarto-de-menino-2/ 4 472 4 4
+/administrator/wp-login.php 2 224 2 1
+/js/ckeditor/kcfinder/upload.php 1 118 0 0
+/wp-content/plugins/contus-video-galleryversion-10/upload1.php 1 118 1 1
+/administrator/manifests/files/joomla.xml 2 236 1 0
+/novidades-para-quartos-infanto-juvenis-da-intercasa/ 1 118 1 1
+/category/adesivos-para-quartos/ 5 578 4 5
+/wordpress/wp-admin/setup-config.php 1 118 0 0
+/quartos-com-beliche/ 4 472 4 4
+/administrator 2 212 0 0
+/blog/wp-login.php 1 106 0 0
+/moveis-infantis/sofas-cama/ 5 590 5 5
+/WordPress_Files/All_Users/wp-content/plugins/Enigma2.php 2 236 2 2
+/assets/global/plugins/jquery-file-upload/server/php/ 1 118 0 0
+/language/en-GB/en-GB.xml 2 236 0 0
+/fim-da-liquidacao-intercasa/ 6 708 6 6
+/english/wp-login.php 1 106 0 1
+/configuration.bak 1 106 0 0
+/wp-content/plugins/contus-hd-flv-player/uploadVideo.php 1 118 1 1
+/web/wp-login.php 1 106 0 0
+/assets/ckeditor/kcfinder/upload.php 1 118 0 0
+/administrator/components/com_alberghi/upload.alberghi.php 2 236 0 0
+/wp-json/wp/v2/users/ 7 742 0 0
+/empresa/quem-somos/ 3 354 3 3
+/moveis-infantis/treliches/ 4 472 4 4
+/configuration.php_Old 1 106 0 0
+/admin/login.php 3 516 1 0
+/scripts/jquery/kcfinder/upload/files/up.php.jd 1 118 0 0
+/tag/adesivos/ 4 460 4 4
+/ckeditor/kcfinder/upload.php 1 118 0 0
+/sitio/wp-login.php 1 106 0 0
+/demo/wp-login.php 1 106 0 0
+/novidade-da-intercasa-para-o-dia-das-criancas/ 3 354 3 3
+/moveis-infantis/camas/cama-dossel/ 1 118 1 1
+/site/wp-login.php 1 106 0 0
+/wp-admin/admin-ajax.php 1 106 1 1
+/novidade-intercasa-para-quarto-dos-meninos/ 5 590 4 5
+/assets/js/mylibs/kcfinder/upload/files/up.php.jd 1 118 0 0
+/.git/config 1 118 1 1
+/404.php 1 118 1 1
+/kcfinder-2.51/upload/files/up.php.jd 1 118 0 0
+/assets/ckeditor/kcfinder/upload/files/up.php.jd 1 118 0 0
+/admin/ckeditor/kcfinder/upload/files/up.php.jd 1 118 0 0
+/plugins/fckeditor/editor/filemanager/connectors/php/upload.php 1 118 0 0
+/plugins/content/s5_media_player/helper.php 5 578 1 0
+/tag/decoracao-2/ 4 472 4 4
+/components/com_sexycontactform/fileupload/ 6 708 0 0
+/novidades/ 5 590 5 5
+/wordpress/wp-login.php 1 106 0 0
+//ldskflks 2 236 2 2
+/admin/ckeditor/kcfinder/upload.php 1 118 0 0
+/admin/ 4 1884 2 2
+/comecou-a-liquidacao-intercasa/ 4 472 4 4
+/home/wp-login.php 1 106 0 0
+/js/ckeditor/kcfinder/upload/files/up.php.jd 1 118 0 0
+/news/wp-login.php 1 106 0 0
+/moveis-infantis/comodas/ 4 472 4 4
+/tag/comodas/ 5 590 5 5
+/.well-known/acme-challenge/_LET6IVMMW2094X1ZB0JN8RIR3ZMR4WW 1 64 1 0
+/tag/cama-2/ 5 590 5 5
+/components/com_hdflvplayer/hdflvplayer/download.php 5 578 0 0
+/category/quartos/ 5 590 5 5
+/components/ 1 118 0 1
+/moveis-infantis/camas/cama-max/ 4 472 4 4
+/assets/global/plugins/jquery-file-upload/server/php/files/up.php 1 118 0 0
+/vehiculo_photos/server/php/files/up.php 1 118 0 0
+/assets/plugins/ckeditor/kcfinder/upload/files/up.php.jd 1 118 0 0
+/wp-content/plugins/smart-slide-show/js/swfupload/js/upload.php 1 118 1 1
+/.well-known/acme-challenge/ZFZZvd3N5kDfxXphhitRNTLGVVn54CNQwlKQd96wTIY 2 214 0 2
+/ckeditor/kcfinder/upload/files/up.php.jd 1 118 0 0
+/components/com_sexycontactform/fileupload/files/up.php 2 236 0 0
+/cama-com-escorrega-no-tema-futebol/ 3 354 3 3
+/administrator/wp-json/wp/v2/users 1 106 0 1
+/tag/ipad/ 4 472 4 4
+/old/wp-login.php 1 106 0 0
+/moveis-infantis/camas/primeira-cama/ 3 354 3 3
+/moveis-infantis/bercos/ 5 590 5 5
+/.well-known/acme-challenge/4QMT4_DABDHLTA_MC_K4V4_M--A4J_00 1 64 0 1
+/.well-known/acme-challenge/uhydOPS6sO6kp1x3WZ7n3QAosC9RiAV-9cet66lDPwg 2 214 2 0
+/tag/intercasa-2/ 6 708 6 6
+/wp-content/plugins/gallery-plugin/upload/php.php 2 236 2 2
+/phpmyadmin 1 106 1 1
+/moveis-infantis/camas/camas-com-escorrega/ 5 590 5 5
+/wpmu/wp-login.php 1 106 0 0
+/category/almofadas/ 5 590 5 5
+/wp-json/oembed/1.0/embed 7 742 0 0
+/moveis-infantis/beliches/ 5 590 5 5
+/tag/dicas-para-decorar/ 2 236 2 2
+/administrator/help/en-GB/toc.json 7 826 0 0
+/components/com_jbcatalog/libraries/jsupload/server/php/files/up.php 2 236 0 0
+/assets/admin/ckeditor/kcfinder/upload/files/up.php.jd 1 118 0 0
+/tpl/plugins/upload9.1.0/server/php/up.php 1 118 0 0
+/moveis-infantis/camas/cama-individual/ 4 472 4 3
+/themes/dashboard/assets/plugins/jquery-file-upload/server/php/ 1 118 0 0
+/category/treliches/ 3 354 3 3
+/app/etc/local.xml 1 106 0 1
+/web/image/upload.php 1 118 0 0
+/dicas-praticas-de-como-deixar-o-quarto-das-criancas-organizado/ 7 826 7 7
+/new/wp-login.php 1 106 0 0
+/wp/wp-admin/setup-config.php 1 118 0 1
+/tpl/plugins/upload9.1.0/server/php/ 3 354 0 0
+/wp-admin/setup-config.php 1 103 0 0
+/public/upload_nhieuanh/server/php/_index.php 1 118 0 0
+/en/wp-login.php 1 106 0 0
+END_SIDER

@@ -1,0 +1,39 @@
+<modification>
+	<id>Combo SEO url</id>
+	<version>1.5.x</version>
+	<vqmver>2.3.x</vqmver>
+	<author>Fanha Giang</author>
+	<!-- begin SEF -->
+	<file name="catalog/controller/common/seo_url.php">
+		<operation>
+			<search position="before"><![CDATA[if ($url[0] == 'category_id') {]]></search>
+				<add><![CDATA[
+					if ($url[0] == 'combo_id') {
+						$this->request->get['combo_id'] = $url[1];
+					}
+				]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[} elseif ($key == 'path') {]]></search>
+			<add><![CDATA[ 
+				} elseif (isset($data['route']) && $data['route'] == 'product/combo' && $key == 'combo_id') {
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
+				
+					if ($query->num_rows) {
+						$url .= '/' . $query->row['keyword'];
+						
+						unset($data[$key]);
+					}									
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[} elseif (isset($this->request->get['path'])) {]]></search>
+			<add><![CDATA[
+
+				}elseif (isset($this->request->get['combo_id'])) {
+					$this->request->get['route'] = 'product/combo';
+			]]></add>
+		</operation>
+	<!-- end SEF -->
+	</file>
+</modification>

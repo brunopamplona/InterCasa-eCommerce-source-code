@@ -1,0 +1,4 @@
+Found user as mailer/postmaster mailer-daemon@vps-3830212.sv2hostconecte.com.br/Mail delivery failed: returning message to sender
+Searching for stale data files (1296000 seconds old)
+Unlinking /home/interca1/etc/boxtrapper/log/05-15-2020.log age exceeds 1296000 seconds
+Found user as mailer/postmaster mailer-daemon@vps-3830212.sv2hostconecte.com.br/Mail delivery failed: returning message to sender

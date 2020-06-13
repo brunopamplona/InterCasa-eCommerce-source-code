@@ -1,0 +1,57 @@
+<modification> 
+    <id>Show order id on success page</id>
+    <version>1.0.0</version> 
+    <vqmver>2.4.1</vqmver>
+    <author>MIT Web Solutions</author> 
+    
+    <file name="catalog/controller/checkout/success.php">
+        <operation> 
+            <search position="before">
+			<![CDATA[unset($this->session->data['shipping_method']);]]>
+            </search>
+            <add>
+			<![CDATA[
+			// MIT : Order Id
+			$this->session->data['last_order_id'] = $this->session->data['order_id'];
+			// MIT : Order Id End
+			]]>
+            </add> 
+        </operation> 
+        
+        <operation> 
+            <search position="after">
+			<![CDATA[$this->data['continue'] = $this->url->link('common/home');]]>
+            </search>
+            <add>
+			<![CDATA[
+			// MIT : Orderid
+			$this->load->language('account/order');
+			$last_order_id = isset($this->session->data['last_order_id']) ? $this->session->data['last_order_id'] : '';
+			$this->data['text_order_id'] = '';
+			if($last_order_id)
+				$this->data['text_order_id'] = $last_order_id;
+			// MIT : Orderid End
+			]]>
+            </add> 
+        </operation> 
+    </file>
+	
+	<file name="catalog/view/theme/*/template/common/success.tpl">
+        <operation> 
+            <search position="before">
+			<![CDATA[<?php echo $text_message; ?>]]>
+            </search>
+            <add>
+			<![CDATA[
+			<!-- MIT : Order Id-->
+			<?php if(isset($text_order_id)) { ?>
+			  <p><strong>N° do seu pedido: <?php echo $text_order_id;?></strong></p>
+			<?php } ?>
+			  <!-- MIT : Order Id END-->
+			  
+			]]>
+            </add> 
+        </operation> 
+    </file>
+
+</modification>

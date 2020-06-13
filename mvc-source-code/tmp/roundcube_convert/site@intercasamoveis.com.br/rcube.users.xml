@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="cptmpdb_interca1_Y7hFa7oJWjfkn6IJ">
+	<table_structure name="users">
+		<field Field="user_id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="username" Type="varchar(128)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="mail_host" Type="varchar(128)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="created" Type="datetime" Null="NO" Key="" Default="1000-01-01 00:00:00" Extra="" Comment="" />
+		<field Field="last_login" Type="datetime" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="language" Type="varchar(5)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="preferences" Type="longtext" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="users" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="users" Non_unique="0" Key_name="username" Seq_in_index="1" Column_name="username" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="users" Non_unique="0" Key_name="username" Seq_in_index="2" Column_name="mail_host" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="users" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="8" Avg_row_length="2048" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="1015" Create_time="2019-07-20 03:15:42" Update_time="2019-07-20 03:15:42" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="users">
+	<row>
+		<field name="user_id">286</field>
+		<field name="username">site@intercasamoveis.com.br</field>
+		<field name="mail_host">localhost</field>
+		<field name="created">2014-05-31 12:39:39</field>
+		<field name="last_login">2015-06-01 15:21:45</field>
+		<field name="language">pt_BR</field>
+		<field name="preferences">a:4:{s:12:&quot;preview_pane&quot;;s:1:&quot;1&quot;;s:15:&quot;default_folders&quot;;a:5:{i:0;s:5:&quot;INBOX&quot;;i:1;s:12:&quot;INBOX.Drafts&quot;;i:2;s:10:&quot;INBOX.Sent&quot;;i:3;s:10:&quot;INBOX.Junk&quot;;i:4;s:11:&quot;INBOX.Trash&quot;;}s:8:&quot;timezone&quot;;s:4:&quot;auto&quot;;s:15:&quot;namespace_fixed&quot;;b:1;}</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

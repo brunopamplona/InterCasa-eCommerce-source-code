@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Rich Snippets for OpenCart</id>
+	<version>2.0</version>
+	<vqmver required="false">2.5.2</vqmver>
+	<author>MinoS</author>
+	
+        
+        <file path="catalog/view/theme/*/template/common/header.tpl">
+            <operation>
+                <search position="before"><![CDATA[</head>]]></search>
+                <add><![CDATA[<!--MRS_PLACEHOLDER-->]]></add>
+            </operation>
+        </file>
+        
+	<file path="catalog/controller/product/" name="product.php">
+		<operation error="skip">
+			<search position="before" ><![CDATA['date_added' => date($this->language->get('date_format_short'), strtotime($result['date_added']))]]></search>
+			<add><![CDATA['timestamp' => strtotime($result['date_added']),]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="after" ><![CDATA['author'     => $result['author'],]]></search>
+			<add><![CDATA['title'     => $result['name'],]]></add>
+		</operation>
+	</file>
+	<file path="catalog/controller/product/" name="product.php">
+		<operation error="skip">
+			<search position="before" ><![CDATA[public function review() {]]></search>
+			<add><![CDATA[
+			 
+                         public function richsnippet ($product_info = false, $data) {
+                         
+                            //error_reporting(E_ALL);
+                            //ini_set('display_errors', '1');
+
+                            $result = '';
+                            
+							if (!$product_info) return $result;
+
+                            /**************************************   BREADCRUMBS SECTION START   ****************************************/
+                                            
+                            $result .= '<script type="application/ld+json">
+                                {
+                                "@context": "http://schema.org",
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [{'."\r\n";
+                                
+                                foreach ($data['breadcrumbs'] as $bid => $breadcrumb) {
+                                          
+                                    if (!preg_match('/<[^>]*>(?:[^<]*)?<\/[^>]>/is',$breadcrumb['text'])) {
+                                        $bcName = $breadcrumb['text']; 
+                                    } else {
+                                        $bcName = 'Home';
+                                    }
+                                    
+                                    $bc[] = '
+                                            "@type": "ListItem",
+                                            "position": '.($bid+1).',
+                                            "item": {
+                                                "@id": "'.trim($breadcrumb['href']).'",
+                                                "name": "'.$bcName.'"
+                                            }
+                                        }'."\r\n";            
+                                }
+                                
+                            $result .= implode(',{',$bc).']'."\r\n";
+                                
+                            $result .='}
+                            </script>'."\r\n";
+                                
+                                /**************************************   BREADCRUMBS SECTION END   ****************************************/
+                            
+                            
+                            
+                            
+                                $result .= '<script type="application/ld+json">
+                                            {
+                                            "@context": "http://schema.org/",';
+                                            
+                                
+                                
+                                            
+                                $result .= '"@type": "Product",'."\r\n";
+                                            
+                                $result .= '"name": "'.$product_info['name'].'",'."\r\n";
+                                $result .= '"description": "'.addslashes(json_encode($product_info['description'], JSON_HEX_APOS)).'",'."\r\n";
+                                $result .= '"image": "'.$data['thumb'].'",'."\r\n";
+                                $result .= '"sku": "'.$product_info['sku'].'",'."\r\n";
+                                $result .= '"mpn": "'.$product_info['mpn'].'",'."\r\n";
+                                //$result .= '"isbn": "'.$product_info['isbn'].'",'."\r\n";
+                                $result .= '"gtin14": "'.$product_info['ean'].'",'."\r\n";
+                                $result .= '"brand": "'.$data['manufacturer'].'",'."\r\n";
+                                
+                                /**************************************   OFFERS SECTION START   ****************************************/
+                                
+                                if (version_compare(VERSION,'3','>=')) { //OpenCart 3.x
+                                    if (isset($this->session->data['currency'])) {
+                                        $cur = $this->session->data['currency'];
+                                    } else {
+                                        $cur = 'CurrencyError';
+                                    }
+                                } else { // OpenCart 2.x
+                                    $sessKeys = array_keys($_SESSION);
+                                    if (isset($_SESSION['currency'])) {
+                                        $cur = $_SESSION['currency'];
+                                    } else if (isset($_SESSION['default']['currency'])) {
+                                        $cur = $_SESSION['default']['currency'];
+                                    } else if (isset($_SESSION[$sessKeys[0]]['currency'])){
+                                        $cur = $_SESSION[$sessKeys[0]]['currency'];
+                                    } else {
+                                        $cur = 'CurrencyError';
+                                    }
+                                }
+                                
+                                $productUrl = end($data['breadcrumbs']);
+                                $result .= '"offers": {
+                                                "@type": "Offer",
+                                                "price": "'. $data['priceISO'] .'",
+                                                "priceCurrency": "'. $cur .'",
+                                                "availability": "'. $data['stockStatus'] .'",
+                                                "priceValidUntil": "'. date('Y-m-d', strtotime('+1 year')) .'",
+                                                "url": "'. trim($productUrl['href']) .'",
+                                                "itemCondition": "http://schema.org/NewCondition"
+                                            } '."\r\n";
+                                            
+                                /**************************************   OFFERS SECTION END   ****************************************/
+
+                                                                
+                               
+                                
+                                
+                                /**************************************   REVIEWS SECTION START   ****************************************/
+                                $this->load->model('catalog/review');
+                                $all_reviews = $this->model_catalog_review->getReviewsByProductId($this->request->get['product_id'], 0, 100);
+                                        
+                                $reviews = array();
+                                
+                                if (is_array($all_reviews) && count($all_reviews)) {
+
+                                    $result .= ',"review": [';
+                                    foreach ($all_reviews as $review) {
+                                    
+                                        $reviews[] = '
+                                        {
+                                            "@type": "Review",
+                                            "reviewRating": {
+                                                "@type": "Rating",
+                                                "ratingValue": "'.(int)$review['rating'].'"
+                                            },
+                                            "author": {
+                                                "@type": "Person",
+                                                "name": "'.$review['author'].'"
+                                            },
+                                            "datePublished": "'.date('Y-m-d',strtotime($review['date_added'])).'",
+                                            "reviewBody": "'.addslashes(json_encode($review['text'])).'"
+                                        }'."\r\n";
+                                    }
+                                }
+
+                                if (count($reviews)) {
+                                    $result .= "\r\n".implode(',',$reviews).']';
+                                }
+                                
+                                /**************************************   REVIEWS SECTION END   ****************************************/
+                                
+                                 /**************************************   AGGREGATE RATING SECTION START   ****************************************/
+                                if (count($reviews)) {
+                                    $result .= ',"aggregateRating": {
+                                        "@type": "AggregateRating",
+                                        "ratingValue": "'.$data['rating'].'",
+                                        "reviewCount": "'.(int)$product_info['reviews'].'"
+                                    }';
+                                }
+                                
+                                /**************************************   AGGREGATE RATING SECTION END   ****************************************/
+                                
+                                $result .= '}
+                                            </script>';
+                                        
+                                return $result;
+                            
+                            }
+                            
+                            
+			public function tofloat($num) {
+			      $dotPos = strrpos($num, '.');
+			      $commaPos = strrpos($num, ',');
+			      $sep = (($dotPos > $commaPos) && $dotPos) ? $dotPos : 
+				  ((($commaPos > $dotPos) && $commaPos) ? $commaPos : false);
+			    
+			      if (!$sep) {
+				  return floatval(preg_replace("/[^0-9]/", "", $num));
+			      } 
+
+			      return floatval(
+				  preg_replace("/[^0-9]/", "", substr($num, 0, $sep)) . '.' .
+				  preg_replace("/[^0-9]/", "", substr($num, $sep+1, strlen($num)))
+			      );
+			  }
+			 
+			  
+			  public function stockStatus ($stock = false) {
+			      
+			      $content = 'http://schema.org/InStock'; 
+			      if ($stock == false) return $content;
+			      
+			      if (!is_numeric($stock)) {
+				  global $config;
+				  global $db;
+				  $content = '';
+				  $lang = $config->get('config_language_id');
+				  $query = "SELECT stock_status_id FROM ".DB_PREFIX."stock_status WHERE name = '".$stock."' and language_id = '".(int)$lang."' "; 
+				  $result = $db->query($query);
+				  $result = $result->row;
+
+				  if (isset($result['stock_status_id']) && !empty($result['stock_status_id'])) {
+					  switch ($result['stock_status_id']) {
+					      case '7' : $content = 'http://schema.org/InStock'; break;
+					      case '5' : $content = 'http://schema.org/OutOfStock'; break;
+					      case '8' : $content = 'http://schema.org/PreOrder'; break;
+					      case '6' : $content = 'http://schema.org/LimitedAvailability'; break;
+					  }
+				  } else {
+					  switch ($stock) {
+					      case 'In Stock' : $content = 'http://schema.org/InStock'; break;
+					      case 'Out Of Stock' : $content = 'http://schema.org/OutOfStock'; break;
+					      case 'Pre-Order' : $content = 'http://schema.org/PreOrder'; break;
+					      case '2-3 Days' : $content = 'http://schema.org/LimitedAvailability'; break;
+					      default: $content = 'http://schema.org/InStock'; break;
+					  }
+				  }
+			      } else { //stock is a number
+				  if ($stock > 0) { 
+				      $content = 'http://schema.org/InStock'; 
+				  } else {
+				      $content = 'http://schema.org/OutOfStock';
+				  }
+			      }
+			      
+			      return $content;
+			  }
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="before" ><![CDATA[$this->load->model('tool/image');]]></search>
+			<add><![CDATA[$this->data['stockStatus'] = $this->stockStatus($this->data['stock']);]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="before" index="1"><![CDATA[if ($this->config->get('config_tax')) {]]></search>
+			<add><![CDATA[
+			  $this->data['priceISO'] = $this->tofloat($this->data['price']);
+			  $this->data['specialISO'] = $this->tofloat($this->data['special']);
+			  ]]></add>
+		</operation>
+                <operation>
+                    <search position="replace" ><![CDATA[$this->response->setOutput($this->render());]]></search>
+                    <add><![CDATA[
+                    	if (isset($product_info)) {
+	                        $snippet = $this->richsnippet($product_info, $this->data);
+	                        $content = $this->render();
+	                        $content = str_replace('<!--MRS_PLACEHOLDER-->',$snippet,$content);
+	                        $this->response->setOutput($content);
+	                    } else {
+	                    	$this->response->setOutput($this->render());
+	                    }
+                    ]]></add>
+                </operation>
+    </file>
+</modification>
+

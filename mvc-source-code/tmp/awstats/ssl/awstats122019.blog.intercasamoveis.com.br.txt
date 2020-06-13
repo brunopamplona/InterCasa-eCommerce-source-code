@@ -1,0 +1,678 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201912 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/ssl/awstats.blog.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2028                
+POS_TIME 2707                
+POS_VISITOR 8583                
+POS_DAY 17797               
+POS_DOMAIN 3500                
+POS_LOGIN 4184                
+POS_ROBOT 4339                
+POS_WORMS 4961                
+POS_EMAILSENDER 5092                
+POS_EMAILRECEIVER 5235                
+POS_SESSION 17909               
+POS_SIDER 18100               
+POS_FILETYPES 5370                
+POS_DOWNLOADS 5545                
+POS_OS 5670                
+POS_BROWSER 5845                
+POS_SCREENSIZE 6650                
+POS_UNKNOWNREFERER 6724                
+POS_UNKNOWNREFERERBROWSER 6921                
+POS_ORIGIN 7113                
+POS_SEREFERRALS 7252                
+POS_PAGEREFS 7547                
+POS_SEARCHWORDS 7977                
+POS_KEYWORDS 8129                
+POS_MISC 2371                
+POS_ERRORS 8188                
+POS_CLUSTER 4040                
+POS_SIDER_404 8274                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200101000120 62 18031 27368175850583
+FirstTime 20191230223021
+LastTime 20191231233728
+LastUpdate 20200101225031 62 0 61 0 0
+TotalVisits 230                 
+TotalUnique 170                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 273                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 1 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 42 45 677985 36 41 32735
+1 36 38 344471 35 45 42121
+2 39 41 883445 36 42 33591
+3 33 38 890635 33 36 3497
+4 31 31 220223 37 40 5380
+5 29 30 374244 32 34 4573
+6 29 48 2910393 26 68 466229
+7 34 37 523462 20 24 72347
+8 32 37 643630 30 32 2421
+9 18 19 179744 23 27 15113
+10 5 19 1665734 35 44 5412420
+11 11 16 576020 46 50 43507
+12 4 8 526994 44 55 551396
+13 12 20 690598 36 39 16079
+14 9 15 415390 38 39 8764
+15 1 5 531936 60 63 1459124
+16 7 13 1051697 47 50 10098
+17 10 10 118532 167 199 5375990
+18 9 12 424435 111 113 28016
+19 2 4 215744 48 54 98076
+20 2 6 226032 35 44 5185773
+21 1 2 52900 45 51 254234
+22 26 34 1078709 42 57 2261986
+23 42 55 1292519 62 67 2523531
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 34
+us 165 222 8344358
+br 60 101 3130517
+cn 33 33 243155
+in 27 32 1398891
+ca 25 25 177109
+gb 21 21 154735
+tr 18 18 605350
+de 15 23 852160
+ru 12 12 255718
+id 12 12 88420
+it 9 9 66315
+es 8 8 64950
+au 7 7 54580
+bd 6 6 44210
+my 6 6 43114
+vn 6 6 44210
+nl 4 4 22374
+mx 4 6 86367
+gr 3 3 22105
+eu 3 3 22105
+kr 3 3 22105
+ng 3 3 22105
+hk 3 3 22105
+be 2 4 93827
+tj 2 2 11735
+cr 1 1 269
+cl 1 1 269
+il 1 1 10370
+nz 0 1 154419
+ma 1 1 269
+pt 2 3 293826
+ar 0 1 111816
+mz 0 1 51194
+ch 1 1 420
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+Googlebot/ 643 224778 20191231235931 1
+bot[\s_+:,\.\;\/\\-] 241 64829 20191231225040 0
+bingbot/ 171 1493247 20191231235839 6
+SemrushBot/ 127 34163 20191231235912 44
+MJ12bot/ 70 18790759 20191231202257 7
+msnbot/ 43 463808 20191231204959 0
+Applebot/ 9 2421 20191231200820 1
+Googlebot\-Image/ 3 2599619 20191231232648 0
+facebookexternalhit/ 2 232032 20191231212555 0
+blog 1 269 20191231064156 0
+(firefox/)([0-9]\.|[0-1][0]\.) 1 269 20191231070831 0
+Feedfetcher\-Google 1 269 20191231100946 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+php 355 3352608 0 0
+gif 1 97063 0 0
+jpg 112 12651939 0 0
+html 109 30680 0 0
+jpeg 5 256973 0 0
+png 1 126209 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/wp-content/uploads/2015/07/ebookquartobebe.pdf 1 0 1447517
+/ads.txt 1 0 269
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+ios_iphone 14 9
+linux 306 306
+win7 45 35
+macosx 3 3
+winphone 1 0
+Unknown 64 3
+linuxandroid 110 74
+win10 40 34
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 38
+chrome79.0.3945.88 20 9
+Unknown 64 3
+safari13.0.1 2 1
+opera64.0.3417.150 1 0
+safari13.0.4 10 7
+firefox62.0 304 304
+safari10.0 1 0
+chrome63.0.3239.84 28 28
+msie11.0 2 1
+android 5 1
+firefox71.0 1 1
+lg\- 2 2
+chrome74.0.3729.136 1 1
+edge15 1 0
+msie7.0 1 0
+chrome78.0.3904.108 6 6
+chrome40.0.2214.109 1 0
+chrome36.0.1985.135 1 0
+safari12.1.1 1 1
+chrome77.0.3865.120 1 0
+edge18 1 1
+chrome63.0.3235.0 1 0
+chrome71.0.3578.99 10 10
+chrome79.0.3945.79 3 1
+opera53.0.2907.99 2 2
+chrome76.0.3809.132 1 1
+iphone 1 1
+chrome77.0.3865.92 2 1
+firefox51.0 1 1
+chrome38.0.1025.166 25 25
+chrome65.0.3325.181 2 2
+chrome77.0.3865.116 1 0
+chrome30.0.0.0 1 0
+chrome50.0.2661.86 1 0
+chrome79.0.3945.93 49 28
+chrome55.0.2883.91 4 1
+opera54.0.2952.54 4 4
+chrome51.0.2704.103 21 21
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+Photon/1.0 20191231200324
+'' 20191230225151
+SEMrushBot 20191231110214
+Jetpack_by_WordPress.com 20191231064156
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+'' 20191230225151
+Photon/1.0 20191231200324
+Jetpack_by_WordPress.com 20191231064156
+SEMrushBot 20191231110214
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 374 441
+From1 0 0
+From2 61 113
+From3 6 6
+From4 23 23
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 7
+www_google_pt 2 2
+br_images_search_yahoo_com 0 2
+www_google_be 1 2
+www_google_com_br 9 14
+www_google_com 49 90
+ar_images_search_yahoo_com 0 1
+bing 0 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 6
+https://pinterest.com/pin/478577897901890305/ 1 1
+https://pinterest.com/pin/59954238792602111/ 1 1
+https://pinterest.com/pin/332281278751911058/ 1 1
+https://www.pinterest.com/pin/332281278751911070 1 1
+https://pinterest.com/pin/233483561916629247/ 1 1
+https://www.pinterest.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+206 1 269
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 0
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 273
+167.99.212.81 15 15 110525 20191231083655
+51.15.222.246 9 9 66315 20191231082406
+210.212.250.41 9 9 66315 20191231071000
+46.37.31.195 9 9 66315 20191231084103
+157.245.105.87 9 9 66315 20191231032647
+35.240.184.174 9 9 66315 20191231074931
+74.125.210.47 8 8 2152 20191231201710
+198.57.167.49 8 8 82960 20191231185755
+175.29.203.4 6 6 44210 20191231054734
+198.245.51.20 6 6 44210 20191231020052
+104.236.98.54 6 6 44210 20191231074408
+167.114.253.182 6 6 44210 20191231030922
+157.245.96.139 6 6 44210 20191231043729
+103.9.159.44 6 6 44210 20191231044833
+82.223.34.171 6 6 44210 20191231075442
+103.92.29.135 6 6 44210 20191231064735
+104.155.105.249 6 6 44210 20191231062604
+117.103.168.195 6 6 44210 20191231051512
+159.89.131.172 6 6 44210 20191231050421
+40.89.140.31 6 6 44210 20191231081204
+139.59.11.223 6 6 44210 20191231023555
+192.241.148.219 6 6 44210 20191231033207
+52.187.181.133 6 6 44210 20191231065342
+59.110.236.234 6 6 44210 20191231011024
+185.119.81.50 6 6 233298 20191231112942
+35.198.198.36 3 3 22105 20191230224624
+201.83.131.202 4 4 1076 20191231000128
+177.21.115.62 1 1 269 20191231222654
+196.45.48.48 3 3 22105 20191231053124
+200.54.150.42 1 1 269 20191231165759
+74.125.210.45 4 4 1076 20191231183257
+201.150.151.50 0 1 29424 
+192.0.85.93 0 1 118893 
+177.10.237.197 1 1 269 20191231092033
+45.170.180.14 0 2 241469 
+181.221.198.1 1 1 269 20191231171651
+45.171.147.3 0 1 55581 
+201.87.59.7 1 1 269 20191231143350
+177.79.64.93 1 1 269 20191231110032
+192.0.86.149 0 1 25304 
+179.182.31.36 1 1 269 20191230230416
+66.249.83.47 1 1 269 20191231121852
+85.25.185.27 3 3 22105 20191231060910
+131.255.8.114 0 1 52724 
+182.156.218.70 3 3 31110 20191231044240
+195.234.109.182 0 1 119840 
+162.243.110.205 3 3 22105 20191231072709
+192.0.84.125 0 1 83665 
+187.25.57.105 1 1 269 20191231161826
+192.0.100.11 0 1 57083 
+195.234.109.64 0 1 71601 
+165.22.118.94 3 3 22105 20191231022846
+192.0.86.164 0 2 275935 
+31.210.56.34 3 3 22105 20191231032041
+191.249.54.198 1 1 269 20191231111151
+177.79.28.113 1 1 269 20191231102110
+192.0.102.70 0 1 43758 
+41.76.145.135 0 1 51194 
+187.33.212.135 1 1 269 20191231135409
+139.59.235.2 1 1 10370 20191230234714
+144.91.115.75 3 3 22105 20191230225237
+103.247.9.51 3 3 22105 20191230233547
+87.196.80.192 1 1 269 20191231102508
+138.204.224.220 1 1 269 20191231170250
+216.10.250.107 5 5 51850 20191231222747
+201.80.142.220 1 1 269 20191231182055
+187.60.32.145 0 1 97063 
+186.211.49.224 0 1 60808 
+192.0.84.119 0 1 74631 
+18.189.95.127 3 3 22105 20191231003111
+192.0.102.52 0 1 139963 
+189.221.100.145 0 1 27752 
+189.6.27.215 1 1 269 20191231111807
+192.0.86.123 0 1 284339 
+192.0.98.181 0 1 144511 
+192.0.102.138 0 1 23784 
+131.255.213.230 0 1 75122 
+66.102.6.173 1 1 269 20191231133112
+187.150.43.206 3 3 22105 20191231043741
+177.71.45.85 0 1 55581 
+187.2.48.17 0 1 29424 
+192.0.99.178 0 1 215789 
+39.105.106.98 3 3 22105 20191231014925
+177.23.251.157 1 1 269 20191231135033
+74.125.210.43 2 2 538 20191231185044
+200.229.80.23 0 1 188801 
+201.191.198.202 1 1 269 20191231172352
+52.42.79.222 1 1 10370 20191231100902
+185.86.164.98 3 3 116649 20191231094415
+177.189.19.108 1 1 269 20191231104305
+206.189.91.4 1 1 10370 20191231032950
+152.235.222.242 2 2 689 20191231165440
+177.181.171.235 1 1 269 20191230230751
+185.85.239.195 3 3 116649 20191231141503
+187.101.228.26 2 2 538 20191231004314
+187.112.64.120 0 1 155092 
+187.68.204.44 1 1 269 20191231112011
+187.64.53.136 0 1 126209 
+192.0.100.35 0 1 279336 
+189.40.69.93 1 1 269 20191230232837
+66.249.83.51 2 2 538 20191231231642
+185.86.164.108 3 3 116649 20191231062640
+177.131.181.87 1 2 51463 20191231133418
+177.19.74.238 0 1 16427 
+199.249.230.118 1 1 420 20191231233726
+192.0.82.254 0 2 163665 
+185.85.190.132 3 3 116649 20191231003636
+181.222.61.41 0 1 93289 
+192.0.99.179 0 1 47263 
+191.6.70.108 1 1 269 20191231091747
+192.0.114.113 0 1 258955 
+192.0.88.51 0 1 17356 
+177.25.209.223 0 1 16427 
+134.209.105.46 3 3 22105 20191231005426
+177.134.249.132 1 1 269 20191231183826
+191.251.32.19 0 1 93289 
+179.220.176.252 0 1 51194 
+217.182.192.214 3 3 22105 20191231020555
+177.79.127.191 0 1 55581 
+157.245.89.227 3 3 22105 20191231074549
+13.127.91.194 3 3 22105 20191231085212
+51.15.242.148 3 3 22105 20191231063612
+13.59.153.149 1 1 10370 20191231084729
+62.22.50.68 1 1 10370 20191231123316
+186.232.93.30 1 1 269 20191230234224
+138.99.118.228 0 1 52724 
+66.85.47.62 3 3 22105 20191230224132
+192.0.102.118 0 1 796227 
+88.157.95.231 1 1 269 20191231080707
+45.170.114.211 0 1 106669 
+190.108.101.195 1 1 269 20191230225529
+192.0.102.50 0 1 65577 
+5.189.165.134 3 3 22105 20191231060320
+66.102.6.171 2 2 538 20191231202001
+134.209.216.249 3 3 22105 20191231003710
+177.156.74.246 1 1 269 20191231015907
+192.0.91.157 0 2 201484 
+200.68.139.217 1 1 269 20191231023022
+192.0.102.68 0 1 27407 
+192.0.86.162 0 1 148008 
+192.0.100.179 0 1 116419 
+95.64.253.245 2 2 20740 20191231052221
+177.177.109.177 0 2 215584 
+191.176.240.27 0 1 101942 
+177.200.69.5 0 1 74310 
+179.67.100.108 2 2 689 20191231001314
+192.0.91.101 0 1 39873 
+191.185.210.108 1 1 269 20191231053331
+45.118.145.223 3 3 22105 20191231080055
+103.225.9.143 3 3 22105 20191231063056
+192.0.91.155 0 1 61135 
+94.199.18.198 2 2 11735 20191231080652
+192.0.99.83 0 2 216441 
+189.40.87.218 1 1 269 20191231091147
+45.225.86.19 1 1 269 20191230225409
+192.0.102.66 0 1 231546 
+185.85.239.110 3 3 116649 20191231173946
+131.161.105.15 0 1 82131 
+164.85.23.208 1 1 269 20191231053816
+189.40.71.69 0 1 52724 
+170.78.20.147 1 1 269 20191230224409
+142.93.65.231 1 1 269 20191231002732
+115.159.34.124 3 3 22105 20191230235223
+189.19.178.133 0 1 82131 
+142.93.160.197 3 3 22105 20191230225800
+177.124.120.125 0 1 29424 
+192.0.99.35 0 1 191748 
+178.128.242.161 3 3 22105 20191231012743
+66.249.83.49 2 2 538 20191231133537
+144.76.8.249 3 3 22105 20191231055801
+192.0.101.11 0 2 81134 
+200.24.64.237 2 2 538 20191231091420
+192.0.86.143 0 1 167642 
+186.237.53.178 0 1 82131 
+195.234.109.70 0 1 160704 
+125.212.224.192 3 3 22105 20191231021841
+195.234.109.16 0 1 116317 
+177.59.25.35 1 1 269 20191231131728
+177.15.1.254 0 1 106669 
+200.185.222.239 1 1 269 20191231195929
+143.255.134.25 0 1 52724 
+195.234.109.126 0 1 43585 
+103.127.42.102 6 6 44210 20191231081815
+115.94.13.52 3 3 22105 20191231073302
+187.26.215.19 1 1 269 20191231110610
+187.66.114.237 1 1 269 20191230234558
+149.129.104.140 2 2 20740 20191231070858
+203.100.77.162 3 3 13100 20191231044242
+124.13.50.237 1 1 269 20191231042335
+192.0.85.91 0 1 113657 
+66.249.88.23 2 2 538 20191231181841
+66.249.88.27 1 1 269 20191231071633
+46.229.161.131 1 1 269 20191231110214
+88.99.135.50 3 3 22105 20191231014414
+50.16.241.114 1 1 269 20191230225151
+189.40.78.106 1 1 269 20191231054627
+190.31.205.180 0 1 111816 
+146.255.103.9 1 1 10370 20191231192747
+45.62.117.165 3 3 22105 20191231012127
+187.26.205.81 1 2 93558 20191231151550
+177.72.90.17 0 1 49429 
+177.221.15.250 2 2 538 20191231053716
+192.0.99.59 0 1 83619 
+200.159.164.117 1 1 269 20191231083808
+195.234.109.130 0 1 90868 
+186.203.170.21 1 1 269 20191231174707
+191.13.44.246 1 1 269 20191231221441
+201.7.143.73 1 1 269 20191231094530
+47.98.241.4 3 3 22105 20191231085510
+192.0.101.190 0 1 452510 
+179.199.175.222 1 1 269 20191231172753
+87.118.82.185 6 6 44210 20191231035854
+138.0.26.38 0 1 52724 
+5.188.211.100 4 4 1680 20191231091906
+45.171.146.250 0 1 796227 
+187.102.84.106 1 1 269 20191231013419
+13.82.187.210 3 3 22105 20191231042025
+51.178.25.125 3 3 22105 20191231031444
+81.17.27.133 1 1 420 20191231233728
+85.243.98.42 0 1 293288 
+179.216.171.188 0 1 29424 
+177.76.251.24 1 1 269 20191231002601
+192.0.85.147 0 1 27057 
+192.0.101.216 0 1 87433 
+192.0.86.187 0 1 34649 
+45.70.212.248 0 1 154419 
+177.79.7.241 0 1 93289 
+192.0.101.58 0 1 197705 
+187.85.194.245 2 2 689 20191231014709
+139.199.5.175 6 6 44210 20191231090107
+168.205.245.125 3 3 807 20191231130728
+157.245.202.245 2 2 20740 20191231114315
+201.17.85.225 0 1 60808 
+194.8.52.2 1 3 93558 20191231104316
+177.66.208.247 1 1 269 20191231141855
+118.25.79.17 3 3 22105 20191230230224
+138.197.7.56 1 1 269 20191231114918
+187.95.180.0 0 1 55581 
+46.101.136.196 3 3 22105 20191231050921
+177.25.196.16 0 1 42530 
+192.0.99.131 0 1 113657 
+157.245.142.119 2 2 20740 20191231165844
+134.209.184.77 3 3 31110 20191231185847
+178.62.34.46 3 3 22105 20191231005954
+189.40.73.143 0 1 16427 
+191.54.173.97 0 1 82131 
+186.193.210.7 1 1 269 20191231071844
+192.0.100.203 0 1 40806 
+192.0.89.241 1 1 1365 20191231064156
+45.77.70.221 3 3 22105 20191231004223
+195.234.109.174 0 1 75318 
+192.0.84.121 0 2 149177 
+179.191.235.90 1 2 52993 20191231164023
+201.54.174.122 0 1 341722 
+189.40.101.89 1 1 269 20191231125500
+195.234.109.4 0 1 63402 
+179.217.20.63 1 1 269 20191230235236
+192.0.101.35 0 2 212980 
+200.68.138.23 0 1 36241 
+192.0.100.83 0 1 96691 
+168.194.238.23 0 1 118893 
+212.150.139.113 1 1 10370 20191230231959
+192.0.101.218 0 1 155092 
+192.0.112.18 0 2 502632 
+119.40.118.37 3 3 22105 20191231002516
+119.235.30.160 3 3 22105 20191231040630
+69.171.251.16 0 1 106669 
+24.47.116.64 1 2 66250 20191230235642
+139.99.45.160 2 2 11735 20191231070921
+192.0.101.168 0 1 97877 
+134.209.62.13 1 1 1365 20191231034729
+210.14.72.78 3 3 22105 20191231045330
+187.6.112.177 0 1 16427 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20191230 62 79 2140970 31
+20191231 402 504 14374502 199
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+15mn-30mn 4
+5mn-15mn 3
+30mn-1h 4
+30s-2mn 5
+0s-30s 214
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 59
+/wp-login.php 252 3212013 133 38
+/xmlrpc.php 103 140595 3 98
+/descubra-4-modelos-de-mini-cama-infantil/ 11 2959 11 10
+/qual-a-idade-de-sair-do-berco-para-a-cama-infantil/ 9 2421 7 8
+/ 6 2067 4 5
+/como-escolher-a-cama-infantil-ideal-para-o-bom-sono-das-criancas/ 5 1345 5 5
+/cabaninhas-infantis-incriveis-faca-voce-mesmo-diy/ 4 1529 2 1
+/conheca-os-itens-e-kits-de-decoracao-para-quartos-de-bebe/roupa-de-cama-infantil-05/ 3 807 1 1
+/dicas-de-decoracao-para-quarto-de-meninos/ 3 958 3 3
+/quarto-de-gamer-o-setup-da-intercasa-2017/ 3 958 2 2
+/como-subir-e-descer-a-grade-movel-do-berco-do-bebe/ 3 807 3 3
+/5-erros-comuns-na-hora-de-escolher-os-moveis-do-quarto-infantil/ 3 807 1 2
+/o-quarto-montessoriano-completo-mais-lindo/ 3 958 2 2
+/o-bebe-e-a-crianca-dividirem-o-mesmo-quarto-infantil/ 2 538 2 2
+/veja-como-transformar-o-berco-do-bebe-em-outros-moveis-infantis/ 2 538 2 2
+/inspiracoes-para-montar-a-brinquedoteca-no-quarto-infantil/ 2 538 2 2
+/camas-infantis-ao-redor-do-mundo/caballeros_01/ 2 538 1 1
+/dicas-de-decoracao-infantil-com-cabeceiras-de-cama-muito-originais/ 2 538 1 2
+/como-saber-o-melhor-momento-de-abaixar-o-colchao/ 2 538 2 2
+/quais-as-exigencias-do-inmetro-para-bercos-de-bebe-no-brasil/ 2 538 2 2
+/4-dicas-infaliveis-para-acabar-com-a-bagunca-no-quarto-das-criancas/ 2 538 2 1
+/o-olfato-do-bebe-como-ele-sente-cheiro/ 2 538 2 2
+/7-tipos-de-choros-do-bebe-descubra-seu-significado/choro-do-bebe/ 2 538 2 2
+/faca-voce-mesmoa-transformar-o-berco-em-uma-linda-escrivaninha-infantil-juvenil/ 1 269 1 1
+/os-quartos-de-crianca-completos-e-decorados-tematicos-mais-legais/sony-dsc-3/ 1 269 1 1
+/monte-uma-casa-de-bonecas-incrivel-no-quarto-infantil/ 1 269 1 1
+/diy-faca-voce-mesmo-os-novos-papeis-de-parede-do-quarto-infantil/ 1 269 1 1
+/beliche-infantil-qual-escolher/ 1 269 1 1
+/como-combinar-moveis-coloridos-no-quarto-do-bebe/quarto-infantil-tons-pasteis/ 1 269 1 1
+/5-erros-comuns-na-hora-de-escolher-os-moveis-do-quarto-infantil/quarto_crianca/ 1 269 1 1
+/quarto-de-gamer-o-setup-da-intercasa-2017/01-iluminacao-led-quarto-gamer-01/ 1 269 1 1
+/como-consertar-pintura-e-defeitos-em-moveis-infantis/02-riscos-em-moveis-como-retirar/ 1 269 1 1
+/escolha-a-poltrona-de-amamentacao-certa-para-seu-quarto-infantil/ 1 269 1 1
+/3-dicas-para-escolher-novas-cadeiras-infantis-e-juvenis-para-o-seu-filho/ 1 269 1 1
+/vendendo-o-desafio-de-decorar-o-quarto-de-dormir-infantil/bi-cama-infantil/ 1 269 1 1
+/qual-e-o-horario-certo-de-colocar-as-criancas-pra-dormir/ 1 269 1 1
+/os-5-design-de-beliches-contemporaneos-de-maior-sucesso/ 1 269 0 1
+/como-escolher-a-cama-infantil-ideal-para-o-bom-sono-das-criancas/img_1191/ 1 269 1 1
+/que-cor-usar-no-quarto-do-bebe/quarto-de-bebe-parede-salmao-claro/ 1 269 1 0
+/quarto-montessoriano-de-bebe-e-infantil-entenda-os-conceitos/ 1 269 1 1
+/os-5-design-de-beliches-contemporaneos-de-maior-sucesso/beliche-kids-branco-fosco-02/ 1 269 1 1
+/o-sono-no-primeiro-e-segundo-dias-do-bebe/ 1 269 1 1
+/como-montar-a-cama-infantil-solteiro-da-i-c-n-a-t-s-e-a-r/ 1 269 1 1
+/beliches-acessiveis-e-moveis-infantis-para-irmaos/ 1 269 1 1
+/camas-infantis-ao-redor-do-mundo/ikea_kids_01/ 1 269 1 1
+/criancas-adoram-a-cama-infantil-com-escorregador-conheca-as-opcoes/cama-escorrega-casinha/ 1 269 1 1
+/a-nova-colecao-de-camas-infantis-e-bercos-para-bebes/01_escrivaninha-xis-ambientada/ 1 269 1 1
+/quarto-de-bebe-com-estilo-luis-xv/ 1 269 1 1
+/descubra-4-estilos-de-quarto-de-bebe-modernos-e-completos/ 1 269 1 1
+/como-consertar-pintura-e-defeitos-em-moveis-infantis/ 1 269 1 1
+/dicas-de-decoracao-para-quartos-de-meninas/ 1 269 1 1
+/qual-o-melhor-guarda-roupa-de-bebe-veja-aqui/ 1 269 1 1
+/a-nova-colecao-de-camas-infantis-e-bercos-para-bebes/01_casashopping_interior_novo_07/ 1 269 1 1
+/escritorios-de-arquitetura-infantil/bacla-arquitetura-infantil/ 1 269 1 1
+/1-dia-de-trabalho-de-uma-mae-e-equivalente-2-dias-de-trabalho-comum/ 1 269 1 1
+/top-5-dicas-par-organizar-o-quarto-do-bebe/ 1 269 1 1
+/cama-de-solteiro-para-criancas-por-muitos-anos/ 1 269 1 1
+/criancas-adoram-a-cama-infantil-com-escorregador-conheca-as-opcoes/cama-escorrega-princesa/ 1 269 1 0
+/enxoval-de-bebe-como-comprar-o-essencial-para-os-3-primeiros-meses-do-bebe/ 1 269 1 1
+END_SIDER

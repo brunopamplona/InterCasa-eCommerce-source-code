@@ -1,0 +1,156 @@
+<modification>
+
+	<id>Review Booster</id>
+	<version>3.0</version>
+	<vqmver>2.5.1</vqmver>
+	<author>Adikon.eu</author>
+
+	<file name="lojaadmin/controller/sale/order.php" error="skip">
+		<operation error="skip">
+			<search position="after"><![CDATA[function getList() {]]></search>
+			<add><![CDATA[
+			$this->load->config('review_booster');
+			]]></add>
+		</operation>
+
+		<operation error="skip">
+			<search position="before"><![CDATA[data['orders'][] = array(]]></search>
+			<add><![CDATA[
+			$store_url = $this->db->query("SELECT store_url FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$result['order_id'] . "'")->row['store_url'];
+			]]></add>
+		</operation>
+
+		<operation error="skip">
+			<search position="after"><![CDATA[data['orders'][] = array(]]></search>
+			<add><![CDATA[
+			'review_booster' => ($this->config->get($this->config->get('rb_module_name') . '_status') && $this->config->get($this->config->get('rb_module_name') . '_manually_status')) ? $store_url . (substr($store_url, -1) == '/' ? '' : '/') . 'index.php?route=' . $this->config->get('rb_module_path') . '/cron' : '',
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="lojaadmin/view/template/sale/order_list.tpl" error="skip">
+		<!-- for Opencart 1.5.1 - 1.5.6.x -->
+		<operation error="skip">
+			<search position="replace"><![CDATA[<?php foreach ($order['action'] as $action) { ?>]]></search>
+			<add><![CDATA[
+			<?php if ($order['review_booster']) { ?>[ <a href="<?php echo $order['review_booster']; ?>" id="button-review-booster<?php echo $order['order_id']; ?>" data-value="<?php echo $order['order_id']; ?>" title="Review Booster Reminder">RB Notify</a> ] <?php } ?>
+			<?php foreach ($order['action'] as $action) { ?>
+			]]></add>
+		</operation>
+		<!-- END for Opencart 1.5.1 - 1.5.6.x -->
+
+		<!-- for Opencart 2.x -->
+		<operation error="skip">
+			<search position="replace"><![CDATA[<a href="<?php echo $order['view']; ?>"]]></search>
+			<add><![CDATA[
+			<?php if ($order['review_booster']) { ?><a href="<?php echo $order['review_booster']; ?>" id="button-review-booster<?php echo $order['order_id']; ?>" data-value="<?php echo $order['order_id']; ?>" data-toggle="tooltip" title="Review Booster Reminder" class="btn btn-warning"><i class="fa fa-send"></i></a> <?php } ?>
+			<a href="<?php echo $order['view']; ?>"
+			]]></add>
+		</operation>
+		<!-- END for Opencart 2.x -->
+
+		<operation error="skip">
+			<search position="before"><![CDATA[<?php echo $footer; ?>]]></search>
+			<add><![CDATA[
+			<script type="text/javascript"><!--
+			$('a[id^=\'button-review-booster\']').on('click', function(e) {
+				e.preventDefault();
+
+				obj = this;
+
+				$.ajax({
+					url: ('https:' == document.location.protocol ? $(obj).attr('href').replace(/^http:/, 'https:') : $(obj).attr('href').replace(/^https:/, 'http:')) + '&format=raw',
+					type: 'post',
+					dataType: 'text',
+					data: { order_id: $(obj).attr('data-value') },
+					beforeSend: function() {
+						$(obj).attr('disabled', true);
+
+						<?php if (version_compare(VERSION, '2.0', '<')) { ?>
+						$(obj).html('<img src="view/image/loading.gif" />');
+						<?php } else { ?>
+						$(obj).html('<i class="fa fa-spin fa-spinner"></i>');
+						<?php } ?>
+					},
+					complete: function() {
+						$(obj).attr('disabled', false);
+					},
+					success: function(data) {
+						<?php if (version_compare(VERSION, '2.0', '<')) { ?>
+						$(obj).html('RB Notify');
+						<?php } else { ?>
+						$(obj).html('<i class="fa fa-send"></i>');
+						<?php } ?>
+
+						alert(data);
+					}
+				});
+			});
+			//--></script>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/controller/product/product.php" error="skip">
+		<operation error="skip">
+			<search position="before"><![CDATA[data['reviews'][] = array(]]></search>
+			<add><![CDATA[
+			$this->load->config('review_booster');
+
+			if ($this->config->get($this->config->get('rb_module_name') . '_status') && $this->config->get($this->config->get('rb_module_name') . '_verified_buyer_status')) {
+				$review_query = $this->db->query("SELECT r.customer_id, (SELECT e.verified_buyer FROM " . DB_PREFIX . "rb_email e WHERE e.review_id LIKE '%[" . (int)$result['review_id'] . "]%') AS verified_buyer FROM " . DB_PREFIX . "review r WHERE r.review_id = '" . (int)$result['review_id'] . "'");
+
+				if ($review_query->row && ($review_query->row['customer_id'] || ($review_query->row['verified_buyer'] || $review_query->row['verified_buyer'] == ''))) {
+					$verified_buyer_text = (array)$this->config->get($this->config->get('rb_module_name') . '_verified_buyer_text');
+
+					if (isset($verified_buyer_text[$this->config->get('config_language_id')])) {
+						$result['author'] .= ' <span class="verified_buyer">' . $verified_buyer_text[$this->config->get('config_language_id')] . '</span>';
+					}
+				}
+			}
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/product.tpl" error="skip">
+		<operation error="skip">
+			<search position="before"><![CDATA[<?php echo $footer; ?>]]></search>
+			<add><![CDATA[
+			<style>
+			.verified_buyer {
+				background-color: #698b22;
+				color: #ffffff;
+				padding: 2px 4px;
+				font-size: 11px;
+				font-weight: normal;
+				-webkit-border-radius: 3px;
+				-khtml-border-radius: 3px;    
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+			}
+			</style>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/controller/product/review_booster.php" error="skip">
+		<operation error="skip">
+			<search position="after"><![CDATA[public function index() {]]></search>
+			<add><![CDATA[
+			$this->load->config('review_booster');
+
+			return new Action($this->config->get('rb_module_path'));
+			]]></add>
+		</operation>
+
+		<operation error="skip">
+			<search position="after"><![CDATA[public function cron() {]]></search>
+			<add><![CDATA[
+			$this->load->config('review_booster');
+
+			return new Action($this->config->get('rb_module_path') . '/cron');
+			]]></add>
+		</operation>
+	</file>
+
+</modification>

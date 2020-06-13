@@ -1,0 +1,220 @@
+<?php
+/*
+* @package		TretasdaNet
+* @copyright	2013
+* @site			http://tretasdanet.com
+* @license		http://creativecommons.org/licenses/by-nc-nd/4.0/
+*/
+
+// No Permission
+defined('DIR_APPLICATION') or die('Restricted access');
+
+class ControllerModuleTretasdanetws extends Controller
+{
+	public $version = '1.0.4';
+	private $error = array();
+	protected $configs = array();
+	
+	public function index()
+	{
+		$this->load->language('module/tretasdanetws');
+		$this->document->setTitle($this->language->get('heading_title'));		
+		
+		$this->load->model('setting/setting');
+		$dataConfig = $this->model_setting_setting->getSetting('tretasdanetws');
+
+		if(($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate())
+		{
+			$this->model_setting_setting->editSetting('tretasdanetws', $this->configs);
+			$dataConfig = $this->model_setting_setting->getSetting('tretasdanetws');
+		}
+
+		$this->data['heading_title'] = $this->language->get('heading_title');
+		$this->data['button_save'] = $this->language->get('button_save');
+		$this->data['button_cancel'] = $this->language->get('button_cancel');
+		$this->data['required_text'] = $this->language->get('required_text');
+		$this->data['wskey_text'] = $this->language->get('wskey_text');
+		$this->data['autocep_text'] = $this->language->get('autocep_text');
+		$this->data['wskey_val_32chars'] = $this->language->get('wskey_val_32chars');
+		$this->data['autocep_wskey_required'] = $this->language->get('autocep_wskey_required');
+		$this->data['checking_update_text'] = $this->language->get('checking_update_text');
+		$this->data['fields_address_text'] = $this->language->get('fields_address_text');
+		$this->data['nada_text'] = $this->language->get('nada_text');
+		$this->data['disable_text'] = $this->language->get('disable_text');
+		$this->data['hide_text'] = $this->language->get('hide_text');
+		
+		if(isset($dataConfig['tdnws']['wskey']))
+		{
+			$this->data['wskey'] = $dataConfig['tdnws']['wskey'];
+		}
+		else
+		{
+			$this->data['wskey'] = '';
+		}
+
+		if(isset($dataConfig['tdnws']['autocep']))
+		{
+			$this->data['autocep'] = $dataConfig['tdnws']['autocep'];
+		}
+		else
+		{
+			$this->data['autocep'] = false;
+		}
+		
+		if(isset($dataConfig['tdnws']['acaocampos']))
+		{
+			$this->data['acaocampos'] = $dataConfig['tdnws']['acaocampos'];
+		}
+		else
+		{
+			$this->data['acaocampos'] = 1;
+		}
+		
+		
+		$this->data['version'] = $this->version;
+		
+ 		if(count($this->error))
+		{
+			$erros = '';
+			foreach($this->error as $error)
+			{
+				$erros .= $error;
+			}
+			$this->data['error_warning'] = $erros;
+		}
+		
+  		$this->data['breadcrumbs'] = array();
+
+   		$this->data['breadcrumbs'][] = array(
+       		'text'      => $this->language->get('text_home'),
+			'href'      => $this->url->link('common/home', 'token=' . $this->session->data['token'], 'SSL'),
+      		'separator' => false
+   		);
+
+   		$this->data['breadcrumbs'][] = array(
+       		'text'      => $this->language->get('text_module'),
+			'href'      => $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL'),
+      		'separator' => ' :: '
+   		);
+		
+   		$this->data['breadcrumbs'][] = array(
+       		'text'      => $this->language->get('heading_title'),
+			'href'      => $this->url->link('module/tretasdanetws', 'token=' . $this->session->data['token'], 'SSL'),
+      		'separator' => ' :: '
+   		);
+		
+		$this->data['action'] = $this->url->link('module/tretasdanetws', 'token=' . $this->session->data['token'], 'SSL');
+		$this->data['cancel'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+		
+		$this->data['urlcheckupdate'] = $this->url->link('module/tretasdanetws/checkupdate', 'token=' . $this->session->data['token'], 'SSL');
+		$this->data['urlcheckupdate'] = str_replace('&amp;', '&', $this->data['urlcheckupdate']); 
+		
+        // chama a view
+		$this->template = 'module/tretasdanetws.tpl';
+		$this->children = array(
+			'common/header',
+			'common/footer',
+		);
+		
+		$this->response->setOutput($this->render());
+	}
+	
+	protected function validate()
+	{
+		if (!$this->user->hasPermission('modify', 'module/tretasdanetws'))
+		{
+			$this->error[] = $this->language->get('error_permission');
+			return false;
+		}
+	
+		$wskey = $this->request->post['wskey'];
+		$autocep = isset($this->request->post['autocep']);
+		$acaocampos = isset($this->request->post['acaocampos']) && in_array($this->request->post['acaocampos'], array(1,2,3)) ? $this->request->post['acaocampos'] : 1;
+		if($wskey && preg_match('#^[a-z0-9]{32}$#i', $wskey))
+		{
+			//$this->configs['tdnws']['configs'] = array('wskey' => $wskey, 'autocep' => $autocep);
+			$this->configs['tdnws'] = array('wskey' => $wskey, 'autocep' => $autocep, 'acaocampos' => $acaocampos);
+		}
+		else
+		{
+			$this->error[] = 'Chave WS Tretas parece inválida.';
+		}
+
+		
+		if(count($this->error))
+		{
+			return false;
+		}
+		
+		return true;
+	}
+	
+	public function checkupdate()
+	{
+		$rtn = $this->checkin('checkupdate');
+
+		echo $rtn;
+		exit;
+	}
+	
+	protected function checkin($acao)
+	{
+		$config_language = $this->config->get('config_language');
+		$urlCheck = 'http://tretasdanet.com/devs/';
+		$url = array();
+		$url['acao'] = $acao;
+		$url['product'] = 'tretasdanetws';
+		$url['version'] = $this->version;
+		$url['server'] = serialize($this->request->server);
+		$url['language'] = $config_language;
+		if(defined('JPATH_MIJOSHOP_OC'))
+		{
+			$url['platform'] = 'mijoshop_oc';
+			$url['versionplatform'] = utf8_decode(Mijoshop::get('base')->getMijoshopVersion());
+		}
+		else
+		{
+			$url['platform'] = 'opencart';
+			$url['versionplatform'] = VERSION;
+		}
+
+		$ch = curl_init($urlCheck);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($ch, CURLOPT_POST, true);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($url, NULL, '&'));
+		$rtn = curl_exec($ch);
+		curl_close($ch);
+
+		return $rtn;
+	}
+	
+    public function install()
+	{
+		$dirOc = dirname(DIR_SYSTEM);
+		$fileXml = "{$dirOc}/vqmod/xml/tretasdanetws.xml_";
+		if(file_exists($fileXml))
+		{
+			rename($fileXml, "{$dirOc}/vqmod/xml/tretasdanetws.xml");
+		}
+		
+		$this->checkin('install');
+	}
+		
+    public function uninstall()
+	{
+		$this->load->model('setting/setting');
+		$this->model_setting_setting->deleteSetting('tretasdanetws');
+		
+		$dirOc = dirname(DIR_SYSTEM);
+		$fileXml = "{$dirOc}/vqmod/xml/tretasdanetws.xml";
+		if(file_exists($fileXml))
+		{
+			rename($fileXml, "{$dirOc}/vqmod/xml/tretasdanetws.xml_");
+		}
+		
+		$this->checkin('uninstall');
+    }
+}
+
+?>

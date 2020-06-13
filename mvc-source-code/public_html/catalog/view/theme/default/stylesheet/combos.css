@@ -1,0 +1,51 @@
+.combo-box {
+	overflow: auto;
+	margin-bottom: 15px;
+}	
+.combo-box + .combo-box  {
+    border-top: 1px solid #EEEEEE;
+    padding-top: 16px;
+}
+.combo-box .combo-name {
+	margin-bottom: 10px;
+}
+.combo-box .combo-name a {
+    color: #38B0E3;
+    font-weight: bold;
+    text-decoration: none;
+}
+.combo-box .price {
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.combo-box .price-old {
+    color: #FF0000;
+    text-decoration: line-through;
+}
+.combo-box .price-new {
+    font-weight: bold;
+}
+.combo-box .combo-thumbs {
+	float: left;
+	margin-right: 20px;
+}
+.combo-box .combo-thumbs span {
+	margin-right: 10px;
+}
+.combo-box .combo-clear {
+	clear: left;
+}
+.combo-box .combo-price {
+	padding-top: 10px;
+}
+.combo-box .plus {
+	margin-bottom: 30px;
+}
+.combo-options .combo-product {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.combo-options .option, .combo-options .error {
+	margin-left: 50px;
+}

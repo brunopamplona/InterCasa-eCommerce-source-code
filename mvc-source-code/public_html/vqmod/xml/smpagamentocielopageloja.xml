@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Alteracoes para Pagamento CIELO PAGE LOJA</id>
+	<version>0.7</version>
+	<vqmver>2.1.6</vqmver>
+	<author>System Master Ltda</author>
+	<file name="catalog/controller/checkout/checkout.php">
+		<operation>
+			<search position="after">
+				<![CDATA[public function index() {]]>
+			</search>
+			<add>
+				<![CDATA[
+					//$this->document->addStyle("fancybox/jquery.fancybox.css");        
+        			//$this->document->addScript("fancybox/jquery.fancybox.pack.js");
+				]]>
+			</add>
+		</operation>
+	</file>
+	<file name="lojaadmin/controller/sale/order.php">
+		<operation>
+			<search position="after">
+				<![CDATA[$this->load->model('sale/order');]]>
+			</search>
+			<add>
+				<![CDATA[
+					if($this->config->get('smcielopageloja_status')){
+						$this->load->model('systemmaster/smcielopageloja');				
+					}					
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="after">
+				<![CDATA[foreach ($this->request->post['selected'] as $order_id) {]]>
+			</search>
+			<add>
+				<![CDATA[
+					// XML - smpagamentocielopageloja ///
+					// Cancelar a transacao caso o pedido seja excluido e o modulo cielo esteja configurado para cancelar transacao ao deletar pedidos ///
+					if($this->config->get('smcielopageloja_status')){
+						if($this->config->get('smcielopageloja_cancelar_transacao_pedido_excluido')){							
+							$this->model_systemmaster_smcielopageloja->cancelarTransacao($order_id);
+						}						
+					}					
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="before">
+				<![CDATA[$this->model_sale_order->addOrderHistory($this->request->get['order_id'], $this->request->post);]]>
+			</search>
+			<add>
+				<![CDATA[
+					// XML - smpagamentocielopageloja ///
+					// Cancelar a transacao caso o pedido esteja com status configurado no array de config do modulo ///
+					if($this->config->get('smcielopageloja_status')){
+						if( in_array( $this->request->post['order_status_id'] , $this->config->get('smcielopageloja_status_pedido_cancelamento_transacao') ) ){
+							$this->model_systemmaster_smcielopageloja->cancelarTransacao( $this->request->get['order_id'] );
+						}						
+					}					
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="before">
+				<![CDATA[$this->model_sale_order->editOrder($this->request->get['order_id'], $this->request->post);]]>
+			</search>
+			<add>
+				<![CDATA[
+					// XML - smpagamentocielopageloja ///
+					// Cancelar a transacao caso o pedido esteja com status configurado no array de config do modulo ///
+					if($this->config->get('smcielopageloja_status')){
+						if( $this->config->get('smcielopageloja_status_pedido_cancelamento_transacao') ){
+							if( in_array( $this->request->post['order_status_id'] , $this->config->get('smcielopageloja_status_pedido_cancelamento_transacao') ) ){
+								$this->model_systemmaster_smcielopageloja->cancelarTransacao( $this->request->get['order_id'] );
+							}						
+						}						
+					}					
+				]]>
+			</add>
+		</operation>		
+	</file>
+</modification>

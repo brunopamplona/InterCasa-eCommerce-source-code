@@ -1,0 +1,799 @@
+<modification>
+	<id>Product Accessories</id>
+	<version>2.1</version>
+	<vqmver>2.1.5</vqmver>
+	<author><![CDATA[Júlio César]]></author>
+	<file name="lojaadmin/controller/catalog/product.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$this->data['tab_image'] = $this->language->get('tab_image');
+			]]></search>
+			<add><![CDATA[
+			$this->data['entry_accessory'] = $this->language->get('entry_accessory');
+			$this->data['entry_essential_accessory'] = $this->language->get('entry_essential_accessory');
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			if (isset($this->request->post['product_related'])) {
+			]]></search>
+			<add><![CDATA[
+			if (isset($this->request->post['product_accessory'])) {
+				$products = $this->request->post['product_accessory'];
+			} elseif (isset($product_info)) {		
+				$products = $this->model_catalog_product->getProductOptionalAccessory($this->request->get['product_id']);
+			} else {
+				$products = array();
+			}
+		
+			$this->data['product_accessories'] = array();
+			$product_accessories_ids = array();
+			$this->data['product_accessories_ids'] = '';				
+			
+			foreach ($products as $product_id) {
+				$accessory_info = $this->model_catalog_product->getProduct($product_id);
+				
+				if ($accessory_info) {
+					$this->data['product_accessories'][] = array(
+						'product_id' => $accessory_info['product_id'],
+						'name'       => $accessory_info['name']
+					);
+					$product_accessories_ids[] = $accessory_info['product_id'];
+				}
+			}
+			if($product_accessories_ids) {
+				$this->data['product_accessories_ids'] = implode(',', $product_accessories_ids);
+			}						
+
+			if (isset($this->request->post['product_essential_accessory'])) {
+				$products = $this->request->post['product_essential_accessory'];
+			} elseif (isset($product_info)) {		
+				$products = $this->model_catalog_product->getProductEssentialAccessory($this->request->get['product_id']);
+			} else {
+				$products = array();
+			}
+		
+			$this->data['product_essential_accessories'] = array();
+			$product_essential_accessories_ids = array();
+			$this->data['product_essential_accessories_ids'] = '';			
+			
+			foreach ($products as $product_id) {
+				$essential_accessory_info = $this->model_catalog_product->getProduct($product_id);
+				
+				if ($essential_accessory_info) {
+					$this->data['product_essential_accessories'][] = array(
+						'product_id' => $essential_accessory_info['product_id'],
+						'name'       => $essential_accessory_info['name']
+					);
+					$product_essential_accessories_ids[] = $essential_accessory_info['product_id'];
+				}
+			}
+			if($product_essential_accessories_ids) {
+				$this->data['product_essential_accessories_ids'] = implode(',', $product_essential_accessories_ids);
+			}						
+			]]></add>
+		</operation>
+	</file>
+	<file name="lojaadmin/language/*/catalog/product.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			<?php
+			]]></search>
+			<add><![CDATA[
+			$_['entry_accessory'] = 'Acessórios Opcionais:<br /><span class="help">(Autocomplete)</span>';
+			$_['entry_essential_accessory'] = 'Acessórios Obrigatórios:<br /><span class="help">(Autocomplete)</span>';
+			]]></add>
+		</operation>
+	</file>
+	<file name="lojaadmin/model/catalog/product.php">
+		<operation>
+			<search position="after"><![CDATA[
+			$product_id = $this->db->getLastId();
+			]]></search>
+			<add><![CDATA[
+			if (isset($data['product_accessories_ids'])) {
+				$product_accessories_ids = explode(',', $data['product_accessories_ids']);
+				foreach ($product_accessories_ids as $accessory_id) {
+					$this->db->query("INSERT INTO " . DB_PREFIX . "product_accessory SET product_id = '" . (int)$product_id . "', accessory_id = '" . (int)$accessory_id . "'");
+				}
+			}
+			if (isset($data['product_essential_accessories_ids'])) {
+				$product_essential_accessories_ids = explode(',', $data['product_essential_accessories_ids']);
+				foreach ($product_essential_accessories_ids as $accessory_id) {
+					$this->db->query("INSERT INTO " . DB_PREFIX . "product_accessory SET product_id = '" . (int)$product_id . "', accessory_id = '" . (int)$accessory_id . "', required = '1'");
+				}
+			}
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			public function editProduct($product_id, $data) {
+			]]></search>
+			<add><![CDATA[
+			$this->db->query("DELETE FROM " . DB_PREFIX . "product_accessory WHERE required = '0' AND product_id = '" . (int)$product_id . "'");
+			
+			if (isset($data['product_accessories_ids'])) {
+				$product_accessories_ids = explode(',', $data['product_accessories_ids']);
+				foreach ($product_accessories_ids as $accessory_id) {
+					$this->db->query("INSERT INTO " . DB_PREFIX . "product_accessory SET product_id = '" . (int)$product_id . "', accessory_id = '" . (int)$accessory_id . "'");
+				}
+			}
+			
+			$this->db->query("DELETE FROM " . DB_PREFIX . "product_accessory WHERE required = '1' AND product_id = '" . (int)$product_id . "'");
+			
+			if (isset($data['product_essential_accessories_ids'])) {
+				$product_essential_accessories_ids = explode(',', $data['product_essential_accessories_ids']);
+				foreach ($product_essential_accessories_ids as $accessory_id) {
+					$this->db->query("INSERT INTO " . DB_PREFIX . "product_accessory SET product_id = '" . (int)$product_id . "', accessory_id = '" . (int)$accessory_id . "', required = '1'");
+				}
+			}
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$data = array_merge($data, array('product_related' => $this->getProductRelated($product_id)));
+			]]></search>
+			<add><![CDATA[
+			$data = array_merge($data, array('product_accessory' => $this->getProductOptionalAccessory($product_id)));
+			$data = array_merge($data, array('product_essential_accessory' => $this->getProductEssentialAccessory($product_id)));
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			public function deleteProduct($product_id) {
+			]]></search>
+			<add><![CDATA[
+			$this->db->query("DELETE FROM " . DB_PREFIX . "product_accessory WHERE product_id = '" . (int)$product_id . "'");
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			public function addProduct($data) {
+			]]></search>
+			<add><![CDATA[
+			public function getProductAccessory($product_id) {
+				$product_accessory_data = array();
+			
+				$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_accessory WHERE product_id = '" . (int)$product_id . "' ORDER BY product_accessory_id");
+			
+				foreach ($query->rows as $result) {
+					$product_accessory_data[] = $result['accessory_id'];
+				}
+			
+				return $product_accessory_data;
+			}
+			
+			public function getProductOptionalAccessory($product_id) {
+				$product_accessory_data = array();
+			
+				$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_accessory WHERE required = '0' AND product_id = '" . (int)$product_id . "' ORDER BY product_accessory_id");
+			
+				foreach ($query->rows as $result) {
+					$product_accessory_data[] = $result['accessory_id'];
+				}
+			
+				return $product_accessory_data;
+			}
+			
+			public function getProductEssentialAccessory($product_id) {
+				$product_accessory_data = array();
+			
+				$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_accessory WHERE required = '1' AND product_id = '" . (int)$product_id . "' ORDER BY product_accessory_id");
+			
+				foreach ($query->rows as $result) {
+					$product_accessory_data[] = $result['accessory_id'];
+				}
+			
+				return $product_accessory_data;
+			}
+			]]></add>
+		</operation>											
+	</file>	
+	<file name="lojaadmin/view/template/catalog/product_form.tpl">
+		<operation>
+			<search position="before" index="1"><![CDATA[
+			<td><?php echo $entry_related; ?></td>
+			]]></search>
+			<add><![CDATA[
+            <tr>
+              <td><?php echo $entry_accessory; ?></td>
+              <td><input type="text" name="accessory" value="" /></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><div class="scrollbox" id="product-accessory">
+                  <?php $class = 'odd'; ?>
+                  <?php foreach ($product_accessories as $product_accessory) { ?>
+                  <?php $class = ($class == 'even' ? 'odd' : 'even'); ?>
+                  <div id="product-accessory<?php echo $product_accessory['product_id']; ?>" class="<?php echo $class; ?>"> <?php echo $product_accessory['name']; ?><img src="view/image/delete.png" />
+					<input type="hidden" value="<?php echo $product_accessory['product_id']; ?>" />
+                  </div>
+                  <?php } ?>
+                </div>
+                <input type="hidden" name="product_accessories_ids" value="<?php echo $product_accessories_ids; ?>" />  
+                </td>
+            </tr>
+            <tr>
+              <td><?php echo $entry_essential_accessory; ?></td>
+              <td><input type="text" name="essential_accessory" value="" /></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><div class="scrollbox" id="product-essential_accessory">
+                  <?php $class = 'odd'; ?>
+                  <?php foreach ($product_essential_accessories as $product_essential_accessory) { ?>
+                  <?php $class = ($class == 'even' ? 'odd' : 'even'); ?>
+                  <div id="product-essential_accessory<?php echo $product_essential_accessory['product_id']; ?>" class="<?php echo $class; ?>"> <?php echo $product_essential_accessory['name']; ?><img src="view/image/delete.png" />
+					<input type="hidden" value="<?php echo $product_essential_accessory['product_id']; ?>" />
+                  </div>
+                  <?php } ?>
+                </div>
+                <input type="hidden" name="product_essential_accessories_ids" value="<?php echo $product_essential_accessories_ids; ?>" />
+                </td>
+            </tr>            
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			$('input[name=\'related\']').autocomplete({
+			]]></search>
+			<add><![CDATA[
+			$('input[name=\'accessory\']').autocomplete({
+				delay: 0,
+				source: function(request, response) {
+					$.ajax({
+						url: 'index.php?route=catalog/product/autocomplete&token=<?php echo $token; ?>&filter_name=' +  encodeURIComponent(request.term),
+						dataType: 'json',
+						success: function(json) {		
+							response($.map(json, function(item) {
+								return {
+									label: item.name,
+									value: item.product_id
+								}
+							}));
+						}
+					});
+				}, 
+				select: function(event, ui) {
+					$('#product-accessory' + ui.item.value).remove();
+					
+					$('#product-accessory').append('<div id="product-accessory' + ui.item.value + '">' + ui.item.label + '<img src="view/image/delete.png" /><input type="hidden" value="' + ui.item.value + '" /></div>');
+
+					$('#product-accessory div:odd').attr('class', 'odd');
+					$('#product-accessory div:even').attr('class', 'even');
+					
+					data = $.map($('#product-accessory input'), function(element){
+						return $(element).attr('value');
+					});
+									
+					$('input[name=\'product_accessories_ids\']').attr('value', data.join());
+								
+					return false;
+				},
+				focus: function(event, ui) {
+					return false;
+				}
+			});
+
+			$('#product-accessory div img').live('click', function() {
+				$(this).parent().remove();
+				
+				$('#product-accessory div:odd').attr('class', 'odd');
+				$('#product-accessory div:even').attr('class', 'even');
+
+				data = $.map($('#product-accessory input'), function(element){
+					return $(element).attr('value');
+				});
+								
+				$('input[name=\'product_accessories_ids\']').attr('value', data.join());	
+			});
+			
+			//
+			
+			$('input[name=\'essential_accessory\']').autocomplete({
+				delay: 0,
+				source: function(request, response) {
+					$.ajax({
+						url: 'index.php?route=catalog/product/autocomplete&token=<?php echo $token; ?>&filter_name=' +  encodeURIComponent(request.term),
+						dataType: 'json',
+						success: function(json) {		
+							response($.map(json, function(item) {
+								return {
+									label: item.name,
+									value: item.product_id
+								}
+							}));
+						}
+					});
+				}, 
+				select: function(event, ui) {
+					$('#product-essential_accessory' + ui.item.value).remove();
+					
+					$('#product-essential_accessory').append('<div id="product-essential_accessory' + ui.item.value + '">' + ui.item.label + '<img src="view/image/delete.png" /><input type="hidden" value="' + ui.item.value + '" /></div>');
+
+					$('#product-essential_accessory div:odd').attr('class', 'odd');
+					$('#product-essential_accessory div:even').attr('class', 'even');
+					
+					data = $.map($('#product-essential_accessory input'), function(element){
+						return $(element).attr('value');
+					});
+									
+					$('input[name=\'product_essential_accessories_ids\']').attr('value', data.join());
+								
+					return false;
+				},
+				focus: function(event, ui) {
+					return false;
+				}
+			});
+
+			$('#product-essential_accessory div img').live('click', function() {
+				$(this).parent().remove();
+				
+				$('#product-essential_accessory div:odd').attr('class', 'odd');
+				$('#product-essential_accessory div:even').attr('class', 'even');
+
+				data = $.map($('#product-essential_accessory input'), function(element){
+					return $(element).attr('value');
+				});
+								
+				$('input[name=\'product_essential_accessories_ids\']').attr('value', data.join());	
+			});							
+			]]></add>
+		</operation>
+		<operation>
+		  <search position="before"><![CDATA[
+			<?php echo $footer; ?>
+			]]></search>
+		  <add><![CDATA[
+			<style type="text/css">
+			.odd, .even {background:#EFEFEF !important; margin:2px;}
+			</style>
+			<script type="text/javascript">
+			$(function() {
+			  $("#product-accessory").css({"height":"auto", "overflow":"auto"}).before("Click and drag to reorder product");
+			  $("#product-accessory").sortable({
+				update: function() {
+				  data = $.map($("#product-accessory input"), function(element){
+						return $(element).val();
+					  });
+				  $("input[name=product_accessories_ids]").val(data.join());
+				  }
+				});			  
+			});
+			
+			//
+			
+			$(function() {
+			  $("#product-essential_accessory").css({"height":"auto", "overflow":"auto"}).before("Click and drag to reorder product");
+			  $("#product-essential_accessory").sortable({
+				update: function() {
+				  data = $.map($("#product-essential_accessory input"), function(element){
+						return $(element).val();
+					  });
+				  $("input[name=product_essential_accessories_ids]").val(data.join());
+				  }
+				});			  
+			});							
+			</script>
+			]]></add>
+		</operation>		
+	</file>
+	<file name="catalog/controller/product/product.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$this->data['heading_title'] = $product_info['name'];
+			]]></search>
+			<add><![CDATA[
+			$this->data['text_accessories'] = $this->language->get('text_accessories');
+			$this->data['text_total_accessories'] = $this->language->get('text_total_accessories');
+			$this->data['text_total_geral'] = $this->language->get('text_total_geral');
+			$this->data['text_accessory_required'] =  $this->language->get('text_accessory_required');
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			$this->data['price'] = false;
+			]]></search>
+			<add><![CDATA[
+			$this->data['price_value'] = false;
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			$this->data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+			]]></search>
+			<add><![CDATA[
+			$this->data['price_value'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), '', '', false);
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			$this->data['special'] = false;
+			]]></search>
+			<add><![CDATA[
+			$this->data['special_value'] = false;
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			$this->data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+			]]></search>
+			<add><![CDATA[
+			$this->data['special_value'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), '', '', false);
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			$this->data['products'] = array();
+			]]></search>
+			<add><![CDATA[
+			$this->data['accessories'] = array();
+			$this->data['accessories_ids'] = array();
+			
+			$results = $this->model_catalog_product->getProductAccessory($this->request->get['product_id']);
+
+			foreach ($results as $result) {
+				if ($result['image']) {
+					$image = $result['image'];
+				} else {
+					$image = 'no_image.jpg';
+				}
+					
+				if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+					$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+					$price_value = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), '', '', false);
+				} else {
+					$price = false;
+					$price_value = false;
+				}
+						
+				if ((float)$result['special']) {
+					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+					$special_value = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')), '', '', false);
+				} else {
+					$special = false;
+					$special_value = false;
+				}
+				
+				if ($result['minimum'] > 1) {
+					$minimum = $result['minimum'];
+				}
+				else if ($result['required']){
+					$minimum = 1;
+				}
+				else{
+					$minimum = 0;
+				}
+				
+				$discounts = $this->model_catalog_product->getProductDiscounts($result['product_id']);
+				
+				$discounts_accessory = array(); 
+				
+				foreach ($discounts as $discount) {
+					$discounts_accessory[] = array(
+						'quantity' => $discount['quantity'],
+						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax'))),
+						'price_value'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), '', '', false)
+					);
+				}				
+				
+				$this->data['accessories'][] = array(
+					'product_id'    => $result['product_id'],
+					'name'    		=> $result['name'],
+					'price'   		=> $price,
+					'price_value'   => $price_value,
+					'special' 		=> $special,
+					'required' 		=> $result['required'],
+					'special_value'	=> $special_value,
+					'minimum'		=> $minimum,
+					'discounts'		=> $discounts_accessory,
+					'image'   		=> $this->model_tool_image->resize($image, 100, 100),
+					'popup'   		=> $this->model_tool_image->resize($image, $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+					'href'    		=> $this->url->link('product/product', 'product_id=' . $result['product_id'])
+				);
+			
+				$this->data['accessories_ids'][] = $result['product_id'];
+			}
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			public function write() {
+			]]></search>
+			<add><![CDATA[
+			public function discount() {
+				$this->language->load('product/product');
+				
+				$this->load->model('catalog/product');
+				
+				$json = array();
+				
+				if ($this->request->server['REQUEST_METHOD'] == 'POST') {
+				
+					if (isset($this->request->get['product_id'])) {
+						$product_id = $this->request->get['product_id'];
+					} else {
+						$product_id = 0;
+					} 				
+					
+					$discount_quantity = (int)$this->request->post['quantity'];
+					
+					$price = $this->model_catalog_product->getProductPrice($product_id, $discount_quantity);
+				
+					if (!$price) {
+						$json['error'] = $this->language->get('error_get_price');
+					}
+					
+					if (!isset($json['error'])) {
+						$json['price'] = $price;
+						$json['success'] = true;
+					}
+				}
+				
+				$this->response->setOutput(json_encode($json));
+			}
+			]]></add>
+		</operation>														
+	</file>
+	<file name="catalog/controller/checkout/cart.php">
+		<operation>
+			<search position="before"><![CDATA[
+			$product_options = $this->model_catalog_product->getProductOptions($this->request->post['product_id']);
+			]]></search>
+			<add><![CDATA[
+			if (isset($this->request->post['accessories'])) {
+				$accessories = array_filter($this->request->post['accessories']);
+			} else {
+				$accessories = array();	
+			}
+							
+			$product_accessories = $this->model_catalog_product->getProductAccessory($this->request->post['product_id']);
+			
+			foreach ($product_accessories as $product_accessory) {
+				if ($product_accessory['required'] && empty($accessories[$product_accessory['product_id']])) {
+					$json['error']['accessory'][$product_accessory['product_id']] = sprintf($this->language->get('error_required'), $product_accessory['name']);
+				}
+			}
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[
+			$this->cart->add($this->request->post['product_id'], $quantity, $option);
+			]]></search>
+			<add><![CDATA[
+			if (isset($this->request->post['accessories'])) {
+				foreach ($this->request->post['accessories'] as $accessory_id=>$accessory_quantity){
+					if((int)$accessory_quantity){
+						$this->cart->add($accessory_id, $accessory_quantity, array());
+					}
+				}
+			}
+			]]></add>
+		</operation>
+	</file>	
+	<file name="catalog/language/*/product/product.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			<?php
+			]]></search>
+			<add><![CDATA[
+			$_['text_accessories']    	= 'Escolha os Acessórios:';
+			$_['text_total_accessories']= 'Total de acessórios:';
+			$_['text_total_geral']    	= 'Total do produto com acessórios:';
+			$_['text_accessory_required'] = '* acessório obrigatório';
+			$_['text_minimum_qty_accessory'] = 'min. qty of %s';
+			$_['error_get_price'] = 'Erro no preço';
+			]]></add>
+		</operation>	
+	</file>
+	<file name="catalog/model/catalog/product.php">
+		<operation>
+			<search position="before"><![CDATA[
+			public function getCategories($product_id) {
+			]]></search>
+			<add><![CDATA[
+			public function getProductAccessory($product_id) {
+				$product_data = array();
+		
+				$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_accessory pa LEFT JOIN " . DB_PREFIX . "product p ON (pa.accessory_id = p.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pa.product_id = '" . (int)$product_id . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "' ORDER BY pa.product_accessory_id");
+				
+				foreach ($query->rows as $result) { 
+					$product_result = $this->getProduct($result['accessory_id']);
+					$product_result['required'] = $result['required'];
+					$product_data[$result['accessory_id']] = $product_result;
+				}
+				
+				return $product_data;
+			}
+			public function getProductPrice($product_id, $discount_quantity) {
+				
+				$price = 0; 
+				
+				$product_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) WHERE p.product_id = '" . (int)$product_id . "' AND pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.date_available <= NOW() AND p.status = '1'");
+				
+				if ($product_query->num_rows) {
+					$price = $product_query->row['price'];
+					
+					if ($this->customer->isLogged()) {
+						$customer_group_id = $this->customer->getCustomerGroupId();
+					} else {
+						$customer_group_id = $this->config->get('config_customer_group_id');
+					}				
+					
+					$product_discount_query = $this->db->query("SELECT price FROM " . DB_PREFIX . "product_discount WHERE product_id = '" . (int)$product_id . "' AND customer_group_id = '" . (int)$customer_group_id . "' AND quantity <= '" . (int)$discount_quantity . "' AND ((date_start = '0000-00-00' OR date_start < NOW()) AND (date_end = '0000-00-00' OR date_end > NOW())) ORDER BY quantity DESC, priority ASC, price ASC LIMIT 1");
+					
+					if ($product_discount_query->num_rows) {
+						$price = $product_discount_query->row['price'];
+					}
+					
+					$product_special_query = $this->db->query("SELECT price FROM " . DB_PREFIX . "product_special WHERE product_id = '" . (int)$product_id . "' AND customer_group_id = '" . (int)$customer_group_id . "' AND ((date_start = '0000-00-00' OR date_start < NOW()) AND (date_end = '0000-00-00' OR date_end > NOW())) ORDER BY priority ASC, price ASC LIMIT 1");
+				
+					if ($product_special_query->num_rows) {
+						$price = $product_special_query->row['price'];
+					}
+					
+					$price = $this->currency->format($this->tax->calculate($price, $product_query->row['tax_class_id'], $this->config->get('config_tax')), '', '', false);				
+				}
+				return $price;			
+			}			
+			]]></add>
+		</operation>	
+	</file>
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation>
+			<search position="before" index="1"><![CDATA[
+			<div class="cart">
+			]]></search>
+			<add><![CDATA[
+		      <?php if ($accessories) { ?>
+              <div style="border-bottom: 1px solid #E7E7E7;color: #4D4D4D;margin-bottom: 20px;overflow: auto; padding: 0 5px 5px;">
+              <h2><?php echo $text_accessories; ?></h2><br />
+		      <table style="width: 100%;">
+		        <?php $has_required = false;?>
+		      	<?php foreach ($accessories as $accessory) { ?>
+		        <?php if ($accessory['required'] == '1') $has_required = true;?>
+		        <tr>
+		          <td align="left" style="padding:2px;border-bottom:1px dotted #DDDDDD;">
+		            <a href="<?php echo $accessory['popup']; ?>" title="<?php echo $accessory['name']; ?>" class="colorbox" rel="colorbox_accessory"><img src="<?php echo $accessory['image']; ?>" title="<?php echo $accessory['name']; ?>" alt="<?php echo $accessory['name']; ?>" /></a>
+		          </td>
+		          <td style="padding:2px 0;border-bottom:1px dotted #DDDDDD;"><?php echo ($accessory['required'] == '0') ? "" : '*';?></td>		          
+		          <td align="left" style="padding:2px;border-bottom:1px dotted #DDDDDD;">
+		            <a href="<?php echo $accessory['href']; ?>"><?php echo $accessory['name']; ?></a>
+		          </td>
+		          <td align="right" style="padding:2px;border-bottom:1px dotted #DDDDDD;">
+		            <?php if (!$accessory['special']) { ?>
+		            <span><?php echo $accessory['price']; ?></span>
+		            <?php } else { ?>
+		            <span style="text-decoration: line-through;"><?php echo $accessory['price']; ?></span> <span style="color: #F00;"><?php echo $accessory['special']; ?></span>
+		            <?php } ?>
+			        <?php if ($accessory['discounts'] && !$accessory['special']) { ?>
+			        <br />
+			        <div style="font-size:11px; color:#999;">
+			          <?php foreach ($accessory['discounts'] as $discount) { ?>
+			          <?php echo sprintf($text_discount, $discount['quantity'], $discount['price']); ?><br />
+			          <?php } ?>
+			        </div>
+			        <?php } ?>		            
+		          </td>
+		          <td align="right" style="white-space:nowrap;padding:2px;border-bottom:1px dotted #DDDDDD;" >
+		          	<?php echo $text_qty; ?>
+		          	<input type="text" name="accessories[<?php echo $accessory['product_id'];?>]" id="accessories[<?php echo $accessory['product_id'];?>]" onclick="this.select();" onkeyup="getDiscount(<?php echo $accessory['product_id'];?>, this.value);;" size="2" style="width:20px;" value="<?php echo ($accessory['required']) ? $accessory['minimum'] : 0; ?>" />
+		          	<input type="hidden" name="accessories_values[<?php echo $accessory['product_id'];?>]" id="accessories_values[<?php echo $accessory['product_id'];?>]" value="<?php echo ($accessory['special_value']) ? $accessory['special_value'] : $accessory['price_value'];?>" />
+			        <?php if ($accessory['minimum'] > 1) { ?>
+			        <br /><span style="font-size:11px; color:#999;"><?php echo sprintf($this->language->get('text_minimum_qty_accessory'), $accessory['minimum']); ?></span>
+			        <?php } ?>		          	
+		          </td>		          
+		        </tr>
+		        <?php } ?>
+		        <tr>
+		        	<td colspan="4" align="right" style="color: #666;"><?php echo $text_total_accessories;?></td>
+		        	<td align="right"><div id="total_accessories">0.0</div></td>
+		        </tr>
+		        <tr>
+		        	<td colspan="4" align="right" style="color: #666; font-weight: bold;"><?php echo $text_total_geral;?></td>
+		        	<td align="right" style="color: #ff8600; font-weight: bold; font-size: 17px;"><div id="total_geral" style="font-weight: bold;"><?php echo ($special) ? $special : $price; ?></div></td>
+		        </tr>
+		        <tr><td colspan="5" style="font-size: 11px; color:#666;" align="right"><?php echo ($has_required) ? $text_accessory_required : '';?></td></tr>
+				<tr><td colspan="5" id="accessory_msg"></td></tr>
+		      </table>
+		      </div>
+		      <?php } ?>
+              
+			  <input type="hidden" name="price_value" id="price_value" value="<?php echo ($special_value) ? $special_value : $price_value; ?>" />
+              <input type="hidden" name="accessories_ids" id="accessories_ids" value="<?php echo implode('.', $accessories_ids); ?>" />
+			]]></add>
+		</operation>	
+		<operation>
+			<search position="before"><![CDATA[
+			<?php echo $footer; ?>
+			]]></search>
+			<add><![CDATA[
+			<script type="text/javascript"><!--
+			function update_accessories(){
+				
+				if($('#accessories_ids').attr('value') == '') return;
+				
+				var product_quantity = $('input[name="quantity"]').attr('value');
+			
+				if(!isNaN(product_quantity)){
+			
+					var product_price = $('#price_value').attr('value');
+			
+					var product_total = product_price * product_quantity;
+				
+					var accessories_ids = $('#accessories_ids').attr('value').split('.');
+					
+					var total_accessories = 0;
+					for (var i = 0; i < accessories_ids.length; i++) {
+						
+						qtde = document.getElementById("accessories["+accessories_ids[i]+"]").value;
+						if(isNaN(qtde)) {
+							document.getElementById("accessories["+accessories_ids[i]+"]").value = 0;
+						}
+						else{
+							value = document.getElementById("accessories_values["+accessories_ids[i]+"]").value;
+					
+							total_accessories += qtde*value;
+						}
+					}
+					var total_geral = product_total + total_accessories;
+				
+					$('#total_accessories').html('R$ ' + total_accessories.toFixed(2));
+					$('#total_geral').html('R$ ' + total_geral.toFixed(2));
+				}
+				else{
+					$('input[name="quantity"]').attr('value', 1);
+				}	
+			}
+			
+			$(document).ready(function() {
+				update_accessories();
+			});
+			
+			function getDiscount(product_id, quantity){
+				$.ajax({
+					url: 'index.php?route=product/product/discount&product_id=' + product_id,
+					type: 'post',
+					dataType: 'json',
+					data: 'quantity=' + quantity,
+					beforeSend: function() {
+						$('#accessory_msg').html('<div class="attention"><img src="catalog/view/theme/default/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
+					},
+					complete: function() {
+						$('.attention').remove();
+					},
+					success: function(data) {
+						if (data['error']) {
+							$('#accessory_msg').html('<div class="warning">' + data['error'] + '</div>');
+						}
+						
+						if (data['success']) {
+							document.getElementById("accessories_values["+product_id+"]").value = data['price'];
+						}
+						update_accessories();
+					}
+				});			
+			}
+			$('input[name="quantity"]').keyup(function() {
+				update_accessories();
+			});
+			//--></script>
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[
+			if (json['error']['option']) {
+			]]></search>
+			<add><![CDATA[
+			if (json['error']['accessory']) {
+				var error_msg = '';
+				for (i in json['error']['accessory']) {
+					error_msg += json['error']['accessory'][i] + '<br />';
+				}
+				$('#accessory_msg').html('<div class="warning">' + error_msg + '</div>');
+			}
+			]]></add>
+		</operation>
+	</file>										
+</modification>

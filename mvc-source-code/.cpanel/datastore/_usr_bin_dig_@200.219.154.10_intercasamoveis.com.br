@@ -1,0 +1,27 @@
+
+; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 <<>> @200.219.154.10 intercasamoveis.com.br
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12730
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 2, ADDITIONAL: 4
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;intercasamoveis.com.br.		IN	A
+
+;; AUTHORITY SECTION:
+intercasamoveis.com.br.	86400	IN	NS	dns2.wsisolucoesonline.com.br.
+intercasamoveis.com.br.	86400	IN	NS	dns1.wsisolucoesonline.com.br.
+
+;; ADDITIONAL SECTION:
+dns1.wsisolucoesonline.com.br. 86400 IN	A	189.38.95.2
+dns1.wsisolucoesonline.com.br. 86400 IN	AAAA	2804:10:2003::95:2
+dns2.wsisolucoesonline.com.br. 86400 IN	A	189.38.95.3
+dns2.wsisolucoesonline.com.br. 86400 IN	AAAA	2804:10:2003::95:3
+
+;; Query time: 64 msec
+;; SERVER: 200.219.154.10#53(200.219.154.10)
+;; WHEN: Sat Jun  7 23:48:07 2014
+;; MSG SIZE  rcvd: 184
+

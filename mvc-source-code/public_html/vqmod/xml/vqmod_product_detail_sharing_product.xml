@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+
+	<id><![CDATA[Sharing Productt]]></id>
+	<version><![CDATA[1.0.0]]></version>
+	<vqmver><![CDATA[2.4.1]]></vqmver>
+	<author><![CDATA[MojeGalanterka.cz]]></author>
+
+
+	<!-- http://www.addthis.com/services/list -->
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  
+  <file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation>
+			<search position="replace" offset="4"><![CDATA[<div class="share"><!-- AddThis Button BEGIN -->]]></search>
+			                                 <add><![CDATA[<!-- AddThis Button Replaced -->]]></add>
+		</operation>
+		<operation>
+			<search position="before" index="1"><![CDATA[<?php if ($review_status) { ?>]]></search>
+			<add><![CDATA[
+<?php $pubid_code = ""; // Enter your code: ra-1234567890123456 ?>
+<div class="share">
+  <div style="color:#999; margin:5px 0;">Sdílet</div>  
+  <!-- AddThis Button BEGIN -->
+  <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+    <a class="addthis_button_facebook"></a>
+    <!-- <a class="addthis_button_twitter"></a> -->
+    <a class="addthis_button_email"></a>
+    <a class="addthis_button_pinterest_share"></a>
+    <a class="addthis_button_google_plusone_share"></a>
+    <!-- <a class="addthis_button_compact"></a> -->
+    <!-- <a class="addthis_counter addthis_bubble_style"></a> -->
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js<?php if ($pubid_code) {echo '#pubid='.$pubid_code;} ?>"></script>
+  <!-- AddThis Button END -->  
+</div>
+      ]]></add>
+		</operation>
+	</file>
+
+</modification>

@@ -1,0 +1,784 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202003 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/awstats.site.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2024                
+POS_TIME 2705                
+POS_VISITOR 11777               
+POS_DAY 18270               
+POS_DOMAIN 3544                
+POS_LOGIN 4122                
+POS_ROBOT 4277                
+POS_WORMS 5366                
+POS_EMAILSENDER 5497                
+POS_EMAILRECEIVER 5640                
+POS_SESSION 19042               
+POS_SIDER 19249               
+POS_FILETYPES 5775                
+POS_DOWNLOADS 6158                
+POS_OS 6832                
+POS_BROWSER 7142                
+POS_SCREENSIZE 8756                
+POS_UNKNOWNREFERER 8830                
+POS_UNKNOWNREFERERBROWSER 9411                
+POS_ORIGIN 9726                
+POS_SEREFERRALS 9866                
+POS_PAGEREFS 10085               
+POS_SEARCHWORDS 11169               
+POS_KEYWORDS 11321               
+POS_MISC 2367                
+POS_ERRORS 11380               
+POS_CLUSTER 3978                
+POS_SIDER_404 11468               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200401002501 86 16354 10375383968016
+FirstTime 20200301014221
+LastTime 20200331205720
+LastUpdate 20200401090425 86 0 85 0 0
+TotalVisits 183                 
+TotalUnique 125                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 190                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+PDFSupport 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 174 0
+FlashSupport 0 0 0
+JavascriptDisabled 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 23 25 4588 71 115 1082971
+1 26 29 4085 59 100 1846832
+2 35 35 4673 72 127 1481266
+3 4 10 163586 58 103 1325773
+4 3 10 1561406 64 89 1243003
+5 4 8 46519 62 95 1014122
+6 7 12 414899 54 100 1522290
+7 47 49 431671 64 112 994473
+8 25 28 837094 61 108 1141081
+9 14 18 840772 104 195 1081359
+10 55 66 140362 88 162 664942
+11 15 20 689649 84 141 1530101
+12 21 25 498611 74 126 635364
+13 29 35 652633 95 174 2397053
+14 8 17 663388 81 136 942532
+15 8 11 114456 76 124 608323
+16 16 27 1498632 82 132 1321985
+17 30 37 592802 82 231 3460111
+18 39 41 12142 78 167 2504259
+19 9 13 944164 64 127 444652
+20 18 21 493050 97 162 1678718
+21 16 21 318516 83 241 1262827
+22 12 19 1323147 76 185 1125720
+23 4 6 101439 75 133 1086816
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 27
+ca 146 154 21769
+us 96 140 3083446
+br 66 102 4588571
+fr 29 29 4988
+ru 28 29 3278
+nl 21 23 352645
+ua 16 19 2242
+gb 14 14 2483
+in 12 14 372659
+cn 8 10 403174
+it 8 9 1136957
+gr 3 3 342
+es 3 3 354
+be 3 3 318
+ma 2 6 419820
+pt 2 8 1553957
+pe 2 2 236
+co 2 2 236
+mx 2 4 135645
+cr 1 1 118
+th 1 1 118
+id 1 1 118
+il 1 1 118
+jp 1 2 102048
+ar 0 1 50658
+ao 0 1 60712
+de 0 1 55274
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 25
+bingbot/ 595 15245640 20200331225311 69
+AhrefsBot/ 440 11162560 20200331224325 44
+CFNetwork 367 43306 20200331000028 0
+Googlebot/ 358 650178 20200331171340 29
+Applebot/ 342 38953 20200331234230 23
+SemrushBot/ 307 28747 20200331201654 145
+bot[\s_+:,\.\;\/\\-] 227 788939 20200331234955 61
+Googlebot\-Image/ 166 3675295 20200330152037 0
+msnbot/ 137 17495 20200331235753 23
+unknown 75 4765 20200331203027 75
+MJ12bot/ 59 6596 20200320001129 6
+DotBot/ 17 311387 20200330204246 8
+YandexBot/ 14 1164 20200330193732 8
+crawl 13 1461 20200327213956 1
+java 10 1060 20200318203324 0
+link 10 62763 20200330060138 9
+(firefox/)([0-9]\.|[0-1][0]\.) 7 742 20200329074535 0
+oBot/ 4 326 20200324212703 2
+Feedfetcher\-Google 4 472 20200328053101 0
+Python\-urllib/ 3 318 20200321131122 0
+YandexImages/ 2 0 20200310182503 0
+facebookexternalhit/ 2 259204 20200315082817 0
+no_user_agent 2 212 20200305181102 0
+Cliqzbot/ 2 175 20200315005442 1
+bingpreview 1 68737 20200314210905 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 20
+gif 7 1135878 0 0
+bak 4 448 0 0
+action 1 106 0 0
+Unknown 42 4620 0 0
+sql 6 708 0 0
+js 1 118 0 0
+css 20 5407 0 0
+png 3 39646 0 0
+html 262 29098 0 0
+old 3 342 0 0
+dist 1 118 0 0
+php 129 14376 0 0
+swp 1 118 0 0
+inc 2 236 0 0
+env 2 236 0 0
+new 1 106 0 0
+txt 12 1416 0 0
+jpg 72 11106531 0 0
+xml 13 12658 0 0
+save 1 118 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 13
+/ads.txt 31 0 3658
+/wp-content/plugins/wp-homepage-slideshow/readme.txt 1 0 118
+/wp-content/plugins/estatik/readme.txt 1 0 118
+/wp-content/plugins/wp-formgenerator/changelog.txt 1 0 118
+/wp-content/plugins/wp2android-turn-wp-site-into-android-app/readme.txt 1 0 118
+/wp-content/plugins/wp-mobile-detector/readme.txt 1 0 118
+/wp-content/plugins/wp-dreamworkgallery/readme.txt 1 0 118
+/wp-content/plugins/wp-easy-gallery-pro/LICENSE.txt 1 0 118
+/wp-content/plugins/delucks-seo/readme.txt 1 0 118
+/media/spy.txt 1 0 118
+/wp-config.txt 1 0 118
+/wp-config.php.txt 1 0 118
+/wp-content/plugins/php-event-calendar/readme.txt 1 0 118
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 19
+win10 244 199
+linuxandroid 42 34
+win7 99 63
+macosx 13 13
+win8 2 2
+macosx7 2 2
+winphone 2 0
+winxp 4 1
+Unknown 46 33
+macosx5 1 1
+macosx6 3 3
+macosx8 4 4
+macosx9 4 4
+linux 33 32
+ios_iphone 10 7
+winlong 1 1
+win8.1 23 19
+ios_ipad 47 47
+macosx10 3 3
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 82
+webcollage 2 0
+chrome80.0.3987.87 10 10
+chrome67.0.3396.87 1 1
+chrome74.0.3729.131 1 1
+firefox65.0 2 0
+chrome79.0.3945.93 1 1
+chrome30.0.0.0 1 1
+edge16 2 0
+firefox62.0 15 15
+edge13 1 0
+chrome46.0.2490.80 1 1
+chrome40.0.2214.89 1 0
+firefox73.0 1 1
+safari 1 0
+chrome75.0.3770.100 7 7
+chrome63.0.3233.0 1 0
+android 8 7
+msie11.0 7 2
+safari6.1.5 1 1
+chrome55.0.2883.91 1 1
+opera53.0.2907.106 1 1
+firefox63.0 8 8
+safari8.0 3 3
+edge18 17 0
+chrome71.0.3578.98 1 1
+chrome42.0.2311.90 6 6
+firefox67.0 2 1
+chrome75.0.3770.143 1 1
+firefox64.0 37 29
+safari12.1.2 17 17
+firefox31.0 10 10
+chrome56.0.2896.3 3 2
+firefox57.0 17 14
+chrome76.0.3809.132 8 8
+firefox11.0 3 0
+safari10.0 1 1
+chrome80.0.3987.119 8 6
+chrome79.0 56 56
+chrome80.0.3987.122 6 5
+firefox30.0 4 4
+chrome68.0.3440.84 1 1
+chrome78.0.3904.97 8 8
+chrome67.0.3396.99 1 1
+chrome80.0.3987.99 1 1
+chrome73.0.3683.90 4 4
+netscape5.0 1 1
+chrome63.0.3239.132 12 12
+firefox59.0 1 1
+chrome4.0.249.0 1 1
+Unknown 32 30
+chrome79.0.3945.116 1 1
+edge17 1 1
+opera53.0.2907.99 1 1
+chrome35.0.1916.153 3 3
+chrome36.0.1985.125 4 4
+chrome80.0.3987.132 17 4
+safari13.0.5 3 2
+chrome80.0.3987.106 1 1
+edge15 1 0
+chrome49.0.2623.75 6 6
+firefox66.0 1 1
+msie7.0 1 1
+iphone 4 3
+chrome42.0.2311.152 32 5
+chrome79.0.3945.136 2 0
+chrome79.0.3945.130 2 1
+chrome80.0.3987.149 11 6
+msie10.0 3 3
+firefox24.0 1 1
+firefox58.0 9 9
+edge14 1 0
+chrome78.0.3904.87 2 2
+safari12.0 30 30
+netscape4.0 1 1
+msie9.0 25 25
+chrome78.0.3904.96 2 2
+mozilla 11 2
+safari13.0.1 2 2
+firefox50.0 50 50
+chrome78.0.3904.108 16 16
+safari13.0.4 1 1
+chrome71.0.3578.141 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 12
+Blackboard_Safeassign 20200330164142
+webcollage/1.183 20200303231958
+webcollage/1.182 20200303174412
+Mozilla/5.0_(compatible;_NetcraftSurveyAgent/1.0;__info@netcraft.com) 20200331135247
+Go-http-client/1.1 20200301014221
+python-requests/2.22.0 20200305101848
+Mozilla/5.0 20200323143648
+python-requests/2.23.0 20200331084957
+YahooCacheSystem;_YahooWebServiceClient 20200322132626
+Dispatch/0.11.3 20200327174000
+Mozilla/5.0_(compatible;_tracemyfile/1.0) 20200316075856
+Mozilla/4.0 20200306114354
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+python-requests/2.23.0 20200331084957
+YahooCacheSystem;_YahooWebServiceClient 20200322132626
+Dispatch/0.11.3 20200327174000
+Blackboard_Safeassign 20200330164142
+python-requests/2.22.0 20200305101848
+Go-http-client/1.1 20200301014221
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 413 459
+From1 0 0
+From2 13 42
+From3 28 39
+From4 14 43
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+www_google_com 7 8
+br_search_yahoo_com 0 2
+www_google_com_hk 6 6
+bing 0 26
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 20
+http://pinterest.com/pin/338262621991014135/ 5 5
+http://pinterest.com/pin/41447259048478579/ 4 4
+https://br.pinterest.com 4 6
+https://www.pinterest.es 2 2
+https://www.pinterest.com 2 2
+http://www.pinterest.com/pin/338262621991014135 2 2
+http://www.pinterest.com/pin/529595237416177353 1 1
+http://pinterest.com/pin/338262621991014137/ 1 1
+http://pinterest.com/pin/588001295086840404/ 1 1
+http://pinterest.com/pin/344173596525793715/ 1 1
+https://www.pinterest.fr 1 1
+http://pinterest.com/pin/760334349561857436/ 1 1
+http://pinterest.com/pin/735353445393185023/ 1 1
+http://pinterest.com/pin/777222848181319548/ 1 1
+http://pinterest.com/pin/12244230224012491/ 1 1
+http://digitaliphonetv.blogspot.com/2015/06/mini-cama-infantil-com-gavetas.html 0 5
+http://pinterest.com/pin/557531628851518820/ 0 1
+http://www.pinterest.com 0 1
+http://smartphoneofertas.blogspot.com/2015/05/cama-de-escorrega.html 0 1
+http://digitaliphonetv.blogspot.com 0 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+206 47 5546
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 0
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 190
+167.114.200.140 45 53 6308 20200305101848
+179.213.81.182 22 22 2596 20200330212817
+198.27.81.94 22 22 2380 20200324072859
+89.248.174.46 21 21 2226 20200311182815
+142.44.251.104 20 20 3998 20200312082103
+62.210.140.151 16 16 3574 20200313001505
+192.99.43.100 15 15 1590 20200330022903
+192.99.245.217 15 15 1590 20200330011541
+207.180.244.44 15 15 1590 20200315135025
+13.91.201.3 12 12 3150 20200310170106
+158.69.38.243 12 12 2211 20200324133436
+37.187.74.109 11 11 1190 20200321071424
+194.61.24.94 10 13 1534 20200315160956
+93.124.15.87 10 10 1060 20200323003826
+148.72.153.211 9 9 954 20200326023356
+187.35.234.163 9 9 1062 20200331000024
+158.69.158.103 8 8 1787 20200317185104
+164.132.47.19 8 8 1787 20200331004248
+51.79.111.220 8 8 1787 20200331205720
+158.69.158.101 8 8 1787 20200329025445
+52.167.155.74 8 8 1787 20200324080409
+191.162.237.227 7 7 826 20200311185523
+157.245.221.109 5 5 530 20200308120139
+172.104.210.172 5 5 530 20200322114119
+50.116.49.144 5 5 530 20200321123222
+95.136.100.167 2 2 236 20200328102048
+38.135.200.144 1 1 106 20200327171949
+13.90.88.105 1 1 118 20200330175946
+77.74.177.114 1 1 118 20200327192926
+114.119.165.187 1 1 118 20200319201246
+177.25.132.89 1 1 118 20200312145601
+201.103.122.67 1 1 118 20200326085009
+189.54.175.202 0 1 45693 
+179.112.106.148 1 1 118 20200318073353
+189.85.154.197 0 1 60712 
+95.216.200.208 4 4 472 20200311092422
+190.113.215.23 2 2 236 20200302230019
+157.245.1.98 1 1 106 20200331135247
+151.37.241.243 0 1 1135170 
+177.126.11.70 0 1 50658 
+177.119.207.193 1 1 118 20200304093537
+177.92.168.193 0 1 45693 
+114.236.175.43 0 1 62250 
+64.233.172.221 0 1 45693 
+206.189.68.222 1 1 118 20200323181017
+223.111.150.12 1 1 106 20200306114354
+45.232.132.51 0 1 117901 
+194.7.35.200 3 3 318 20200318004059
+34.91.102.2 0 1 376694 
+149.248.184.215 0 1 55274 
+201.30.119.14 1 1 118 20200307143233
+201.1.19.161 0 1 50658 
+201.17.88.107 0 1 285082 
+187.189.100.75 0 1 67701 
+185.116.140.124 1 1 118 20200328191154
+114.119.161.240 0 1 339992 
+34.90.55.143 0 1 35429 
+103.82.235.2 2 3 3401 20200302195026
+154.66.106.89 0 1 60712 
+90.163.184.38 1 1 118 20200309083427
+13.113.175.77 1 1 118 20200308000542
+36.73.34.11 1 1 118 20200310123413
+187.26.169.110 0 3 604946 
+195.123.217.153 1 1 118 20200301014221
+45.162.93.243 0 1 368078 
+212.92.105.137 3 3 354 20200313050548
+185.153.196.226 1 1 118 20200331084957
+34.90.199.56 0 1 104067 
+191.255.3.83 0 1 273996 
+64.233.172.203 1 1 118 20200328125735
+209.90.225.220 3 16 1888 20200313125633
+67.195.177.63 0 1 45240 
+66.249.88.95 0 1 6855 
+91.204.46.58 1 1 118 20200310112624
+177.11.94.146 0 1 200872 
+77.170.243.241 0 1 295145 
+212.92.122.196 4 4 472 20200324173009
+177.103.123.177 0 1 200872 
+168.227.88.254 0 1 50658 
+177.99.51.231 0 1 45693 
+188.93.56.216 1 2 236 20200319164547
+104.236.127.247 1 1 118 20200301183818
+66.249.93.221 1 1 118 20200308195155
+179.228.212.64 1 1 118 20200302215348
+177.17.216.243 0 1 368078 
+94.73.194.12 1 1 118 20200323110752
+187.0.197.174 0 2 353173 
+177.42.33.138 0 1 60712 
+114.119.165.167 1 1 118 20200320055822
+189.5.100.252 3 3 354 20200329103353
+186.241.33.113 0 1 45693 
+149.100.187.93 1 1 106 20200327174000
+187.123.0.101 0 2 83155 
+193.128.111.37 1 1 106 20200309073914
+177.79.34.66 1 1 118 20200323163124
+209.90.225.219 2 16 1888 20200311021552
+189.235.138.6 0 1 67708 
+80.95.45.238 1 1 106 20200302081456
+157.230.218.128 1 1 118 20200323135935
+45.228.101.61 1 1 118 20200313011033
+104.131.0.18 1 1 118 20200323123543
+200.159.141.36 0 1 45693 
+177.9.69.199 0 1 82918 
+200.223.107.58 0 1 273996 
+187.16.4.1 1 1 118 20200309140310
+189.102.158.31 0 1 101942 
+186.224.26.28 1 1 118 20200310002249
+177.144.158.98 2 2 236 20200325093434
+195.154.172.15 1 1 118 20200321031038
+45.235.161.153 0 1 139029 
+82.80.249.192 1 1 118 20200310092555
+195.201.85.122 1 1 118 20200321200712
+179.232.220.127 0 1 45693 
+201.87.154.97 0 1 273996 
+157.245.113.214 1 1 118 20200323164410
+191.249.192.17 2 2 236 20200318063702
+186.204.68.177 2 2 236 20200308214354
+189.100.48.43 0 1 285082 
+213.125.12.142 0 1 55274 
+95.152.35.115 1 1 106 20200326025032
+79.103.243.158 1 1 118 20200308135035
+189.6.24.89 0 1 45693 
+45.181.218.163 5 5 590 20200305085121
+179.99.166.165 0 1 101942 
+187.25.50.82 1 1 118 20200306124252
+142.4.211.200 1 1 118 20200307182610
+191.102.198.247 1 1 118 20200326230410
+45.233.138.242 0 2 162654 
+187.105.238.227 0 1 45693 
+200.153.120.90 1 1 106 20200305091601
+18.217.90.224 1 1 0 20200306104629
+66.249.85.25 0 1 45693 
+66.70.160.89 2 2 236 20200324030714
+168.195.197.211 0 1 265045 
+34.91.196.207 0 3 760718 
+114.119.160.27 1 1 118 20200318202616
+168.195.182.174 1 1 118 20200320214232
+190.113.114.52 1 1 118 20200307165754
+201.80.61.125 1 1 118 20200315091744
+212.92.108.24 1 1 118 20200303210603
+177.55.59.87 0 1 45693 
+213.194.182.204 1 1 118 20200303191228
+201.80.122.208 1 1 118 20200304233021
+191.160.68.59 1 1 118 20200303105141
+23.100.232.233 4 4 472 20200315212454
+64.233.172.91 1 1 118 20200301155132
+34.91.113.20 0 1 337947 
+66.249.83.193 2 2 236 20200324072633
+114.119.166.246 1 1 118 20200320013532
+178.128.150.120 1 1 106 20200328110513
+34.91.87.134 0 1 371929 
+179.69.150.12 1 1 118 20200328170650
+45.136.108.44 4 4 472 20200317182103
+114.119.160.164 1 1 118 20200319120534
+160.238.135.49 0 1 101942 
+138.197.220.231 1 1 118 20200331083702
+189.249.3.5 1 1 118 20200318205418
+92.53.96.184 1 1 118 20200306093329
+94.132.105.179 0 2 353173 
+179.236.74.105 0 1 45693 
+186.102.11.121 1 1 118 20200306135553
+114.119.167.250 1 1 118 20200318150953
+168.195.198.75 0 1 265045 
+67.195.177.83 0 1 273996 
+185.234.218.174 1 1 118 20200303101734
+91.121.183.15 1 1 106 20200319030134
+191.193.169.55 0 1 45693 
+186.240.101.245 1 1 118 20200324091941
+178.128.107.95 1 1 118 20200311120648
+177.87.99.3 0 1 45693 
+110.49.47.242 1 1 118 20200322124702
+114.119.161.95 1 1 118 20200322140901
+104.199.216.0 1 1 118 20200317093233
+94.62.20.35 0 3 832470 
+201.22.172.118 2 2 236 20200310130450
+188.81.202.166 0 1 368078 
+187.95.173.8 0 1 273996 
+34.91.189.247 0 1 87181 
+51.77.249.202 5 5 590 20200326152833
+177.97.120.153 1 1 118 20200301211718
+49.204.231.173 1 1 118 20200323152029
+45.252.250.106 1 1 118 20200315095035
+38.128.157.31 1 1 106 20200327173711
+133.242.50.222 1 1 106 20200323143648
+66.249.83.223 2 2 236 20200331101015
+64.233.172.207 0 1 45693 
+34.202.93.213 4 4 236 20200330164142
+189.68.27.90 1 1 118 20200314171412
+90.162.147.45 1 1 118 20200331104228
+179.234.97.16 0 1 45693 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20200301 5 5 590 5
+20200302 14 19 749920 6
+20200303 4 7 171732 4
+20200304 5 14 897010 4
+20200305 56 70 460345 6
+20200306 17 22 139768 8
+20200307 4 10 357257 4
+20200308 14 17 47521 7
+20200309 6 9 377626 6
+20200310 27 32 158097 9
+20200311 34 36 334463 9
+20200312 19 22 187472 8
+20200313 17 18 63549 8
+20200314 4 11 1625559 4
+20200315 22 28 1083691 7
+20200316 1 6 508890 1
+20200317 11 16 834847 4
+20200318 11 13 369458 7
+20200319 5 10 201910 5
+20200320 3 5 590 3
+20200321 19 20 2192 5
+20200322 8 9 274868 4
+20200323 9 10 275034 9
+20200324 46 49 430045 7
+20200325 2 2 236 2
+20200326 18 24 1278033 7
+20200327 11 13 332037 10
+20200328 7 10 214126 6
+20200329 11 15 446700 3
+20200330 36 37 105712 7
+20200331 22 24 423006 8
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 2
+15mn-30mn 1
+1h+ 1
+2mn-5mn 6
+0s-30s 166
+30s-2mn 4
+30mn-1h 3
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 110
+/ 101 11018 52 37
+/moveis-infantis/camas/camas-altas/ 29 3422 15 15
+/xmlrpc.php 26 2756 4 13
+/wp-login.php 25 2758 10 10
+/index.php 17 2006 0 0
+/tag/quartos-de-menina/ 16 1888 16 16
+/wp-json/wp/v2/users/ 15 1602 1 1
+/wordpress/ 14 1532 3 2
+/blog/ 13 1414 0 1
+/wp/ 13 1414 0 4
+/tag/quartos-de-adolescente/ 13 1534 11 11
+/wp-json/oembed/1.0/embed 12 1272 0 0
+/wp-includes/wlwmanifest.xml 12 12540 0 0
+/tag/cama-safari/ 11 1298 10 10
+/empresa/quem-somos/ 9 1026 4 4
+/administrator/wp-login.php 7 742 0 0
+/moveis-infantis/bercos/ 5 590 4 4
+/components/com_jbcatalog/libraries/jsupload/server/php 5 590 0 0
+/administrator/components/com_rokdownloads/assets/uploadhandler.php 4 472 0 0
+/category/treliches/ 4 472 3 3
+/wp-json/trx_addons/v2/get/sc_layout 4 472 1 0
+/administrator/components/com_extplorer/uploadhandler.php 4 472 0 1
+/wp-admin/plugin-install.php 4 424 0 2
+/components/com_sexycontactform/fileupload/ 3 354 0 0
+/lancamento-intercasa-para-quarto-infantil 2 212 0 0
+/wp-content/plugins/wp-easy-gallery-pro/admin/php.php 1 118 1 1
+/wp-config.php.inc 1 118 1 1
+/info/wp-login.php 1 106 0 0
+/components/com_sexycontactform/fileupload/files/up.php 1 118 0 0
+/news/wp-login.php 1 106 0 0
+/.env 1 118 1 1
+/admin/login.php 1 172 1 0
+/configuration.bak 1 106 0 0
+/configuration.php.bak 1 106 0 0
+/wordpress/wp-login.php 1 106 0 0
+//vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 2 236 0 1
+/wpmu/wp-login.php 1 106 0 0
+/lancamento-para-quarto-de-bebe-comoda-mila 2 212 0 2
+/tag/quartos-de-menino/ 2 118 1 1
+/new/ 1 118 0 1
+/empresa/ 2 118 1 1
+/wp-config.php.bak 1 118 1 1
+/images/stories/up.php 2 236 0 0
+/wp/wp-login.php 1 106 0 0
+/wp-config.php.swp 1 118 1 1
+/tag/moveis-infantis-2/ 1 118 1 1
+/blog/wp-login.php 1 106 0 0
+/web/wp-login.php 1 106 0 0
+/.git/config 2 236 2 2
+/wp-content/themes/ThisWay/includes/uploadify/upload_settings_image.php 1 118 1 1
+/fale-conosco/assistencia-tecnica/ 1 118 1 1
+/new/wp-login.php 1 106 0 0
+//.env 1 118 1 0
+/language/en-GB/en-GB.xml 1 118 0 0
+/old/wp-login.php 1 106 0 0
+/configuration.php_bak 1 106 0 0
+/press/wp-login.php 1 106 0 0
+/wp-config.php~ 1 118 1 1
+/wp-content/plugins/mm-forms-community/includes/doajaxfileupload.php 1 118 1 1
+/administrator/wp-json/trx_addons/v2/get/sc_layout 2 236 1 0
+/tag/quartos-de-bebe/ 1 118 1 1
+/aplicativo-para-iphone-e-ipad-para-criancas 2 212 2 0
+/wp-config.php.dist 1 118 1 1
+/category/comodas/ 1 118 1 1
+/sites/all/libraries/dompdf/dompdf.php 1 106 1 1
+/novidade-da-intercasa-para-o-dia-das-criancas 2 212 0 0
+/wp-config.inc 1 118 1 1
+/tag/beliches-3/ 1 118 1 1
+/wp-content/themes/village/blueprint/gallery/ajaxupload/server/php.php 1 118 1 1
+/sites/wp-login.php 1 106 0 0
+/configuration.php-bak 1 106 0 1
+/com.sql 1 118 1 1
+/wp-links-opml.php 2 236 2 2
+/xijxindex.action 1 106 1 1
+/configuration.php.old 1 106 0 0
+/fale-conosco 1 106 1 1
+/mail.sql 1 118 1 1
+/wp-admin/ 1 0 1 1
+/components/com_hdflvplayer/hdflvplayer/download.php 2 236 0 0
+/english/wp-login.php 1 106 0 1
+/home/wp-login.php 1 106 0 0
+/category/quartos/ 2 236 2 2
+/administrator/components/com_alberghi/upload.alberghi.php 1 118 0 0
+/configuration.php.new 1 106 0 0
+/portal/wp-login.php 1 106 0 0
+/blogs/wp-login.php 1 106 0 0
+/email.sql 1 118 1 1
+/configuration.php_Old 1 106 0 0
+/db.sql 1 118 1 1
+/nova-linha-de-escrivaninhas-e-homes-com-paineis-para-tv/ 1 118 1 1
+/como-transformar-o-quarto-de-crianca-em-um-de-adolescente/ 1 118 1 1
+/demo/wp-login.php 1 106 0 0
+/configuration.php_old 1 106 1 0
+/wp-config.php.save 1 118 1 1
+/wp-config.php.old 1 118 1 1
+/moveis-infantis/camas/cama-dossel/ 1 118 1 1
+/wp-content/plugins/revslider/temp/update_extract/conf.php 1 118 1 1
+/en/wp-login.php 1 106 0 0
+/wp-config.old 1 118 1 1
+/plugins/content/s5_media_player/helper.php 2 236 0 0
+/wp-admin/admin-post.php 1 118 1 1
+/site/wp-login.php 1 106 0 0
+/components/com_jbcatalog/libraries/jsupload/server/php/files/up.php 1 118 0 0
+/sitio/wp-login.php 1 106 0 0
+/administrator/wp-admin/plugin-install.php 2 212 0 0
+/novidades-intercasa-para-2013 2 212 0 0
+/bd.sql 1 118 1 1
+/configuration.php_new 1 106 0 0
+/backup.sql 1 118 1 1
+/wp-config.bak 1 118 1 1
+END_SIDER

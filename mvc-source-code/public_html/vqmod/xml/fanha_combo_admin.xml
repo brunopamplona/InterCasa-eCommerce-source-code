@@ -1,0 +1,28 @@
+<modification>
+	<id>Combo in admin page</id>
+	<version>1.5.x</version>
+	<vqmver>2.3.x</vqmver>
+	<author>Fanha Giang</author>
+	<!-- begin admin control -->
+	<file name="lojaadmin/view/template/common/header.tpl">
+		<operation>
+			<search position="after"><![CDATA[<li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>]]></search>
+			<add><![CDATA[<li><a href="<?php echo $combo; ?>"><?php echo $text_combo_title; ?></a></li>]]></add>
+		</operation>
+	</file>
+	<file name="lojaadmin/controller/common/header.php">
+		<operation>
+			<search position="before"><![CDATA[$this->data['heading_title'] = $this->language->get('heading_title');]]></search>
+			<add><![CDATA[
+				$this->language->load('catalog/combo');
+				
+				$this->data['text_combo_title'] = $this->language->get('text_combo_title');
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[$this->data['affiliate'] = $this->url->link('sale/affiliate', 'token=' . $this->session->data['token'], 'SSL');]]></search>
+			<add><![CDATA[$this->data['combo'] = $this->url->link('catalog/combo', 'token=' . $this->session->data['token'], 'SSL');]]></add>
+		</operation>
+	</file>
+	<!-- end admin control -->
+</modification>

@@ -1,0 +1,484 @@
+/* ADMIN PANEL STYLES */
+
+/* iModules */
+.iModuleContent ul, li {
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+
+.iModuleContent h1 .iModulesTitle {
+	color:#333;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	display: block;
+	float: left;
+	margin-right:20px;
+}
+
+.iModuleContent .box > .heading h1 {
+	width: 680px;	
+}
+
+ul.iModuleAdminMenu {
+	width: 160px;
+	list-style:none;
+	padding:0;
+	margin:-10px 0 0 -30px;
+	background:#EDEDED;
+	min-height: 319px;
+	float:left;
+	font-family: Trebuchet MS;
+	border-left: 1px solid #CCC;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #CCC;
+}
+
+.iModuleAdminMenu li {
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:block;
+	height: 38px;
+	margin-bottom: 0px;
+	line-height:38px;
+	padding-left: 30px;
+	font-size: 14px;
+	cursor:pointer;
+	color:#333;
+	text-shadow: #fff 1px 1px 0px;
+}
+
+.iModuleAdminMenu li.selected {
+	background:#CFDE55;
+}
+
+.iModuleAdminMenu li:hover {
+	color:#000;
+}
+
+
+.iModuleAdminSuperMenu {
+	float: left;	
+	margin-left: 19px;
+}
+
+.iModuleAdminSuperMenu li {
+	float: left;	
+	font-size: 14px;
+	line-height:23px;
+	cursor: pointer;
+	color: #333;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	padding: 0 10px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	margin-top: -7px;
+	margin-right: 5px;
+	background: #DBDBDB;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.iModuleAdminSuperMenu li.selected {
+	background:#fff;
+	font-weight:bold;
+	color:#333;
+}
+
+
+.iModuleAdminWrappers {
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+
+.iModuleAdminWrappers li {
+	list-style:none;
+	padding:0;
+	margin:0;
+	height: 100%;
+	margin-bottom: 15px;
+	padding: 10px;
+	display: none;
+}
+
+.iModuleAdminWrappers hr {
+	border: none;
+	border-bottom: 1px dashed #ccc;
+}
+
+.iModuleAdminWrappers label {
+	min-width: 200px;	
+	margin-top:5px;
+	display:block;
+	float:left;
+	padding-right: 15px;
+}
+
+.iModuleAdminWrappers .iModuleFields > span {
+	float:left !important;	
+}
+
+.iModuleAdminWrappers select, .iModuleAdminWrappers input, .iModuleAdminWrappers textarea {
+	min-width: 140px;	
+}
+
+.iModuleAdminWrappers textarea {
+	min-height:140px;	
+	min-width:400px;
+}
+
+.iModuleAdminWrappers li:first-child {
+	display:block;	
+}
+
+.iModuleWrapperTitle {
+	font-size: 16px;
+	margin-bottom: 15px;	
+}
+
+.iModuleAdminSuperWrappers .content {
+	padding: 10px;
+	margin-left: 160px;
+	min-height: 320px;
+}
+
+.iModuleAdminSuperWrappers > li {
+	display:none;	
+}
+
+.iModuleAdminSuperWrappers > li:first-child {
+	display: block;
+}
+
+.iModuleContent .clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.iModuleContent .clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .iModuleContent .clearfix {
+	display: block;
+}
+ 
+* html .iModuleContent .clearfix {
+	height: 1%;
+}
+
+.iModuleAdminSuperWrappers .iModuleWrapperTitle h2 {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:none;
+	text-transform:none;
+	font-size: 24px;
+}
+
+.iModuleAdminSuperWrappers .iModuleWrapperTitle h3 {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:none;
+	text-transform:none;
+	font-size: 18px;
+}
+
+.iModuleAdminSuperWrappers .iModuleWrapperText {
+	font-size: 12px;	
+}
+
+.iModuleAdminSuperWrappers .supportUL, .iModuleAdminSuperWrappers .iModuleUL {
+	padding-left: 20px;	
+}
+
+.iModuleAdminSuperWrappers .iModuleSupportButton {
+	background:#51AA68;
+	padding: 10px 20px;
+	color:white;
+	border: 2px solid #fff;
+	outline: 2px solid #4E9660;
+	text-decoration:none;
+	display:inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	
+}
+
+.iModuleAdminSuperWrappers .iModuleSupportButton:hover {
+	background:#4E9660;
+}
+
+.iModuleContent .box .notActivatedContent {
+	padding: 10px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	min-height: 300px;
+	overflow: auto;	
+	text-align:center;
+	padding-top: 80px;
+}
+
+.iModuleContent .box .notActivatedContent h1 {
+	font-size:28px;
+	
+}
+
+.iModuleContent .iModuleActivateButton {
+	background:#069;
+	padding: 16px 28px;
+	color:white;
+	border: 4px solid #fff;
+	outline: 4px solid #ccc;
+	text-decoration:none;
+	display:inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 34px;
+	
+}
+
+.iModuleContent .iModuleActivateButton:hover {
+	background:#06d;
+}
+
+.wideBoxes input, .wideBoxes textarea {
+	width:320px;
+}
+
+
+/* FacebookLogin */
+.colorsLi .colorPreview {
+	width: 18px;
+	height: 18px;
+	background:#ccc;
+	border: 1px solid #aaa;
+}
+
+.colorsLi tr th {
+	color:#333;
+	font-size:13px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+	text-align:left;
+	padding-left:10px;
+}
+
+.colorsLi tr td {
+	text-align:left;	
+}
+
+.leftBoxTitle {
+	display:inline-block;	
+	margin-right: 10px;
+	
+}
+.leftBoxInput {
+	display:inline-block;	
+	margin-right: 3px;
+}
+
+.buttonPositionOpenCart {
+	display:inline-block;
+	min-width: 128px;
+	padding-left: 14px;	
+}
+
+.buttonPositionOpenCart:first-child {
+	padding-left: 0px;	
+}
+
+.module-row-label {
+	width: 100px;
+	text-align: right;
+	display:inline-block;
+	margin-right: 5px;
+}
+
+.module-row-input-number {
+	width: 50px;	
+	margin-left: 2px;
+}
+
+.cssSelectorBox {
+	width: 280px;	
+}
+
+/* -- Facebook Standard Login Button -- */
+
+a.fbkStandardBtn {
+	display: inline-block;
+	text-decoration: none;
+	font-family: Tahoma, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #fff;
+	height: 19px;
+	line-height: 18px;
+	text-align: center;
+	padding: 0 10px 0 31px;
+	background-color: #5f78ab;
+	border-top: 1px solid #879ac0;
+	outline: 1px solid #29447e;
+	position: relative;
+}
+
+a.fbkStandardBtn span.fbSpan {
+	width: 21px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	top: -1px;
+	position: absolute;
+	background: url("../image/facebooklogin/fbkIconStandardBtn.png") no-repeat left top;	
+}
+
+a.fbkStandardBtn:active {
+	background-color: #4f6aa3;
+	border-top: 1px solid #50609c;
+}
+
+
+/* -- End -- */
+
+
+/* -- Facebook Metro Style Login Button -- */
+
+a.fbkMetroStyleBtn {
+	display: inline-block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #fff;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	padding: 0 20px 0 58px;
+	background-color: #3b5998;
+	position: relative;
+	transition: background-color 700ms ease-in-out;
+	-moz-transition: background-color 700ms ease-in-out;
+	-webkit-transition: background-color 700ms ease-in-out;
+	-o-transition: background-color 700ms ease-in-out;
+}
+
+a.fbkMetroStyleBtn span.fbSpan {
+	width: 38px;
+	height: 36px;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background: url("../image/facebooklogin/fbkIconMetroBtn.png") no-repeat left top;
+}
+
+a.fbkMetroStyleBtn:hover {
+	background-color: #2e4b89;
+}
+
+
+/* -- End -- */
+
+
+/* -- Facebook Rounded Login Button -- */
+
+a.fbkRoundedBtn {
+	display: inline-block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 20px 0 57px;
+	background: url("../image/facebooklogin/roundedBtnBg.png") repeat-x left 0;
+	border: 1px solid #264076;
+	border-radius: 4px;
+	position: relative;
+}
+
+a.fbkRoundedBtn span.fbSpan {
+	width: 37px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background: url("../image/facebooklogin/fbkIconRoundedBtn.png") no-repeat left top;
+}
+
+a.fbkRoundedBtn:hover {
+	background: url("../image/facebooklogin/roundedBtnBg.png") repeat-x left -30px;
+}
+
+a.fbkRoundedBtn:active {
+	background: url("../image/facebooklogin/roundedBtnBg.png") repeat-x left -60px;
+}
+
+
+/* -- End -- */
+
+
+.box-fbconnect {
+	margin: 0;	
+}
+
+.extraFields input, .FacebookLoginUseDefaultCustomerGroups {
+	width:auto;
+}
+
+.buttonPreview {
+	display:inline-block;	
+}
+
+.buttonPreview .box .box-heading {
+	-webkit-border-radius: 7px 7px 0px 0px;
+	-moz-border-radius: 7px 7px 0px 0px;
+	-khtml-border-radius: 7px 7px 0px 0px;
+	border-radius: 7px 7px 0px 0px;
+	border: 1px solid #DBDEE1;
+	background: url('../image/facebooklogin/widgetbackground.png') repeat-x;
+	padding: 8px 10px 7px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #333;	
+}
+
+.buttonPreview .box .box-content {
+	background: #FFFFFF;
+	-webkit-border-radius: 0px 0px 7px 7px;
+	-moz-border-radius: 0px 0px 7px 7px;
+	-khtml-border-radius: 0px 0px 7px 7px;
+	border-radius: 0px 0px 7px 7px;
+	border-left: 1px solid #DBDEE1;
+	border-right: 1px solid #DBDEE1;
+	border-bottom: 1px solid #DBDEE1;
+	padding: 10px;
+}
+
+.noBoxWrapper .box-heading {
+	display:none;
+}
+
+.noBoxWrapper .box .box-content { 
+	border: none;
+}

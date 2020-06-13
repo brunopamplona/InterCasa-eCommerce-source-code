@@ -1,0 +1,106 @@
+<modification>
+	<id><![CDATA[<a style="text-decoration:none" href="http://www.codemarket.com.br"><b  style="color:#00a99d;margin-right: 8px;">Code Market - Menu Admistrador</b> </a>]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[2.4.1]]></vqmver>
+	<author>
+		<![CDATA[<b><a style="color:#00a99d;" href="http://www.codemarket.com.br">Code Market - codemarket.com.br</a></b>]]>
+	</author>
+    
+    <file path="admin/controller/common/header.php">
+		<operation>
+			<search position="before">
+				<![CDATA[$this->data['module'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+				    $this->data['codemarket_module'] = $this->url->link('extension/codemarket_module', 'token=' . $this->session->data['token'], 'SSL');
+				]]>
+			</add>
+		</operation>
+	</file>
+    
+	<file path="admin/view/template/common/header.tpl">
+		<operation>
+			<search position="before">
+				<![CDATA[<li><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>
+
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+				    <li><a href="<?php echo $codemarket_module; ?>">Code Market - Módulos</a></li>
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="replace">
+				<![CDATA[<script type="text/javascript" src="view/javascript/jquery/superfish/js/superfish.js"></script>
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="replace">
+				<![CDATA[<script type="text/javascript" src="view/javascript/jquery/jquery-1.7.1.min.js"></script>
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+                    <?php if ( (isset($this->request->get['route'])) and (($this->request->get['route'] == 'extension/codemarket_module') OR ($this->request->get['route'] == 'extension/codemarket_ticket'))){ ?>
+                    <link href="view/javascript/codemarketPainel/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+                    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                    <link href="view/javascript/codemarketPainel/summernote/dist/summernote.css" rel="stylesheet" />
+                    <link href="view/javascript/codemarketPainel/summernote/dist/summernote-bs3.css" rel="stylesheet" />
+                    <link href="view/javascript/codemarketPainel/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
+                    <link href="view/javascript/codemarketPainel/api.css" rel="stylesheet" />
+                    <script type="text/javascript" src="view/javascript/codemarketPainel/jquery-2.1.4.min.js"></script>
+                    <script type="text/javascript" src="view/javascript/codemarketPainel/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+                    <script type="text/javascript" src="view/javascript/codemarketPainel/summernote/dist/summernote.min.js"></script>
+                    <script src="view/javascript/codemarketPainel/datetimepicker/moment.js" type="text/javascript"></script>
+                    <script src="view/javascript/codemarketPainel/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+                    <script type="text/javascript" src="view/javascript/codemarketPainel/jquery.validate.js"></script>
+                    <script type="text/javascript" src="view/javascript/codemarketPainel/superfish.js"></script>
+
+                    <?php } else { ?>
+                    <script type="text/javascript" src="view/javascript/jquery/jquery-1.7.1.min.js"></script>
+                    <script type="text/javascript" src="view/javascript/jquery/superfish/js/superfish.js"></script>
+                    <?php } ?>
+				]]>
+			</add>
+		</operation>
+        <operation>
+			<search position="replace">
+				<![CDATA[<div id="menu">
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+                    <?php if ( (isset($this->request->get['route'])) and (($this->request->get['route'] == 'extension/codemarket_module') OR ($this->request->get['route'] == 'extension/codemarket_ticket'))){ ?>
+                    <div id="menu">
+                    <ul class="left" style="display: none;">
+                    <li id="dashboard"><a href="<?php echo $home; ?>" class="top">Voltar Painel de Controle</a></li>
+                    </ul>
+                    <ul class="right" style="display: none;">
+                    <li id="store"><a href="<?php echo $store; ?>" target="_blank" class="top"><?php echo $text_front; ?></a>
+                    <ul>
+                    <?php foreach ($stores as $stores) { ?>
+                    <li><a href="<?php echo $stores['href']; ?>" target="_blank"><?php echo $stores['name']; ?></a></li>
+                    <?php } ?>
+                    </ul>
+                    </li>
+                    <li><a class="top" href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+                    </ul>
+                    </div>
+                    <div id="menu_d" style='display:none;'>
+                    <?php } else { ?>
+                    <div id="menu">
+                    <?php } ?>
+				]]>
+			</add>
+		</operation>
+	</file>
+</modification>

@@ -1,0 +1,314 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201908 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/ssl/awstats.site.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2028                
+POS_TIME 2674                
+POS_VISITOR 9158                
+POS_DAY 9230                
+POS_DOMAIN 3173                
+POS_LOGIN 3384                
+POS_ROBOT 3539                
+POS_WORMS 3671                
+POS_EMAILSENDER 3802                
+POS_EMAILRECEIVER 3945                
+POS_SESSION 9286                
+POS_SIDER 9423                
+POS_FILETYPES 4080                
+POS_DOWNLOADS 4144                
+POS_OS 4192                
+POS_BROWSER 4257                
+POS_SCREENSIZE 4307                
+POS_UNKNOWNREFERER 4381                
+POS_UNKNOWNREFERERBROWSER 4468                
+POS_ORIGIN 4550                
+POS_SEREFERRALS 4680                
+POS_PAGEREFS 4824                
+POS_SEARCHWORDS 4972                
+POS_KEYWORDS 5124                
+POS_MISC 2338                
+POS_ERRORS 5183                
+POS_CLUSTER 3240                
+POS_SIDER_404 5269                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20191230225939 1 0 16837879164431
+FirstTime 0
+LastTime 0
+LastUpdate 20191231223715 1 0 0 0 0
+TotalVisits 0                   
+TotalUnique 0                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 0                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+QuickTimeSupport 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 12 15 0
+1 0 0 0 4 5 0
+2 0 0 0 7 9 0
+3 0 0 0 9 13 0
+4 0 0 0 7 12 0
+5 0 0 0 6 7 0
+6 0 0 0 5 5 0
+7 0 0 0 9 10 0
+8 0 0 0 11 15 0
+9 0 0 0 16 28 0
+10 0 0 0 7 10 0
+11 0 0 0 8 9 0
+12 0 0 0 17 39 0
+13 0 0 0 7 11 0
+14 0 0 0 11 24 0
+15 0 0 0 12 15 0
+16 0 0 0 8 10 0
+17 0 0 0 5 9 0
+18 0 0 0 8 20 0
+19 0 0 0 8 9 0
+20 0 0 0 7 8 0
+21 0 0 0 8 9 0
+22 0 0 0 11 24 0
+23 0 0 0 6 16 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 0
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 0
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 0 0
+From1 0 0
+From2 0 0
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 316 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 96
+/moveis-infantis/sofas-cama/ 1 -
+/robots.txt 37 -
+/tag/bercos-3/ 1 -
+/category/adesivos-para-quartos/ 2 -
+/fim-da-liquidacao-intercasa/ 3 -
+/moveis-infantis/bicamas/ 1 -
+/category/mesas-e-bancadas/ 2 -
+/apple-touch-icon.png 14 -
+/tag/quarto-das-criancas/ 3 -
+/moveis-infantis/camas/ 5 -
+/tag/quarto-de-criancas/ 1 -
+/moveis-infantis/camas/primeira-cama/ 1 -
+/wp-content/uploads/2014/05/slide-cama-futebol.jpg 1 -
+/imprensa/revista-magazine-2010/ 3 -
+/beliches-transformaveis-em-camas-individuais/ 1 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1985/ 1 -
+/moveis-infantis/adesivos-para-quartos/ 1 -
+/tag/quartos-de-menina/ 1 -
+/novidade-da-intercasa-para-o-dia-das-criancas/ 1 -
+/category/camas-2/ 1 -
+/moveis-infantis/mesas-e-bancadas/ 1 -
+/comecou-a-liquidacao-intercasa/ 1 -
+/moveis-infantis/camas/camas-com-escorrega/ 1 -
+/novidades/ 3 -
+/lancamento-da-nova-colecao-de-almofadas-e-colchas-super-herois/ 5 -
+/tag/quartos-de-menino/ 10 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1983/ 1 -
+/ads.txt 8 -
+/tag/cama-2/ 2 -
+/imprensa/casa-claudia-bebe-marco-2010/ 1 -
+/category/beliches-2/ 13 -
+/imprensa/revista-veja-rio-1998/ 2 -
+/moveis-infantis/bercos/ 2 -
+/apple-touch-icon-120x120.png 15 -
+/novidades-em-camas-e-almofadas/ 2 -
+/nova-cama-tema-castelo-com-cortinas-estampadas-em-xadrez/ 3 -
+/projetos-para-quartos/quartos-6-12/ 4 -
+/tag/camas-tematicas/ 2 -
+/tag/adesivos/ 2 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1986/ 1 -
+/novidades-intercasa-para-2013/ 2 -
+/como-transformar-o-quarto-de-crianca-em-um-de-adolescente/ 2 -
+/imprensa/jornal-o-globo-1996/ 1 -
+/fale-conosco/assistencia-tecnica/ 1 -
+/lancamento-para-quarto-de-bebe-comoda-mila/ 1 -
+/wp-content/uploads/2013/10/moveis-infantis-decoracao-de-quarto-infantil-4.jpg 1 -
+/dicas-praticas-de-como-deixar-o-quarto-das-criancas-organizado/ 2 -
+/projetos-para-quartos/ 4 -
+/tag/cama-safari/ 1 -
+/empresa/ 5 -
+/moveis-infantis/armarios/ 1 -
+/projetos-para-quartos/quartos-2-6/ 6 -
+/tag/quartos-de-adolescente/ 2 -
+/tag/almofadas/ 1 -
+/liquidacao-intercasa-moveis/ 1 -
+/empresa/quem-somos/ 1 -
+/novidade-intercasa-para-quarto-dos-meninos/ 1 -
+/nova-linha-de-escrivaninhas-e-homes-com-paineis-para-tv/ 1 -
+/tag/moveis-infantis-2/ 3 -
+/category/treliches/ 3 -
+/www.intercasamoveis.com.br/novidades 2 -
+/nova-linha-intercasa-de-quartos-de-bebe/ 3 -
+/tag/quarto-de-bebe-2/ 1 -
+/imprensa/revista-minha-casa-dezembro-2012/ 4 -
+/moveis-infantis/treliches/ 2 -
+/wp-content/themes/Intercasa_Theme/facebook_ico_pequeno.png 1 -
+/empresa/loja/ 3 -
+/imprensa/jornal-do-brasil-revista-de-domingo-1997/ 3 -
+/tag/beliches-3/ 1 -
+/tag/quarto-de-menina-2/ 1 -
+/moveis-infantis/camas/cama-dossel/ 1 -
+/quartos-com-beliche/ 2 -
+/apple-touch-icon-120x120-precomposed.png 15 -
+/category/edredons-e-almofadas/ 3 -
+/moveis-infantis/camas/cama-max/ 3 -
+/.well-known/assetlinks.json 1 -
+/facebook-home/moveis-infantis-juvenis/ 1 -
+/empresa/responsabilidade-ambiental/ 4 -
+/governo-federal-elimina-o-imposto-sobre-produtos-industrializados-ipi-de-moveis-para-estimular-consumo/ 1 -
+/category/quartos/ 1 -
+/tag/ipad/ 1 -
+/lancamento-intercasa-cama-provencal/ 1 -
+/aplicativo-para-iphone-e-ipad-para-criancas/ 1 -
+/tag/comodas/ 1 -
+/moveis-infantis/acessorios/ 2 -
+/apple-touch-icon-precomposed.png 15 -
+/moveis-infantis/camas/mini-cama/ 1 -
+/ 25 -
+/moveis-infantis/comodas/ 1 -
+/category/almofadas/ 2 -
+/moveis-infantis/ 2 -
+/ideias-de-projetos-para-presente-do-dia-das-criancas/ 3 -
+/projetos-para-quartos/quartos-bebe/ 4 -
+/tag/quartos-de-crianca/ 1 -
+/novidades-para-quartos-infanto-juvenis-da-intercasa/ 2 -
+/category/bicamas-2/ 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 0
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 0
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 0
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 0
+END_SIDER

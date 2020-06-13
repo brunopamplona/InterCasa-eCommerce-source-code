@@ -1,0 +1,297 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201907 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/awstats.site.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2024                
+POS_TIME 2696                
+POS_VISITOR 7058                
+POS_DAY 7561                
+POS_DOMAIN 3338                
+POS_LOGIN 3615                
+POS_ROBOT 3770                
+POS_WORMS 4169                
+POS_EMAILSENDER 4300                
+POS_EMAILRECEIVER 4443                
+POS_SESSION 7644                
+POS_SIDER 7818                
+POS_FILETYPES 4578                
+POS_DOWNLOADS 4760                
+POS_OS 4808                
+POS_BROWSER 4952                
+POS_SCREENSIZE 5157                
+POS_UNKNOWNREFERER 5231                
+POS_UNKNOWNREFERERBROWSER 5412                
+POS_ORIGIN 5588                
+POS_SEREFERRALS 5722                
+POS_PAGEREFS 5947                
+POS_SEARCHWORDS 6198                
+POS_KEYWORDS 6350                
+POS_MISC 2358                
+POS_ERRORS 6409                
+POS_CLUSTER 3471                
+POS_SIDER_404 6530                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190801000033 439 101707 11731753142285
+FirstTime 0
+LastTime 20190731233724
+LastUpdate 20190801022524 439 0 438 0 0
+TotalVisits 15                  
+TotalUnique 8                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 13                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 166 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 78 132 0
+1 0 0 0 84 115 0
+2 0 0 0 65 98 0
+3 0 0 0 80 101 0
+4 0 0 0 108 138 0
+5 0 0 0 89 135 0
+6 0 0 0 86 122 0
+7 0 0 0 85 111 0
+8 0 0 0 59 92 0
+9 0 0 0 80 142 0
+10 0 0 0 55 124 0
+11 0 0 0 69 129 0
+12 4 32 189607 98 166 79014
+13 4 53 533728 104 280 736570
+14 0 3 192460 72 141 119691
+15 2 3 45693 80 146 1510212
+16 2 2 0 88 119 81464
+17 3 3 0 74 154 192904
+18 2 2 0 78 197 215121
+19 3 3 0 84 145 97539
+20 2 4 124011 89 194 20903
+21 1 1 0 85 197 59576
+22 2 3 355985 62 115 81722
+23 3 32 236639 126 195 216496
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 5
+mu 14 14 109
+br 9 63 817574
+us 4 61 736429
+nl 1 1 0
+cr 0 2 124011
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+bingpreview 41 828839 20190731233737 0
+bingbot/ 38 1556863 20190731233723 1
+Googlebot/ 35 187643 20190731180139 1
+SemrushBot/ 20 171524 20190731230853 6
+Applebot/ 5 45700 20190731234944 1
+bot[\s_+:,\.\;\/\\-] 2 39584 20190731212929 0
+DotBot/ 1 55150 20190731123655 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+php 17 637 0 0
+gif 1 723 0 0
+png 14 18325 0 0
+js 51 301134 0 0
+css 33 239745 0 0
+jpg 14 1081781 0 0
+html 11 35778 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 6
+win7 55 2
+win10 2 0
+winlong 60 4
+ios_iphone 8 7
+linuxandroid 1 0
+Unknown 15 15
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 9
+msie9.0 60 4
+chrome75.0.3770.143 1 0
+firefox68.0 2 0
+Unknown 15 15
+safari12.0 1 0
+firefox58.0 51 2
+safari12.1.1 5 5
+safari10.0 2 2
+chrome75.0.3770.142 4 0
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+SEMrushBot 20190731195226
+WordPress/4.3.19;_http://site.intercasamoveis.com.br 20190731233724
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+WordPress/4.3.19;_http://site.intercasamoveis.com.br 20190731233724
+SEMrushBot 20190731195226
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 24 25
+From1 0 0
+From2 1 6
+From3 0 2
+From4 3 108
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+www_google_com 0 1
+www_google_com_br 1 1
+bing 0 3
+br_images_search_yahoo_com 0 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+http://digitaliphonetv.blogspot.com 0 1
+http://www.dirpages.org/quarto-de-menino-tema-futebol.html 0 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+301 1 0
+206 1 10892
+404 50 515017
+403 3128 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 6
+/apple-touch-icon-120x120-precomposed.png 12 -
+/apple-touch-icon-precomposed.png 12 -
+/apple-touch-icon.png 12 -
+/ads.txt 1 -
+/wp-content/themes/Intercasa_Theme/sub_menu_hover.jpg 1 -
+/apple-touch-icon-120x120.png 12 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 13
+154.16.135.80 14 14 109 20190731233724
+52.162.211.179 4 60 380444 20190731231005
+179.11.155.40 4 4 0 20190731193211
+201.55.45.34 2 51 533728 20190731134436
+187.119.226.237 1 1 0 20190731135342
+46.229.161.131 1 1 0 20190731195226
+191.183.198.195 1 1 0 20190731125012
+200.148.90.178 1 1 0 20190731225009
+200.75.178.38 0 3 192460 
+138.255.105.79 0 1 355985 
+189.113.74.70 0 1 45693 
+138.186.51.3 0 2 124011 
+201.21.196.64 0 1 45693 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 1
+20190731 28 141 1678123 15
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+1h+ 2
+30mn-1h 1
+5mn-15mn 1
+0s-30s 11
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 8
+/wp-cron.php 14 109 5 5
+/tag/quartos-de-bebe/ 4 0 3 3
+/wp-content/plugins/iphorm-form-builder/includes/captcha.php 3 528 0 3
+/ 2 16272 2 1
+/moveis-infantis/bicamas/ 2 0 2 2
+/projetos-para-quartos/quartos-12-18/ 1 9029 1 0
+/tag/beliches-3/ 1 0 1 1
+/empresa/ 1 10477 1 0
+END_SIDER

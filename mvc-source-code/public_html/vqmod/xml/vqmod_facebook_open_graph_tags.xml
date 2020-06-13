@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+
+	<id>Facebook Open Graph Tags</id>
+	<version>1.0</version>
+	<vqmver>2.3.2</vqmver>
+	<author>MojeGalanterka.cz</author>
+
+	<file name="catalog/controller/common/header.php">
+    <operation>
+			<search position="before"><![CDATA[$this->data['text_home'] = $this->language->get('text_home');]]></search>
+		                       <add><![CDATA[$this->data['store'] = $this->config->get('config_name');]]></add>
+		</operation>
+    <operation>
+			<search position="before"><![CDATA[$this->children = array(]]></search>
+			<add><![CDATA[
+
+    $facebook_thumb = false;
+    
+    if ( isset($_REQUEST['manufacturer_id']) OR 
+         isset($_REQUEST['path']) OR 
+         isset($_REQUEST['product_id']) 
+      ) 
+    {
+      if ( !isset($this->model_tool_image->getThumbById) ) {
+        $this->load->model('tool/image'); // osetreni absence funkce
+      } 
+      $facebook_thumb = true; // parametr pro povoleni zjistit nahled    
+    } 
+    
+    // nahledy pro Facebook LIKE/SEND
+    $item_id    = 0;
+    $route_page = "";    
+    
+    if ( isset($_REQUEST['product_id']) ) {
+      $item_id    = $_REQUEST['product_id'];
+      $route_page = "product";
+
+    } elseif ( isset($_REQUEST['path']) ) {
+      $item_id    = $_REQUEST['path'];
+      $route_page = "category";
+
+    } elseif ( isset($_REQUEST['manufacturer_id']) ) {
+      $item_id    = $_REQUEST['manufacturer_id'];
+      $route_page = "manufacturer";
+    }    
+    
+    if ($facebook_thumb) {
+      $thumb = $this->model_tool_image->getThumbById($item_id, $route_page);
+      if ($thumb) {
+        $this->data['image'] = array('thumb' => "image/" . $thumb, '');
+      } // if thumb
+    }
+    
+      ]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/model/tool/image.php">
+    <operation>
+			<search position="before"><![CDATA[public function resize($filename, $width, $height]]></search>
+			<add><![CDATA[
+
+  // zjisti URL nahledu podle ID polozky (pro Facebook LIKE/SEND)
+  public function getThumbById($item_id, $page = '') {	
+				
+		if ( !$item_id OR !$page ) { return false; }
+    
+    switch ($page) {
+        
+      case "category":
+        if ( !is_numeric($item_id) ) {
+  		    $item_id_path = explode('_', $item_id);			
+  		    $item_id      = end($item_id_path);          
+        }                 
+        if ( !is_numeric($item_id) ) { return false; }        
+        $query = $this->db->query("
+          SELECT DISTINCT c.image  
+          FROM " . DB_PREFIX . "category c  
+          WHERE c.category_id = '" . (int)$item_id . "'  
+        ");
+        break;
+
+      case "manufacturer":
+       	if ( !is_numeric($item_id) ) { return false; } 
+        $query = $this->db->query("
+          SELECT DISTINCT m.image  
+          FROM " . DB_PREFIX . "manufacturer m  
+          WHERE m.manufacturer_id = '" . (int)$item_id . "'  
+        ");
+        break;
+
+      case "product":
+        if ( !is_numeric($item_id) ) { return false; }
+		    $query = $this->db->query("
+          SELECT DISTINCT p.image  
+          FROM " . DB_PREFIX . "product p  
+          WHERE p.product_id = '" . (int)$item_id . "'  
+        ");      
+        break;
+       
+      default: 
+        return false;
+        break;    
+
+    } // switch
+    
+		if ( isset($query->num_rows) ) {
+
+      if ( isset($query->row['image']) ) {
+        return ( $query->row['image'] == "" ? false : $query->row['image'] );
+      } else {
+        return false;
+      } // if image
+
+		} else {
+			return false;
+		}
+		
+	} // getThumbById
+      
+      ]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/common/header.tpl">
+    <operation>
+			<search position="before"><![CDATA[<?php foreach ($links as $link) { ?>]]></search>
+			<add><![CDATA[
+<!-- Facebook Open Graph Tags -->
+<meta property="og:title" content="<?php echo $title; ?>" />
+<meta property="og:site_name" content="<?php echo $store; ?>" />
+<meta property="og:description" content="<?php echo $description; ?>" />
+<?php  
+$og_url = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+$og_url = str_replace("%2F", "/", $og_url);
+$og_url = str_replace("%3B", ";", $og_url);
+$og_url = str_replace("&amp;", "&", $og_url);
+?>
+<meta property="og:url" content="<?php echo $og_url; ?>" />
+<?php
+if(isset($og_images)):
+foreach($og_images as $im): ?>
+<meta property="og:image" content="<?php echo $im; ?>" />
+<link rel="image_src" href="<?php echo $im; ?>" />
+<?php endforeach; endif; ?>
+<?php if ( isset($image['thumb']) ) { // zobrazi nahled produktu, pokud je otevrena stranka s produktem ?>
+<meta property="og:type" content="product" />
+<meta property="og:image" content="<?php echo HTTP_SERVER . $image['thumb']; ?>" />
+<link rel="image_src" href="<?php echo HTTP_SERVER . $image['thumb']; ?>" />
+<?php } ?>
+]]></add>
+		</operation>
+	</file>
+
+</modification>

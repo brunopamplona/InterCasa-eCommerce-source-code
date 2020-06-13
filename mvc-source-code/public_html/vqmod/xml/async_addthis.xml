@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+        <id>Replace sync script of addthis with async</id>
+        <version>1.0</version>
+        <vqmver>2.X</vqmver>
+        <author>MMOSolution.com</author>
+        <file name="catalog/view/theme/*/template/product/product.tpl">
+				<operation info="Replace sync script of addthis with async">
+                        <search position="replace"><![CDATA[
+                        <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script>
+                        ]]></search>
+                        <add><![CDATA[
+                         <script type="text/javascript">
+						   $(document).ready(function() {
+						   $.getScript("http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5060838a0c731db1");
+							});
+						  </script>
+                        ]]></add>
+                </operation>
+				
+				<operation info="Replace sync script of addthis with async">
+                        <search position="replace"><![CDATA[
+                        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+                        ]]></search>
+                        <add><![CDATA[
+                         <script type="text/javascript">
+						   $(document).ready(function() {
+						   $.getScript("http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5060838a0c731db1");
+							});
+						  </script>
+                        ]]></add>
+                </operation>
+        </file>
+</modification>

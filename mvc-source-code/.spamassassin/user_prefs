@@ -1,0 +1,5 @@
+blacklist_from *@qq.com
+required_score 5
+whitelist_from *@gmail.com
+whitelist_from *@hotmail.com
+whitelist_from *@uol.com.br

@@ -1,0 +1,1661 @@
+# Webalizer V2.23-08 Incremental Data - 06/09/2020 09:08:31
+2020 6 9 9 8 31
+1496 1466 192 353 25 88 8407143 576 397 0
+13 2 34 1 9
+124 124 719672 24 44 34
+152 150 1201373 49 64 53
+113 112 968536 34 62 49
+227 226 330003 34 75 54
+228 228 545837 39 84 51
+248 246 614559 40 105 52
+188 174 2244898 30 66 45
+183 173 1525405 32 52 41
+33 33 256860 13 24 19
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+46 40 476774 17
+40 39 557138 19
+43 39 5166 21
+44 43 456999 17
+61 60 384232 28
+20 20 180913 11
+40 38 564171 26
+36 32 572741 18
+32 32 491002 22
+138 136 48211 37
+91 91 109626 31
+80 79 261893 25
+100 99 133579 27
+60 60 96196 18
+44 43 142020 18
+95 94 464040 57
+87 87 373812 33
+23 23 120778 17
+54 53 336931 19
+112 112 82651 23
+46 46 221217 24
+59 59 653012 24
+66 66 297562 15
+79 75 1376479 29
+0
+0
+0
+1466
+0
+0
+0
+0
+0
+5
+0
+0
+0
+0
+24
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/old/wp-login.php
+0 15 8388362428574169705 1770 0 0
+/feed/atom/
+0 1 404438835201 118 1 0
+/novidades-para-quartos-infanto-juvenis-da-intercasa/
+0 1 29617008 118 1 0
+/misc/ajax.js
+0 1 407012197889 118 0 0
+/2020/
+0 1 0 118 0 0
+/imprensa/casa-claudia-bebe-marco-2010/
+0 2 0 236 2 1
+/projetos-para-quartos/quartos-2-6
+0 1 0 118 1 1
+/wordpress/
+0 1 0 118 0 0
+/2019/
+0 1 0 118 0 0
+/wp-content/gallery/camas-e-bicamas/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-decoracao-1.jpg
+0 1 0 0 0 0
+/wp-content/themes/Intercasa_Theme/logo.jpg
+0 1 0 0 0 0
+/tag/decoracao-2/
+0 1 0 118 0 1
+/apple-touch-icon-precomposed.png
+0 79 0 9322 0 0
+/website/
+0 1 29667488 118 0 0
+/wp-content/themes/Intercasa_Theme/projetos_img.jpg
+0 1 0 55345 0 0
+/wp-content/gallery/cama-dossel/cama-dossel-intercasa-moveis-15.jpg
+0 1 0 70687 0 0
+/cms/vendor/phpunit/phpunit/phpunit.xsd
+0 1 3330751884003639296 118 0 0
+/sitemap.xml
+0 2 0 2968 0 0
+/wp-content/gallery/primeira-cama/moveis-intanfis-primeira-cama.jpg
+0 1 0 0 0 0
+/wp-content/uploads/2011/11/quarto-de-bebe-5.jpg
+0 1 0 73168 0 0
+/wp-content/uploads/2011/11/quarto-de-bebe-4.jpg
+0 1 29667600 114490 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-quarto-laranja-4.jpg
+0 1 0 0 0 0
+/wp2/
+0 1 0 118 0 0
+/blog/
+0 1 0 118 0 0
+/projetos-para-quartos/quartos-bebe/
+0 1 0 118 1 0
+/wp-content/gallery/mini-cama/moveis-infantis-mini-cama-2.jpg
+0 2 0 180027 0 0
+/wp-content/gallery/primeira-cama/moveis-intanfis-primeira-cama-menina.jpg
+0 1 0 43403 0 0
+/lancamento-para-quarto-de-bebe-comoda-mila/
+0 2 0 236 1 0
+/fale-conosco/assistencia-tecnica/
+0 1 0 118 1 1
+/nova-linha-intercasa-de-quartos-de-bebe/
+0 2 0 236 1 2
+/comecou-a-liquidacao-intercasa
+0 1 0 118 1 1
+/moveis-infantis/edredons-e-almofadas/
+0 1 72057594037928050 118 1 1
+/wp-content/gallery/primeira-cama/moveis-infantis-primeira-cama-auxiliar-grades.jpg
+0 1 7002643775065517689 0 0 0
+/moveis-infantis/camas/camas-tematicas/
+0 6 125766011285347 708 5 4
+/apple-touch-icon.png
+0 80 3257850948276924672 9440 0 0
+/wp-content/gallery/primeira-cama/moveis-intanfis-primeira-cama-menino.jpg
+0 1 3329066320618926638 50917 0 0
+/wp-json/wp/v2/users/
+0 8 3258692074638486839 848 0 3
+/login/wp-login.php
+0 15 3615884966773012532 1770 0 0
+/wp-content/gallery/projeto-bebe-4/moveis-infantis-intercasa-projeto-quarto-bebe-d-5.jpg
+0 1 0 38287 0 0
+/moveis-infantis/treliches
+0 1 0 118 0 1
+/wp-content/gallery/cama-dossel/cama-dossel-intercasa-moveis-10.jpg
+0 1 0 54805 0 0
+/v2/
+0 1 0 118 0 0
+/category/treliches/
+0 1 0 118 1 1
+/wp-content/gallery/primeira-cama/moveis-intanfis-primeira-cama-gavetas.jpg
+0 9 0 365544 0 0
+/v1/
+0 1 0 118 0 0
+/wp-content/uploads/2013/09/cama-tematica-safari2.jpg
+0 1 0 0 0 0
+/wp-content/gallery/cama-dossel/cama-dossel-intercasa-moveis-16.jpg
+0 2 0 158630 0 0
+/wp-content/uploads/2015/11/new_up.php
+0 1 0 118 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-decoracao-2.jpg
+0 2 0 82681 0 0
+/novidade-para-o-quarto-das-criancas/
+0 2 0 236 2 2
+/wp-content/themes/Intercasa_Theme/loja.jpg
+0 1 0 44759 0 0
+/tag/edredons-e-almofadas/
+0 1 0 118 0 0
+/2018/
+0 1 0 118 0 0
+/wp-content/uploads/2014/05/cama-futebol-2.jpg
+0 1 0 273996 0 0
+/this_page_does_not_exist/wp-login.php
+0 15 0 1770 0 0
+/fale-conosco/fale-com-a-intercasa/
+0 1 0 118 1 0
+/wp-content/gallery/mini-cama/thumbs/thumbs_moveis-infantis-mini-cama-2.jpg
+0 1 0 8955 0 0
+/cgi-bin/trust.php
+0 1 0 106 0 0
+/ads.txt
+0 9 0 1062 0 0
+/moveis-infantis/camas/mini-cama/
+0 3 0 354 3 1
+/projetos/quartos-2-6/
+0 7 0 826 6 3
+/dicas-para-decorar-o-quarto-do-bebe/feed/
+0 1 29617264 118 1 0
+/cms/
+0 1 24148 118 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-3.jpg
+0 2 7002662492348705904 220484 0 0
+/wp-content/gallery/camas-e-bicamas/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-5.jpg
+0 1 3531103582835179520 15347 0 0
+/blog2/
+0 1 29667264 118 0 0
+/category/armarios-2/feed/
+0 1 0 118 1 0
+/tag/quartos-de-menino/
+0 1 7854277750134145024 118 0 1
+/wp-content/uploads/2015/12/new_up.php
+0 1 0 118 0 0
+/nova-linha-de-escrivaninhas-e-homes-com-paineis-para-tv/
+0 5 3546920251833920821 590 5 5
+/atom.xml
+0 1 12279347178416188985 118 0 0
+/_old/
+0 1 29667376 118 0 0
+/wp-content/gallery/cama-dossel/cama-dossel-intercasa-moveis-18.JPG
+0 1 4047954519222219891 107592 0 0
+/sito/
+0 1 0 118 0 0
+/nova-colecao-punk-rock-para-quartos-de-meninas
+0 1 0 118 0 1
+/wp-content/gallery/mini-cama/thumbs/thumbs_moveis-infantis-mini-cama-1.jpg
+0 2 0 22974 0 0
+/wp-content/gallery/camas-e-bicamas/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-decoracao-2.jpg
+0 1 0 12948 0 0
+/category/almofadas/
+0 5 0 590 4 4
+/wp-content/uploads/2011/11/moveis-infantis-intercasa-camas-tematicas-1.jpg
+0 3 0 144665 0 0
+/comecou-a-liquidacao-intercasa/
+0 8 0 944 8 6
+/wordpress/wp-login.php
+0 15 0 1770 0 0
+/admin/vendor/phpunit/phpunit/phpunit.xsd
+0 1 0 118 0 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/moveis-infantis-cama-bicama-intercasa-quarto-menina.jpg
+0 1 0 101942 0 0
+/moveis-infantis/adesivos-para-quartos/
+0 1 0 118 0 1
+/category/camas-2/feed/
+0 1 29689888 118 1 1
+/tag/quarto-das-criancas/
+0 7 0 826 3 2
+/novidade-da-intercasa-para-o-dia-das-criancas
+0 2 0 236 2 0
+/inauguracao-da-loja-via-parque/feed/
+0 1 0 118 1 1
+/dicas-praticas-de-como-deixar-o-quarto-das-criancas-organizado/
+0 1 0 118 1 1
+/wp-includes/wlwmanifest.xml
+0 9 0 8820 0 0
+/wp-content/gallery/projeto-bebe-5/moveis-infantis-intercasa-projeto-quarto-bebe-e-2.jpg
+0 1 0 67708 0 0
+/moveis-infantis/armarios/
+0 3 0 354 3 2
+/lib/vendor/phpunit/phpunit/phpunit.xsd
+0 1 0 118 0 0
+/category/edredons-e-almofadas/
+0 1 0 118 0 0
+/tag/moveis-infantis-2/feed/
+0 1 0 118 1 1
+/wp-content/uploads/2013/10/superherois.jpg
+0 1 0 376694 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-1.jpg
+0 1 3347430608575689572 0 0 0
+/wp-content/uploads/2014/01/moveis-infantis-intercasa-camas-tematicas-11.jpg
+0 1 7959318726852816951 265045 0 0
+/quartos-com-beliche/
+0 3 404327982593 354 3 3
+/projetos-para-quartos/quartos-2-6/
+0 1 3687943647387923761 118 1 0
+/inauguracao-da-loja-via-parque
+0 1 7171939 118 1 1
+/api/vendor/phpunit/phpunit/phpunit.xsd
+0 1 3329343409608458240 118 0 0
+/wp-content/gallery/projeto-bebe-5/moveis-infantis-intercasa-projeto-quarto-bebe-e-3.jpg
+0 1 0 56475 0 0
+/admin/wp-login.php
+0 15 0 1770 0 0
+/tag/moveis-infantis-2/
+0 1 0 118 0 0
+/tag/cama-2/
+0 2 0 236 2 1
+/category/armarios-2/
+0 6 0 708 4 5
+/tag/dicas-para-decorar/feed/
+0 1 0 118 1 0
+/+/
+0 1 0 118 0 0
+/imprensa/jornal-do-brasil-1980/
+0 2 0 236 1 1
+/wp-content/gallery/camas-e-bicamas/thumbs/thumbs_cama-provencal.jpg
+0 1 0 13735 0 0
+/moveis-infantis/beliches/
+0 3 0 354 2 1
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/thumbs/thumbs_quarto-teen.jpg
+0 1 0 14648 0 0
+/quarto-das-criancas-cama-safari-2-andares/
+0 3 0 354 3 2
+/wp-admin/maint/trust.php
+0 1 0 106 0 0
+/wp-admin/trust.php
+0 1 0 106 0 0
+/tag/intercasa-2/
+0 3 0 354 3 1
+/js/header-rollup-554.js
+0 1 0 118 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-6.jpg
+0 1 0 70662 0 0
+/wp-content/gallery/camas-e-bicamas/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-quarto-laranja-3.jpg
+0 1 0 15207 0 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/moveis-infantis-cama-bicama-intercasa-menino.jpg
+0 1 0 40980 0 0
+/wp-content/gallery/projeto-bebe-3/moveis-infantis-intercasa-projeto-quarto-bebe-c-5.jpg
+0 1 0 68449 0 0
+/wp-admin/1index.php
+0 1 0 106 0 0
+/category/bicamas-2/
+0 1 0 118 1 1
+/wp-content/gallery/projetos-2-6-ana-claudia/moveis-infantis-intercasa-projeto-menina-2-a-6-b-4.jpg
+0 1 0 65443 0 0
+/projetos-para-quartos/
+0 1 0 118 1 1
+/wp-content/gallery/projeto-bebe-3/moveis-infantis-intercasa-projeto-quarto-bebe-c-1.jpg
+0 1 8502796096475496448 72908 0 0
+/tag/quarto-de-criancas/
+0 1 32762621198758754 118 1 1
+/wp-content/uploads/2013/10/slide-dia-das-criancas-casinha.jpg
+0 2 8026310038357175393 657516 0 0
+/novo/wp-login.php
+0 15 7092733375143739392 1770 0 0
+/home/
+0 1 3687662172394435889 118 0 0
+/category/beliches-2/
+0 8 72057594037927936 944 8 6
+/tag/bercos-3/
+0 2 0 236 1 2
+/moveis-infantis/camas/cama-individual
+0 1 0 118 1 0
+/inauguracao-da-loja-virtual-para-as-regioes-metropolitanas-rj-e-sp/
+0 1 0 118 1 1
+/favicon.ico
+0 119 0 14042 0 0
+/wp-content/gallery/camas-com-escorrega/moveis-infantis-cama-escorrega-menino-1.jpg
+0 1 0 0 0 0
+/wp-config-sample.php
+0 1 0 95 0 0
+/tag/quartos-de-menina/feed/
+0 1 0 118 0 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/moveis-infantis-cama-bicama-intercasa-decoracao-de-quarto-2.JPG
+0 1 0 0 0 0
+/.env
+0 9 0 966 0 0
+/tag/quartos-de-menina/
+0 33 0 3894 28 17
+/wp-content/themes/Intercasa_Theme/loja2.jpg
+0 1 0 43781 0 0
+/imprensa/jornal-do-brasil-revista-de-domingo-1987/
+0 3 0 354 1 2
+/wp-content/gallery/projeto-bebe-5/moveis-infantis-intercasa-projeto-quarto-bebe-e-5.jpg
+0 2 0 117656 0 0
+/wp-content/themes/Intercasa_Theme/intercasa-4.jpg
+0 1 0 30989 0 0
+/novidades-intercasa-para-2013/
+0 2 0 236 0 1
+/novidades
+0 1 0 118 0 0
+/wp-json/oembed/1.0/embed
+0 5 0 530 0 0
+/wp/wp-login.php
+0 15 0 1770 0 0
+/web/
+0 1 0 118 0 0
+/test/
+0 1 0 118 0 0
+/wp-content/gallery/projeto-bebe-3/moveis-infantis-intercasa-projeto-quarto-bebe-c-6.jpg
+0 1 0 61867 0 0
+/wp-content/gallery/camas-com-escorrega/thumbs/thumbs_moveis-infantis-cama-escorrega-menino-2.jpg
+0 1 0 10623 0 0
+/tag/quartos-de-menina
+0 1 0 118 0 1
+/old-wp/
+0 1 0 118 0 0
+/comecou-a-liquidacao-intercasa/feed/
+0 1 0 118 0 0
+/demo/vendor/phpunit/phpunit/phpunit.xsd
+0 1 94 118 0 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-primeira-cama-menina.jpg
+0 1 8100956991115912556 9248 0 0
+/nova-cama-tema-castelo-com-cortinas-estampadas-em-xadrez/feed/atom/
+0 1 3328498972736303662 118 0 1
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/moveis-infantis-cama-bicama-intercasa-menino-2.jpg
+0 1 3329067415952895285 38061 0 0
+/tag/cama-2/feed/
+0 1 6716324636071114542 118 1 0
+/dicas-para-decorar-o-quarto-do-bebe/
+0 4 3330188934050217984 472 2 3
+/tag/camas-3/
+0 2 116 236 2 1
+/projetos-para-quartos/quartos-12-18/
+0 5 7597699432598222385 590 4 2
+/wp-content/gallery/camas-tematicas/moveis-intanfis-cama-safari-intercasa.jpg
+0 1 0 114260 0 0
+/tag/cama-safari/
+0 18 0 2124 14 11
+/cobertores-norkid/
+0 1 0 118 0 0
+/old/
+0 1 0 118 0 0
+/category/quartos/
+0 5 0 590 2 2
+/vendor/phpunit/phpunit/build.xml
+0 1 0 118 0 0
+/tag/quartos-de-adolescente/feed/
+0 1 0 118 1 0
+/imprensa/
+0 1 0 118 0 1
+/administrator/
+0 1 0 118 0 0
+/wp-content/gallery/projeto-bebe-4/moveis-infantis-intercasa-projeto-quarto-bebe-d-1.jpg
+0 1 0 34393 0 0
+/tag/iphone/
+0 1 0 118 1 0
+/moveis-infantis/bercos/
+0 4 0 472 3 0
+/moveis-infantis/camas/cama-dossel
+0 1 0 118 1 1
+/moveis-infantis/camas/primeira-cama
+0 1 0 118 1 1
+/wp-content/uploads/2015/09/new_up.php
+0 1 0 118 0 0
+/wp-admin/network/trust.php
+0 1 0 106 0 0
+/wp-content/plugins/background-image-cropper/image/ico/search.php
+0 1 0 106 0 0
+/wp-content/gallery/camas-e-bicamas/cama-provencal.jpg
+0 1 0 162474 0 0
+/empresa/feed/
+0 1 0 118 1 1
+/tag/quartos-de-adolescente/
+0 28 0 3304 27 15
+/main/
+0 1 0 118 0 0
+/lancamento-intercasa-para-quarto-infantil
+0 2 0 236 2 0
+/tag/quartos-de-bebe/
+0 4 0 472 2 1
+/tag/camas-tematicas/feed/
+0 1 0 118 1 1
+/new/
+0 1 0 118 0 0
+/temp/
+0 1 0 118 0 0
+/wp-content/gallery/camas-com-escorrega/moveis-infantis-cama-escorrega-menino-3.jpg
+0 1 0 0 0 0
+/wp-load.php
+0 1 0 106 0 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/moveis-infantis-cama-bicama-intercasa-primeira-cama-menina.jpg
+0 2 0 93092 0 0
+/moveis-infantis/camas/camas-tematicas/feed/
+0 1 0 118 1 1
+/wp-content/uploads/2011/11/quarto-de-bebe-1.jpg
+0 1 0 92484 0 0
+/7index.php
+0 1 0 106 0 0
+/wp-login.php
+0 19 0 2230 0 0
+/almofadas-edredon-e-adesivo-para-quarto-jovem/feed/
+0 1 0 118 1 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-quarto-laranja-3.jpg
+0 1 0 123897 0 0
+/teste/wp-login.php
+0 15 0 1770 0 0
+/category/comodas/feed/
+0 1 0 118 1 1
+/wp-includes/3index.php
+0 1 0 106 0 0
+/nova-linha-de-produtos-para-recem-nascidos/
+0 1 0 118 1 1
+/admin/view/javascript/common.js
+0 1 0 118 0 0
+/backup/wp-login.php
+0 15 0 1770 0 0
+/tag/camas-tematicas/
+0 2 0 236 1 2
+/tag/ipad/
+0 1 0 118 1 1
+/novidades-intercasa-para-2013
+0 2 0 236 1 0
+/wp-includes/js/jquery/jquery.js
+0 1 0 33285 0 0
+/empresa/
+0 9 0 1062 7 6
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-menina.jpg
+0 1 0 9337 0 0
+/bak/
+0 1 0 118 0 0
+/administrator/language/en-GB/install.xml
+0 1 0 118 0 0
+/wp-content/uploads/2013/10/moveis-infantis-decoracao-de-quarto-infantil-5.jpg
+0 1 0 379925 0 0
+/wp-content/uploads/2011/11/moveis-infantis-intercasa-camas-tematicas-11.jpg
+0 1 0 0 0 0
+/nova-cama-tema-castelo-com-cortinas-estampadas-em-xadrez/feed/
+0 1 0 118 1 1
+/.well-known/acme-challenge/52ECCRIMRQT9OFTSXP0QW7H97-MT6GOZ
+0 1 0 64 0 0
+/wp-content/gallery/camas-e-bicamas/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-quarto-laranja-6.jpg
+0 1 0 14892 0 0
+/category/adesivos-para-quartos/feed/
+0 1 0 118 0 0
+/wp-content/uploads/2014/05/cama-futebol-detalhe.jpg
+0 2 0 355985 0 0
+/wp1/
+0 1 3472838262656073728 118 0 0
+/lancamento-intercasa-cama-provencal/
+0 2 3330466011739074866 236 2 0
+/wp-content/uploads/2011/11/moveis-infantis-intercasa-camas-tematicas-12.jpg
+0 3 7881702290525925428 358960 0 0
+/wp-admin/css/trust.php
+0 1 6179727 106 0 0
+/afjbxuhhjcywhmw.html
+0 1 29689584 118 1 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-decoracao-de-quarto.JPG
+0 1 3976961045456486400 16701 0 0
+/wp-admin/images/
+0 1 3759718684100737073 106 1 0
+/decore-o-quarto-de-bebe-com-adesivos-de-parede/
+0 3 0 354 2 1
+/wp-content/themes/Intercasa_Theme/rss.png
+0 1 0 698 0 0
+/moveis-infantis/camas/cama-individual/
+0 2 0 236 2 2
+/inauguracao-da-loja-via-parque/
+0 5 0 590 3 3
+/trust.php
+0 1 0 106 0 0
+/lancamento-para-quarto-de-bebe-comoda-mila/feed/
+0 1 29618080 118 1 1
+/backup/vendor/phpunit/phpunit/phpunit.xsd
+0 1 0 118 0 0
+/wp-content/plugins/trust.php
+0 1 0 106 0 0
+/tag/quartos-de-bebe
+0 1 0 118 1 1
+/empresa/loja/
+0 1 0 118 1 0
+/tag/beliches-3/
+0 1 0 118 1 1
+/wp-content/uploads/2011/11/moveis-infantis-intercasa-camas-tematicas-10.jpg
+0 2 0 278058 0 0
+/lancamento-da-nova-colecao-de-almofadas-e-colchas-super-herois/
+0 2 0 236 1 0
+/wp-includes/trust.php
+0 1 0 106 0 0
+/xmlrpc.php
+0 12 0 1284 0 0
+/vendor/phpunit/phpunit/phpunit.xsd
+0 1 0 118 0 0
+/imprensa/jornal-o-globo-1996/
+0 7 0 826 4 2
+/tmp/
+0 1 0 118 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-quarto-laranja-1.jpg
+0 2 0 117901 0 0
+/wp-content/themes/Intercasa_Theme/youtube_ico.png
+0 2 0 5892 0 0
+/plugins/system/debug/debug.xml
+0 1 0 118 0 0
+/cama-com-escorrega-no-tema-futebol
+0 1 0 118 1 1
+/apple-touch-icon-152x152-precomposed.png
+0 42 0 4956 0 0
+/demo/
+0 1 0 118 0 0
+/nova-colecao-punk-rock-para-quartos-de-meninas/
+0 3 0 354 2 1
+/novidade-intercasa-para-quarto-dos-meninos/
+0 1 0 118 0 0
+/empresa/quem-somos/
+0 4 0 472 3 2
+/category/bercos-2/feed/
+0 1 0 118 0 0
+/.well-known/acme-challenge/Q39NJT9MMHBQRE_YF_YZN_96IQH-IDJV
+0 1 0 64 0 0
+/tag/quartos-de-crianca/
+0 18 0 2124 6 3
+/painel/wp-login.php
+0 15 0 1770 0 0
+/wp-content/gallery/projeto-bebe-3/moveis-infantis-intercasa-projeto-quarto-bebe-c-3.jpg
+0 1 0 67701 0 0
+/category/camas-2/
+0 3 0 354 3 2
+/administrator/help/en-GB/toc.json
+0 1 0 118 0 0
+/moveis-infantis/mesas-e-bancadas
+0 1 0 118 1 1
+/tag/camas-3/feed/
+0 1 0 118 1 1
+/wp-admin/css/
+0 1 0 106 0 0
+/.well-known/acme-challenge/VKHPikSa3vvdrJn4B-DN0dHHRHY1Cnw1wncKCAYfWTI
+0 4 0 428 0 0
+/wp-content/themes/Intercasa_Theme/intercasa1.jpg
+0 1 0 45975 0 0
+/ideias-de-projetos-para-presente-do-dia-das-criancas/
+0 2 0 236 2 1
+/
+0 100 0 11404 65 18
+/category/bercos-2/
+0 1 0 118 1 0
+/wp-admin/css/colors/trust.php
+0 1 0 106 0 0
+/backup/
+0 1 0 118 0 0
+/dev/
+0 1 0 118 0 0
+/tag/quartos-de-crianca/feed/
+0 1 0 118 1 1
+/new/wp-login.php
+0 15 0 1770 0 0
+/governo-federal-elimina-o-imposto-sobre-produtos-industrializados-ipi-de-moveis-para-estimular-consumo/
+0 1 0 118 0 0
+/wp-content/gallery/mini-cama/moveis-infantis-mini-cama-1.jpg
+0 4 0 242848 0 0
+/revista-minha-casa-dezembro-2012/
+0 2 0 236 1 1
+/wp-content/gallery/projeto-bebe-5/moveis-infantis-intercasa-projeto-quarto-bebe-e-4.jpg
+0 1 0 60198 0 0
+/cama-com-escorrega-no-tema-futebol/
+0 2 0 236 2 2
+/moveis-infantis/bicamas/
+0 4 0 472 4 2
+/wp/
+0 1 0 118 0 0
+/novidades-em-camas-e-almofadas/
+0 1 0 118 1 0
+/moveis-infantis/camas/
+0 8 0 944 8 6
+/moveis-infantis/camas/cama-individual/feed/
+0 1 0 118 1 1
+/moveis-infantis/sofas-cama/
+0 6 0 708 4 4
+/tag/quarto-de-meninos/
+0 3 3976959945944858624 354 3 2
+/moveis-infantis/mesas-e-bancadas/feed/
+0 1 29692416 118 1 1
+/imprensa/revista-minha-casa-dezembro-2012/
+0 4 3530822107858468864 472 1 2
+/imprensa/revista-magazine-junho-de-2009/
+0 2 7362674523993436260 236 2 1
+/comments/feed/
+0 1 407365978881 118 1 1
+/aplicativo-para-iphone-e-ipad-para-criancas
+0 2 7958824813261225984 236 2 0
+/tag/quartos-de-menino/feed/
+0 1 3545795455716962561 118 1 1
+/projetos-para-quartos/quartos-6-12/
+0 1 32773565814499173 118 1 1
+/wp-admin/setup-config.php
+0 2 7310315698623311727 190 0 0
+/imprensa/revista-magazine-outubro-2011-2/
+0 3 0 354 3 2
+/tag/dicas-para-decorar/
+0 1 0 118 1 1
+/mudanca-do-berco-para-cama-sem-traumas/
+0 5 0 590 3 2
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/quarto-teen.jpg
+0 2 0 141214 0 0
+/wp-content/gallery/cama-dossel/cama-dossel-intercasa-moveis-20.JPG
+0 2 0 228020 0 0
+/images/editor/separator.gif
+0 1 0 118 0 0
+/category/mesas-e-bancadas/
+0 1 0 118 1 1
+/imprensa/feed/
+0 1 0 118 1 1
+/wp-content/gallery/projeto-bebe-5/moveis-infantis-intercasa-projeto-quarto-bebe-e-6.jpg
+0 3 0 137474 0 0
+/blog/wp-login.php
+0 15 0 1770 0 0
+/decoracao-para-quarto-de-bebe/
+0 3 0 354 3 1
+/wp-content/trust.php
+0 1 0 106 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-4.jpg
+0 1 0 116029 0 0
+/wp-content/gallery/intercasa-moveis-camas-individuais-linha-clever/thumbs/thumbs_moveis-infantis-cama-bicama-intercasa-basica.jpg
+0 3 0 20853 0 0
+/bk/
+0 1 0 118 0 0
+/adminer.php
+0 2 0 118 0 0
+/laravel/vendor/phpunit/phpunit/phpunit.xsd
+0 2 0 236 0 0
+/moveis-infantis/camas/cama-max/
+0 1 0 118 1 1
+/entrar/wp-login.php
+0 15 0 1770 0 0
+/wp-content/uploads/2015/10/new_up.php
+0 1 0 118 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-quarto-laranja-6.jpg
+0 1 0 102190 0 0
+/moveis-infantis/camas/camas-altas/
+0 7 0 826 5 4
+/robots.txt
+0 95 0 5415 0 0
+/category/beliches-2
+0 1 0 118 1 1
+/admin/includes/general.js
+0 1 0 118 0 0
+/fim-da-liquidacao-intercasa/
+0 2 0 236 1 2
+/wp-content/uploads/2013/09/cama-tematica-safari.jpg
+0 1 0 72777 0 0
+/feed/
+0 4 0 472 4 2
+/como-transformar-o-quarto-de-crianca-em-um-de-adolescente/
+0 5 0 590 4 2
+/wp-content/gallery/projeto-bebe-4/moveis-infantis-intercasa-projeto-quarto-bebe-d-3.jpg
+0 1 0 55274 0 0
+/imprensa/jornal-o-globo-2008/
+0 1 0 118 1 1
+/category/adesivos-para-quartos/
+0 1 0 118 1 0
+/apple-touch-icon-152x152.png
+0 42 0 4956 0 0
+/nova-cama-tema-castelo-com-cortinas-estampadas-em-xadrez/
+0 3 0 354 2 2
+/imprensa/jornal-do-brasil-revista-de-domingo-1985/
+0 1 0 118 0 1
+/liquidacao-intercasa-moveis/
+0 2 0 236 1 1
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-decoracao-1.jpg
+0 1 0 73721 0 0
+/moveis-infantis/
+0 2 0 236 2 1
+/tag/liquidacao/
+0 1 0 118 1 0
+/lancamento-para-quarto-de-bebe-comoda-mila
+0 2 0 236 2 0
+/tag/quartos-de-crianca
+0 1 0 118 1 0
+/projetos/quartos-6-12/
+0 2 0 236 2 2
+/wp-content/uploads/2013/10/escorrega-copia.jpg
+0 1 0 241617 0 0
+/wp-content/gallery/camas-e-bicamas/moveis-infantis-cama-bicama-intercasa-bancada.jpg
+0 1 0 0 0 0
+/moveis-infantis/camas/primeira-cama/
+0 7 0 826 6 4
+/wp-content/uploads/2013/10/slide-curta-pagina.jpg
+0 1 0 104067 0 0
+/wp-admin/admin-ajax.php
+0 1 0 118 0 0
+/old-site/
+0 1 0 118 0 0
+/wp-content/gallery/projetos-12-18-gabriel/moveis-infantis-intercasa-projeto-menino-12-a-18-f-5.jpg
+0 2 0 0 0 0
+/novidades/
+0 2 0 236 2 2
+/sitemaps.xml
+0 1 0 118 0 0
+/berco-e-comoda-provencal/
+0 1 0 118 0 0
+/tag/quartos-de-adolescente
+0 2 0 236 2 1
+/mybackup/
+0 1 29666784 118 1 0
+/portal/wp-login.php
+0 15 0 1770 0 0
+/moveis-infantis/mesas-e-bancadas/
+0 6 0 708 2 3
+/fckeditor/editor/filemanager/connectors/php/upload.php
+0 1 3531103582835179520 118 0 0
+/site/wp-login.php
+0 15 3257844368222745444 1770 0 0
+# End Of Table - urls
+# -sites- (monthly)
+crawl-66-249-69-47.googlebot.com
+0 10 10 1119 4 1591351807
+/imprensa/jornal-o-globo-1996/
+vps-3830212.sv2hostconecte.com.br
+0 2 2 128 0 0
+-
+20.191.124.140
+0 1 1 106 0 0
+-
+host-95-152-17-7.dsl.sura.ru
+0 3 3 318 3 1591663784
+/
+crawl-66-249-73-14.googlebot.com
+0 39 31 189702 17 1591677359
+/dicas-para-decorar-o-quarto-do-bebe/feed/
+msnbot-157-55-39-15.search.msn.com
+0 2 2 114 0 0
+-
+179.95.168.43.dynamic.adsl.gvt.net.br
+0 1 1 328758 0 0
+-
+bbb7246d.virtua.com.br
+0 18 18 2124 1 1591471238
+/
+77-88-5-55.spider.yandex.com
+0 4 4 350 2 1591660370
+/
+crawl-54-236-1-12.pinterest.com
+0 19 19 1876 13 1591675976
+/tag/quartos-de-adolescente/
+google-proxy-66-249-83-222.google.com
+0 2 2 236 1 1591280208
+/
+177.73.167.179
+0 18 18 2124 1 1591529354
+/
+msnbot-157-55-39-168.search.msn.com
+0 15 15 47414 6 1591455353
+/tag/quartos-de-menina/feed/
+msnbot-207-46-13-196.search.msn.com
+0 23 23 106663 16 1591363929
+/lancamento-para-quarto-de-bebe-comoda-mila/
+0.215.210.35.bc.googleusercontent.com
+0 2 2 175 1 1591587037
+/aplicativo-para-iphone-e-ipad-para-criancas
+188.166.22.77
+0 3 3 1659 1 1591073815
+/
+web348.redgalaxy.co.uk
+0 1 1 106 0 0
+-
+static.114.26.63.178.clients.your-server.de
+0 2 2 175 1 1591342293
+/category/adesivos-para-quartos/
+200-7-118-151.sunway.com.br
+0 1 1 60712 0 0
+-
+google-proxy-66-249-83-193.google.com
+0 2 2 236 1 1591330102
+/
+melia.onyphe.io
+0 1 1 106 1 1591193087
+/
+ec2-52-15-254-228.us-east-2.compute.amazonaws.com
+0 1 1 107 0 0
+-
+msnbot-157-55-39-245.search.msn.com
+0 3 3 179716 2 1591007072
+/mudanca-do-berco-para-cama-sem-traumas/
+fwdproxy-rva-111.fbsv.net
+0 1 1 118 1 1591237183
+/
+fixed-187-189-245-212.totalplay.net
+0 2 2 236 1 1591115136
+/tag/quartos-de-adolescente/
+b3d551b6.virtua.com.br
+0 22 22 2596 2 1591403030
+/moveis-infantis/camas/camas-altas/
+app14.pointssoft.com
+0 3 3 318 0 0
+-
+crawl-66-249-66-159.googlebot.com
+0 9 9 47429 3 1591434033
+/moveis-infantis/camas/mini-cama/
+40.77.202.102
+0 1 1 118 1 1591417640
+/category/beliches-2/
+cnxrck2-svr16.connexinet.net
+0 7 7 731 1 1591521931
+/wp-admin/css/
+crawl2.bl.semrush.com
+0 1 1 118 1 1591129379
+/category/beliches-2/
+78.46.194.236
+0 1 1 118 1 1591418570
+/
+177-170-247-131.user.vivozap.com.br
+0 110 110 12980 8 1591659486
+/tag/cama-safari/
+200-236-202-89.shared.desktop.com.br
+0 1 1 45693 0 0
+-
+ec2-3-250-202-94.eu-west-1.compute.amazonaws.com
+0 4 4 411 1 1591678214
+/
+187-126-121-169.user.veloxzone.com.br
+0 18 18 2124 1 1591483151
+/
+dynamic-168-121-90-110.ideallins.net.br
+0 2 2 236 1 1591214652
+/tag/quartos-de-menina/
+msnbot-207-46-13-117.search.msn.com
+0 14 14 1002708 6 1591648495
+/inauguracao-da-loja-via-parque/
+ip50.ip-176-31-40.eu
+0 3 3 354 0 0
+-
+msnbot-157-55-39-149.search.msn.com
+0 1 1 118 1 1591658729
+/almofadas-edredon-e-adesivo-para-quarto-jovem/feed/
+189.78.65.99
+0 1 1 118 1 1591124229
+/tag/quartos-de-menina/
+msnbot-40-77-167-211.search.msn.com
+0 3 3 354 3 1591036288
+/projetos-para-quartos/quartos-12-18/
+bd0564fc.virtua.com.br
+0 11 11 1298 1 1591618914
+/tag/quartos-de-menina/
+msnbot-40-77-167-196.search.msn.com
+0 2 2 56593 1 1591326721
+/tag/cama-2/feed/
+179.95.223.105.dynamic.adsl.gvt.net.br
+0 98 98 11564 4 1591288612
+/tag/quartos-de-crianca/
+177-58-255-35.3g.claro.net.br
+0 2 2 124011 0 0
+-
+206.189.24.6
+0 1 1 118 0 0
+-
+ontario.cominity.ca
+0 1 1 118 0 0
+-
+km35623-01.keymachine.de
+0 1 1 118 0 0
+-
+crawl-66-249-69-43.googlebot.com
+0 5 5 590 3 1591351238
+/projetos/quartos-2-6/
+c915253f.virtua.com.br
+0 2 2 236 1 1591530677
+/tag/quartos-de-menina/
+101.134.206.35.bc.googleusercontent.com
+0 2 2 175 1 1591230676
+/lancamento-para-quarto-de-bebe-comoda-mila
+216.244.66.247
+0 4 4 133258 0 0
+-
+b3d21e45.virtua.com.br
+0 6 5 46165 0 0
+-
+177-55-190-53.telecomdados.com.br
+0 18 18 2124 1 1591409122
+/
+128.199.74.47
+0 1 1 460 0 0
+-
+177.239.17.0
+0 1 1 101942 0 0
+-
+crawl-54-236-1-18.pinterest.com
+0 15 15 1526 10 1591401233
+/tag/quartos-de-adolescente/
+crawl-54-236-1-15.pinterest.com
+0 30 30 139655 16 1591663769
+/tag/quartos-de-adolescente/
+65.52.16.39
+0 28 28 38205 3 1591384377
+/wp-json/wp/v2/users/
+crawl-66-249-72-77.googlebot.com
+0 2 2 236 1 1591325341
+/moveis-infantis/bercos/
+fwdproxy-ftw-022.fbsv.net
+0 1 1 118 1 1591091694
+/
+191.33.219.18.dynamic.adsl.gvt.net.br
+0 11 11 1298 1 1591107355
+/moveis-infantis/bercos/
+msnbot-157-55-39-16.search.msn.com
+0 3 3 171 0 0
+-
+msnbot-157-55-39-1.search.msn.com
+0 2 2 114 0 0
+-
+179-198-125-127.user.veloxzone.com.br
+0 18 18 2124 1 1591459558
+/
+bb7a9bbb.virtua.com.br
+0 18 18 2124 1 1591447862
+/
+msnbot-40-77-167-3.search.msn.com
+0 26 26 693703 16 1591679623
+/moveis-infantis/armarios/
+187.158.206.35.bc.googleusercontent.com
+0 2 2 175 1 1591515081
+/novidade-da-intercasa-para-o-dia-das-criancas
+177.98.35.dynamic.adsl.gvt.net.br
+0 14 14 1652 1 1591090339
+/tag/quartos-de-crianca/
+msnbot-40-77-167-221.search.msn.com
+0 3 3 141450 2 1591065969
+/tag/dicas-para-decorar/feed/
+201-68-15-96.dsl.telesp.net.br
+0 18 18 2124 1 1591298823
+/
+msnbot-40-77-167-137.search.msn.com
+0 1 1 118 1 1591654135
+/tag/cama-safari/
+191.243.138.4
+0 18 18 2124 1 1591394350
+/
+msnbot-207-46-13-146.search.msn.com
+0 8 8 46801 7 1591405284
+/projetos-para-quartos/quartos-2-6/
+crawl-66-249-72-75.googlebot.com
+0 1 1 118 1 1591312997
+/tag/intercasa-2/
+msnbot-40-77-167-40.search.msn.com
+0 1 1 139029 0 0
+-
+bd3fafdd.virtua.com.br
+0 18 18 2124 1 1591327117
+/
+msnbot-207-46-13-40.search.msn.com
+0 3 3 354 3 1591190810
+/imprensa/casa-claudia-bebe-marco-2010/
+13.92.93.175
+0 1 1 118 0 0
+-
+google-proxy-66-249-83-223.google.com
+0 2 2 236 1 1591187226
+/tag/quartos-de-adolescente/
+195.54.160.68
+0 2 2 118 0 0
+-
+100.155.210.35.bc.googleusercontent.com
+0 2 2 175 1 1591330907
+/lancamento-intercasa-para-quarto-infantil
+ip-95-223-73-107.hsi16.unitymediagroup.de
+0 2 2 236 1 1591037298
+/tag/quartos-de-menina/
+msnbot-157-55-39-44.search.msn.com
+0 8 8 456 0 0
+-
+msnbot-207-46-13-246.search.msn.com
+0 1 1 118 1 1591014414
+/imprensa/revista-magazine-junho-de-2009/
+201.22.52.167.dynamic.adsl.gvt.net.br
+0 1 1 45693 0 0
+-
+201-9-199-160.user.veloxzone.com.br
+0 18 18 2124 1 1591350138
+/
+52.191.190.62
+0 2 2 212 0 0
+-
+52.167.187.182
+0 1 1 60712 0 0
+-
+crawl22.bl.semrush.com
+0 1 1 57 0 0
+-
+212.92.107.65
+0 4 4 472 1 1591688191
+/website/
+msnbot-207-46-13-130.search.msn.com
+0 5 5 139501 3 1591692929
+/lancamento-intercasa-cama-provencal/
+181.64.57.95
+0 2 2 236 1 1591050433
+/tag/quartos-de-menina/
+rate-limited-proxy-66-249-90-205.google.com
+0 1 1 118 1 1591677819
+/feed/
+static-213-115-172-206.sme.telenor.se
+0 10 10 1060 0 0
+-
+90.149.210.35.bc.googleusercontent.com
+0 2 2 175 1 1591406558
+/novidade-da-intercasa-para-o-dia-das-criancas
+ns529211.ip-192-99-15.net
+0 2 2 163 0 0
+-
+msnbot-157-55-39-32.search.msn.com
+0 3 3 171 0 0
+-
+103.82.235.2
+0 5 5 590 0 0
+-
+euro2.dow-media.com
+0 1 1 95 0 0
+-
+229-137-190-190.cab.prima.net.ar
+0 2 2 236 1 1591088646
+/tag/quartos-de-menina/
+191.39.69.104
+0 4 4 472 1 1591177492
+/inauguracao-da-loja-via-parque/
+52.247.113.105
+0 8 8 1787 1 1591149389
+/wp-json/wp/v2/users/
+static.250.8.251.148.clients.your-server.de
+0 9 9 1001 1 1591548082
+/comecou-a-liquidacao-intercasa/feed/
+customer-190-63-160-137.claro.com.ec
+0 2 2 236 1 1591536422
+/tag/quartos-de-menina/
+a89-154-79-132.cpe.netcabo.pt
+0 2 2 236 1 1591446370
+/tag/quartos-de-adolescente/
+host86-175-239-195.range86-175.btcentralplus.com
+0 4 4 472 3 1591292196
+/
+msnbot-207-46-13-233.search.msn.com
+0 14 14 928687 7 1591616215
+/moveis-infantis/bicamas/
+ip-177-76-221-30.user.vivozap.com.br
+0 66 66 7788 5 1591136641
+/tag/cama-safari/
+msnbot-157-55-39-133.search.msn.com
+0 5 5 529 4 1591693601
+/category/camas-2/
+b3d12d70.virtua.com.br
+0 18 18 2124 1 1591309813
+/
+msnbot-207-46-13-222.search.msn.com
+0 39 39 140389 15 1591402359
+/feed/atom/
+36.116.255.173.bc.googleusercontent.com
+0 31 30 3658 2 1591455947
+/+/
+crawl-66-249-73-10.googlebot.com
+0 42 35 461145 16 1591617638
+/afjbxuhhjcywhmw.html
+crawl25.bl.semrush.com
+0 1 1 57 0 0
+-
+c9503d7d.virtua.com.br
+0 11 11 1298 1 1591097446
+/tag/quartos-de-bebe/
+crawl5.bl.semrush.com
+0 2 2 175 1 1591122338
+/moveis-infantis/bicamas/
+badcc51f.virtua.com.br
+0 2 2 236 1 1591097132
+/tag/quartos-de-adolescente/
+b3daac3d.virtua.com.br
+0 18 18 2124 1 1591435283
+/
+msnbot-157-55-39-17.search.msn.com
+0 2 2 114 0 0
+-
+177.59.7.77
+0 2 2 236 1 1591134582
+/tag/quartos-de-menina/
+191-213-196-101.user3g.veloxzone.com.br
+0 4 4 472 1 1591147417
+/tag/quartos-de-adolescente/
+crawl-66-249-73-143.googlebot.com
+0 9 9 1001 5 1591131217
+/moveis-infantis/camas/
+245.61.230.35.bc.googleusercontent.com
+0 1 1 118 1 1591343230
+/
+64.78.149.164
+0 1 1 107 0 0
+-
+82.211.177.45.fronteirainternet.com.br
+0 18 18 2124 1 1591383095
+/
+218.207.210.35.bc.googleusercontent.com
+0 2 2 175 1 1591401655
+/lancamento-intercasa-para-quarto-infantil
+crawl-66-249-72-79.googlebot.com
+0 1 1 118 1 1591314970
+/tag/intercasa-2/
+crawl-66-249-73-139.googlebot.com
+0 11 11 2664 5 1591119638
+/projetos-para-quartos/quartos-12-18/
+ip226.ip-54-39-198.net
+0 2 2 236 0 0
+-
+crawl31.bl.semrush.com
+0 1 1 118 1 1591410798
+/
+static.38.201.217.95.clients.your-server.de
+0 1 1 118 1 1591633006
+/
+138.0.25.36
+0 1 1 60712 0 0
+-
+191-37-158-34.speedenet.com.br
+0 1 1 118 1 1591062646
+/
+ip-54-36-149-86.a.ahrefs.com
+0 1 1 57 0 0
+-
+b18c858e.virtua.com.br
+0 4 4 472 1 1591041531
+/moveis-infantis/bercos/
+ec2-18-196-96-172.eu-central-1.compute.amazonaws.com
+0 1 1 107 0 0
+-
+129.146.169.58
+0 2 2 212 0 0
+-
+89.180.10.255
+0 2 2 20442 0 0
+-
+173.252.87.8
+0 1 1 118 1 1591528283
+/tag/quartos-de-menina/
+fwdproxy-ash-120.fbsv.net
+0 1 1 118 1 1591144820
+/
+crawl-66-249-66-158.googlebot.com
+0 7 7 7659 4 1591439757
+/
+195.175.29.62.static.turktelekom.com.tr
+0 1 1 114010 0 0
+-
+b1218df8.virtua.com.br
+0 18 18 2124 1 1591505067
+/
+177.205.148.239.dynamic.adsl.gvt.net.br
+0 14 14 1652 1 1591644043
+/tag/quartos-de-crianca/
+msnbot-40-77-167-21.search.msn.com
+0 14 14 418765 7 1591128230
+/tag/iphone/
+crawl-66-249-73-141.googlebot.com
+0 8 8 944 5 1591100281
+/empresa/quem-somos/
+static.72.70.9.5.clients.your-server.de
+0 5 5 529 1 1591315070
+/tag/quartos-de-menina/
+177.22.145.82
+0 2 2 236 1 1591269736
+/tag/quartos-de-adolescente/
+crawl7.bl.semrush.com
+0 1 1 118 1 1591106801
+/lancamento-da-nova-colecao-de-almofadas-e-colchas-super-herois/
+17-58-97-136.applebot.apple.com
+0 5 5 285 0 0
+-
+177.22.145.232
+0 2 2 236 1 1591111018
+/tag/quarto-das-criancas/
+static.140.218.217.95.clients.your-server.de
+0 8 8 1787 1 1591361123
+/wp-json/wp/v2/users/
+msnbot-157-55-39-90.search.msn.com
+0 3 3 380161 2 1591237974
+/decore-o-quarto-de-bebe-com-adesivos-de-parede/
+ec2-3-231-226-13.compute-1.amazonaws.com
+0 11 11 1237 2 1591479301
+/lancamento-para-quarto-de-bebe-comoda-mila/
+177.16.94.30
+0 2 2 236 1 1591388517
+/projetos/quartos-2-6/
+crawl-66-249-75-234.googlebot.com
+0 1 1 118 1 1591322341
+/moveis-infantis/bercos/
+ip172.ip-51-89-204.eu
+0 3 3 354 0 0
+-
+crawl-66-249-66-129.googlebot.com
+0 7 7 3654 4 1591441830
+/
+crawl-66-249-73-12.googlebot.com
+0 43 35 184068 18 1591637291
+/ideias-de-projetos-para-presente-do-dia-das-criancas/
+msnbot-207-46-13-208.search.msn.com
+0 1 1 118 1 1591111885
+/lancamento-intercasa-cama-provencal/
+110.132.155.104.bc.googleusercontent.com
+0 1 1 95 0 0
+-
+b18c68c2.virtua.com.br
+0 1 1 60712 0 0
+-
+159.78.210.35.bc.googleusercontent.com
+0 4 4 350 1 1591329616
+/novidades-intercasa-para-2013
+msnbot-207-46-13-79.search.msn.com
+0 1 1 118 1 1591289551
+/tag/quartos-de-adolescente/feed/
+63.83.249.167.dynamic.vipnett.net.br
+0 18 18 2124 1 1591361274
+/
+crawl-66-249-69-45.googlebot.com
+0 7 7 826 3 1591340351
+/como-transformar-o-quarto-de-crianca-em-um-de-adolescente/
+ec2-34-209-232-166.us-west-2.compute.amazonaws.com
+0 1 1 107 0 0
+-
+168.194.161.108
+0 3 3 45929 0 0
+-
+157.55.39.235
+0 5 5 114962 4 1591693711
+/tag/quartos-de-menina/
+209.17.96.2.rdns.cloudsystemnetworks.com
+0 1 1 106 1 1591415743
+/
+rate-limited-proxy-209-85-238-11.google.com
+0 1 1 118 1 1591044248
+/feed/
+183.136.225.46
+0 1 1 106 1 1591153913
+/
+msnbot-207-46-13-65.search.msn.com
+0 5 5 114482 4 1591108108
+/moveis-infantis/camas/primeira-cama/
+17-58-101-246.applebot.apple.com
+0 16 16 1888 14 1591537157
+/novidades
+47.75.179.199
+0 1 1 118 0 0
+-
+crawl32.bl.semrush.com
+0 1 1 57 0 0
+-
+msnbot-207-46-13-28.search.msn.com
+0 17 17 672290 7 1591540475
+/decoracao-para-quarto-de-bebe/
+52.146.38.182
+0 6 6 1575 1 1591652670
+/wp-json/wp/v2/users/
+23.237.4.26
+0 5 5 530 5 1591151737
+/
+msnbot-207-46-13-2.search.msn.com
+0 14 14 635552 7 1591285006
+/category/quartos/
+56.115.210.35.bc.googleusercontent.com
+0 2 2 175 1 1591612221
+/aplicativo-para-iphone-e-ipad-para-criancas
+ec2-3-10-210-195.eu-west-2.compute.amazonaws.com
+0 18 18 4725 3 1591599308
+/wp-json/wp/v2/users/
+ip-54-36-148-100.a.ahrefs.com
+0 1 1 118 1 1591253511
+/
+host-93-124-7-131.dsl.sura.ru
+0 1 1 106 1 1591126272
+/
+msnbot-157-55-39-77.search.msn.com
+0 3 3 354 1 1591610834
+/imprensa/jornal-o-globo-1996/
+181.176.115.76
+0 2 2 236 1 1591401232
+/tag/quartos-de-adolescente/
+fwdproxy-frc-030.fbsv.net
+0 1 1 118 1 1591122101
+/tag/quartos-de-menina/
+213.53.210.35.bc.googleusercontent.com
+0 2 2 175 1 1591256459
+/lancamento-para-quarto-de-bebe-comoda-mila
+209.17.96.18.rdns.cloudsystemnetworks.com
+0 1 1 106 1 1591432077
+/
+179.212.91.113
+0 2 2 236 1 1591565812
+/tag/quartos-de-menina/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+host-95-152-17-7.dsl.sura.ru
+0 1 1 106 1 1591663784
+/
+crawl-66-249-73-14.googlebot.com
+0 2 2 236 2 1591677359
+/dicas-para-decorar-o-quarto-do-bebe/feed/
+crawl-54-236-1-12.pinterest.com
+0 2 2 175 1 1591675976
+/tag/quartos-de-adolescente/
+ec2-3-250-202-94.eu-west-1.compute.amazonaws.com
+0 4 4 411 1 1591678214
+/
+crawl-54-236-1-15.pinterest.com
+0 1 1 118 1 1591663769
+/tag/quartos-de-adolescente/
+msnbot-157-55-39-1.search.msn.com
+0 2 2 114 0 0
+-
+msnbot-40-77-167-3.search.msn.com
+0 1 1 118 1 1591679623
+/moveis-infantis/armarios/
+212.92.107.65
+0 4 4 472 1 1591688191
+/website/
+msnbot-207-46-13-130.search.msn.com
+0 4 4 139383 2 1591692929
+/lancamento-intercasa-cama-provencal/
+rate-limited-proxy-66-249-90-205.google.com
+0 1 1 118 1 1591677819
+/feed/
+msnbot-157-55-39-133.search.msn.com
+0 5 5 529 4 1591693601
+/category/camas-2/
+crawl-66-249-73-12.googlebot.com
+0 1 1 118 0 0
+-
+157.55.39.235
+0 5 5 114962 4 1591693711
+/tag/quartos-de-menina/
+# End Of Table - sites (daily)
+# -referrers- 
+https://br.pinterest.com/
+0 4
+http://pinterest.com/pin/41447259048478579/
+0 1
+http://site.intercasamoveis.com.br/inauguracao-da-loja-via-parque/
+0 1
+http://www.pinterest.com/pin/529595237416177353
+0 2
+https://www.google.com.br/
+0 3
+http://site.intercasamoveis.com.br/tag/quarto-das-criancas/
+0 2
+https://www.google.com/
+0 1
+- (Direct Request)
+0 1436
+http://www.site.intercasamoveis.com.br/
+0 3
+http://site.intercasamoveis.com.br/tag/quartos-de-adolescente/
+0 7
+http://pinterest.com/pin/575827502333711569/
+0 1
+http://digitaliphonetv.blogspot.com/2015/06/mini-cama-infantil-com-gavetas.html
+0 1
+http://pinterest.com/pin/338262621991014135/
+0 3
+https://www.bing.com/
+0 2
+http://site.intercasamoveis.com.br/
+0 2
+http://pinterest.com/pin/529595237416177353/
+0 2
+https://www.pinterest.pt/
+0 1
+http://site.intercasamoveis.com.br/projetos/quartos-2-6/
+0 1
+http://www.pinterest.com/pin/338262621991014135
+0 1
+http://pinterest.com/pin/302515299966405747/
+0 2
+http://www.google.com/
+0 5
+http://www.pinterest.com/pin/796292777841434693
+0 1
+http://site.intercasamoveis.com.br/wp-content/gallery/primeira-cama/moveis-intanfis-primeira-cama-gavetas.jpg
+0 6
+https://www.pinterest.de/
+0 1
+http://site.intercasamoveis.com.br/tag/quartos-de-menina/
+0 7
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+0 1
+Mozilla/5.0 (Linux; Android 5.1.1; SM-J111F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36
+0 30
+\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 
+0 9
+Mozilla/5.0 (Linux; Android 9; CLT-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36
+0 2
+Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+0 9
+Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.
+0 2
+Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)
+0 2
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile S
+0 43
+Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)
+0 4
+MobileSafari/604.1 CFNetwork/976 Darwin/18.2.0
+0 20
+CCBot/2.0 (https://commoncrawl.org/faq/)
+0 11
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) BingPreview/1.0b
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/605.1.15 (KHTML, like Gecko)
+0 9
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+0 1
+Mozilla/5.0 (compatible; Let's Encrypt validation server; +https://www.letsencrypt.org)
+0 4
+MobileSafari/604.1 CFNetwork/978.0.7 Darwin/18.7.0
+0 180
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.1
+0 1
+Mozilla/5.0 (Linux; Android 7.0; Lenovo K33b36 Build/NRD90N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83
+0 2
+Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+0 6
+Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.31 SmartTV/6.0
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15
+0 4
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+0 18
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+0 1
+Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.1; bit.ly/2W6Px8S) Chrome/7
+0 4
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 101
+python-requests/2.23.0
+0 2
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+0 222
+Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+0 18
+Mozilla/5.0 (Linux; Android 7.0; LG-M320) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36
+0 4
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+0 1
+Go-http-client/1.1
+0 10
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50
+0 1
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Mobile/15E148 
+0 4
+Googlebot-Image/1.0
+0 58
+Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/20100101 Firefox/28.0
+0 15
+Mozilla/5.0 (Linux; Android 8.1.0; SM-G610M Build/M1AJQ; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4
+0 4
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+0 5
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+0 20
+Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+0 1
+MobileSafari/602.1 CFNetwork/811.5.4 Darwin/16.7.0
+0 10
+Safari/11605.3.8.1 CFNetwork/760.9 Darwin/15.6.0 (x86_64)
+0 108
+Mozilla/5.0 (Linux; Android 10; SM-A305GT Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrom
+0 2
+Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0
+0 4
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebo
+0 21
+Mozilla/5.0 (iPad; CPU OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/60
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebook
+0 4
+Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome
+0 2
+facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+0 5
+Cpanel-HTTP-Client/1.0
+0 2
+Mozilla/5.0 (compatible; VelenPublicWebCrawler/1.0; +https://velen.io)
+0 10
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+0 16
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+0 3
+Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2) Gecko/20100115 MRA 5.6 (build 03278) Firefox/3.6 (.NET CLR 3.5.30729)
+0 1
+Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+0 255
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.1
+0 1
+Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0
+0 1
+Mozilla/5.0 (compatible; MJ12bot/v1.4.8; http://mj12bot.com/)
+0 16
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+0 4
+WLMHttpTransport
+0 1
+Mozilla/5.0 (Windows NT 10.0; WOW64; Rv:50.0) Gecko/20100101 Firefox/50.0
+0 1
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2896.3 Safari/537.36
+0 5
+Mozilla/5.0 (Linux; Android 8.0.0; moto e5 plus Build/OPP27.91-122; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Ch
+0 2
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36
+0 3
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 3
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2
+0 1
+Mozilla/5.0 (iPad; CPU OS 12_4_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Mobile/15E148 Safari/
+0 18
+Mozilla/5.0 (compatible; SemrushBot/6~bl; +http://www.semrush.com/bot.html)
+0 8
+Mozilla/5.0 (compatible; AlphaBot/3.2; +http://alphaseobot.com/bot.html)
+0 5
+Mozilla/5.0 (Linux; Android 7.1.1; LG-M700 Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3
+0 2
+Mozilla/5.0 (Linux; Android 8.1.0; ASUS_A001D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.3
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.
+0 1
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+0 1
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0
+0 1
+Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+0 2
+FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
+0 2
+Mozilla/5.0 (compatible; Pinterestbot/1.0; +http://www.pinterest.com/bot.html)
+0 64
+Mozilla/5.0 (Linux; Android 9; ANE-LX3 Build/HUAWEIANE-L23; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36 Edg/83.0.4
+0 1
+Mozilla/5.0 (iPad; CPU OS 10_3_4 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.0 Mobile/14G61 Safari/602.
+0 1
+python-requests/2.18.4
+0 15
+Dalvik/2.1.0 (Linux; U; Android 9; SM-A207M Build/PPR1.180610.011)
+0 2
+Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safa
+0 29
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

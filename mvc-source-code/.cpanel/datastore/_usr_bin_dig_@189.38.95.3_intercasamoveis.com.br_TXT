@@ -1,0 +1,26 @@
+
+; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 <<>> @189.38.95.3 intercasamoveis.com.br TXT
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60073
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 4, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;intercasamoveis.com.br.		IN	TXT
+
+;; ANSWER SECTION:
+intercasamoveis.com.br.	3600	IN	TXT	"v=spf1 include:spf.idc2.mandic.com.br ~all"
+
+;; AUTHORITY SECTION:
+intercasamoveis.com.br.	3600	IN	NS	dns1.wsisolucoesonline.com.br.
+intercasamoveis.com.br.	3600	IN	NS	dns2.wsisolucoesonline.com.br.
+intercasamoveis.com.br.	3600	IN	NS	dns3.wsisolucoesonline.com.br.
+intercasamoveis.com.br.	3600	IN	NS	dns4.wsisolucoesonline.com.br.
+
+;; Query time: 192 msec
+;; SERVER: 189.38.95.3#53(189.38.95.3)
+;; WHEN: Sat Jun  7 23:47:56 2014
+;; MSG SIZE  rcvd: 189
+

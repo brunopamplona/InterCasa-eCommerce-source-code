@@ -1,0 +1,162 @@
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<?php if ($informations) { ?>
+			<div class="span3">
+				<h2><?php echo $text_information; ?></h2>
+				<ul>
+				<?php foreach ($informations as $information) { ?>
+				<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+				<?php } ?>
+				</ul>
+			</div>
+			<?php } ?>
+			<div class="span3">
+				<h2>SAC</h2>
+				<ul>
+				<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+				<li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+				<li><a href="Seguranca_e_Privacidade">Seguranca & Privacidade</a></li>
+				<li><a href="Dicas_Conservacao">Dicas de Conservação</a></li>
+				<li><a href="Sustentabilidade">Sustentabilidade</a></li>
+				<li><a href="FAQ">FAQ</a></li>
+		      <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+				</ul>
+
+			</div>
+
+			<div class="span3">
+				<h2>Autoatendimento  </h2>
+				<ul>
+				<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+				<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+				<li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
+				<li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
+				</ul>
+				<div class="social-links">
+					<hr/>
+					<a class="twitter" target="_blank" href="https://twitter.com/IntercasaMoveis"></a>
+					<a class="youtube" target="_blank" href="http://www.youtube.com/user/intercasamoveis"></a>
+					<a class="facebook" target="_blank" href="https://www.facebook.com/Intercasa"></a>
+					<a class="gplus" target="_blank" href="https://plus.google.com/b/108378494303031669883/108378494303031669883/about?hl=pt-BR&service=PLUS"></a>
+					<a class="pintrest" target="_blank" href="http://br.pinterest.com/Intercasamoveis/"></a>
+				</div>
+				<div class="info-seguro"></div>
+        <!--
+GlobeSSL Seal Logo Html Builder Code:
+Shows the logo at URL https://intercasamoveis.com.br/website_seal_small.gif
+Logo type is  ("GSSL")
+//-->
+<style>#bottomright { position:fixed; bottom:0px; right:0px; width:100px; height:100px; z-index:999;}</style><div id="none"><script type="text/javascript">Seal("https://intercasamoveis.com.br/website_seal_small.gif", "GSSL", "none");</script></div>
+			</div>
+            <div class="span3">
+                <h2>Formas de Pagamento</h2>
+					<div id="f-pagamentos"></div>
+					<h3>Entrega Garantida</h3>
+					<div id="f-entregas"></div>
+
+					<div class="clear clearfix"></div>
+					<div class="fbbox">
+					<div class="fb-like-box" data-href="https://www.facebook.com/Intercasa" data-width="270" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+					</div>
+
+            </div>
+		</div>
+
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+             <div id="powered">
+                 <div class="row-fluid">
+                     <div class="span6">
+                         <dl>
+                             <dt>COPYRIGHT © 2013 -</dt>
+                             <dd><?php echo $powered; ?></dd>
+                         </dl>
+                     </div>
+                     <div class="span6" id="contaianer-conecte">
+                         Desenvolvimento: <a class="conecte" href="https://www.conectedesign.com.br/" target="_blank">Conecte Studio</a>
+                         &nbsp;&nbsp;&nbsp;&nbsp;
+                         Powered by: <a class="ic-opencart" href="http://www.opencart.com/" target="_blank"><img src="/catalog/view/theme/theme255/image/opencart-logo.png"/></a>
+                     </div>
+
+                 </div>
+             </div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" 	src="catalog/view/theme/<?php echo $this->config->get('config_template');?>/js/livesearch.js"></script>
+</div>
+</div>
+</div>
+<?php echo $modal; ?>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=225164554355533&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="isca-lead-interna">
+	<span class="saibamais"><a href="#" class="fechar"><i class="fa fa-times"></i></a><i class="gift"></i>Para você</span>
+	<div id="lead-interna-form">
+		<span class="cp-desconto"></span>
+		<!-- FORM CHIMP -->
+		<form action="//essenciamoveis.us2.list-manage.com/subscribe/post?u=42bc41479b38717f6b5e59551&amp;id=d8de434855" method="post" id="mc-embedded-subscribe-form-2" name="mc-embedded-subscribe-form-2" class="validate" novalidate>
+			<!-- <label for="mc-EMAIL">Seu e-mail</label> -->
+			<p>Receba novidades e ofertas no seu e-mail.
+				<small>Lhe enviaremos um cupom de 5% de desconto!</small>
+			</p>
+			<div class="mc-field-group">
+				<input type="text" value="" class="input-klick" name="EMAIL" class="required email" id="mce-EMAIL-2" placeholder="Digite o seu e-mail">
+				<input type="button" value="Cadastrar" name="subscribe" id="mc-embedded-subscribe-2" class="button button-klick">
+			</div>
+			<input type="hidden" value="2" name="group[10873][2]" id="mce-group[10873]-10873-1"  checked="checked">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_42bc41479b38717f6b5e59551_d88abd23cd" tabindex="-1" value=""></div>
+			<!-- <p>-ou-</p>
+			<div id="facebook-btn">
+				<script type="text/javascript" src="https://www.klickmail.com.br/form.php?id=19650&type=fb"></script><div id="kt_formular" style="display:none;"><center><iframe class="ktiframe" src="https://www.klickmail.com.br/form.php?id=19650&type=if" frameborder="0" allowtransparency="true" width="286px" height="232px" scrolling="no"></iframe><div class="connect_widget"><a class="connect_widget_text" href="javascript:ktswitchform(0);">Entrar usando seu Facebook</a></div></center></div><noscript><center><iframe class="ktiframe" src="https://www.klickmail.com.br/form.php?id=19650&type=if" frameborder="0" allowtransparency="true" width="286px" height="232px" scrolling="no"></iframe></center></noscript><div id="kt_fb_adds"><center><div class="connect_widget"><a class="connect_widget_text" href="javascript:ktswitchform(1);">Use formul&aacute;rio de inscri&ccedil;&atilde;o</a></div></center></div>
+			</div> -->
+		</form>
+		<small>*Número de cupons são limitados.</small>
+		<!-- FORM CHIMP -->
+	</div>
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('#isca-lead-interna').hover(function() {
+			$(this).addClass('active');
+		});
+		$('#isca-lead-interna .fechar').click(function(event) {
+			event.preventDefault();
+			$('#isca-lead-interna').remove();
+                        $.cookie("isca-lead-interna", true, {path: "/"});
+		});
+	});
+</script>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+	$.src='//v2.zopim.com/?1vo1qind3PUZpt9tR6Tl6R80hmZ6A5W5';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
+
+
+</body></html>

@@ -1,0 +1,1268 @@
+***********************************************
+2014-09-12 15:43:40:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=677d279707b5a21c2bcbb27dfe407dde
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="fe1b1d40a067b51dbeec51cb32182840" versao="1.1.1">
+   <tid>105351324800000E1001</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2014-09-12 15:43:41:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=677d279707b5a21c2bcbb27dfe407dde
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="fe1b1d40a067b51dbeec51cb32182840" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>105351324800000E1001</tid>
+  <pan>E67EZyDKIv31lsQc9HOhac18mIynjaENdszvIEDvMEE=</pan>
+  <dados-pedido>
+    <numero>2280</numero>
+    <valor>500</valor>
+    <moeda>986</moeda>
+    <data-hora>2014-09-12T12:04:52.614-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2014-09-12T12:04:52.662-03:00</data-hora>
+    <valor>500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2014-09-12T12:04:52.743-03:00</data-hora>
+    <valor>500</valor>
+    <lr>00</lr>
+    <arp>046293</arp>
+    <nsu>000014</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2014-09-12T12:04:53.236-03:00</data-hora>
+    <valor>500</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2014-09-12T15:43:41.177-03:00</data-hora>
+    <valor>500</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2014-09-12 16:59:35:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=50c29870ca0651b1dc782b63ea6d2f32
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="5bf04fbaedeb82716af2b34655b1cb3c" versao="1.1.1">
+   <tid>105351324800000D1001</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2014-09-12 16:59:38:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=50c29870ca0651b1dc782b63ea6d2f32
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="5bf04fbaedeb82716af2b34655b1cb3c" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>105351324800000D1001</tid>
+  <pan>E67EZyDKIv31lsQc9HOhac18mIynjaENdszvIEDvMEE=</pan>
+  <dados-pedido>
+    <numero>2270</numero>
+    <valor>5000</valor>
+    <moeda>986</moeda>
+    <data-hora>2014-09-11T10:54:10.139-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2014-09-11T10:54:10.182-03:00</data-hora>
+    <valor>5000</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2014-09-11T10:54:10.215-03:00</data-hora>
+    <valor>5000</valor>
+    <lr>00</lr>
+    <arp>008995</arp>
+    <nsu>000013</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2014-09-11T10:54:10.793-03:00</data-hora>
+    <valor>5000</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2014-09-12T16:59:37.479-03:00</data-hora>
+    <valor>5000</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2014-09-19 16:28:19:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=c3e7c5cb083c6cc4713c4bf4f910c1a9
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="975d712dda1ad35d79ef7e615a9faff5" versao="1.1.1">
+   <tid>10535132480000112006</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2014-09-19 16:28:20:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=c3e7c5cb083c6cc4713c4bf4f910c1a9
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="975d712dda1ad35d79ef7e615a9faff5" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10535132480000112006</tid>
+  <pan>E67EZyDKIv31lsQc9HOhac18mIynjaENdszvIEDvMEE=</pan>
+  <dados-pedido>
+    <numero>2294</numero>
+    <valor>16900</valor>
+    <moeda>986</moeda>
+    <data-hora>2014-09-19T16:26:52.172-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>2</produto>
+    <parcelas>6</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2014-09-19T16:26:52.192-03:00</data-hora>
+    <valor>16900</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2014-09-19T16:26:52.209-03:00</data-hora>
+    <valor>16900</valor>
+    <lr>00</lr>
+    <arp>029538</arp>
+    <nsu>000017</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2014-09-19T16:26:52.916-03:00</data-hora>
+    <valor>16900</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2014-09-19T16:28:20.427-03:00</data-hora>
+    <valor>16900</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2014-09-29 17:26:00:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=7374f2fbec5ab82a7c94dc10f89dc69e
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="35c5b8c313021aa6e628ecde4d6eb4bb" versao="1.1.1">
+   <tid>105351324800001C1001</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2014-09-29 17:26:01:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=7374f2fbec5ab82a7c94dc10f89dc69e
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="35c5b8c313021aa6e628ecde4d6eb4bb" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>105351324800001C1001</tid>
+  <pan>E67EZyDKIv31lsQc9HOhac18mIynjaENdszvIEDvMEE=</pan>
+  <dados-pedido>
+    <numero>2313</numero>
+    <valor>54454</valor>
+    <moeda>986</moeda>
+    <data-hora>2014-09-29T17:24:34.957-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2014-09-29T17:24:35.076-03:00</data-hora>
+    <valor>54454</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2014-09-29T17:24:35.097-03:00</data-hora>
+    <valor>54454</valor>
+    <lr>00</lr>
+    <arp>017439</arp>
+    <nsu>000028</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2014-09-29T17:24:35.649-03:00</data-hora>
+    <valor>54454</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2014-09-29T17:26:01.177-03:00</data-hora>
+    <valor>54454</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2014-11-24 13:10:53:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=5a732b68d88890d245e8bbcea879a408
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="e9e03e7b05ff539d4c68ed40ad401779" versao="1.1.1">
+   <tid>10535132480000211001</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2014-11-24 13:10:55:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=5a732b68d88890d245e8bbcea879a408
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="e9e03e7b05ff539d4c68ed40ad401779" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10535132480000211001</tid>
+  <pan>E67EZyDKIv31lsQc9HOhac18mIynjaENdszvIEDvMEE=</pan>
+  <dados-pedido>
+    <numero>2332</numero>
+    <valor>3500</valor>
+    <moeda>986</moeda>
+    <data-hora>2014-11-24T13:08:34.241-02:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2014-11-24T13:08:34.274-02:00</data-hora>
+    <valor>3500</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2014-11-24T13:08:34.344-02:00</data-hora>
+    <valor>3500</valor>
+    <lr>00</lr>
+    <arp>065753</arp>
+    <nsu>000033</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2014-11-24T13:08:35.037-02:00</data-hora>
+    <valor>3500</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2014-11-24T13:10:54.673-02:00</data-hora>
+    <valor>3500</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2015-04-08 15:27:35:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=ea278c43c4c4d58d978b9ab6ccf292c8&amp;order_id=2460
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="0b57f2dc276e780f7957cdb157e50ac5" versao="1.1.1">
+   <tid>105351324800003C1001</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-04-08 15:27:37:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=ea278c43c4c4d58d978b9ab6ccf292c8&amp;order_id=2460
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="0b57f2dc276e780f7957cdb157e50ac5" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>105351324800003C1001</tid>
+  <pan>Y8+AGkveA7FbHmhW/Ka75o+C9HjYlj5tOGXOuvzllsE=</pan>
+  <dados-pedido>
+    <numero>2460</numero>
+    <valor>77700</valor>
+    <moeda>986</moeda>
+    <data-hora>2015-04-08T12:42:42.074-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2015-04-08T12:42:42.151-03:00</data-hora>
+    <valor>77700</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2015-04-08T12:42:42.169-03:00</data-hora>
+    <valor>77700</valor>
+    <lr>00</lr>
+    <arp>032239</arp>
+    <nsu>000060</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2015-04-08T12:42:42.747-03:00</data-hora>
+    <valor>77700</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2015-04-08T15:27:37.115-03:00</data-hora>
+    <valor>77700</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2015-08-11 15:45:35:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=b2973c80a2a7cfe49f3ad1db47034aca
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="77a9297eecef0123b0cb1f38574360a6" versao="1.1.1">
+   <tid>1053513248000000053A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-08-11 15:45:40:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=b2973c80a2a7cfe49f3ad1db47034aca
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="77a9297eecef0123b0cb1f38574360a6" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1053513248000000053A</tid>
+  <pan>E67EZyDKIv31lsQc9HOhac18mIynjaENdszvIEDvMEE=</pan>
+  <dados-pedido>
+    <numero>2538</numero>
+    <valor>4000</valor>
+    <moeda>986</moeda>
+    <data-hora>2015-08-11T15:43:24.703-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>2</produto>
+    <parcelas>6</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2015-08-11T15:43:24.758-03:00</data-hora>
+    <valor>4000</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2015-08-11T15:43:24.776-03:00</data-hora>
+    <valor>4000</valor>
+    <lr>00</lr>
+    <arp>058920</arp>
+    <nsu>000083</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2015-08-11T15:43:25.448-03:00</data-hora>
+    <valor>4000</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2015-08-11T15:45:37.892-03:00</data-hora>
+    <valor>4000</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2015-09-02 17:28:15:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=9b9c58e7dfb7d8f6b7d6f4833731be86
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="8a43512af90a834349771b66ae6160bc" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-02 17:28:53:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=9b9c58e7dfb7d8f6b7d6f4833731be86
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="461f089349967745b6ce5f7f46f0fc2d" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-02 17:29:21:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=9b9c58e7dfb7d8f6b7d6f4833731be86
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="f130ef310fe35a548648207f9927aafc" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-04 15:42:56:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=47e900f686c7782671de6ee397a67c09
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="bbcc7ed6fb5a647b6050d27a0b10f85c" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-04 15:43:27:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=47e900f686c7782671de6ee397a67c09
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="111cf29de984aa956900c3bde23cd4c8" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-04 20:46:27:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=0f7f1f932533642baa33030836722eba
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="66063157bc3c0ecbce1f3e73126bb110" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-04 20:46:48:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=0f7f1f932533642baa33030836722eba
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="89cf5fb00e1eaa7fdbc1f2cb975eb4ca" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-09 19:09:33:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=26cf4f4bbf11505fc84ede97bd2d29fd
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="d8e4e9317da45281f0cf580fb458dff2" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-09 19:09:43:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=26cf4f4bbf11505fc84ede97bd2d29fd
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="0840e56a4350bee06bea9ad085f6c2eb" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-14 14:28:31:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=8abb4b64787b5742c882b91dd3938065
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="8cf4fdf4dac533f833213faec9273766" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-09-14 14:28:50:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=8abb4b64787b5742c882b91dd3938065
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="3715fa8392c5b9d111e9643cf1d8a872" versao="1.1.1">
+   <tid>1053513248000000056A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-11-19 15:18:55:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=f483cd2f1774106707282daf7efbf57c&amp;page=2
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="757f833202b801f2a7ab5b49aa39b0d1" versao="1.1.1">
+   <tid>105351324800000005DA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-11-19 15:19:17:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=f483cd2f1774106707282daf7efbf57c&amp;page=2
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="a74c7b4d1c9d08c31adcce56d4e13a86" versao="1.1.1">
+   <tid>105351324800000005DA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-11-19 15:19:56:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=f483cd2f1774106707282daf7efbf57c&amp;order_id=2586
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="2e245c0a849c0392ab0742aa4aa2ce7c" versao="1.1.1">
+   <tid>105351324800000005DA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-11-19 15:20:13:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=f483cd2f1774106707282daf7efbf57c&amp;order_id=2586
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="7c9c5d352a0e63ab1dabf358a610ff91" versao="1.1.1">
+   <tid>105351324800000005DA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-11-19 15:21:00:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=f483cd2f1774106707282daf7efbf57c&amp;page=2
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="8395507c5e9cd546ab4f9d020468d3a3" versao="1.1.1">
+   <tid>105351324800000005DA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-11-19 15:21:22:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=f483cd2f1774106707282daf7efbf57c&amp;page=2
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="c9f76e7b25e984652a8c6c924a574c9f" versao="1.1.1">
+   <tid>105351324800000005DA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-12-14 16:18:45:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=288d00aab54eef7bb6c2f10e177918ea&amp;order_id=2673
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="9e2ad3cb83dacb717b0b4beb5470de00" versao="1.1.1">
+   <tid>105351324800000006BA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-12-14 16:19:08:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=288d00aab54eef7bb6c2f10e177918ea&amp;order_id=2673
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="b1a78191b86355a5097c543d64785f46" versao="1.1.1">
+   <tid>105351324800000006BA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-12-14 16:19:24:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=288d00aab54eef7bb6c2f10e177918ea&amp;order_id=2673
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="f7b25b92117c6985b1c06aa5733a1a79" versao="1.1.1">
+   <tid>105351324800000006BA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-12-21 09:48:37:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=e0920551f77fe2ec079e26d8eecbb739&amp;order_id=2673
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="bb6f0233bb940c7798fb6ea15074e5ae" versao="1.1.1">
+   <tid>105351324800000006BA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2015-12-21 09:48:56:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=e0920551f77fe2ec079e26d8eecbb739&amp;order_id=2673
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="2e1f70d2dd415c37f9b1c8047976cc7a" versao="1.1.1">
+   <tid>105351324800000006BA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-01-12 14:28:37:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=42a3771f6380350dc086a3f9b5eba534
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="c31540794ab146bb2459d6f9f477fbfa" versao="1.1.1">
+   <tid>105351324800000006CA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-01-12 14:41:48:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=42a3771f6380350dc086a3f9b5eba534
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="34111f6ae30deddde63c6903b417b784" versao="1.1.1">
+   <tid>105351324800000006CA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-01-12 14:43:03:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=e5633d1173a6c0dddad61d8244796240
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="aad41a6443ad4cb0caed0f7a3e8665d5" versao="1.1.1">
+   <tid>105351324800000006CA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-01-12 14:43:34:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=e5633d1173a6c0dddad61d8244796240
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="6f1e6074c042f83bf054c32aff131d5e" versao="1.1.1">
+   <tid>105351324800000006CA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-01-14 11:48:38:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=62fd55e4bbfd288df08fb103587ee879
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="9af87e23db8935d91cadd091032a1b14" versao="1.1.1">
+   <tid>105351324800000006CA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-01-14 11:49:01:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=62fd55e4bbfd288df08fb103587ee879
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="1af31b14f9f1a957652123e30f793151" versao="1.1.1">
+   <tid>105351324800000006CA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-04-01 11:47:36:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=c3583089af6b10d258a27146f3260735&amp;order_id=2750
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="9566e0cfe82835811575dd71b38fc7d1" versao="1.1.1">
+   <tid>105351324800000007EA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-04-01 11:47:37:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=c3583089af6b10d258a27146f3260735&amp;order_id=2750
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="9566e0cfe82835811575dd71b38fc7d1" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>105351324800000007EA</tid>
+  <pan>QKaJj7N3j689469+0l0CP+Z7oNr5LxIIBCjfm9QKgbw=</pan>
+  <dados-pedido>
+    <numero>2750</numero>
+    <valor>86220</valor>
+    <moeda>986</moeda>
+    <data-hora>2016-04-01T09:31:16.306-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>2</produto>
+    <parcelas>6</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2016-04-01T09:31:16.374-03:00</data-hora>
+    <valor>86220</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2016-04-01T09:31:16.392-03:00</data-hora>
+    <valor>86220</valor>
+    <lr>00</lr>
+    <arp>218360</arp>
+    <nsu>000126</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2016-04-01T09:31:16.965-03:00</data-hora>
+    <valor>86220</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2016-04-01T11:47:37.261-03:00</data-hora>
+    <valor>86220</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2016-04-22 11:34:14:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=7b4d848853ae562fda891a14d2765aca&amp;order_id=2773
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="95cdeec9804d615d7323fbea5c85bd52" versao="1.1.1">
+   <tid>1053513248000000084A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-04-22 11:34:16:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=7b4d848853ae562fda891a14d2765aca&amp;order_id=2773
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="95cdeec9804d615d7323fbea5c85bd52" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1053513248000000084A</tid>
+  <pan>4g0e7x0L8CgSMrjwdaHCdpZu/KoWCZoHm1BFF8hA73o=</pan>
+  <dados-pedido>
+    <numero>2773</numero>
+    <valor>69010</valor>
+    <moeda>986</moeda>
+    <data-hora>2016-04-19T16:38:16.601-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2016-04-19T16:38:16.741-03:00</data-hora>
+    <valor>69010</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2016-04-19T16:38:16.764-03:00</data-hora>
+    <valor>69010</valor>
+    <lr>00</lr>
+    <arp>045575</arp>
+    <nsu>000132</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2016-04-19T16:38:17.358-03:00</data-hora>
+    <valor>69010</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2016-04-22T11:34:15.841-03:00</data-hora>
+    <valor>69010</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2016-04-28 11:07:27:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=e695f09f3e3c65a5e28de5bee9850403&amp;order_id=2765
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="de5267304561cbfd4c03bcc207f4cdda" versao="1.1.1">
+   <tid>1053513248000000082A</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-04-28 11:07:28:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=e695f09f3e3c65a5e28de5bee9850403&amp;order_id=2765
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="de5267304561cbfd4c03bcc207f4cdda" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>1053513248000000082A</tid>
+  <pan>uMnIZ+dz29DIpUe5RlZ6ELkpglfsX6fu6eoGL9B5aa4=</pan>
+  <dados-pedido>
+    <numero>2765</numero>
+    <valor>332060</valor>
+    <moeda>986</moeda>
+    <data-hora>2016-04-09T12:06:13.719-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>2</produto>
+    <parcelas>6</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2016-04-09T12:06:13.729-03:00</data-hora>
+    <valor>332060</valor>
+    <eci>7</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2016-04-09T12:06:13.734-03:00</data-hora>
+    <valor>332060</valor>
+    <lr>00</lr>
+    <arp>661399</arp>
+    <nsu>000130</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2016-04-09T12:06:14.506-03:00</data-hora>
+    <valor>332060</valor>
+  </captura>
+  <cancelamento>
+    <codigo>6</codigo>
+    <mensagem>Nao foi possivel cancelar a transacao</mensagem>
+    <data-hora>2016-04-28T11:07:28.122-03:00</data-hora>
+    <valor>332060</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2016-06-27 16:09:32:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=17e98234ecc69d78ef4211c59a79365d&amp;order_id=2805
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="08f60f55aa9e45e8faac587605a7b168" versao="1.1.1">
+   <tid>105351324800000008FA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-06-27 16:09:34:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=17e98234ecc69d78ef4211c59a79365d&amp;order_id=2805
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="08f60f55aa9e45e8faac587605a7b168" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>105351324800000008FA</tid>
+  <pan>7KrKIcGz55+v/Ml08M/hqL9FDnKgVNgo2SQ1EbbsNXs=</pan>
+  <dados-pedido>
+    <numero>2805</numero>
+    <valor>249652</valor>
+    <moeda>986</moeda>
+    <data-hora>2016-06-22T15:39:57.432-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>6</status>
+  <autenticacao>
+    <codigo>6</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2016-06-22T15:39:57.519-03:00</data-hora>
+    <valor>249652</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>6</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2016-06-22T15:39:57.538-03:00</data-hora>
+    <valor>249652</valor>
+    <lr>00</lr>
+    <arp>067801</arp>
+    <nsu>000143</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>6</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2016-06-22T15:39:58.070-03:00</data-hora>
+    <valor>249652</valor>
+  </captura>
+  <cancelamento>
+    <codigo>6</codigo>
+    <mensagem>Nao foi possivel cancelar a transacao</mensagem>
+    <data-hora>2016-06-27T16:09:33.168-03:00</data-hora>
+    <valor>249652</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2016-10-13 17:43:49:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=a616fc20877f61d3371a4ce914fd5470&amp;order_id=2881
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="b779fb5e7637780b351a0de57a119373" versao="1.1.1">
+   <tid>10535132480000000AAA</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-10-13 17:43:51:000000 (BRT)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=a616fc20877f61d3371a4ce914fd5470&amp;order_id=2881
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1"?>
+<transacao versao="1.1.1" id="b779fb5e7637780b351a0de57a119373" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>10535132480000000AAA</tid>
+  <pan>hL+P1ch/Y3oi3oTS9zkB2/4oHEiy8fazRDv65Nd8cNo=</pan>
+  <dados-pedido>
+    <numero>2881</numero>
+    <valor>473440</valor>
+    <moeda>986</moeda>
+    <data-hora>2016-10-11T17:05:28.024-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>mastercard</bandeira>
+    <produto>2</produto>
+    <parcelas>6</parcelas>
+  </forma-pagamento>
+  <status>9</status>
+  <autenticacao>
+    <codigo>9</codigo>
+    <mensagem>Transacao sem autenticacao</mensagem>
+    <data-hora>2016-10-11T17:05:28.077-03:00</data-hora>
+    <valor>473440</valor>
+    <eci>0</eci>
+  </autenticacao>
+  <autorizacao>
+    <codigo>9</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2016-10-11T17:05:28.095-03:00</data-hora>
+    <valor>473440</valor>
+    <lr>00</lr>
+    <arp>375161</arp>
+    <nsu>000170</nsu>
+  </autorizacao>
+  <captura>
+    <codigo>9</codigo>
+    <mensagem>Transacao capturada com sucesso</mensagem>
+    <data-hora>2016-10-11T17:05:28.886-03:00</data-hora>
+    <valor>473440</valor>
+  </captura>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2016-10-13T17:43:50.395-03:00</data-hora>
+    <valor>473440</valor>
+  </cancelamento>
+</transacao>
+
+
+***********************************************
+2016-11-30 19:55:03:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=9de22e7e3695cd499dc4fe2a3730b23f
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="d1ea19548743019d0b1e5e49cb5c4550" versao="1.1.1">
+   <tid>10535132485OBUV232FB</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2016-11-30 19:55:12:000000 (BRST)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=9de22e7e3695cd499dc4fe2a3730b23f
+OPERAÇÃO: Cancelamento
+RESPOSTA: <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><transacao id="d1ea19548743019d0b1e5e49cb5c4550" versao="1.1.1" xmlns="http://ecommerce.cbmp.com.br">    <tid>10535132485OBUV232FB</tid>    <pan>+XTfxCzJvULs8cTnhnG2kViX/ojejSqLdtoQ4xi6YAc=</pan>    <dados-pedido>        <numero>2921</numero>        <valor>107780</valor>        <moeda>986</moeda>        <data-hora>2016-11-30T17:26:08.000-02:00</data-hora>        <idioma>PT</idioma>    </dados-pedido>    <forma-pagamento>        <bandeira>mastercard</bandeira>        <produto>2</produto>        <parcelas>3</parcelas>    </forma-pagamento>    <status>9</status>    <autenticacao>        <codigo>9</codigo>        <mensagem>Transacao sem autenticacao</mensagem>        <data-hora>2016-11-30T17:26:09.150-02:00</data-hora>        <valor>107780</valor>        <eci>0</eci>    </autenticacao>    <autorizacao>        <codigo>9</codigo>        <mensagem>Transacao autorizada</mensagem>        <data-hora>2016-11-30T17:26:09.150-02:00</data-hora>        <valor>107780</valor>        <lr>00</lr>        <arp>099244</arp>        <nsu>004001</nsu>    </autorizacao>    <captura>        <codigo>9</codigo>        <mensagem>Transacao capturada com sucesso</mensagem>        <data-hora>2016-11-30T17:26:09.150-02:00</data-hora>        <valor>107780</valor>    </captura>    <cancelamentos>        <cancelamento>            <codigo>9</codigo>            <mensagem>Transacao cancelada com sucesso</mensagem>            <data-hora>2016-11-30T19:55:04.429-02:00</data-hora>            <valor>107780</valor>        </cancelamento>    </cancelamentos></transacao>
+
+
+***********************************************
+2018-08-14 05:03:18:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=dd10b11ec848ac766a76747ef12dc8cc
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="a7a7dd07a0d495ea149086ea1677a6a6" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:03:33:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=dd10b11ec848ac766a76747ef12dc8cc
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="41a33b0015aa5d23c77c4b5fe2b468cc" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:03:59:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=dd10b11ec848ac766a76747ef12dc8cc
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="0fc8ec18c2632a0e596c83183af2a2ea" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:04:13:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=dd10b11ec848ac766a76747ef12dc8cc
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="d64ca295dbb357a7fcad72099f21293f" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:41:51:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=d574dd22524df21b9d3a987e9e2cccd3
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="5b0945af6cf835b7e16273966759f571" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:41:59:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=d574dd22524df21b9d3a987e9e2cccd3
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="385f447668e3bf2195dc63a6b4e4dd61" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:42:31:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/delete&amp;token=d574dd22524df21b9d3a987e9e2cccd3
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="9c70c9393a16fc997bc1b4c52137dcce" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+
+***********************************************
+2018-08-14 05:43:03:000000 (-03)
+DO ARQUIVO: /lojaadmin/index.php?route=sale/order/history&amp;token=d574dd22524df21b9d3a987e9e2cccd3&amp;order_id=3766
+OPERAÇÃO: Cancelamento
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-cancelamento id="99c010c610281b793ac91d08da55519f" versao="1.1.1">
+   <tid>10535132487FCBSK5N9B</tid>
+   <dados-ec>
+      <numero>1053513248</numero>
+      <chave>dbeddd6f903ded4c079625bebe416ae70c8012df93598fdb2dad595590bb11ee</chave>
+   </dados-ec>
+</requisicao-cancelamento>
+

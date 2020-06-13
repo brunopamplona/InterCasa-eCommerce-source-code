@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="cptmpdb_interca1_Y7hFa7oJWjfkn6IJ">
+	<table_structure name="identities">
+		<field Field="identity_id" Type="int(10) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="user_id" Type="int(10) unsigned" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="changed" Type="datetime" Null="NO" Key="" Default="1000-01-01 00:00:00" Extra="" Comment="" />
+		<field Field="del" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="standard" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<field Field="name" Type="varchar(128)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="organization" Type="varchar(128)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="email" Type="varchar(128)" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="reply-to" Type="varchar(128)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="bcc" Type="varchar(128)" Null="NO" Key="" Default="" Extra="" Comment="" />
+		<field Field="signature" Type="longtext" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="html_signature" Type="tinyint(1)" Null="NO" Key="" Default="0" Extra="" Comment="" />
+		<key Table="identities" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="identity_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="identities" Non_unique="1" Key_name="user_identities_index" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="identities" Non_unique="1" Key_name="user_identities_index" Seq_in_index="2" Column_name="del" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="identities" Non_unique="1" Key_name="email_identities_index" Seq_in_index="1" Column_name="email" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="identities" Non_unique="1" Key_name="email_identities_index" Seq_in_index="2" Column_name="del" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="identities" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="0" Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="1035" Create_time="2019-07-20 03:15:43" Update_time="2019-07-20 03:15:43" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="identities">
+	<row>
+		<field name="identity_id">291</field>
+		<field name="user_id">289</field>
+		<field name="changed">2016-06-03 18:46:35</field>
+		<field name="del">0</field>
+		<field name="standard">1</field>
+		<field name="name"></field>
+		<field name="organization"></field>
+		<field name="email">webmaster@intercasamoveis.com.br</field>
+		<field name="reply-to"></field>
+		<field name="bcc"></field>
+		<field name="signature" xsi:nil="true" />
+		<field name="html_signature">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

@@ -1,0 +1,361 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201908 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/awstats.blog.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2024                
+POS_TIME 2682                
+POS_VISITOR 7434                
+POS_DAY 9087                
+POS_DOMAIN 3379                
+POS_LOGIN 3708                
+POS_ROBOT 3863                
+POS_WORMS 4237                
+POS_EMAILSENDER 4368                
+POS_EMAILRECEIVER 4511                
+POS_SESSION 9334                
+POS_SIDER 9514                
+POS_FILETYPES 4646                
+POS_DOWNLOADS 4801                
+POS_OS 4920                
+POS_BROWSER 5050                
+POS_SCREENSIZE 5237                
+POS_UNKNOWNREFERER 5311                
+POS_UNKNOWNREFERERBROWSER 5448                
+POS_ORIGIN 5580                
+POS_SEREFERRALS 5715                
+POS_PAGEREFS 5859                
+POS_SEARCHWORDS 6007                
+POS_KEYWORDS 6159                
+POS_MISC 2346                
+POS_ERRORS 6218                
+POS_CLUSTER 3564                
+POS_SIDER_404 6339                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20191230225119 1 0 5759614714460
+FirstTime 0
+LastTime 20190808005516
+LastUpdate 20191231223714 1 0 0 0 0
+TotalVisits 17                  
+TotalUnique 16                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 53                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+AddToFavourites 0 4 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+PDFSupport 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 4 526906 2 6 103692
+1 0 1 113178 0 1 8299
+2 19 22 1859297 62 68 2101392
+3 2 4 468035 6 11 52831
+4 1 1 88734 6 7 34359
+5 0 0 0 0 1 67
+6 73 74 1317908 6 9 8366
+7 101 106 422463 10 11 17147
+8 0 4 280666 1 4 106736
+9 1 7 746211 2 3 34293
+10 0 2 101620 2 2 42
+11 0 1 89598 2 39 221758
+12 0 7 340051 5 6 334034
+13 0 2 76176 0 0 0
+14 0 5 367303 5 5 34294
+15 1 3 206568 4 6 42593
+16 0 4 186955 1 2 8302
+17 539 540 494752 11 13 35013
+18 237 243 576222 5 7 34427
+19 0 1 60281 2 4 134
+20 1 2 632650 4 7 8434
+21 1 4 586295 4 8 2459345
+22 0 0 0 1 2 99277
+23 1 3 267930 5 7 17280
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+ua 774 774 491618
+us 196 248 7713235
+br 4 4 354936
+in 1 1 88737
+pt 1 1 88736
+ie 1 1 82497
+it 1 1 88734
+de 0 10 901306
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+bingbot/ 46 2805982 20190808083135 5
+blog 32 0 20190808035739 0
+Googlebot/ 27 346011 20190806204738 6
+DotBot/ 11 382430 20190807231917 9
+Dalvik/ 2 34294 20190807142258 0
+Applebot/ 2 17214 20190801185723 1
+linkdexbot/ 1 17148 20190801020527 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+php 943 1484206 0 0
+xml 1 1045 0 0
+jpg 60 5310165 0 0
+html 34 2570787 0 0
+css 2 443596 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/wp-content/uploads/2015/05/e-book-quartos-tematicos-3.pdf 1 0 2433760
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+linuxandroid 1 1
+win10 961 961
+win7 16 14
+linux 1 1
+Unknown 61 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 7
+chrome63.0.3239.132 961 961
+chrome74.0.3694.0 1 1
+msie9.0 1 1
+chrome49.0.2623.75 1 1
+chrome55.0.2883.87 8 6
+firefox40.1 7 7
+Unknown 61 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Photon/1.0 20190807235807
+PleskBot 20190802095252
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+PleskBot 20190802095252
+Photon/1.0 20190807235807
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 978 1040
+From1 0 0
+From2 0 0
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+404 69 2158344
+405 4 168
+301 16 524
+302 15 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 34
+/mysql.sql 2 -
+/wordpress.sql 2 -
+/wp-config.php.old 2 -
+/wp-config.original 2 -
+/wp-config.php.save 2 -
+/db_backup.sql 2 -
+/wp-config.php.original 2 -
+/dump.sql 2 -
+/blog.intercasamoveis.com.br.sql 1 -
+/wp-config.php~ 2 -
+/wp-config.php_bak 2 -
+/wp-config.orig 2 -
+/wp-config.php.swp 2 -
+/wp-config.txt 2 -
+/backup.sql 2 -
+/ads.txt 9 -
+/.wp-config.php.swp 2 -
+/blog.intercasamoveis.com.br.zip 1 -
+/dbdump.sql 2 -
+/data.sql 2 -
+/blog.intercasamoveis.com.br.sql.gz 1 -
+/wp-config.php.bak 2 -
+/wp-config.bak 2 -
+/www.blog.intercasamoveis.com.br.sql 1 -
+/www.blog.intercasamoveis.com.br.sql.gz 1 -
+/site.sql 2 -
+/wp-config.php.orig 2 -
+/db.sql 2 -
+/database.sql 2 -
+/wp-config.save 2 -
+/wp-config.old 2 -
+/www.blog.intercasamoveis.com.br.zip 1 -
+/wp-config.php 2 -
+/wp-config.php.swo 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 53
+178.137.82.147 538 538 307248 20190807172315
+194.61.24.29 236 236 184370 20190807181819
+18.130.77.170 173 173 1259841 20190804071201
+172.245.71.138 14 14 1122968 20190804023246
+172.245.82.42 6 8 798540 20190803023300
+188.251.226.244 1 1 88736 20190801150816
+35.230.111.159 1 1 17147 20190807180537
+52.48.224.195 1 1 88734 20190802095252
+177.132.182.201 1 1 88734 20190804202604
+177.9.187.81 1 1 88734 20190804043950
+46.51.194.107 1 1 82497 20190808005516
+66.102.6.174 1 1 17146 20190803212948
+179.192.170.138 1 1 88734 20190803234040
+185.53.252.155 1 1 88734 20190804023410
+45.165.62.1 1 1 88737 20190807171634
+177.104.112.78 1 1 88734 20190802073548
+192.0.114.82 0 1 543916 
+192.0.98.184 0 3 296301 
+192.0.102.144 0 1 10030 
+192.0.101.240 0 1 27660 
+192.0.99.11 0 2 226356 
+192.0.102.92 0 4 187107 
+192.0.100.59 0 5 162090 
+192.0.99.106 0 1 7232 
+192.0.91.157 0 1 193329 
+192.0.102.118 0 2 161706 
+195.234.109.194 0 1 46005 
+192.0.99.107 0 1 46926 
+192.0.82.254 0 1 20561 
+192.0.100.11 0 1 159229 
+195.234.109.122 0 1 279470 
+192.0.102.96 0 1 17959 
+192.0.101.142 0 1 20561 
+192.0.99.83 0 1 21006 
+192.0.86.147 0 1 80853 
+192.0.99.179 0 2 558940 
+192.0.116.180 0 1 144378 
+192.0.86.162 0 1 209710 
+192.0.86.151 0 1 28313 
+192.0.102.52 0 3 138015 
+192.0.88.51 0 2 226356 
+192.0.101.190 0 1 4654 
+192.0.112.177 0 1 117841 
+195.234.109.126 0 1 209710 
+195.234.109.20 0 2 56626 
+192.0.114.84 0 1 29424 
+192.0.101.58 0 3 166845 
+192.0.102.90 0 1 26527 
+192.0.101.11 0 4 358392 
+195.234.109.178 0 1 73037 
+195.234.109.188 0 1 55615 
+192.0.85.145 0 1 216642 
+195.234.109.68 0 3 180843 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 8
+20190801 3 7 1275809 2
+20190802 2 25 1852446 2
+20190803 6 13 1207565 3
+20190804 190 196 3007717 5
+20190805 0 9 572611 0
+20190806 0 11 1034456 0
+20190807 776 778 776698 4
+20190808 1 1 82497 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+0s-30s 12
+5mn-15mn 2
+30s-2mn 1
+15mn-30mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 4
+/xmlrpc.php 943 1484206 0 3
+/ 32 2570787 17 13
+/wp-content/plugins/ 2 0 0 1
+/wp-includes/wlwmanifest.xml 1 1045 0 0
+END_SIDER

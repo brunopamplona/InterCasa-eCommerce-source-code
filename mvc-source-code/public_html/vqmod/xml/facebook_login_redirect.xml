@@ -1,0 +1,15 @@
+<!-- Created using vQmod XML Generator by UKSB - http://www.opencart-extensions.co.uk //-->
+<modification>
+	<id><![CDATA[Facebook Login Redirect Mod]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[]]></vqmver>
+	<author><![CDATA[iSenseLabs Team]]></author>
+	<file name="catalog/controller/account/login.php">
+		<operation>
+			<search position="before"><![CDATA[unset($this->session->data['redirect']);]]></search>
+			<add><![CDATA[
+			$this->session->data['facebooklogin_redirect'] = $this->session->data['redirect'];
+			]]></add>
+		</operation>
+	</file>
+</modification>

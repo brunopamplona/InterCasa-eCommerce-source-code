@@ -1,0 +1,261 @@
+09/12/2018 18:57:12 (-02)
+stdClass Object
+(
+    [MerchantOrderId] => 3947
+    [Customer] => stdClass Object
+        (
+            [Name] => jose da silva carneiro
+        )
+
+    [Payment] => stdClass Object
+        (
+            [DebitCard] => stdClass Object
+                (
+                    [CardNumber] => 498401******4187
+                    [Holder] => JOSE S CARNEIRO
+                    [ExpirationDate] => 12/2021
+                    [SaveCard] => 
+                    [Brand] => Visa
+                )
+
+            [Provider] => Cielo
+            [AuthenticationUrl] => https://mpi.braspag.com.br/v1/acs/index/9f3922fd-05ce-4256-82e0-e5ac3c43e0ee
+            [SoftDescriptor] => INTERCA
+            [Tid] => 11042410537IQJ2EJPCB
+            [Authenticate] => 1
+            [Recurrent] => 
+            [Amount] => 94900
+            [ReceivedDate] => 2018-12-09 18:57:10
+            [ReturnUrl] => https://intercasamoveis.com.br/index.php?route=payment/cielo_api_debito/retorno
+            [Status] => 0
+            [IsSplitted] => 
+            [ReturnCode] => 0
+            [PaymentId] => c243d726-f375-4992-b16a-98261a3fb87a
+            [Type] => DebitCard
+            [Currency] => BRL
+            [Country] => BRA
+            [Links] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Method] => GET
+                            [Rel] => self
+                            [Href] => https://apiquery.cieloecommerce.cielo.com.br/1/sales/c243d726-f375-4992-b16a-98261a3fb87a
+                        )
+
+                )
+
+        )
+
+)
+
+09/12/2018 18:59:48 (-02)
+stdClass Object
+(
+    [MerchantOrderId] => 3947
+    [Customer] => stdClass Object
+        (
+            [Name] => jose da silva carneiro
+        )
+
+    [Payment] => stdClass Object
+        (
+            [DebitCard] => stdClass Object
+                (
+                    [CardNumber] => 546452******7610
+                    [Holder] => JOSE S CARNEIRO
+                    [ExpirationDate] => 02/2021
+                    [SaveCard] => 
+                    [Brand] => Master
+                )
+
+            [Provider] => Cielo
+            [AuthenticationUrl] => https://mpi.braspag.com.br/v1/acs/index/cc628fc6-aee8-4086-9f59-f8c8820de114
+            [SoftDescriptor] => INTERCA
+            [Tid] => 11042410537IQJ2FGMKB
+            [Authenticate] => 1
+            [Recurrent] => 
+            [Amount] => 94900
+            [ReceivedDate] => 2018-12-09 18:59:45
+            [ReturnUrl] => https://intercasamoveis.com.br/index.php?route=payment/cielo_api_debito/retorno
+            [Status] => 0
+            [IsSplitted] => 
+            [ReturnCode] => 0
+            [PaymentId] => 0fa9be74-875f-46db-9b64-2417af60359f
+            [Type] => DebitCard
+            [Currency] => BRL
+            [Country] => BRA
+            [Links] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Method] => GET
+                            [Rel] => self
+                            [Href] => https://apiquery.cieloecommerce.cielo.com.br/1/sales/0fa9be74-875f-46db-9b64-2417af60359f
+                        )
+
+                )
+
+        )
+
+)
+
+30/12/2018 15:24:19 (-02)
+stdClass Object
+(
+    [MerchantOrderId] => 3955
+    [Customer] => stdClass Object
+        (
+            [Name] => Leonardo  Soria 
+        )
+
+    [Payment] => stdClass Object
+        (
+            [DebitCard] => stdClass Object
+                (
+                    [CardNumber] => 498453******4153
+                    [Holder] => Leonardo soria
+                    [ExpirationDate] => 12/2021
+                    [SaveCard] => 
+                    [Brand] => Visa
+                )
+
+            [Provider] => Cielo
+            [AuthenticationUrl] => https://mpi.braspag.com.br/v1/acs/index/d7d00bd3-ea8b-4b8e-a160-8b9c8b7e7f15
+            [SoftDescriptor] => INTERCA
+            [Tid] => 11042410537JE6OAFECB
+            [Authenticate] => 1
+            [Recurrent] => 
+            [Amount] => 78990
+            [ReceivedDate] => 2018-12-30 15:24:16
+            [ReturnUrl] => https://intercasamoveis.com.br/index.php?route=payment/cielo_api_debito/retorno
+            [Status] => 0
+            [IsSplitted] => 
+            [ReturnCode] => 0
+            [PaymentId] => 3538a893-423d-4dc1-b276-292324ef9271
+            [Type] => DebitCard
+            [Currency] => BRL
+            [Country] => BRA
+            [Links] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Method] => GET
+                            [Rel] => self
+                            [Href] => https://apiquery.cieloecommerce.cielo.com.br/1/sales/3538a893-423d-4dc1-b276-292324ef9271
+                        )
+
+                )
+
+        )
+
+)
+
+11/03/2019 00:13:09 (-03)
+stdClass Object
+(
+    [MerchantOrderId] => 4033
+    [Customer] => stdClass Object
+        (
+            [Name] => Débora kely Batista da paz
+        )
+
+    [Payment] => stdClass Object
+        (
+            [DebitCard] => stdClass Object
+                (
+                    [CardNumber] => 459080******7813
+                    [Holder] => Anibal f marenga
+                    [ExpirationDate] => 06/2023
+                    [SaveCard] => 
+                    [Brand] => Visa
+                )
+
+            [Provider] => Cielo
+            [AuthenticationUrl] => https://mpi.braspag.com.br/v1/acs/index/aff58f3a-2ff4-408f-b1e6-9181b5537648
+            [SoftDescriptor] => INTERCA
+            [Tid] => 110424105387VUA7T6EB
+            [Authenticate] => 1
+            [Recurrent] => 
+            [Amount] => 101880
+            [ReceivedDate] => 2019-03-11 00:13:04
+            [ReturnUrl] => https://intercasamoveis.com.br/index.php?route=payment/cielo_api_debito/retorno
+            [Status] => 0
+            [IsSplitted] => 
+            [ReturnCode] => 0
+            [PaymentId] => 9b166c8b-1238-432b-9406-66a00153c212
+            [Type] => DebitCard
+            [Currency] => BRL
+            [Country] => BRA
+            [Links] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Method] => GET
+                            [Rel] => self
+                            [Href] => https://apiquery.cieloecommerce.cielo.com.br/1/sales/9b166c8b-1238-432b-9406-66a00153c212
+                        )
+
+                )
+
+        )
+
+)
+
+Erro: 8 RUNTIME NOTICE
+Registrado em: 14/05/2019 13:51:19 (-03)
+No arquivo: /home/interca1/public_html/catalog/controller/payment/cielo_api_credito.php (Linha: 471)
+Com a mensagem: 
+Undefined property: stdClass::$Tid
+
+12/08/2019 20:32:23 (-03)
+stdClass Object
+(
+    [MerchantOrderId] => 4184
+    [Customer] => stdClass Object
+        (
+            [Name] => yuri pinheiro
+        )
+
+    [Payment] => stdClass Object
+        (
+            [DebitCard] => stdClass Object
+                (
+                    [CardNumber] => 498442******0766
+                    [Holder] => YURI PINHEIRO
+                    [ExpirationDate] => 12/2021
+                    [SaveCard] => 
+                    [Brand] => Visa
+                )
+
+            [Provider] => Cielo
+            [AuthenticationUrl] => https://mpi.braspag.com.br/v1/acs/index/401fb51f-fca8-486a-938a-f8d792c80bf3
+            [SoftDescriptor] => INTERCA
+            [Tid] => 11042410538CF21JO8GB
+            [Authenticate] => 1
+            [Recurrent] => 
+            [Amount] => 73590
+            [ReceivedDate] => 2019-08-12 20:32:25
+            [ReturnUrl] => https://intercasamoveis.com.br/index.php?route=payment/cielo_api_debito/retorno
+            [Status] => 0
+            [IsSplitted] => 
+            [ReturnCode] => 0
+            [PaymentId] => 23f6f585-fba0-4cce-b97a-79ca787a9698
+            [Type] => DebitCard
+            [Currency] => BRL
+            [Country] => BRA
+            [Links] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [Method] => GET
+                            [Rel] => self
+                            [Href] => https://apiquery.cieloecommerce.cielo.com.br/1/sales/23f6f585-fba0-4cce-b97a-79ca787a9698
+                        )
+
+                )
+
+        )
+
+)
+

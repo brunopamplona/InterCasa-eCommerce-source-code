@@ -1,0 +1,28 @@
+<modification>
+	<id>Combo in catalog theme</id>
+	<version>1.5.x</version>
+	<vqmver>2.3.x</vqmver>
+	<author>Fanha Giang</author>
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+		<operation error="skip">
+			<search position="after"><![CDATA[<a href="#tab-review"><?php echo $tab_review; ?></a>]]></search>
+			<add><![CDATA[
+	<?php } ?>
+    <?php if ($combo) { ?>
+    <a href="#tab-combo"><?php echo $tab_combo; ?></a>
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="before" index="1"><![CDATA[<?php echo $content_bottom; ?>]]></search>
+			<add><![CDATA[
+				<?php echo $combo; ?>
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="before"><![CDATA[<input type="hidden" name="product_id"]]></search>
+			<add><![CDATA[
+          <input type="hidden" name="combo_id" value="0" />
+			]]></add>
+		</operation>
+	</file>
+</modification>

@@ -1,0 +1,32 @@
+<modification>
+  <id>Cielo API para OpenCart 1.5</id>
+  <version>1.7.0</version>
+  <vqmver>2.3.0</vqmver>
+  <author>OpenCart Brasil</author>
+  <file name="admin/controller/common/header.php">
+    <operation error="abort">
+      <search position="before"><![CDATA[$this->data['stores'] = array();]]></search>
+      <add><![CDATA[
+        $this->load->language('payment/cielo_api_menu');
+        $this->data['text_cielo_api'] = $this->language->get('text_cielo_api');
+        $this->data['text_cielo_api_search'] = $this->language->get('text_cielo_api_search');
+        $this->data['text_cielo_api_log'] = $this->language->get('text_cielo_api_log');
+        $this->data['cielo_api_search'] = $this->url->link('sale/cielo_api_search', 'token=' . $this->session->data['token'], 'SSL');
+        $this->data['cielo_api_log'] = $this->url->link('sale/cielo_api_log', 'token=' . $this->session->data['token'], 'SSL');
+      ]]></add>
+    </operation>
+  </file>
+  <file name="admin/view/template/common/header.tpl">
+    <operation error="abort">
+      <search position="after"><![CDATA[<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>]]></search>
+      <add><![CDATA[
+        <li><a class="parent"><?php echo $text_cielo_api ?></a>
+          <ul>
+            <li><a href="<?php echo $cielo_api_search ?>"><?php echo $text_cielo_api_search ?></a></li>
+            <li><a href="<?php echo $cielo_api_log ?>"><?php echo $text_cielo_api_log ?></a></li>
+          </ul>
+        </li>
+      ]]></add>
+    </operation>
+  </file>
+</modification>

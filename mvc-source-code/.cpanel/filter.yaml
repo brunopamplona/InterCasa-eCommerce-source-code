@@ -1,0 +1,37 @@
+--- 
+filter: 
+  - 
+    actions: 
+      - 
+        action: save
+        dest: /dev/null
+    enabled: 1
+    filtername: Generated Apache SpamAssassin™ Discard Rule
+    rules: 
+      - 
+        match: contains
+        opt: or
+        part: "$h_X-Spam-Bar:"
+        val: +++++
+  - 
+    actions: 
+      - 
+        action: finish
+        dest: ~
+      - 
+        action: save
+        dest: /dev/null
+    filtername: spam
+    rules: 
+      - 
+        match: contains
+        opt: or
+        part: "$header_from:"
+        val: interca1@sv3hostconecte.com.br
+      - 
+        match: contains
+        opt: or
+        part: "$header_to:"
+        val: "@qq.com"
+    unescaped: 1
+version: '2.2'

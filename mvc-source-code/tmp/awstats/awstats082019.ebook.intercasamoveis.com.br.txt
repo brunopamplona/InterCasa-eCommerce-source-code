@@ -1,0 +1,338 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201908 will be lost/reset.
+# Last config file used to build this data file was /home/interca1/tmp/awstats/awstats.ebook.intercasamoveis.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2025                
+POS_TIME 2697                
+POS_VISITOR 8850                
+POS_DAY 9399                
+POS_DOMAIN 3300                
+POS_LOGIN 3554                
+POS_ROBOT 3709                
+POS_WORMS 3985                
+POS_EMAILSENDER 4116                
+POS_EMAILRECEIVER 4259                
+POS_SESSION 9563                
+POS_SIDER 9720                
+POS_FILETYPES 4394                
+POS_DOWNLOADS 4543                
+POS_OS 4591                
+POS_BROWSER 4711                
+POS_SCREENSIZE 4954                
+POS_UNKNOWNREFERER 5028                
+POS_UNKNOWNREFERERBROWSER 5115                
+POS_ORIGIN 5197                
+POS_SEREFERRALS 5330                
+POS_PAGEREFS 5474                
+POS_SEARCHWORDS 5622                
+POS_KEYWORDS 5774                
+POS_MISC 2361                
+POS_ERRORS 5833                
+POS_CLUSTER 3410                
+POS_SIDER_404 5960                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20191231074807 1 0 11407433526677
+FirstTime 20190801001220
+LastTime 20190807112245
+LastUpdate 20191231223714 1 0 0 0 0
+TotalVisits 13                  
+TotalUnique 11                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 13                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+DirectorSupport 0 0 0
+JavascriptDisabled 0 0 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 1147 32 34 73265
+1 0 0 0 0 0 0
+2 2 2 5518 20 20 302384
+3 0 0 0 0 0 0
+4 0 0 0 3 15 556738
+5 1 1 2759 2 2 1147
+6 19 27 466992 68 70 1027540
+7 0 0 0 0 0 0
+8 0 0 0 1 2 3395
+9 0 0 0 3 22 603661
+10 0 0 0 0 0 0
+11 1 1 1147 1 2 2241
+12 1 1 1147 2 3 4542
+13 1 1 2759 22 32 363877
+14 3 19 837419 1 3 2235
+15 0 0 0 3 11 101783
+16 0 0 0 0 0 0
+17 0 0 0 3 18 603661
+18 0 0 0 1 2 1147
+19 0 0 0 1 6 50318
+20 1 1 1147 4 7 13599
+21 0 0 0 1 5 50318
+22 0 0 0 6 22 196008
+23 0 0 0 2 3 17330
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 3
+us 27 35 482616
+br 2 18 834660
+gb 1 1 2759
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+bingpreview 24 1632915 20190807172805 0
+Googlebot/ 18 55469 20190807155602 0
+BDCbot/ 10 50318 20190806094755 0
+bingbot/ 4 4588 20190807172802 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+png 6 606819 0 0
+css 3 22860 0 0
+js 12 147513 0 0
+html 30 71486 0 0
+jpg 3 471357 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 4
+ios_iphone 9 1
+linux 1 1
+linuxandroid 18 2
+win10 26 26
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 9
+chrome75.0.3770.143 9 1
+chrome49.0.2623.75 1 1
+chrome45.0.2454.93 2 2
+chrome74.0.3729.131 1 1
+chrome38.0.1025.166 9 1
+safari12.1.1 9 1
+firefox64.0 2 2
+chrome63.0.3239.132 20 20
+firefox58.0 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 30 30
+From1 0 0
+From2 0 0
+From3 0 0
+From4 0 24
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+404 160 1722484
+206 53 506621
+500 1 2235
+301 2 559
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 71
+/wp-admin 1 -
+//files/uploadify/uploadify.php 1 -
+//cfg-contactform-1/inc/upload.php 1 -
+/website/wp-includes/wlwmanifest.xml 1 -
+/main 1 -
+/administrator/index.php 1 -
+/cms/wp-includes/wlwmanifest.xml 11 -
+/press 1 -
+//editor/plugins/filemanager/ajax_create_folder.php 1 -
+/2018/wp-includes/wlwmanifest.xml 1 -
+//tinymce/plugins/ajaxfilemanager/ajax_create_folder.php 1 -
+/test 1 -
+//public/upload_nhieuanh/server/php/_index.php 1 -
+//scripts/tiny_mce/plugins/ajaxfilemanager/ajax_create_folder.php 1 -
+/assets/global/plugins/jquery-file-upload/server/php 1 -
+/new 1 -
+/adminside/server/php 1 -
+//server/php 1 -
+//app/webroot/js/tinymce/plugins/imgsurfer/main.php 1 -
+//helpdesk/media/editor/plugins/filemanager/ajax_create_folder.php 1 -
+/news/wp-includes/wlwmanifest.xml 1 -
+/home 1 -
+//templates/admin/js/tinymce/plugins/imgsurfer/main.php 1 -
+//admin/tinymce/jscripts/tiny_mce/plugins/imgsurfer/main.php 1 -
+/wp 1 -
+/en 1 -
+// 1 -
+//media/editor/plugins/filemanager/ajax_create_folder.php 1 -
+/2016/wp-includes/wlwmanifest.xml 1 -
+/wp2/wp-includes/wlwmanifest.xml 1 -
+//zp-core/zp-extensions/tiny_mce/plugins/ajaxfilemanager/ajax_create_folder.php 1 -
+//vendor_extra/elfinder/php/connector.minimal.php 1 -
+/test/wp-includes/wlwmanifest.xml 1 -
+/2017/wp-includes/wlwmanifest.xml 1 -
+/wp1/wp-includes/wlwmanifest.xml 1 -
+//ajax/api/hook/decodeArguments 1 -
+//assets/uploadify/uploadify.php 1 -
+/media/wp-includes/wlwmanifest.xml 1 -
+/wordpress/wp-includes/wlwmanifest.xml 11 -
+/site/wp-includes/wlwmanifest.xml 11 -
+//assets/tinymce/plugins/imgsurfer/main.php 1 -
+/shop/wp-includes/wlwmanifest.xml 1 -
+/wp-includes/wlwmanifest.xml 10 -
+/robots.txt 18 -
+/xmlrpc.php 10 -
+//assets/uploadify/old/uploadify.php 1 -
+//admin/login.php 2 -
+//admin/images/cal_date_over.gif 2 -
+/news 1 -
+/www 1 -
+//admin/libraries/ajaxfilemanager/ajax_create_folder.php 1 -
+//public/js/plugins/imgsurfer/main.php 1 -
+//admin/editor/plugins/filemanager/ajax_create_folder.php 1 -
+/cms 1 -
+/web/wp-includes/wlwmanifest.xml 1 -
+//umapresence/umaservices/umapage/inc/contentCss.php 1 -
+/website 1 -
+//tinymce/jscripts/tiny_mce/plugins/imgsurfer/main.php 1 -
+/sito/wp-includes/wlwmanifest.xml 1 -
+//infusions/mp3player_panel/upload.php 1 -
+//modul/tinymce/plugins/ajaxfilemanager/ajax_create_folder.php 1 -
+/site 1 -
+//fckeditor/editor/filemanager/connectors/php/upload.php 2 -
+/wordpress 1 -
+/blog 1 -
+//tinymce/plugins/imgsurfer/main.php 1 -
+/blog/wp-includes/wlwmanifest.xml 11 -
+//templates/system/css/system.css 2 -
+/2015/wp-includes/wlwmanifest.xml 1 -
+/demo 1 -
+/wp/wp-includes/wlwmanifest.xml 11 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 13
+13.90.231.58 16 16 44144 20190803063821
+104.193.88.243 2 2 5518 20190804145909
+18.130.77.170 2 2 5518 20190804065110
+172.245.71.138 2 2 5518 20190804023243
+132.145.138.169 2 2 2294 20190804200728
+66.102.8.252 1 3 129697 20190802142136
+34.229.88.99 1 1 1147 20190804125503
+186.246.74.208 1 9 417330 20190802063357
+189.120.77.229 1 9 417330 20190803143403
+51.79.20.92 1 1 2759 20190804135228
+64.233.172.1 1 1 1147 20190807112245
+66.102.8.248 0 4 197299 
+66.102.8.250 0 2 90334 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 5
+20190801 1 1 1147 1
+20190802 2 18 834660 2
+20190803 18 26 464233 3
+20190804 8 8 18848 6
+20190807 1 1 1147 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+30s-2mn 2
+0s-30s 11
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 1
+/ 30 71486 13 13
+END_SIDER

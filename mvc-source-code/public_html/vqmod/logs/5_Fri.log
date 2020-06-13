@@ -1,0 +1,126 @@
+---------- Date: 2019-09-27 15:18:54 ~ IP : 177.69.205.203 ----------
+REQUEST URI : /lojaadmin/index.php?route=module/vqmod_manager&amp;token=c870d6c7bb2575e7068404517e11d360
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/multi-meios-modulos-loja5.xml
+   id        : Multi Meios de Pagamento por Modulo - Loja5
+   version   : 1.0
+   vqmver    : 2.2.1
+   author    : Loja5 | http://loja5.com.br
+VQModObject::parseMods - Could not resolve path for [admin/controller/extension/payment.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/vqmm_menu_shortcut.xml
+   id        : VQMod Manager Menu Shortcut
+   version   : 1.0.0
+   vqmver    : 2.3.0
+   author    : Ryan (rph) - OpenCartHelp.com
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/header.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/vqmod_cielo_api.xml
+   id        : Cielo API para OpenCart 1.5
+   version   : 1.7.0
+   vqmver    : 2.3.0
+   author    : OpenCart Brasil
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/header.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/wsceps.xml
+   id        : Web Services - Consulta de CEP
+   version   : 1.0.8
+   vqmver    : 2.1.5
+   author    : http://tretasdanet.com
+VQModObject::parseMods - Could not resolve path for [admin/view/template/sale/customer_form.tpl] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-09-27 15:19:18 ~ IP : 46.229.168.161 ----------
+REQUEST URI : /moveis/armario-estante-infantil/estante_cabot_branca?order=ASC&amp;sort=p.price
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/async_addthis.xml
+   id        : Replace sync script of addthis with async
+   version   : 1.0
+   vqmver    : 2.X
+   author    : MMOSolution.com
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script>
+
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/vqmod_product_detail_sharing_product.xml
+   id        : Sharing Productt
+   version   : 1.0.0
+   vqmver    : 2.4.1
+   author    : MojeGalanterka.cz
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="share"><!-- AddThis Button BEGIN -->
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-09-27 15:27:21 ~ IP : 177.69.205.203 ----------
+REQUEST URI : /lojaadmin/index.php?route=module/clearsale_start&amp;token=c870d6c7bb2575e7068404517e11d360
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/multi-meios-modulos-loja5.xml
+   id        : Multi Meios de Pagamento por Modulo - Loja5
+   version   : 1.0
+   vqmver    : 2.2.1
+   author    : Loja5 | http://loja5.com.br
+VQModObject::parseMods - Could not resolve path for [admin/controller/extension/payment.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/vqmm_menu_shortcut.xml
+   id        : VQMod Manager Menu Shortcut
+   version   : 1.0.0
+   vqmver    : 2.3.0
+   author    : Ryan (rph) - OpenCartHelp.com
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/header.tpl] (SKIPPED)
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/vqmod_cielo_api.xml
+   id        : Cielo API para OpenCart 1.5
+   version   : 1.7.0
+   vqmver    : 2.3.0
+   author    : OpenCart Brasil
+VQModObject::parseMods - Could not resolve path for [admin/controller/common/header.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/common/header.tpl] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/wsceps.xml
+   id        : Web Services - Consulta de CEP
+   version   : 1.0.8
+   vqmver    : 2.1.5
+   author    : http://tretasdanet.com
+VQModObject::parseMods - Could not resolve path for [admin/view/template/sale/customer_form.tpl] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-09-27 15:27:30 ~ IP : 66.249.73.200 ----------
+REQUEST URI : /beliche-kids-3-gavetas-cores
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/async_addthis.xml
+   id        : Replace sync script of addthis with async
+   version   : 1.0
+   vqmver    : 2.X
+   author    : MMOSolution.com
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script>
+
+MOD DETAILS:
+   modFile   : /home/interca1/public_html/vqmod/xml/vqmod_product_detail_sharing_product.xml
+   id        : Sharing Productt
+   version   : 1.0.0
+   vqmver    : 2.4.1
+   author    : MojeGalanterka.cz
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div class="share"><!-- AddThis Button BEGIN -->
+
+----------------------------------------------------------------------
+
+

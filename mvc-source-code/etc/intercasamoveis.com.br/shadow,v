@@ -1,0 +1,85 @@
+head	1.5;
+access;
+symbols;
+locks
+	interca1:1.5; strict;
+comment	@# @;
+
+
+1.5
+date	2015.06.02.15.46.06;	author interca1;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2014.07.07.16.18.20;	author interca1;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2014.07.07.16.18.20;	author interca1;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.05.31.15.39.00;	author interca1;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.05.31.15.39.00;	author interca1;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@site:$6$dN4XwpN9pOt2UZOF$b6hB6i73xjg/rxTO3LLsPeBx/L1v9s0W3q7fxJdZwLOTjoZyxgJX/nmBwhu.ED.jTUwxZzzaf2Ig3Rly2PvJM.:16221::::::
+ebook:$6$0rdKrKeH91YIzWrI$W1oxjEMwG9djBOg67lbalGex.QQO9tBg5/DZRltSY6Su5wmgMEZUFFa/2RfvK92voDg3oLXJDP41noJh7ogut0:16258::::::
+webmaster:$6$f6Ujt7YL3GWcGPvg$a1lJ3b3yltq.8l.snf52/Z0.3h/1s15ktyPCt0902swIgVBwWRCC45vUyJ1osz.fjYVy16yNjT/X3xGtb9de9/:16588::::::
+@
+
+
+1.4
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d3 1
+@
+
+
+1.3
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d2 1
+@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+a1 1
+site:$6$Lt1bnwswxokgfArB$C7WsCnnPd8aGSFmWtAvcEjjxy16CCOvjSvAf6gI.xm/9.LQCaOxxEQByeZSo90gYAqQIcPhkb5Nh1uisUGy440:16221::::::
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@
